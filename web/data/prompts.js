@@ -6288,5 +6288,108 @@ window.PROMPTS = [
     ],
     "source": "Google DeepMind / Google Cloud Blog（2026-06-30）",
     "updated": "2026-07-09"
+  },
+  {
+    "id": "plugin-claude-enterprise-mcp-okta-zero-touch",
+    "category": "plugin",
+    "level": "advanced",
+    "title_zh": "Claude 企业级 MCP 免配置接入：管理员在 Okta 里配一次，全员登录就能用",
+    "title_en": "Claude's Enterprise-Managed MCP: IT Configures Once in Okta, Everyone Gets Zero-Touch Access",
+    "body_zh": "Anthropic 于 2026-06-18 上线「企业管理的 MCP 连接器授权」，率先支持 Okta。核心变化：以前团队里每个人要自己给 Claude 逐个连接 Slack、GitHub、Notion 等 MCP 连接器并授权；现在 IT 管理员可以在 Okta 后台把这些连接器统一配置好、批量下发权限，员工第一次登录 Claude（网页版/Claude Code/Cowork）就自动拥有这些连接器的访问权，不用再各自重复走 OAuth 授权流程。适合谁用：Team/Enterprise 版的管理员，尤其是团队人数多、连接器种类多（Slack+GitHub+Jira+Notion 等）的组织，能省下大量「一个个教同事怎么连」的支持成本。给管理员的建议：①先在小范围试点组挑 2-3 个高频连接器配置，观察员工首次登录体验是否顺畅；②配合权限最小化原则，按团队/角色而不是全员统一授权同一批连接器；③留意这是 Beta 阶段功能，配置界面和支持的身份提供商（目前主推 Okta）后续会扩展，正式上线前建议先在测试租户走一遍流程。普通个人用户不受影响，该功能只针对企业版账号。",
+    "body_en": "On 2026-06-18 Anthropic shipped enterprise-managed authorization for MCP connectors, launching first with Okta support. The core change: previously every teammate had to individually connect and authorize each MCP connector (Slack, GitHub, Notion, etc.) inside Claude themselves; now IT admins can configure these connectors centrally in the Okta admin console and push access in bulk, so employees automatically get connector access the first time they log into Claude (web, Claude Code, or Cowork) — no repeated OAuth flows per person. Who it's for: admins on Team/Enterprise plans, especially larger orgs juggling many connectors (Slack + GitHub + Jira + Notion, etc.), where this cuts a lot of \"walk each teammate through setup\" support overhead. Tips for admins: 1) pilot with 2-3 high-frequency connectors in a small group first and check that the first-login experience is smooth; 2) follow least-privilege principles — scope connector access by team/role rather than granting everyone the same bundle; 3) remember this is still in beta and the supported identity providers (currently led by Okta) will expand, so run it through a test tenant before rolling out broadly. Individual free/Pro users aren't affected — this is Enterprise-only.",
+    "models": [
+      "Claude"
+    ],
+    "tags": [
+      "Claude",
+      "MCP",
+      "企业管理",
+      "Okta",
+      "团队协作"
+    ],
+    "source": "Anthropic 官方公告（2026-06-18）",
+    "updated": "2026-07-10"
+  },
+  {
+    "id": "image-mj7-draft-omni-reference-workflow",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "Midjourney V7 省钱工作流：Draft Mode 海选方向，Omni-Reference 锁住角色",
+    "title_en": "Midjourney V7's Money-Saving Workflow: Draft Mode to Explore, Omni-Reference to Lock In a Character",
+    "body_zh": "Midjourney V7 里两个该组合使用的功能：Draft Mode 和 Omni-Reference。Draft Mode 出图速度约快 5 倍、成本只要标准模式的 1/10，适合先批量出 10-20 张草稿探索方向，不用一开始就精修；确定喜欢的方向后再关掉 Draft Mode，用标准或高质量模式精修最终图。Omni-Reference（参数 `--oref` 加图片链接）则用来保持角色/物体/风格在多张图里的一致性，配合 `--ow` 控制参考强度（1-1000，默认 100，数值越高越贴近参考图）。需要注意的坑：Omni-Reference 目前不能和 Fast Mode、Draft Mode、对话模式（Conversational Mode）或 `--q 4` 同时使用，所以正确顺序是——先用 Draft Mode + 对话模式快速定方向和构图，选定后关闭 Draft Mode，再加上 Omni-Reference 锁定角色做批量出图（比如同一角色不同场景的系列插画、连续分镜）。这套流程比从头到尾都用高质量模式更省钱，尤其适合需要出大量变体再精修的场景，比如角色设定集、连环画分镜。",
+    "body_en": "Two Midjourney V7 features are meant to be chained together: Draft Mode and Omni-Reference. Draft Mode renders about 5x faster at roughly 1/10th the cost of standard mode, so it's ideal for cheaply batch-generating 10-20 drafts to explore directions before committing to a final render — once you like a direction, turn Draft Mode off and re-render in standard/high-quality mode. Omni-Reference (the `--oref` parameter plus an image URL) keeps a character, object, or style consistent across multiple images, with `--ow` controlling reference strength (1-1000, default 100 — higher values stick closer to the reference). The gotcha: Omni-Reference currently can't be combined with Fast Mode, Draft Mode, Conversational Mode, or `--q 4`. So the right sequence is: use Draft Mode + Conversational Mode to quickly nail down direction and composition, turn Draft Mode off once you're happy, then add Omni-Reference to lock in the character for a consistent batch — think character sheets or sequential comic panels. This workflow is considerably cheaper than rendering everything at high quality from the start, especially when you need many variants before final polish.",
+    "models": [
+      "Midjourney"
+    ],
+    "tags": [
+      "Midjourney",
+      "Draft Mode",
+      "Omni-Reference",
+      "角色一致性",
+      "省钱技巧"
+    ],
+    "source": "Midjourney 官方文档（Omni Reference / Draft Mode）",
+    "updated": "2026-07-10"
+  },
+  {
+    "id": "craft-gemini35pro-frontend-ui-preview",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "Gemini 3.5 Pro 7 月 17 日发布在即：主打「一次成型」的像素级 UI 生成，提前想好怎么用",
+    "title_en": "Gemini 3.5 Pro Lands July 17: Built for \"One-Shot\" Pixel-Precise UI Generation — Plan Your Use Case Now",
+    "body_zh": "Google 计划于 2026-07-17 正式发布 Gemini 3.5 Pro，官方定位是「重新预训练的全新底座」，重点强化前端代码生成、UI 设计和 SVG 绘制能力，号称能做到「一次成型」——给一句描述或一张草图，直接产出像素级还原度较高的完整界面代码，减少来回修改的轮次。发布前可以先做的准备：①如果你现在常用 AI 生成前端原型（落地页、后台面板、小程序界面），可以先整理一批「文字描述 + 参考截图」的测试用例，等模型上线当天直接拿来对比效果，看是否真能减少手工调整的时间；②留意它和 Fable 5、Claude 等模型在 UI 生成上的定位差异——早期风声是 Gemini 3.5 Pro 主打设计还原度和 SVG，Claude 系列更偏工程落地和长任务把控，做选型前先明确自己是要「快速出像素级稿子」还是「稳定接入现有代码库」；③价格和限速政策要等正式发布日才会公布，现在先别急着规划批量迁移，等首周实测反馈出来再决定要不要切换生产环境。",
+    "body_en": "Google plans to officially launch Gemini 3.5 Pro on 2026-07-17, described as a \"fully re-pretrained new foundation\" with a heavy focus on frontend code generation, UI design, and SVG output — the pitch is \"one-shot\" generation: give it a description or a rough sketch and it produces near-pixel-accurate interface code with fewer rounds of manual revision. Things worth prepping before launch day: 1) if you already use AI to prototype frontends (landing pages, admin panels, mini-program UIs), assemble a small test set of \"text description + reference screenshot\" pairs now, so you can benchmark the new model the moment it ships and see if it genuinely cuts down manual tweaking; 2) keep in mind the apparent positioning gap versus models like Fable 5 or Claude — early word is that Gemini 3.5 Pro leans toward design fidelity and SVG output, while the Claude family leans toward engineering integration and long-running tasks, so decide upfront whether you need \"fast pixel-accurate mockups\" or \"stable integration into an existing codebase\"; 3) pricing and rate limits won't be confirmed until launch day, so hold off planning a bulk migration until first-week hands-on feedback comes in before touching production.",
+    "models": [
+      "Gemini"
+    ],
+    "tags": [
+      "Gemini",
+      "前端生成",
+      "UI设计",
+      "新模型"
+    ],
+    "source": "行业报道 / Google 发布计划（截至 2026-07-10）",
+    "updated": "2026-07-10"
+  },
+  {
+    "id": "skill-glm45v-vision-reasoning-video-doc",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "智谱 GLM-4.5V：旗舰视觉推理模型，拿来读长视频和扫描件的正确姿势",
+    "title_en": "Zhipu's GLM-4.5V: a Flagship Vision-Reasoning Model — the Right Way to Feed It Long Videos and Scanned Docs",
+    "body_zh": "智谱 AI 的 GLM-4.5V 是主打「视觉推理」的旗舰多模态模型，支持视频、图像、文本、文件同时作为输入，在 42 项公开视觉语言基准测试中拿到同级别开源模型 SOTA。和普通「看图说话」模型的区别在于它更擅长「推理」而不只是识别：比如给一段会议录屏视频，它能结合画面变化和上下文推断出操作步骤，而不只是描述画面里有什么。实用场景建议：①处理扫描版合同、发票、手写笔记这类图片化文档时，直接上传原图配合具体问题（比如「这份合同里的付款条款是第几条，写了什么」），比先 OCR 转文字再问效果更好，因为它能结合版面布局理解；②分析教学视频、产品演示视频时，明确告诉它你要的输出形式（时间轴+步骤列表、还是纯文字摘要），它能按视频进度给出结构化拆解；③目前是开源模型，个人和团队都可以自己部署或通过智谱开放平台 API 调用，适合对数据隐私敏感、不想把视频文件传第三方云服务的场景。",
+    "body_en": "Zhipu AI's GLM-4.5V is a flagship multimodal model built for \"vision reasoning,\" accepting video, image, text, and file inputs simultaneously, and hits SOTA among open-source models of its class across 42 public vision-language benchmarks. What sets it apart from typical image-captioning models is that it's built to reason rather than just recognize — fed a screen-recorded meeting video, for example, it can infer the sequence of actions from context and visual changes rather than just describing what's on screen. Practical use cases: 1) for scanned contracts, invoices, or handwritten notes, upload the raw image with a specific question (e.g. \"which clause covers payment terms, and what does it say\") rather than OCR-ing to text first — it reasons over the layout directly, which tends to work better; 2) when analyzing tutorial or product-demo videos, tell it exactly what output format you want (a timeline with step list, or a plain-text summary) and it will structure its breakdown accordingly; 3) it's open-source, so individuals and teams can self-host it or call it via Zhipu's open platform API — a good fit if you're privacy-sensitive and don't want to upload video files to a third-party cloud service.",
+    "models": [
+      "智谱"
+    ],
+    "tags": [
+      "GLM-4.5V",
+      "智谱",
+      "视觉推理",
+      "多模态",
+      "文档处理"
+    ],
+    "source": "智谱 AI 开放文档 / 官方发布",
+    "updated": "2026-07-10"
+  },
+  {
+    "id": "start-waic2026-preview-300-launches",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "2026 世界人工智能大会 7 月 17-20 日在上海：300+ 新品首发前，新手该关注什么",
+    "title_en": "WAIC 2026 Hits Shanghai July 17-20 With 300+ Product Launches — What Beginners Should Actually Watch For",
+    "body_zh": "2026 世界人工智能大会（WAIC）将于 7 月 17 日至 20 日在上海举行，官方预告超过 300 款 AI 新品会在会上全球首发，涵盖大模型（如 MiniMax M3 多模态大模型）、Agent 操作系统（如阶跃的 Agent OS）、以及华为 Atlas 950 等大规模算力硬件。对普通用户来说，这种行业大会最容易踩的坑是「被信息轰炸后不知道该关注什么」。给新手三条筛选建议：①只关注和自己实际场景相关的品类——写作/办公优先看大模型对话和 Agent 类新品，做设计/视频优先看多模态生成类；②新品发布会现场演示效果通常好于实际可用版本，等大会结束一两周、看到第三方博主的真实评测再决定要不要换工具，不用开幕当天就冲；③大会期间往往会有一批模型限时免费或大幅降价试用，如果本来就有换模型的打算，可以留意这个窗口期薅一波羊毛，但记得设提醒，优惠期一般不长。",
+    "body_en": "The 2026 World Artificial Intelligence Conference (WAIC) runs July 17-20 in Shanghai, with organizers previewing more than 300 AI products set for global debut — spanning large models (like the MiniMax M3 multimodal model), agent operating systems (like Stepfun's Agent OS), and large-scale compute hardware such as Huawei's Atlas 950. For everyday users, the easiest mistake at an event like this is getting overwhelmed and not knowing what to actually pay attention to. Three filtering tips for beginners: 1) only track categories relevant to what you actually do — writers and office workers should focus on chat models and agent-type launches, designers and video creators should focus on multimodal generation announcements; 2) live demos at launch events tend to look better than the shipped product, so wait a week or two after the conference for independent reviewers' hands-on takes before deciding whether to switch tools — no need to jump in on day one; 3) conferences like this often come with limited-time free access or steep discounts on new models, so if you were already planning to switch tools, this window is worth watching — just set a reminder, since these promos rarely last long.",
+    "models": [
+      "通用"
+    ],
+    "tags": [
+      "WAIC",
+      "行业动态",
+      "新品发布",
+      "上海"
+    ],
+    "source": "新华网 / 大会官方预告（2026-07-08）",
+    "updated": "2026-07-10"
   }
 ];

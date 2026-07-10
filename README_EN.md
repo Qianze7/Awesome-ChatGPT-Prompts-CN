@@ -16,13 +16,13 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 ### Categories
 
-- 🚀 **Getting Started** (22)
+- 🚀 **Getting Started** (23)
 - 🎭 **Role Prompts** (149)
-- 🖼️ **Text-to-Image** (17)
+- 🖼️ **Text-to-Image** (18)
 - 🎬 **Text-to-Video** (24)
-- 🧩 **Skills** (26)
-- 🔌 **Plugins / MCP** (17)
-- 💡 **Prompt Craft** (54)
+- 🧩 **Skills** (27)
+- 🔌 **Plugins / MCP** (18)
+- 💡 **Prompt Craft** (55)
 
 ## 🚀 Getting Started
 
@@ -135,6 +135,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ Kimi`  ·  月之暗面官宣 Kimi K3 发布计划（2026-07）
 
 > In July 2026, Moonshot AI (月之暗面) announced that Kimi K3 will officially launch this month: 2.5 trillion total MoE parameters (surpassing DeepSeek V4 Pro's 1.6 trillion and even ERNIE 5.0's 2.4 trillion), a 1M-token context window, and native multimodal fusion — a new high-water mark for Chinese model parameter counts. The long-context pitch isn't just "it fits" but "it actually understands," per the company, aimed at scenarios like financial research analysis, legal case-file search, and whole-repository-level coding that genuinely require reading everything at once. One caveat: the previous generation, K2.7 Code, priced at roughly ¥6.5/M tokens after a price hike — about 6.5x DeepSeek V4 Pro — so K3 will likely continue that premium pricing rather than being both strongest and cheapest. Advice for everyday users and developers: 1) don't rush to switch just because of the parameter count — wait for official pricing and public benchmarks (especially coding benchmarks like SWE-Bench) before deciding if it's worth it; 2) if your use case genuinely involves reading an entire long document or codebase in one pass, put K3 near the top of your test list once it ships; 3) for everyday Q&A and writing, your current model (GPT/Claude/DeepSeek/Doubao, etc.) is still plenty — no need to migrate just to chase the biggest parameter count.
+
+### WAIC 2026 Hits Shanghai July 17-20 With 300+ Product Launches — What Beginners Should Actually Watch For
+`🟢 Beginner ｜ 通用`  ·  新华网 / 大会官方预告（2026-07-08）
+
+> The 2026 World Artificial Intelligence Conference (WAIC) runs July 17-20 in Shanghai, with organizers previewing more than 300 AI products set for global debut — spanning large models (like the MiniMax M3 multimodal model), agent operating systems (like Stepfun's Agent OS), and large-scale compute hardware such as Huawei's Atlas 950. For everyday users, the easiest mistake at an event like this is getting overwhelmed and not knowing what to actually pay attention to. Three filtering tips for beginners: 1) only track categories relevant to what you actually do — writers and office workers should focus on chat models and agent-type launches, designers and video creators should focus on multimodal generation announcements; 2) live demos at launch events tend to look better than the shipped product, so wait a week or two after the conference for independent reviewers' hands-on takes before deciding whether to switch tools — no need to jump in on day one; 3) conferences like this often come with limited-time free access or steep discounts on new models, so if you were already planning to switch tools, this window is worth watching — just set a reminder, since these promos rarely last long.
 
 ## 🎭 Role Prompts
 
@@ -979,6 +984,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > On 2026-06-30 Google released Nano Banana 2 Lite (model name Gemini 3.1 Flash-Lite Image), positioned as the faster, cheaper option in the family: roughly 2.7x faster than its sibling Nano Banana 2 (Gemini 3.1 Flash Image), generating an image in about 4 seconds at a flat rate of $0.034 per 1,000 images. It outputs at 1K resolution across 14 aspect ratios, but still keeps the Nano Banana family's signature strengths — character consistency across a stream of images, precise local editing, data-visualization and layout drafts informed by real-world knowledge, and multilingual text rendering — with every output carrying an invisible SynthID watermark for AI-generated identification. When to reach for Lite instead of the pricier Pro/standard version: 1) bulk draft generation, e-commerce product-image variants, or exploring many design directions before narrowing down — this "generate wide, then pick" workflow is where Lite saves time and money; 2) once you've settled on a direction, switch the chosen image over to Nano Banana Pro/standard for the final high-detail render. It's currently available to enterprise developers via Google AI Studio and the Gemini API — individual users should watch for when it lands in the Gemini app.
 
+### Midjourney V7's Money-Saving Workflow: Draft Mode to Explore, Omni-Reference to Lock In a Character
+`🟡 Intermediate ｜ Midjourney`  ·  Midjourney 官方文档（Omni Reference / Draft Mode）
+
+> Two Midjourney V7 features are meant to be chained together: Draft Mode and Omni-Reference. Draft Mode renders about 5x faster at roughly 1/10th the cost of standard mode, so it's ideal for cheaply batch-generating 10-20 drafts to explore directions before committing to a final render — once you like a direction, turn Draft Mode off and re-render in standard/high-quality mode. Omni-Reference (the `--oref` parameter plus an image URL) keeps a character, object, or style consistent across multiple images, with `--ow` controlling reference strength (1-1000, default 100 — higher values stick closer to the reference). The gotcha: Omni-Reference currently can't be combined with Fast Mode, Draft Mode, Conversational Mode, or `--q 4`. So the right sequence is: use Draft Mode + Conversational Mode to quickly nail down direction and composition, turn Draft Mode off once you're happy, then add Omni-Reference to lock in the character for a consistent batch — think character sheets or sequential comic panels. This workflow is considerably cheaper than rendering everything at high quality from the start, especially when you need many variants before final polish.
+
 ## 🎬 Text-to-Video
 
 ### Kling/Sora camera-motion prompt
@@ -1240,6 +1250,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > Claude Code's 2.1.199 release (2026-07-02) fixed how stacked skill invocations behave: previously, triggering several slash-skills back to back would only load the first one and silently drop the rest; now up to 5 skills can be loaded together in one turn. It also fixed a bug where re-invoking an already-loaded skill duplicated its instructions in context (wasting tokens and risking contradictory repeated guidance) — that's now deduplicated automatically. The release also cleaned up MCP error messages so it's faster to tell whether a failure is a plugin config issue or a network issue. Practical effect: if your workflow is "use skill A to clean data, skill B to draft the doc, skill C to check formatting," you can now chain all three in a single task instead of three separate turns — but don't over-stack; loading more skills than you actually need dilutes instruction priority, so 2-3 skills at once tends to work best.
 
+### Zhipu's GLM-4.5V: a Flagship Vision-Reasoning Model — the Right Way to Feed It Long Videos and Scanned Docs
+`🟡 Intermediate ｜ 智谱`  ·  智谱 AI 开放文档 / 官方发布
+
+> Zhipu AI's GLM-4.5V is a flagship multimodal model built for "vision reasoning," accepting video, image, text, and file inputs simultaneously, and hits SOTA among open-source models of its class across 42 public vision-language benchmarks. What sets it apart from typical image-captioning models is that it's built to reason rather than just recognize — fed a screen-recorded meeting video, for example, it can infer the sequence of actions from context and visual changes rather than just describing what's on screen. Practical use cases: 1) for scanned contracts, invoices, or handwritten notes, upload the raw image with a specific question (e.g. "which clause covers payment terms, and what does it say") rather than OCR-ing to text first — it reasons over the layout directly, which tends to work better; 2) when analyzing tutorial or product-demo videos, tell it exactly what output format you want (a timeline with step list, or a plain-text summary) and it will structure its breakdown accordingly; 3) it's open-source, so individuals and teams can self-host it or call it via Zhipu's open platform API — a good fit if you're privacy-sensitive and don't want to upload video files to a third-party cloud service.
+
 ## 🔌 Plugins / MCP
 
 ### Claude Code: Split Work into Specialized Subagents
@@ -1326,6 +1341,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🔴 Advanced ｜ Claude`  ·  参考 helloianneo/awesome-claude-code-skills（GitHub）
 
 > Vercel Labs' Find Skills is a "meta-skill" — it doesn't solve a specific business problem itself, but gives Claude Code the ability to discover and install other skills. Usage: when you hit a scenario your current skill set doesn't cover, just tell Claude "find and install a skill that handles {specific need}" and it searches, evaluates, and installs — no need to go browse skills.sh yourself first. This fits people who already understand the skill ecosystem reasonably well and want to cut manual upkeep further; if you're still learning the ropes, install a few skills manually first to get familiar with the flow before adding this automation layer, otherwise it's harder to debug which step went wrong when something breaks. Install: `npx skills add vercel-labs/skills@find-skills`.
+
+### Claude's Enterprise-Managed MCP: IT Configures Once in Okta, Everyone Gets Zero-Touch Access
+`🔴 Advanced ｜ Claude`  ·  Anthropic 官方公告（2026-06-18）
+
+> On 2026-06-18 Anthropic shipped enterprise-managed authorization for MCP connectors, launching first with Okta support. The core change: previously every teammate had to individually connect and authorize each MCP connector (Slack, GitHub, Notion, etc.) inside Claude themselves; now IT admins can configure these connectors centrally in the Okta admin console and push access in bulk, so employees automatically get connector access the first time they log into Claude (web, Claude Code, or Cowork) — no repeated OAuth flows per person. Who it's for: admins on Team/Enterprise plans, especially larger orgs juggling many connectors (Slack + GitHub + Jira + Notion, etc.), where this cuts a lot of "walk each teammate through setup" support overhead. Tips for admins: 1) pilot with 2-3 high-frequency connectors in a small group first and check that the first-login experience is smooth; 2) follow least-privilege principles — scope connector access by team/role rather than granting everyone the same bundle; 3) remember this is still in beta and the supported identity providers (currently led by Okta) will expand, so run it through a test tenant before rolling out broadly. Individual free/Pro users aren't affected — this is Enterprise-only.
 
 ## 💡 Prompt Craft
 
@@ -1624,5 +1644,10 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ Claude`  ·  Anthropic 官方博客 / TechCrunch 报道（2026-07-07）
 
 > On 2026-07-07 Anthropic announced that Claude Cowork, previously desktop-only, is expanding to web and mobile — rolling out first to Max subscribers, with more plans following over the next several weeks. The core change is remote sessions plus synced files plus a shared chat/Cowork home across devices: you can kick off a Cowork session on your desktop to organize files or run a long task, then switch to your phone to check progress or add a quick instruction, without staying glued to your computer or re-explaining the task. Practical tips: 1) start long-running tasks (bulk document organizing, a research sweep) on desktop first, spelling out scope and output location before you hand it off; 2) mobile is best for lightweight actions — checking progress, approving something, adding a one-line instruction — while major direction changes or reviewing large files are still more efficient back on desktop; 3) for team accounts, check whether an admin has enabled this for Team/Enterprise yet; individual Max accounts can already use it directly.
+
+### Gemini 3.5 Pro Lands July 17: Built for "One-Shot" Pixel-Precise UI Generation — Plan Your Use Case Now
+`🟡 Intermediate ｜ Gemini`  ·  行业报道 / Google 发布计划（截至 2026-07-10）
+
+> Google plans to officially launch Gemini 3.5 Pro on 2026-07-17, described as a "fully re-pretrained new foundation" with a heavy focus on frontend code generation, UI design, and SVG output — the pitch is "one-shot" generation: give it a description or a rough sketch and it produces near-pixel-accurate interface code with fewer rounds of manual revision. Things worth prepping before launch day: 1) if you already use AI to prototype frontends (landing pages, admin panels, mini-program UIs), assemble a small test set of "text description + reference screenshot" pairs now, so you can benchmark the new model the moment it ships and see if it genuinely cuts down manual tweaking; 2) keep in mind the apparent positioning gap versus models like Fable 5 or Claude — early word is that Gemini 3.5 Pro leans toward design fidelity and SVG output, while the Claude family leans toward engineering integration and long-running tasks, so decide upfront whether you need "fast pixel-accurate mockups" or "stable integration into an existing codebase"; 3) pricing and rate limits won't be confirmed until launch day, so hold off planning a bulk migration until first-week hands-on feedback comes in before touching production.
 
 <!-- AUTO-PROMPTS:END -->
