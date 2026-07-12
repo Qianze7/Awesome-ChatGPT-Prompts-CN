@@ -6391,5 +6391,191 @@ window.PROMPTS = [
     ],
     "source": "新华网 / 大会官方预告（2026-07-08）",
     "updated": "2026-07-10"
+  },
+  {
+    "id": "start-gpt56-sol-terra-luna-pick",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "GPT-5.6 全面开放：Sol / Terra / Luna 三档到底该选哪个",
+    "title_en": "GPT-5.6 Is Now Open to Everyone: How to Pick Between Sol, Terra, and Luna",
+    "body_zh": "GPT-5.6 在 2026-07-09 结束了此前的限量灰度，全面向 ChatGPT、Codex 和 API 用户开放，一次性带来三个档位：Sol、Terra、Luna（太阳/地球/月亮的命名，暗示能力从强到轻）。新手最容易犯的错是不管什么任务都用最贵的 Sol，其实三档分工很清楚：①Sol 是旗舰档，适合真正需要深度推理的场景——复杂代码架构、专业分析报告、多步骤研究，输出更严谨但价格也最高（约 $5/$30 每百万 token）；②Terra 是均衡档，日常写文案、改代码、做计划这类「专业但不算最难」的工作用它最划算（约 $2.5/$15 每百万 token），性价比是三档里最高的；③Luna 走速度和成本优先，适合初步分类、内容审核、批量客服这种「量大但单次要求不高」的任务（约 $1/$6 每百万 token）。实操建议：把 Terra 设成默认档位应付大部分日常任务，只有明确卡在推理深度或专业度上时才手动切到 Sol，纯粹图快图省钱的批量任务丢给 Luna，不要三档混用导致成本失控。",
+    "body_en": "GPT-5.6 ended its limited rollout on 2026-07-09 and is now fully available across ChatGPT, Codex, and the API, shipping in three tiers at once: Sol, Terra, and Luna (named after the sun, earth, and moon to signal descending capability). The most common beginner mistake is defaulting to the priciest Sol tier for everything, when the three tiers actually have a clear division of labor: 1) Sol is the flagship, built for tasks that genuinely need deep reasoning — complex code architecture, professional analysis, multi-step research — with the most rigorous output but also the highest price (~$5/$30 per million tokens); 2) Terra is the balanced option, best value for everyday \"professional but not the hardest\" work like copywriting, code edits, and planning (~$2.5/$15 per million tokens) — the best cost-to-capability ratio of the three; 3) Luna prioritizes speed and cost, suited to first-pass classification, content moderation, or high-volume support replies where each individual request doesn't demand much (~$1/$6 per million tokens). Practical tip: set Terra as your default for most daily tasks, switch to Sol manually only when you're clearly bottlenecked on reasoning depth or rigor, and route purely volume-driven, cost-sensitive batch work to Luna — mixing all three without a plan is how costs get away from you.",
+    "models": [
+      "GPT-5.6"
+    ],
+    "tags": [
+      "GPT-5.6",
+      "Sol",
+      "Terra",
+      "Luna",
+      "模型选择"
+    ],
+    "source": "OpenAI 官方发布 / Help Center（2026-07-09）",
+    "updated": "2026-07-11"
+  },
+  {
+    "id": "skill-chatgpt-work-agent-launch",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "ChatGPT Work 上线：一个能跨应用干活、直接交付成品文件的常驻智能体",
+    "title_en": "ChatGPT Work Has Launched: an Always-On Agent That Works Across Your Apps and Delivers Finished Files",
+    "body_zh": "OpenAI 在 GPT-5.6 全面开放的同一天（2026-07-09）推出了 ChatGPT Work，和平时聊天用的 Chat、专门写代码的 Codex 并列成为第三种模式，专门处理「耗时更长、要交成品」的任务。用法：在网页版或手机 App 里切到 Work，开一个新对话或已有项目，把相关文件和背景资料丢进去，说清楚你要的最终交付物，剩下的交给它——它能读取本地文件和已连接的应用，也能用内置浏览器访问网站和在线工具，跑完之后直接给你成品文档、表格、演示文稿，甚至用新的 Sites 功能生成一个可交互的网页看板。它还支持定时任务：设置成「每天/每周自动跑一次」或「触发某个条件就执行」，适合周报汇总、竞品监控这类重复性工作。开通节奏：网页和手机端先对 Pro/Enterprise/Edu 用户开放，Plus 和 Business 用户稍后跟上；桌面版（Mac/Windows）目前所有档位（含免费版）都能直接用。用法提醒：过程里它会主动汇报进度、遇到关键节点会停下来问你要不要继续，重要决定还是自己确认一下，别当甩手掌柜。",
+    "body_en": "On the same day GPT-5.6 fully rolled out (2026-07-09), OpenAI launched ChatGPT Work, a third mode alongside the regular Chat and the coding-focused Codex, purpose-built for longer tasks that need a finished deliverable. How to use it: switch to Work on web or mobile, start a new conversation or open an existing project, drop in the relevant files and background context, and describe the final output you want — it can read local files and connected apps, use an embedded browser to reach websites and online tools, then hand you back a finished document, spreadsheet, presentation, or even an interactive web dashboard via the new Sites feature. It also supports scheduled tasks — set it to run daily, weekly, or on a trigger condition — which is a good fit for recurring work like weekly report roll-ups or competitor monitoring. Rollout pace: Pro, Enterprise, and Edu users get access first on web and mobile, with Plus and Business following soon after; the Mac/Windows desktop app already has it available on every plan, including free. Usage tip: it proactively reports progress and pauses at key decision points to check with you — still confirm anything consequential yourself rather than letting it run unsupervised.",
+    "models": [
+      "ChatGPT",
+      "GPT-5.6"
+    ],
+    "tags": [
+      "ChatGPT Work",
+      "Agent",
+      "工作流",
+      "自动化"
+    ],
+    "source": "OpenAI 官方发布 / Help Center（2026-07-09）",
+    "updated": "2026-07-11"
+  },
+  {
+    "id": "video-gemini-omni-flash-conversational-edit",
+    "category": "video",
+    "level": "advanced",
+    "title_zh": "Gemini Omni Flash 公测：用聊天的方式连续改视频，一次最多改 3 步",
+    "title_en": "Gemini Omni Flash Public Preview: Edit a Video Through Conversation, Up to 3 Sequential Edits at a Time",
+    "body_zh": "谷歌在 2026-06-30 向开发者开放了 Gemini Omni Flash（模型名 gemini-omni-flash-preview），通过 Gemini API 和 Google AI Studio 提供服务，主打「原生多模态视频生成与对话式编辑」——可以同时接收文本、图片、视频作为输入，统一生成或修改视频内容。它和普通文生视频工具最大的区别在于「能对话」：借助 Interactions API，模型会保留会话上下文，你可以用自然语言连续下达最多 3 步顺序编辑指令，比如先说「把背景从白天改成夜晚」，再说「给主角加一件红色外套」，最后说「镜头拉远一点」，每一步都在前一步的基础上叠加，而不用重新描述整段视频。实操建议：①先用一句话把整体场景定下来生成初版，再用连续对话逐步精修，比一次性写一个巨长提示词更可控；②目前公测阶段单次生成上限 10 秒，且按输出时长计费（约每秒 0.10 美元，和 Veo 3.1 Fast 持平），适合先在短片段上把编辑逻辑跑通，再决定要不要批量应用到长视频的分段上；③这套「多模态引用+连续对话编辑」的思路，比起一次性文生视频，更适合需要反复调整细节的产品换装、场景替换类需求。",
+    "body_en": "Google opened Gemini Omni Flash (model ID gemini-omni-flash-preview) to developers on 2026-06-30 via the Gemini API and Google AI Studio, built around native multimodal video generation and conversational editing — it accepts text, image, and video simultaneously as input and generates or edits video from that combined context. What sets it apart from a typical text-to-video tool is that it's conversational: powered by the Interactions API, the model keeps session context alive so you can issue up to 3 sequential edits in natural language — say \"change the background from day to night,\" then \"add a red jacket to the main character,\" then \"pull the camera back a bit\" — with each step building on the last instead of you re-describing the whole scene every time. Practical tips: 1) lock in the overall scene with one generation first, then refine step by step through conversation — this is more controllable than writing one giant prompt upfront; 2) during public preview, generations are capped at 10 seconds and billed by output duration (~$0.10/second, on par with Veo 3.1 Fast), so it's best to validate your editing logic on short clips before deciding whether to apply it across segments of a longer video; 3) this \"multimodal reference plus conversational editing\" approach is a better fit than one-shot text-to-video for use cases needing repeated fine detail changes, like product re-styling or scene swaps.",
+    "models": [
+      "Gemini",
+      "Gemini Omni Flash"
+    ],
+    "tags": [
+      "Gemini Omni Flash",
+      "视频编辑",
+      "对话式编辑",
+      "API"
+    ],
+    "source": "Google Blog / Gemini API 官方文档（2026-06-30）",
+    "updated": "2026-07-11"
+  },
+  {
+    "id": "skill-claude-reflect-dashboard",
+    "category": "skill",
+    "level": "beginner",
+    "title_zh": "Claude Reflect 上线：看看自己到底怎么用 Claude 的，还能设「安静时段」提醒自己歇会儿",
+    "title_en": "Claude Reflect Has Launched: See How You Actually Use Claude, and Set Quiet Hours to Remind Yourself to Take a Break",
+    "body_zh": "Anthropic 在 2026-07-09 上线了 Claude Reflect（公测版），是一个专门回顾「你是怎么用 Claude 的」的仪表盘，入口在设置里的 Reflect 页面。默认展示最近一个月的使用情况，也能切换到查看近 3/6/12 个月：都聊了哪些话题、活跃度最高的是哪天、通常在几点用得最多，还会给一些观察性的小结，比如你是不是经常让 Claude 代劳一些你本来自己也想练习的事。配套还有「时间与专注」设置：可以设置安静时段（在这段时间内减少提醒/使用提示），或者设定用了多久之后弹一个「要不要歇一下」的提醒——这两个都只是提醒，不会强制打断你。开通条件：免费版、Pro、Max 在网页版和 Claude Desktop 上都能用，但必须先打开「记忆」功能才会生成数据；隐身对话和接了健康类工具的对话不计入统计。上手建议：如果你平时用 Claude 处理工作又处理生活杂事，先看一眼月度回顾，看看有没有「本该自己练手但一直丢给 AI」的部分，再决定要不要设安静时段控制一下使用节奏。",
+    "body_en": "Anthropic launched Claude Reflect in beta on 2026-07-09, a dashboard dedicated to showing you how you actually use Claude, accessible from the Reflect page in Settings. By default it covers your last month of usage, but you can switch to a 3/6/12-month view: what topics you spent time on, your most active day, your peak usage hour, plus some observational notes — like whether you're routinely delegating things to Claude that you might otherwise want to practice yourself. It comes paired with Time and Focus settings: you can set quiet hours (reducing prompts/reminders during that window) or schedule a break nudge after a set amount of usage time — both are just reminders and won't forcibly interrupt you. Availability: Free, Pro, and Max plans all get it on web and Claude Desktop, but Memory needs to be turned on first for any data to be generated; incognito chats and conversations linked to a health-tracking tool are excluded from the stats. Getting-started tip: if you use Claude for both work and personal odds and ends, check the monthly recap first to see if there's anything you've been offloading that you'd rather practice yourself, then decide whether quiet hours would help you pace your usage.",
+    "models": [
+      "Claude"
+    ],
+    "tags": [
+      "Claude Reflect",
+      "使用回顾",
+      "数字健康",
+      "设置"
+    ],
+    "source": "Claude Help Center / Anthropic 发布（2026-07-09）",
+    "updated": "2026-07-11"
+  },
+  {
+    "id": "craft-mistral-studio-prompt-versioning",
+    "category": "craft",
+    "level": "advanced",
+    "title_zh": "Mistral Studio 把提示词做成「可回滚的生产资产」，团队协作不再靠文档传来传去",
+    "title_en": "Mistral Studio Treats Prompts as Versioned Production Assets — No More Passing Docs Around the Team",
+    "body_zh": "Mistral 在其 AI 生产平台 Studio 里，把「提示词」和「Skill」都当成正式的生产资产来管理，而不是散落在各个文档、聊天记录里的临时文本。核心思路：①每个提示词/Skill 都有明确的所有者、完整的版本历史和血缘关系，一旦某个版本上线跑过，内容就被锁定不能悄悄改动，保证「线上跑的」和「记录里写的」永远一致；②支持任意两个版本直接对比差异，出问题能几分钟内回滚到已验证可用的旧版本，不用凭记忆去猜是哪次改动引入的问题；③支持打分类标签（比如区分「生产环境」和「测试环境」版本），团队协作时不会用错版本。这套东西解决的是一个很多团队都会踩的坑：提示词改来改去，改到最后没人说得清线上用的到底是哪一版、是谁改的、为什么改。实操建议：哪怕不用 Mistral 的产品，这套「版本化+所有者+审计日志」的思路也值得借鉴——自己团队维护提示词库时，至少给每条提示词标好版本号和修改人，别让「最终版_真的最终版_v3」这种文件名重演。",
+    "body_en": "Inside its AI production platform Studio, Mistral treats both prompts and skills as formal production assets rather than loose text scattered across docs and chat threads. The core idea: 1) every prompt/skill has a named owner, a full version history, and lineage — once a version has shipped and run in production, it's locked and can't be quietly edited, so what's recorded always matches what actually ran; 2) any two versions can be directly diffed, and you can roll back to a known-good version in minutes rather than guessing which change introduced a problem; 3) classification labels (e.g., distinguishing \"production\" from \"staging\" versions) keep teams from accidentally using the wrong one. This addresses a problem most teams eventually hit: prompts get iterated on so many times that nobody can say for certain which version is live, who changed it, or why. Practical takeaway: even if you're not on Mistral's platform, the underlying pattern — versioning, named ownership, audit logs — is worth borrowing. At minimum, tag every prompt in your team's library with a version number and an owner, so you're not stuck with files named \"final_v2_actually_final_v3.\"",
+    "models": [
+      "Mistral"
+    ],
+    "tags": [
+      "Mistral Studio",
+      "提示词管理",
+      "版本控制",
+      "团队协作"
+    ],
+    "source": "Mistral AI 官方发布（mistral.ai/news）",
+    "updated": "2026-07-11"
+  },
+  {
+    "id": "craft-wenxin-deep-reading-chart-gen",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "百度文心一言上线「深度阅读」+「图表生成」：甩给它百页报告，几秒钟出脑图和柱状图",
+    "title_en": "Baidu ERNIE Bot Adds \"Deep Reading\" + \"Chart Generation\": Drop In a 100-Page Report, Get a Mind Map and Bar Chart in Seconds",
+    "body_zh": "百度文心一言 App 在 2026 年 7 月 1 日更新中，针对办公和学习场景新增了两项能力：「深度阅读」和「图表生成」。深度阅读支持一次性上传上百页的行业报告、论文或 PDF 文档，AI 会在数秒内提炼核心论点，自动生成结构化脑图，不用你自己从头到尾啃完再画重点；图表生成则支持直接用自然语言描述需求（比如「按季度对比这几年的营收增长」），让 AI 直接产出可视化的表格和柱状图，不用再手动整理数据、挑图表类型。实操建议：①上传长文档前先明确你想要哪个层级的脑图——「只要一级和二级标题」还是「细到每个小节的关键数据」，避免生成的脑图太粗或太碎；②图表生成尽量把「对比维度」讲清楚（时间、地区、产品线），比如直接说「生成一张按年份分组的柱状图，X 轴是年份，Y 轴是营收，用不同颜色区分产品线」；③这套「甩长文档进去、直接要结构化产出」的用法，其实在 GPT 和 Claude 上传文件后配合类似提示词也能实现，文心一言的优势是免费且中文长文档解析更贴合国内报告格式。",
+    "body_en": "In its July 1, 2026 update, Baidu's ERNIE Bot app added two capabilities aimed at office and study use cases: \"Deep Reading\" and \"Chart Generation.\" Deep Reading lets you upload a report, paper, or PDF running to a hundred-plus pages in one go, and the AI extracts the core arguments within seconds and auto-generates a structured mind map — no more reading cover to cover before you can pull out the key points yourself. Chart Generation lets you just describe what you want in natural language (e.g., \"compare revenue growth across these years by quarter\") and get a visualized table or bar chart directly, without manually organizing the data or picking a chart type. Practical tips: 1) Before uploading a long document, decide what level of detail you want in the mind map — \"just top-level and second-level headings\" versus \"down to the key figures in every subsection\" — so the output isn't too coarse or too fragmented; 2) For chart generation, spell out your comparison dimensions clearly (time period, region, product line), e.g., \"generate a bar chart grouped by year, with year on the X-axis, revenue on the Y-axis, and different colors for each product line\"; 3) This pattern of \"dump in a long document, ask for structured output directly\" also works on GPT and Claude with a similar prompt after uploading a file — ERNIE Bot's edge is that it's free and its long-document parsing is tuned to how Chinese-language reports are typically formatted.",
+    "models": [
+      "文心一言",
+      "ERNIE Bot"
+    ],
+    "tags": [
+      "文心一言",
+      "深度阅读",
+      "图表生成",
+      "长文档解析"
+    ],
+    "source": "百度文心一言 App 更新（2026-07-01，综合新浪财经/搜狐「AI应用周度观察」报道）",
+    "updated": "2026-07-12"
+  },
+  {
+    "id": "craft-chatgpt-dictation-multilingual-upgrade",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "ChatGPT 语音听写偷偷升级：中英混说、嘈杂环境识别都更准了，你什么都不用改",
+    "title_en": "ChatGPT's Dictation Quietly Got Better: More Accurate With Code-Switching and Noisy Environments — No Settings to Change",
+    "body_zh": "OpenAI 在 2026 年 6 月 26 日起，面向所有 ChatGPT 计划（含免费版）静默上线了一版新的语音听写模型，用于 ChatGPT 里的「语音转文字」输入。这是一次纯后台升级：你不需要打开任何新设置，也不会看到界面变化，系统会自动帮你切换到新模型。实测提升主要体现在：①多语言混说场景——比如中英文夹杂、粤语普通话切换——识别准确率明显提升；官方评测里日语、韩语、中文、乌尔都语、越南语，以及带口音的英语都有可感知的进步；②嘈杂环境下的鲁棒性更好，在地铁、办公室这类背景噪音较大的场景，或者你压低音量小声说话时，转写质量也更稳定；③对字母和数字混合内容（比如念身份证号、验证码、型号编号）的识别更准。官方给出的量化数据是：在主要测试语言上，词错误率（WER）比上一代生产模型平均低了至少 10%。实操建议：如果你平时习惯用手机 App 的语音输入功能快速口述邮件、笔记或提示词，现在可以放心在嘈杂环境或中英混说场景下多用语音，减少手打的负担；如果你是团队里做多语种会议纪要/客服转写的重度用户，也值得重新测一遍准确率，可能已经不需要再手动校对那么多次了。",
+    "body_en": "Starting June 26, 2026, OpenAI quietly rolled out a new speech-to-text model powering dictation across all ChatGPT plans, including Free — a purely backend upgrade with no new settings to toggle and no interface changes; the system just switches you over automatically. The measured gains show up mainly in three places: 1) code-switching scenarios — mixing Chinese and English, or switching between Cantonese and Mandarin — see a clear accuracy jump, with OpenAI's own evals showing perceptible improvement in Japanese, Korean, Chinese, Urdu, Vietnamese, and accented English; 2) more robust performance in noisy environments — subways, open offices, or when you're speaking quietly — transcription stays steadier; 3) better recognition of mixed letter-and-number content, like reading out an ID number, a verification code, or a model number. OpenAI's own figure: word error rate (WER) dropped by at least 10% on average across top tested languages compared to the previous production model. Practical takeaway: if you routinely use voice dictation on your phone to draft emails, notes, or prompts, it's now safe to lean on it more in noisy settings or when code-switching, cutting down on manual typing. If you're a heavy user doing multilingual meeting notes or customer-service transcription for a team, it's worth re-testing accuracy — you may no longer need as many manual correction passes.",
+    "models": [
+      "ChatGPT"
+    ],
+    "tags": [
+      "ChatGPT",
+      "语音听写",
+      "多语言识别",
+      "静默升级"
+    ],
+    "source": "OpenAI ChatGPT Release Notes（模型 2026-06-26 起面向全量用户上线）",
+    "updated": "2026-07-12"
+  },
+  {
+    "id": "plugin-claude-m365-write-tools",
+    "category": "plugin",
+    "level": "intermediate",
+    "title_zh": "Claude 接入 Microsoft 365「写权限」：能帮你起草邮件、改日程、传 SharePoint 文件了（团队/企业版）",
+    "title_en": "Claude's Microsoft 365 Connector Gets Write Tools: Draft Emails, Manage Your Calendar, Update SharePoint Files (Team/Enterprise)",
+    "body_zh": "Anthropic 在 2026 年 7 月为 Claude 的 Microsoft 365 连接器新增了「写工具」，在管理员开启后，Claude 不再只能搜索和分析 SharePoint、OneDrive、Outlook、Teams 里的内容，还可以直接帮你起草、发送、整理邮件草稿，创建/更新/删除日历事件，修改邮箱设置（规则、签名、自动回复），以及在 OneDrive 和 SharePoint 里创建或更新文件。默认情况下 Claude 起草回复后不会自动发送，你可以配置成「需要你确认才发送」的审批流程；完全自动发送的能力也存在，但默认是关闭的，需要手动开启。几个需要注意的限制：①写工具目前不支持带附件的邮件——Claude 不能发送、转发或起草带附件的邮件；②必须是绑定 Microsoft Entra 租户的工作账号，个人的 @outlook.com / @hotmail.com / @live.com 账号用不了；③连接器本身 Free 和 Pro 版看不到，只有 Team 和 Enterprise 版的设置里才有。实操建议：①第一次开启写权限时，先只开「起草不自动发送」，观察几天 Claude 起草邮件/改日程的质量再考虑放开自动发送；②在提示词里明确「哪些操作只需要起草、哪些操作必须经过我确认」，避免误发或误删日历事件；③适合用来处理「把会议纪要转成日历提醒」「按邮件内容批量起草回复模板」这类重复性强、但仍需要人过一遍的办公任务。",
+    "body_en": "In July 2026, Anthropic added write tools to Claude's Microsoft 365 connector. Once an admin turns them on, Claude goes beyond just searching and analyzing content in SharePoint, OneDrive, Outlook, and Teams — it can now draft, send, and organize email drafts directly, create/update/delete calendar events, change mailbox settings (rules, signatures, auto-replies), and create or update files in OneDrive and SharePoint. By default, Claude drafts replies without auto-sending them; you can configure a \"send on approval\" workflow that queues emails for your confirmation first. Fully autonomous sending is technically supported but off by default and needs to be manually enabled. A few limitations worth knowing: 1) write tools don't currently support attachments — Claude can't send, forward, or draft emails with attachments; 2) you need a work account tied to a Microsoft Entra tenant — personal @outlook.com/@hotmail.com/@live.com accounts won't work; 3) the connector itself isn't available on Free or Pro — you need Team or Enterprise to even see it in settings. Practical tips: 1) the first time you turn on write access, start with \"draft only, no auto-send,\" watch the quality of Claude's drafted emails and calendar edits for a few days before considering full auto-send; 2) spell out in your prompt which actions only need a draft versus which absolutely require your confirmation, to avoid accidentally sending something or deleting the wrong calendar event; 3) this is well suited for repetitive-but-still-needs-a-human-check office tasks, like turning meeting notes into calendar reminders or batch-drafting reply templates based on email content.",
+    "models": [
+      "Claude"
+    ],
+    "tags": [
+      "Claude",
+      "Microsoft 365",
+      "连接器",
+      "写权限",
+      "Team/Enterprise"
+    ],
+    "source": "Claude Help Center / Anthropic 发布（2026年7月）",
+    "updated": "2026-07-12"
+  },
+  {
+    "id": "skill-claude-code-doctor-transcript-protection",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "Claude Code 新增 /doctor 全面体检 + 会话记录防篡改，Auto Mode 更难被「伪造批准」忽悠",
+    "title_en": "Claude Code Adds a Full /doctor Checkup and Transcript Tampering Protection — Auto Mode Is Harder to Fool With Fake Approvals",
+    "body_zh": "Claude Code 在 2026 年 7 月的更新周期里，针对安全性和易用性做了几处改进，值得日常使用的开发者留意：①/doctor 现在是一个完整的「环境体检」命令（别名 /checkup），可以自动诊断并修复常见的安装/配置问题，还修复了此前 Homebrew 安装场景下更新检查对错版本渠道的 bug；②新增了「会话记录防篡改」保护——Auto Mode 现在会阻止对当前会话 transcript 文件的篡改，后台任务的通知里也会明确标注「未经人工输入」，防止有人伪造一条「看起来像是人工批准」的记录混进 transcript 里，被 Auto Mode 误当成真实批准去执行敏感操作；③自动更新的二进制下载方式改成流式写入磁盘而不是全部读进内存，更新器的峰值内存占用降低了大约 400MB，对内存紧张的机器（尤其是 Windows）更友好。实操建议：①升级后先跑一次 /doctor（或 /checkup），能顺手清掉一批环境配置的小毛病；②如果你在用 Auto Mode 处理长任务或后台任务，理解一下这次的「防伪造批准」机制——这是为了防止 prompt injection 或恶意脚本伪装成「用户已批准」去骗过自动化流程，你不需要额外配置，但值得知道它存在；③Windows 用户和内存较小的机器，这次的自动更新内存优化能明显减少更新时卡顿的情况。",
+    "body_en": "In its July 2026 update cycle, Claude Code shipped a handful of safety and usability improvements worth knowing if you use it day to day: 1) /doctor is now a full environment checkup command (aliased as /checkup) that can automatically diagnose and fix common install/config issues, and a bug was fixed where the update check compared Homebrew installs against the wrong channel; 2) it added transcript tampering protection — Auto Mode now blocks edits to the current session's transcript file, and background task notifications explicitly flag that \"no human input has occurred,\" preventing a forged entry that looks like a human approval from sneaking into the transcript and getting treated as a real approval for a sensitive action; 3) auto-update binary downloads now stream to disk instead of buffering entirely in memory, cutting the updater's peak memory usage by roughly 400MB — friendlier to memory-constrained machines, especially on Windows. Practical tips: 1) after upgrading, run /doctor (or /checkup) once — it'll clean up a batch of small environment config issues for you; 2) if you use Auto Mode for long-running or background tasks, it's worth understanding this \"fake-approval protection\" — it exists to stop prompt injection or a malicious script from disguising itself as \"the user already approved this\" to fool the automation; you don't need to configure anything, but it's good to know it's there; 3) Windows users and machines with limited RAM should notice noticeably less stutter during updates thanks to the memory optimization.",
+    "models": [
+      "Claude Code"
+    ],
+    "tags": [
+      "Claude Code",
+      "/doctor",
+      "会话记录保护",
+      "Auto Mode",
+      "自动更新"
+    ],
+    "source": "Claude Code Docs \"What's new\" / Anthropic 发布（2026年7月更新周期）",
+    "updated": "2026-07-12"
   }
 ];
