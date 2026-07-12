@@ -6577,5 +6577,134 @@ window.PROMPTS = [
     ],
     "source": "Claude Code Docs \"What's new\" / Anthropic 发布（2026年7月更新周期）",
     "updated": "2026-07-12"
+  },
+  {
+    "id": "start-claude-sonnet5-1m-context",
+    "category": "start",
+    "level": "intermediate",
+    "title_zh": "Claude Sonnet 5 上下文扩到 100 万 token：什么时候才真的用得上",
+    "title_en": "Claude Sonnet 5's Context Window Hits 1M Tokens: When You Actually Need It",
+    "body_zh": "Anthropic 在 2026 年 7 月的 Claude Developer Platform 更新里，把 Claude Sonnet 5 的上下文窗口扩到 100 万 token，最大输出也提到 12.8 万 token，同时调整了模型迁移行为（旧调用会按新的默认规则路由）。新手常见的误区是「窗口越大越好，干脆全都用满」，但长上下文按 token 计费，成本会随输入长度明显上涨，而且并不是所有任务都需要这么大窗口。实操建议：①真正用得上 1M 上下文的场景是「一次性喂入整个代码仓库做审查」「分析几百页的合同或财报」「长会话历史不想做摘要压缩」这类必须保留全部细节的任务；②日常写作、改代码片段、单轮问答这类任务，把相关文件精简后再输入，既省钱又能让模型更聚焦，不会被无关内容稀释注意力；③如果用 API 调用，先用小窗口把流程跑通，确认效果后再切到长上下文处理正式的大文件，避免一开始就为不需要的长度付费。",
+    "body_en": "In its July 2026 Claude Developer Platform update, Anthropic expanded Claude Sonnet 5's context window to 1M tokens and raised max output to 128K tokens, alongside updated model-migration behavior (older calls now route under the new defaults). The common beginner mistake is assuming \"bigger window, just max it out every time\" — but long-context calls are billed by token count, so cost climbs noticeably with input length, and most tasks don't actually need that much room. Practical tips: 1) the 1M window earns its keep for jobs that genuinely need every detail preserved — reviewing an entire codebase in one pass, analyzing a multi-hundred-page contract or financial report, or keeping a long conversation history without summarizing it away; 2) for everyday writing, small code edits, or single-turn Q&A, trim your input to what's relevant first — it's cheaper and keeps the model focused instead of diluted by irrelevant context; 3) if you're calling the API, validate your pipeline on a small context first, then switch to the long-context tier once you confirm it works, rather than paying for length you don't need from the start.",
+    "models": [
+      "Claude",
+      "Claude Sonnet 5"
+    ],
+    "tags": [
+      "Claude Sonnet 5",
+      "长上下文",
+      "Developer Platform",
+      "模型选择"
+    ],
+    "source": "Claude Developer Platform Release Notes（2026-07）",
+    "updated": "2026-07-12"
+  },
+  {
+    "id": "start-chatgpt-group-chat-atlas-sunset",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "ChatGPT 群聊功能下线、Atlas 独立浏览器 8 月停用：网页智能体能力并入 ChatGPT 和 Codex",
+    "title_en": "ChatGPT Drops Group Chats as Atlas Browser Sunsets in August, Folding Agentic Browsing Into ChatGPT and Codex",
+    "body_zh": "OpenAI 在 2026-07-09 起，网页版、iOS、Android 上的 ChatGPT 都不再支持新建群聊、把已有对话转成群聊，也不能通过邀请链接加入群聊。同一时间官方宣布独立的 Atlas 浏览器将于 2026-08-09 停止工作，此前 Atlas 承担的「网页自动化/智能体浏览」能力会整合进 ChatGPT 本体和 Codex 里，不再单独维护一款浏览器产品。这两个变化对日常用户的实际影响：①如果你团队里有依赖群聊功能做多人协作提问的场景，需要提前把重要对话记录导出或转存到文档，8 月前群聊会逐步失效；②如果你在用 Atlas 做网页自动填表、抓取信息这类任务，现在起要开始规划迁移到 ChatGPT 内置的浏览工具，或者迁到 Codex 里用它的智能体能力跑同类任务，别等到 8 月 9 号临时抱佛脚；③这次调整也说明 OpenAI 在收敛产品线——与其分散在多个入口（Chat / Atlas / Codex），把「网页智能体」能力统一收回到两个主产品里，用户理解和迁移成本反而更低。",
+    "body_en": "Starting 2026-07-09, ChatGPT on web, iOS, and Android no longer supports creating new group chats, converting existing conversations into group chats, or joining a group chat via invite link. In the same announcement, OpenAI confirmed the standalone Atlas browser will stop working on 2026-08-09, with the web-automation and agentic-browsing capabilities it used to handle folded directly into ChatGPT and Codex instead of living in a separate browser product. What this means day to day: 1) if your team relies on group chats for multi-person collaborative Q&A, export or archive anything important now — group chats will progressively stop working before August; 2) if you use Atlas for web form-filling or data-scraping tasks, start planning a migration to ChatGPT's built-in browsing tools or to Codex's agentic capabilities now, rather than scrambling on August 9th; 3) the change also signals OpenAI consolidating its product surface — rather than spreading agentic-browsing across three entry points (Chat / Atlas / Codex), folding it into the two main products should lower the mental overhead of knowing where to go for what.",
+    "models": [
+      "ChatGPT",
+      "Codex",
+      "Atlas"
+    ],
+    "tags": [
+      "ChatGPT",
+      "Atlas",
+      "产品下线",
+      "Codex"
+    ],
+    "source": "OpenAI 官方发布 / Help Center（2026-07-09）",
+    "updated": "2026-07-12"
+  },
+  {
+    "id": "skill-gemini-alphaevolve-enterprise",
+    "category": "skill",
+    "level": "advanced",
+    "title_zh": "Gemini Enterprise 新增 AlphaEvolve 智能体：不只是写代码，是自动找更优算法",
+    "title_en": "Gemini Enterprise Adds AlphaEvolve: An Agent That Discovers Better Algorithms, Not Just Writes Code",
+    "body_zh": "Google 在 2026 年 7 月把 AlphaEvolve 算法优化智能体加进了 Gemini Enterprise，定位和普通的「AI 写代码」工具不一样：它专门解决复杂算法问题，工作方式是「服务端用 LLM 做创造性的方案探索 + 客户端做安全的代码执行验证」，两边配合自动迭代出更优的解法，而不是一次性生成代码就交差。适合的场景是那种「有明确评估标准、但最优解不好靠人力穷举」的问题，比如调度算法、资源分配策略、数值优化，而不是普通的业务代码开发。实操建议：①用它之前先想清楚你的问题能不能量化出一个「打分函数」——AlphaEvolve 本质是在这个打分函数指导下做搜索和迭代，没有清晰的评估标准它就无从优化；②这类智能体运行时间通常比普通对话式生成长得多，是「后台跑一段时间出结果」的模式，别指望秒级响应；③先在一个小规模、可验证的子问题上试运行，确认它给出的解法确实经得起验证，再放到生产级的大问题上用，避免直接把黑箱结果用到关键系统里。",
+    "body_en": "In July 2026, Google added the AlphaEvolve algorithm-optimization agent to Gemini Enterprise, and it's positioned differently from a typical \"AI writes code\" tool: it's built to solve complex algorithmic problems by combining server-side LLM-driven creative exploration with client-side, secure code execution for verification — the two work together to iteratively discover better solutions, rather than generating code once and calling it done. It's best suited to problems with a clear evaluation criterion where the optimal answer isn't feasible to find by brute-force human effort — scheduling algorithms, resource-allocation strategies, numerical optimization — not routine business-logic development. Practical tips: 1) before using it, make sure your problem can be reduced to a quantifiable scoring function — AlphaEvolve fundamentally searches and iterates against that score, and without a clear evaluation signal it has nothing to optimize toward; 2) this kind of agent typically runs much longer than a normal conversational generation — expect a \"runs in the background, returns a result later\" pattern rather than instant replies; 3) validate it first on a small, verifiable sub-problem to confirm the solutions it returns actually hold up, before trusting it on a production-scale problem where a black-box result could be risky to deploy directly.",
+    "models": [
+      "Gemini",
+      "Gemini Enterprise",
+      "AlphaEvolve"
+    ],
+    "tags": [
+      "AlphaEvolve",
+      "Gemini Enterprise",
+      "算法优化",
+      "Agent"
+    ],
+    "source": "Google AI Updates / Gemini Enterprise Release Notes（2026-07）",
+    "updated": "2026-07-12"
+  },
+  {
+    "id": "plugin-claude-mcp-tunnels-preview",
+    "category": "plugin",
+    "level": "advanced",
+    "title_zh": "Claude MCP Tunnels 研究预览：内网部署的 MCP 服务器，不用暴露到公网也能接",
+    "title_en": "Claude MCP Tunnels Research Preview: Reach Private-Network MCP Servers Without Exposing Them Publicly",
+    "body_zh": "Anthropic 在 2026 年 7 月的 Claude Developer Platform 更新里上线了 MCP Tunnels（研究预览版），解决的是企业接入 MCP 的一个常见痛点：很多公司的内部系统（工单系统、内部知识库、私有数据库）只在内网可访问，以前要接给 Claude 用，得额外搭反向代理或把服务暴露到公网，安全团队往往不会批准。MCP Tunnels 让 Claude 可以直接连接部署在私有网络内的 MCP 服务器，不需要做公网暴露。同一批更新里还带了 Self-hosted sandboxes——针对 Claude Managed Agents，允许把工具执行环境放在自己的基础设施上跑，作为「工具调用都在 Anthropic 云上执行」的替代方案，进一步增强了数据不出内网的可控性。实操建议：①如果你所在团队之前因为「MCP 服务器不能暴露公网」卡住了内部工具接入 Claude 的计划，现在可以重新评估这条路；②研究预览阶段功能和稳定性可能有变动，先在非核心业务的内部工具上试点，别直接接生产环境的敏感系统；③如果你的合规要求是「工具执行也不能出内网」，重点看 Self-hosted sandboxes 这个选项，它比单纯打通网络连接更进一步，把执行环节也留在自己的基础设施里。",
+    "body_en": "Anthropic's July 2026 Claude Developer Platform update shipped MCP Tunnels (Research Preview), addressing a common enterprise pain point: internal systems — ticketing tools, internal knowledge bases, private databases — often live entirely inside a company's network, and previously connecting them to Claude meant standing up a reverse proxy or exposing the service publicly, something security teams routinely reject. MCP Tunnels lets Claude connect directly to MCP servers deployed inside a private network without any public exposure. The same update also introduced self-hosted sandboxes for Claude Managed Agents, letting you run the tool-execution environment on your own infrastructure as an alternative to executing tool calls in Anthropic's cloud — a further step toward keeping data entirely within your network boundary. Practical tips: 1) if your team's plan to connect internal tools to Claude has been stuck on \"the MCP server can't be exposed publicly,\" it's worth re-evaluating now; 2) as a research preview, behavior and stability may still shift, so pilot it on a non-critical internal tool before pointing it at production-sensitive systems; 3) if your compliance requirements also demand that tool execution itself stays inside your network, look specifically at self-hosted sandboxes — it goes a step further than just tunneling the connection by keeping execution on your own infrastructure too.",
+    "models": [
+      "Claude",
+      "MCP"
+    ],
+    "tags": [
+      "MCP Tunnels",
+      "MCP",
+      "企业接入",
+      "Managed Agents"
+    ],
+    "source": "Claude Developer Platform Release Notes（2026-07）",
+    "updated": "2026-07-12"
+  },
+  {
+    "id": "start-kimi-k2-5-thinking-release",
+    "category": "start",
+    "level": "intermediate",
+    "title_zh": "Kimi K2.5 / K2.5-Thinking 发布：日常问答和深度推理终于能分开挑模型",
+    "title_en": "Kimi K2.5 and K2.5-Thinking Ship: Separate Models for Everyday Chat vs. Deep Reasoning",
+    "body_zh": "月之暗面在 2026 年 7 月发布了 Kimi K2.5 系列，同时带来通用对话模型 Kimi-K2.5 和专门做深度推理的 Kimi-K2.5-Thinking，并公开了对应的技术报告。两者的分工和 OpenAI、Anthropic 近期的「多档位」思路类似：K2.5 面向日常问答、写作、检索这类不需要过度推理的场景，响应更快；K2.5-Thinking 面向需要拆解步骤、多轮验证的复杂问题，比如数学证明、复杂代码调试、多约束条件的规划任务，推理过程更慢但准确率更高。实操建议：①先判断任务性质而不是习惯性用同一个模型——如果你只是要一个事实性答案或改写一段文字，K2.5 就够用，没必要为「思考过程」多付时间和 token 成本；②遇到需要模型「想清楚再回答」的任务（比如复杂逻辑推理、需要多步验证的代码问题），主动切到 K2.5-Thinking，别在普通模型上反复追问试图逼它想更深；③如果你的工作流是脚本化调用 API，可以按任务类型做简单的路由规则，把两档模型分流使用，而不是所有请求都打到同一个模型上。",
+    "body_en": "Moonshot AI released the Kimi K2.5 lineup in July 2026, shipping both a general conversational model, Kimi-K2.5, and a reasoning-focused sibling, Kimi-K2.5-Thinking, along with a public technical report. The division of labor mirrors the multi-tier approach OpenAI and Anthropic have leaned into recently: K2.5 targets everyday Q&A, writing, and retrieval tasks that don't need heavy deliberation and responds faster; K2.5-Thinking targets complex problems that require step-by-step decomposition and multi-pass verification — math proofs, complex debugging, planning under multiple constraints — trading speed for accuracy. Practical tips: 1) judge the task first instead of defaulting to the same model out of habit — if you just need a factual answer or a rewrite, K2.5 is enough, and there's no reason to pay the extra time and token cost of a \"thinking\" pass; 2) for tasks that genuinely need the model to reason carefully before answering — complex logic, code that needs multi-step verification — switch to K2.5-Thinking directly rather than repeatedly prodding the base model to \"think harder\"; 3) if you're calling the API programmatically, add a simple routing rule by task type so requests split between the two tiers instead of all hitting the same model.",
+    "models": [
+      "Kimi",
+      "Kimi K2.5",
+      "Kimi K2.5-Thinking"
+    ],
+    "tags": [
+      "Kimi K2.5",
+      "月之暗面",
+      "模型选择",
+      "推理模型"
+    ],
+    "source": "月之暗面官方发布 / 技术报告（2026-07）",
+    "updated": "2026-07-12"
+  },
+  {
+    "id": "start-doubao-seed2-lite-pro-release",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "豆包 Doubao-Seed-2.0 系列发布：Lite/Mini 走量、Pro 主打推理，怎么选",
+    "title_en": "Doubao's Seed-2.0 Lineup Ships: Lite/Mini for Volume, Pro for Reasoning",
+    "body_zh": "字节跳动在 2026 年 7 月发布了豆包 Doubao-Seed-2.0 系列模型，分成通用型的 Seed-2.0 Lite / Mini 和主打深度推理的 Seed-2.0 Pro，延续了此前豆包「基础功能永久免费 + 分档订阅」的产品思路（标准版 68 元/月、加强版 200 元/月、专业版 500 元/月）。对普通用户的选择建议：①日常聊天、写文案、简单问答这类高频轻量任务，用 Lite/Mini 档位就够，速度快、免费额度也够用，不需要一上来就订阅专业版；②只有遇到需要复杂推理的任务——比如需要多步骤验证的代码调试、逻辑严密的分析报告——才有必要切到 Seed-2.0 Pro，而且这类任务通常也更值得为准确率多付订阅费；③如果只是偶尔需要用一下 Pro 档位处理个别难题，没必要长期订阅专业版，可以留意豆包是否提供按次或按量付费的选项，比长期订阅更划算。",
+    "body_en": "ByteDance released the Doubao Seed-2.0 model lineup in July 2026, split into general-purpose Seed-2.0 Lite/Mini and the reasoning-focused Seed-2.0 Pro, continuing Doubao's earlier product approach of permanently free core features plus tiered subscriptions (Standard ¥68/month, Plus ¥200/month, Pro ¥500/month). Guidance for everyday users: 1) high-frequency, lightweight tasks — daily chat, copywriting, simple Q&A — are well served by the Lite/Mini tier, which is fast and has a generous free allowance, so there's no need to jump straight to a Pro subscription; 2) only switch to Seed-2.0 Pro when a task genuinely needs deep reasoning — multi-step-verified code debugging, logically rigorous analysis reports — and those are also the cases where paying more for accuracy tends to be worth it; 3) if you only occasionally need Pro-tier reasoning for the odd hard problem, a long-term subscription may not be worth it — check whether Doubao offers pay-per-use pricing instead, which can work out cheaper than a standing subscription.",
+    "models": [
+      "豆包",
+      "Doubao-Seed-2.0"
+    ],
+    "tags": [
+      "豆包",
+      "Doubao-Seed-2.0",
+      "模型选择",
+      "字节跳动"
+    ],
+    "source": "字节跳动官方发布（2026-07）",
+    "updated": "2026-07-12"
   }
 ];
