@@ -6706,5 +6706,92 @@ window.PROMPTS = [
     ],
     "source": "字节跳动官方发布（2026-07）",
     "updated": "2026-07-12"
+  },
+  {
+    "id": "craft-deepseek-v4-pro-flash-launch",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "DeepSeek V4 正式双版本上线：Pro 与 Flash 价格差 12 倍，怎么选",
+    "title_en": "DeepSeek V4 Ships in Two Versions: Pro vs. Flash Cost 12x Apart — How to Choose",
+    "body_zh": "DeepSeek 在 2026 年 7 月正式上线 V4 系列 API，一次给了两个版本：V4-Pro（1.6T 参数，激活 49B）主打复杂工程与高难度推理，被称为「代码生成天花板」；V4-Flash（284B 参数，激活 13B）智能水平接近 Pro，但价格只要约十分之一。两者都原生支持 100 万 token 上下文、深度思考模式、结构化输出和 Function Calling。价格上差距明显：以输入 token 为例，Pro 约 12 元/百万 token，Flash 约 1 元/百万 token，输出侧 Pro 约 24 元、Flash 约 2 元，相差 12 倍。挑选建议：①高频、日常的编程/问答任务——比如改小 bug、写常规函数、简单问答——优先用 Flash，性价比高很多；②只有任务本身「值得动用最强模型」才切 Pro，比如复杂系统设计、难度大的算法题、需要极高准确率的关键代码；③如果你还在用旧接口，注意官方已经预告会在 7 月下旬停用旧模型名（deepseek-chat / deepseek-reasoner），要提前把代码里的模型名换成 deepseek-v4-pro 或 deepseek-v4-flash，并留意此前公布的峰谷定价（工作日 9-12 点、14-18 点为高峰时段，API 价格翻倍）。",
+    "body_en": "In July 2026 DeepSeek officially launched its V4 series API with two versions at once: V4-Pro (1.6T parameters, 49B activated), built for complex engineering and hard reasoning tasks and billed as a \"code-generation ceiling,\" and V4-Flash (284B parameters, 13B activated), which comes close to Pro's intelligence at roughly a tenth of the price. Both natively support a 1M-token context window, a deep-thinking mode, structured output, and function calling. The price gap is large: on input tokens, Pro runs about ¥12/million vs. Flash's ¥1/million; on output, Pro is about ¥24/million vs. Flash's ¥2/million — a 12x difference. How to choose: 1) for high-frequency, everyday coding and Q&A tasks — small bug fixes, routine functions, simple questions — default to Flash, since the cost-performance is much better; 2) reserve Pro for tasks that genuinely justify the strongest model — complex system design, hard algorithmic problems, mission-critical code that needs top accuracy; 3) if you're still on the old API, note that DeepSeek has announced it will retire the old model names (deepseek-chat / deepseek-reasoner) in late July — update your code to deepseek-v4-pro or deepseek-v4-flash ahead of time, and keep the previously announced peak/off-peak pricing in mind (weekday 9-12 and 14-18 are peak hours with doubled API prices).",
+    "models": [
+      "DeepSeek",
+      "DeepSeek V4",
+      "DeepSeek V4-Pro",
+      "DeepSeek V4-Flash"
+    ],
+    "tags": [
+      "DeepSeek V4",
+      "模型选择",
+      "API",
+      "省钱技巧"
+    ],
+    "source": "DeepSeek 官方发布 / API 文档（2026-07）",
+    "updated": "2026-07-13"
+  },
+  {
+    "id": "image-mj8-alpha-hd-fast-mode",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "Midjourney V8 Alpha 开放测试：--hd 2K 模式、超宽画幅，先在 Alpha 站试",
+    "title_en": "Midjourney V8 Alpha Opens for Testing: --hd 2K Mode and Ultra-Wide Aspect Ratios",
+    "body_zh": "Midjourney V8 目前以 Alpha 版本开放测试（仅限独立网站 alpha.midjourney.com，Discord 和主站暂未同步），核心卖点是速度和画幅上的升级：常规出图速度比此前版本快约 5 倍，10 秒内基本能出图；新增 `--hd` 模式以 2K 分辨率原生渲染，配合 `--q 4` 能进一步提升画面连贯性和细节；画幅上限也放宽到极限 14:1（开启 HD 模式时最高 4:1），适合做长图、横幅这类此前很难一次生成的构图。提示词理解和文字渲染也有提升，遵循细节指令、还原情绪板和风格参考更准，图内文字更清晰可读。用的时候要注意：①`--hd`、`--q 4`、风格参考/情绪板这些进阶功能目前生成速度慢 4 倍、成本也高 4 倍，先用普通模式选好方向，最后一步再上高质量参数出精修图；②V7 的个人风格配置、情绪板、风格参考在 V8 里保持兼容，不用重新训练或重新准备参考图；③目前只能在 Alpha 独立站体验，正式合并进 Discord/主站前功能和参数可能还会调整，先把它当「抢先版」用，别把关键项目完全押在还没定型的参数上。",
+    "body_en": "Midjourney V8 is currently in open Alpha testing — available only on the standalone site alpha.midjourney.com, not yet on Discord or the main site — with speed and canvas size as its headline upgrades: standard generation is roughly 5x faster than the previous version, typically finishing in under 10 seconds. A new `--hd` mode renders natively at 2K resolution, and pairing it with `--q 4` further improves image coherence and detail. The maximum aspect ratio has also widened to an extreme 14:1 (up to 4:1 with HD mode on), making compositions like long banners — previously hard to generate in one pass — much easier. Prompt comprehension and text rendering are also improved: the model follows detailed instructions and mood-board/style references more faithfully, and in-image text is more legible. A few things to keep in mind: 1) advanced features like `--hd`, `--q 4`, and style references/mood boards currently run about 4x slower and 4x more expensive, so scout directions in normal mode first and only apply the high-quality parameters on your final pick; 2) V7 personalization profiles, mood boards, and style references remain compatible in V8, so there's no need to retrain or re-prepare references; 3) since it's only available on the Alpha standalone site for now, features and parameters may still shift before it merges into Discord/the main site — treat it as an early preview rather than betting a critical project entirely on parameters that aren't finalized yet.",
+    "models": [
+      "Midjourney",
+      "Midjourney V8"
+    ],
+    "tags": [
+      "Midjourney V8",
+      "Alpha测试",
+      "2K出图",
+      "超宽画幅"
+    ],
+    "source": "Midjourney 官方 Alpha 测试 / 社区实测（2026-07）",
+    "updated": "2026-07-13"
+  },
+  {
+    "id": "skill-agent-skills-cross-tool-portable",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "一份 SKILL.md 到处用：Claude Code、Codex CLI、Cursor、Gemini CLI 都认",
+    "title_en": "Write One SKILL.md, Use It Everywhere: Claude Code, Codex CLI, Cursor, and Gemini CLI All Support It",
+    "body_zh": "起源于 Anthropic 内部规范的 Agent Skills（`SKILL.md` 格式）已经成为开放标准，目前 Claude Code、OpenAI Codex CLI、Cursor、Gemini CLI、GitHub Copilot 等 30 多个平台都已支持同一套格式，同样的 Skill 文件基本不用改就能跨工具使用。这对经常在多个编程助手之间切换的人是个实打实的省事：以前给团队写的「提交信息规范」「代码审查清单」「内部框架用法」这些操作手册，只要按 SKILL.md 的格式写一份，就不用为每个 Agent 各写一份。实操建议：①新建 Skill 时按通用格式写——frontmatter 里给清楚的 name 和 description（决定 Agent 什么场景下会自动匹配调用这个 Skill），正文用「什么场景 → 具体怎么做」的结构，少写「为什么」这类背景介绍，多写可执行步骤；②先在你最常用的一个工具里写好并测试触发是否准确，再拿到另一个工具里验证，遇到平台特有的差异（比如脚本执行权限、文件路径约定）再单独调整，不用整份重写；③如果团队里有人用 Claude Code、有人用 Cursor、有人用 Codex CLI，可以把 Skill 仓库当成共享资产，放进代码仓库或团队公共配置里，统一维护一份而不是各自造轮子。",
+    "body_en": "Agent Skills — the `SKILL.md` format that started as an internal Anthropic convention — has become an open standard, and the same skill files now work with little to no modification across more than 30 platforms including Claude Code, OpenAI's Codex CLI, Cursor, Gemini CLI, and GitHub Copilot. That's a real time-saver if you switch between coding assistants often: playbooks you'd normally write for a team — commit-message conventions, code-review checklists, how to use an internal framework — only need to be written once in SKILL.md format instead of once per agent. Practical tips: 1) when writing a new skill, follow the portable format — give the frontmatter a clear name and description (this is what an agent matches against to decide when to auto-load the skill), and write the body as \"situation → concrete steps\" rather than background explanation, favoring actionable steps over \"why\" narrative; 2) write and test it in whichever tool you use most first, confirm it triggers correctly, then verify it in a second tool — only tweak the parts affected by platform-specific differences (script execution permissions, file-path conventions), not the whole file; 3) if your team is split across Claude Code, Cursor, and Codex CLI, treat your skills as a shared asset — keep them in the repo or a shared team config and maintain one copy instead of everyone reinventing their own.",
+    "models": [
+      "Claude",
+      "Codex",
+      "Gemini"
+    ],
+    "tags": [
+      "Agent Skills",
+      "SKILL.md",
+      "跨工具",
+      "团队协作"
+    ],
+    "source": "Agent Skills 开放规范 / 社区生态观察（2026-07）",
+    "updated": "2026-07-13"
+  },
+  {
+    "id": "start-wenxin-yiyan-site-migration",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "文心一言官网即将下线：7 月 26 日起服务迁移到「百度文心」网站",
+    "title_en": "Baidu's Old ERNIE Bot Site Is Retiring: Service Moves to \"Baidu Wenxin\" on July 26",
+    "body_zh": "如果你一直习惯用 yiyan.baidu.com（文心一言官网）跟百度的 AI 聊天，需要留意一个时间点：百度已经在做入口升级，从 2026 年 7 月 26 日 0 点起，问答提问入口正式迁移到「百度文心」网站，之前的智能对话、内容创作、学习办公、信息查询等功能会在新站点继续提供，并且能体验到更新的文心大模型能力。百度文心网站本身功能也更丰富一些，多了 AI 志愿报告（高考相关）、AI PPT、深入研究、AI 音乐等模块。给普通用户的建议：①如果你有收藏的旧版文心一言网址或历史对话记录，趁迁移前确认一下重要内容有没有导出或保存的需要；②迁移后第一次打开新站点，先花几分钟看看导航，功能位置和入口跟旧站会有差异，不用照旧版的操作路径去找；③如果你是通过第三方工具或脚本调用文心的网页版（不是 API），到时候要同步更新链接，避免旧地址失效导致自动化流程中断。",
+    "body_en": "If you're used to chatting with Baidu's AI at yiyan.baidu.com (the old ERNIE Bot / Wenxin Yiyan site), take note of an upcoming date: Baidu is consolidating its entry point, and starting midnight on July 26, 2026, the chat/query entry point officially moves to the \"Baidu Wenxin\" site. Existing features — conversational chat, content creation, study/work tools, information lookup — continue on the new site, along with access to Baidu's updated ERNIE models. The new site also adds a few extra modules not on the old one, including an AI college-application advisor (tied to China's gaokao), AI-generated slide decks, deep research, and AI music generation. Tips for regular users: 1) if you have bookmarked the old URL or important chat history, confirm before the migration whether you need to export or save anything you care about; 2) the first time you open the new site, spend a few minutes exploring the navigation — feature locations differ from the old layout, so don't assume the old click-path still applies; 3) if you or a script call Baidu's web chat (not the API) programmatically, update the URL accordingly so an automated workflow doesn't silently break when the old address stops working.",
+    "models": [
+      "文心一言",
+      "百度文心"
+    ],
+    "tags": [
+      "文心一言",
+      "百度",
+      "服务迁移",
+      "入口升级"
+    ],
+    "source": "IT之家 / 百度文心官方公告（2026-07）",
+    "updated": "2026-07-13"
   }
 ];

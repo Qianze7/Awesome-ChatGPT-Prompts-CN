@@ -16,13 +16,13 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 ### Categories
 
-- 🚀 **Getting Started** (28)
+- 🚀 **Getting Started** (29)
 - 🎭 **Role Prompts** (149)
-- 🖼️ **Text-to-Image** (18)
+- 🖼️ **Text-to-Image** (19)
 - 🎬 **Text-to-Video** (25)
-- 🧩 **Skills** (31)
+- 🧩 **Skills** (32)
 - 🔌 **Plugins / MCP** (20)
-- 💡 **Prompt Craft** (58)
+- 💡 **Prompt Craft** (59)
 
 ## 🚀 Getting Started
 
@@ -165,6 +165,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ 豆包 · Doubao-Seed-2.0`  ·  字节跳动官方发布（2026-07）
 
 > ByteDance released the Doubao Seed-2.0 model lineup in July 2026, split into general-purpose Seed-2.0 Lite/Mini and the reasoning-focused Seed-2.0 Pro, continuing Doubao's earlier product approach of permanently free core features plus tiered subscriptions (Standard ¥68/month, Plus ¥200/month, Pro ¥500/month). Guidance for everyday users: 1) high-frequency, lightweight tasks — daily chat, copywriting, simple Q&A — are well served by the Lite/Mini tier, which is fast and has a generous free allowance, so there's no need to jump straight to a Pro subscription; 2) only switch to Seed-2.0 Pro when a task genuinely needs deep reasoning — multi-step-verified code debugging, logically rigorous analysis reports — and those are also the cases where paying more for accuracy tends to be worth it; 3) if you only occasionally need Pro-tier reasoning for the odd hard problem, a long-term subscription may not be worth it — check whether Doubao offers pay-per-use pricing instead, which can work out cheaper than a standing subscription.
+
+### Baidu's Old ERNIE Bot Site Is Retiring: Service Moves to "Baidu Wenxin" on July 26
+`🟢 Beginner ｜ 文心一言 · 百度文心`  ·  IT之家 / 百度文心官方公告（2026-07）
+
+> If you're used to chatting with Baidu's AI at yiyan.baidu.com (the old ERNIE Bot / Wenxin Yiyan site), take note of an upcoming date: Baidu is consolidating its entry point, and starting midnight on July 26, 2026, the chat/query entry point officially moves to the "Baidu Wenxin" site. Existing features — conversational chat, content creation, study/work tools, information lookup — continue on the new site, along with access to Baidu's updated ERNIE models. The new site also adds a few extra modules not on the old one, including an AI college-application advisor (tied to China's gaokao), AI-generated slide decks, deep research, and AI music generation. Tips for regular users: 1) if you have bookmarked the old URL or important chat history, confirm before the migration whether you need to export or save anything you care about; 2) the first time you open the new site, spend a few minutes exploring the navigation — feature locations differ from the old layout, so don't assume the old click-path still applies; 3) if you or a script call Baidu's web chat (not the API) programmatically, update the URL accordingly so an automated workflow doesn't silently break when the old address stops working.
 
 ## 🎭 Role Prompts
 
@@ -1014,6 +1019,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > Two Midjourney V7 features are meant to be chained together: Draft Mode and Omni-Reference. Draft Mode renders about 5x faster at roughly 1/10th the cost of standard mode, so it's ideal for cheaply batch-generating 10-20 drafts to explore directions before committing to a final render — once you like a direction, turn Draft Mode off and re-render in standard/high-quality mode. Omni-Reference (the `--oref` parameter plus an image URL) keeps a character, object, or style consistent across multiple images, with `--ow` controlling reference strength (1-1000, default 100 — higher values stick closer to the reference). The gotcha: Omni-Reference currently can't be combined with Fast Mode, Draft Mode, Conversational Mode, or `--q 4`. So the right sequence is: use Draft Mode + Conversational Mode to quickly nail down direction and composition, turn Draft Mode off once you're happy, then add Omni-Reference to lock in the character for a consistent batch — think character sheets or sequential comic panels. This workflow is considerably cheaper than rendering everything at high quality from the start, especially when you need many variants before final polish.
 
+### Midjourney V8 Alpha Opens for Testing: --hd 2K Mode and Ultra-Wide Aspect Ratios
+`🟡 Intermediate ｜ Midjourney · Midjourney V8`  ·  Midjourney 官方 Alpha 测试 / 社区实测（2026-07）
+
+> Midjourney V8 is currently in open Alpha testing — available only on the standalone site alpha.midjourney.com, not yet on Discord or the main site — with speed and canvas size as its headline upgrades: standard generation is roughly 5x faster than the previous version, typically finishing in under 10 seconds. A new `--hd` mode renders natively at 2K resolution, and pairing it with `--q 4` further improves image coherence and detail. The maximum aspect ratio has also widened to an extreme 14:1 (up to 4:1 with HD mode on), making compositions like long banners — previously hard to generate in one pass — much easier. Prompt comprehension and text rendering are also improved: the model follows detailed instructions and mood-board/style references more faithfully, and in-image text is more legible. A few things to keep in mind: 1) advanced features like `--hd`, `--q 4`, and style references/mood boards currently run about 4x slower and 4x more expensive, so scout directions in normal mode first and only apply the high-quality parameters on your final pick; 2) V7 personalization profiles, mood boards, and style references remain compatible in V8, so there's no need to retrain or re-prepare references; 3) since it's only available on the Alpha standalone site for now, features and parameters may still shift before it merges into Discord/the main site — treat it as an early preview rather than betting a critical project entirely on parameters that aren't finalized yet.
+
 ## 🎬 Text-to-Video
 
 ### Kling/Sora camera-motion prompt
@@ -1304,6 +1314,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🔴 Advanced ｜ Gemini · Gemini Enterprise · AlphaEvolve`  ·  Google AI Updates / Gemini Enterprise Release Notes（2026-07）
 
 > In July 2026, Google added the AlphaEvolve algorithm-optimization agent to Gemini Enterprise, and it's positioned differently from a typical "AI writes code" tool: it's built to solve complex algorithmic problems by combining server-side LLM-driven creative exploration with client-side, secure code execution for verification — the two work together to iteratively discover better solutions, rather than generating code once and calling it done. It's best suited to problems with a clear evaluation criterion where the optimal answer isn't feasible to find by brute-force human effort — scheduling algorithms, resource-allocation strategies, numerical optimization — not routine business-logic development. Practical tips: 1) before using it, make sure your problem can be reduced to a quantifiable scoring function — AlphaEvolve fundamentally searches and iterates against that score, and without a clear evaluation signal it has nothing to optimize toward; 2) this kind of agent typically runs much longer than a normal conversational generation — expect a "runs in the background, returns a result later" pattern rather than instant replies; 3) validate it first on a small, verifiable sub-problem to confirm the solutions it returns actually hold up, before trusting it on a production-scale problem where a black-box result could be risky to deploy directly.
+
+### Write One SKILL.md, Use It Everywhere: Claude Code, Codex CLI, Cursor, and Gemini CLI All Support It
+`🟡 Intermediate ｜ Claude · Codex · Gemini`  ·  Agent Skills 开放规范 / 社区生态观察（2026-07）
+
+> Agent Skills — the `SKILL.md` format that started as an internal Anthropic convention — has become an open standard, and the same skill files now work with little to no modification across more than 30 platforms including Claude Code, OpenAI's Codex CLI, Cursor, Gemini CLI, and GitHub Copilot. That's a real time-saver if you switch between coding assistants often: playbooks you'd normally write for a team — commit-message conventions, code-review checklists, how to use an internal framework — only need to be written once in SKILL.md format instead of once per agent. Practical tips: 1) when writing a new skill, follow the portable format — give the frontmatter a clear name and description (this is what an agent matches against to decide when to auto-load the skill), and write the body as "situation → concrete steps" rather than background explanation, favoring actionable steps over "why" narrative; 2) write and test it in whichever tool you use most first, confirm it triggers correctly, then verify it in a second tool — only tweak the parts affected by platform-specific differences (script execution permissions, file-path conventions), not the whole file; 3) if your team is split across Claude Code, Cursor, and Codex CLI, treat your skills as a shared asset — keep them in the repo or a shared team config and maintain one copy instead of everyone reinventing their own.
 
 ## 🔌 Plugins / MCP
 
@@ -1724,5 +1739,10 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ ChatGPT`  ·  OpenAI ChatGPT Release Notes（模型 2026-06-26 起面向全量用户上线）
 
 > Starting June 26, 2026, OpenAI quietly rolled out a new speech-to-text model powering dictation across all ChatGPT plans, including Free — a purely backend upgrade with no new settings to toggle and no interface changes; the system just switches you over automatically. The measured gains show up mainly in three places: 1) code-switching scenarios — mixing Chinese and English, or switching between Cantonese and Mandarin — see a clear accuracy jump, with OpenAI's own evals showing perceptible improvement in Japanese, Korean, Chinese, Urdu, Vietnamese, and accented English; 2) more robust performance in noisy environments — subways, open offices, or when you're speaking quietly — transcription stays steadier; 3) better recognition of mixed letter-and-number content, like reading out an ID number, a verification code, or a model number. OpenAI's own figure: word error rate (WER) dropped by at least 10% on average across top tested languages compared to the previous production model. Practical takeaway: if you routinely use voice dictation on your phone to draft emails, notes, or prompts, it's now safe to lean on it more in noisy settings or when code-switching, cutting down on manual typing. If you're a heavy user doing multilingual meeting notes or customer-service transcription for a team, it's worth re-testing accuracy — you may no longer need as many manual correction passes.
+
+### DeepSeek V4 Ships in Two Versions: Pro vs. Flash Cost 12x Apart — How to Choose
+`🟡 Intermediate ｜ DeepSeek · DeepSeek V4 · DeepSeek V4-Pro · DeepSeek V4-Flash`  ·  DeepSeek 官方发布 / API 文档（2026-07）
+
+> In July 2026 DeepSeek officially launched its V4 series API with two versions at once: V4-Pro (1.6T parameters, 49B activated), built for complex engineering and hard reasoning tasks and billed as a "code-generation ceiling," and V4-Flash (284B parameters, 13B activated), which comes close to Pro's intelligence at roughly a tenth of the price. Both natively support a 1M-token context window, a deep-thinking mode, structured output, and function calling. The price gap is large: on input tokens, Pro runs about ¥12/million vs. Flash's ¥1/million; on output, Pro is about ¥24/million vs. Flash's ¥2/million — a 12x difference. How to choose: 1) for high-frequency, everyday coding and Q&A tasks — small bug fixes, routine functions, simple questions — default to Flash, since the cost-performance is much better; 2) reserve Pro for tasks that genuinely justify the strongest model — complex system design, hard algorithmic problems, mission-critical code that needs top accuracy; 3) if you're still on the old API, note that DeepSeek has announced it will retire the old model names (deepseek-chat / deepseek-reasoner) in late July — update your code to deepseek-v4-pro or deepseek-v4-flash ahead of time, and keep the previously announced peak/off-peak pricing in mind (weekday 9-12 and 14-18 are peak hours with doubled API prices).
 
 <!-- AUTO-PROMPTS:END -->
