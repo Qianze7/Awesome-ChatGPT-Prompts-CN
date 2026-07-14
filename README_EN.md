@@ -16,12 +16,12 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 ### Categories
 
-- 🚀 **Getting Started** (29)
+- 🚀 **Getting Started** (31)
 - 🎭 **Role Prompts** (149)
 - 🖼️ **Text-to-Image** (19)
 - 🎬 **Text-to-Video** (25)
-- 🧩 **Skills** (32)
-- 🔌 **Plugins / MCP** (20)
+- 🧩 **Skills** (33)
+- 🔌 **Plugins / MCP** (22)
 - 💡 **Prompt Craft** (59)
 
 ## 🚀 Getting Started
@@ -170,6 +170,16 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ 文心一言 · 百度文心`  ·  IT之家 / 百度文心官方公告（2026-07）
 
 > If you're used to chatting with Baidu's AI at yiyan.baidu.com (the old ERNIE Bot / Wenxin Yiyan site), take note of an upcoming date: Baidu is consolidating its entry point, and starting midnight on July 26, 2026, the chat/query entry point officially moves to the "Baidu Wenxin" site. Existing features — conversational chat, content creation, study/work tools, information lookup — continue on the new site, along with access to Baidu's updated ERNIE models. The new site also adds a few extra modules not on the old one, including an AI college-application advisor (tied to China's gaokao), AI-generated slide decks, deep research, and AI music generation. Tips for regular users: 1) if you have bookmarked the old URL or important chat history, confirm before the migration whether you need to export or save anything you care about; 2) the first time you open the new site, spend a few minutes exploring the navigation — feature locations differ from the old layout, so don't assume the old click-path still applies; 3) if you or a script call Baidu's web chat (not the API) programmatically, update the URL accordingly so an automated workflow doesn't silently break when the old address stops working.
+
+### Doubao and Qwen Pull Their "AI Agent" Features on July 15 — Export Your Data Today
+`🟢 Beginner ｜ 豆包 · 通义千问 · Doubao · Qwen`  ·  chinaz.com / 新浪新闻（2026-07-03～07-04）
+
+> ByteDance's Doubao app and Alibaba's Qwen app each announced on July 3-4 that their core "AI Agent" creation and chat features will be fully discontinued on July 15, 2026 — the same day China's new "Interim Measures for AI Anthropomorphic Interactive Services" takes effect, which is widely seen as the direct cause. ByteDance's separate Maoxiang (猫箱) app still allows agent creation for now. Practical steps: 1) if you've built a custom agent or saved important conversations in Doubao or Qwen, export or screenshot them today — they likely won't be recoverable after the cutoff; 2) if you rely on these agents for daily tasks (writing assistants, study companions, etc.), save the underlying prompt text separately so you can rebuild the same setup on ChatGPT, Claude, Kimi, or another platform that still supports custom agents/GPTs; 3) going forward, if you regularly use an agent feature inside a domestic app, build a habit of periodically exporting conversations and persona configs so a sudden policy or product change doesn't catch you off guard.
+
+### Moonshot AI Confirms Kimi K3: 2.5-Trillion-Parameter Domestic Model With Native Multimodal and 1M-Token Context
+`🟡 Intermediate ｜ Kimi · Kimi K3 · 月之暗面`  ·  新浪科技 / AI工具宝箱（2026-07）
+
+> In July 2026, Moonshot AI confirmed its next flagship model, Kimi K3, will launch this month with a 2.5-trillion-parameter MoE architecture — surpassing DeepSeek V4 Pro (1.6T) and ERNIE 5.0 (2.4T) to become the largest publicly disclosed domestic model. It also ships a 1-million-character context window and native multimodal capability that unifies video understanding, chart analysis, and audio transcription in a single model. Moonshot's valuation reportedly hit $31.5B with ARR past $300M around the same time. Practical tips: 1) a bigger parameter count doesn't automatically make every task better — for light everyday chat or writing, there's no rush to switch until you've seen real-world speed and cost after launch; 2) if you regularly work with long documents, long videos, or complex charts that need one model to handle multiple input types at once, K3 is worth testing first once it's live; 3) Moonshot has only committed to a "this month" launch window without a firm date or pricing yet, so check its official channels for confirmed pricing tiers before committing, rather than paying through the wrong entry point.
 
 ## 🎭 Role Prompts
 
@@ -1320,6 +1330,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > Agent Skills — the `SKILL.md` format that started as an internal Anthropic convention — has become an open standard, and the same skill files now work with little to no modification across more than 30 platforms including Claude Code, OpenAI's Codex CLI, Cursor, Gemini CLI, and GitHub Copilot. That's a real time-saver if you switch between coding assistants often: playbooks you'd normally write for a team — commit-message conventions, code-review checklists, how to use an internal framework — only need to be written once in SKILL.md format instead of once per agent. Practical tips: 1) when writing a new skill, follow the portable format — give the frontmatter a clear name and description (this is what an agent matches against to decide when to auto-load the skill), and write the body as "situation → concrete steps" rather than background explanation, favoring actionable steps over "why" narrative; 2) write and test it in whichever tool you use most first, confirm it triggers correctly, then verify it in a second tool — only tweak the parts affected by platform-specific differences (script execution permissions, file-path conventions), not the whole file; 3) if your team is split across Claude Code, Cursor, and Codex CLI, treat your skills as a shared asset — keep them in the repo or a shared team config and maintain one copy instead of everyone reinventing their own.
 
+### Kimi Code's K2.7 High-Speed Mode Goes Permanent: 5-6x Faster Agentic Coding at No Extra Cost
+`🟡 Intermediate ｜ Kimi · Kimi Code · K2.7`  ·  新浪科技（2026-07-11）
+
+> On July 11, 2026, Kimi Code's K2.7 Code high-speed edition exited beta and became a permanent, selectable mode. Official figures show 5-6x faster output than the standard version, with a June SWE-Bench Pro score of 58.6% — meaning the speed gain didn't come with a noticeable accuracy trade-off. Practical tips: 1) if you're already using Kimi Code for agentic coding (letting the model read code, make edits, and run tests on its own), switch to the K2.7 high-speed mode in settings right away — the same subscription quota now covers more iteration rounds; 2) the high-speed mode shines most on tasks with a large volume of changes that need multiple self-verification passes, like batch refactors or fixing a pile of similar bugs; 3) for tasks where accuracy is critical — financial calculations, security-sensitive code — compare the standard and high-speed outputs on a small change first before switching over entirely.
+
 ## 🔌 Plugins / MCP
 
 ### Claude Code: Split Work into Specialized Subagents
@@ -1421,6 +1436,16 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🔴 Advanced ｜ Claude · MCP`  ·  Claude Developer Platform Release Notes（2026-07）
 
 > Anthropic's July 2026 Claude Developer Platform update shipped MCP Tunnels (Research Preview), addressing a common enterprise pain point: internal systems — ticketing tools, internal knowledge bases, private databases — often live entirely inside a company's network, and previously connecting them to Claude meant standing up a reverse proxy or exposing the service publicly, something security teams routinely reject. MCP Tunnels lets Claude connect directly to MCP servers deployed inside a private network without any public exposure. The same update also introduced self-hosted sandboxes for Claude Managed Agents, letting you run the tool-execution environment on your own infrastructure as an alternative to executing tool calls in Anthropic's cloud — a further step toward keeping data entirely within your network boundary. Practical tips: 1) if your team's plan to connect internal tools to Claude has been stuck on "the MCP server can't be exposed publicly," it's worth re-evaluating now; 2) as a research preview, behavior and stability may still shift, so pilot it on a non-critical internal tool before pointing it at production-sensitive systems; 3) if your compliance requirements also demand that tool execution itself stays inside your network, look specifically at self-hosted sandboxes — it goes a step further than just tunneling the connection by keeping execution on your own infrastructure too.
+
+### MCP's Biggest-Ever Spec Revision Hits Release Candidate: Stateless Core Plus Long-Running Task Support
+`🔴 Advanced ｜ MCP · Claude Code · Model Context Protocol`  ·  MCP 官方博客（2026-07）
+
+> The Model Context Protocol's official blog published the release candidate for its 2026-07-28 spec — described by the maintainers as "the biggest revision since the protocol launched." The core protocol moves from stateful to stateless, so it can run directly behind a plain HTTP load balancer without sticky sessions; the update also adds an Extensions framework, a Tasks extension for long-running jobs, MCP Apps for server-rendered UI, and brings authentication in line with standard OAuth/OIDC. The final spec is expected July 28, with roughly a 10-week adaptation window given to SDK maintainers. Practical tips: 1) if you just connect Claude Code, Cursor, or similar tools to someone else's already-maintained MCP server, this revision is mostly invisible to you — just wait for their SDK update; 2) if you run your own MCP server (say, wiring in an internal knowledge base or internal tool), skim the official migration notes over the next few weeks, especially the auth section — a simple API-key check may need adjusting once OAuth/OIDC becomes the norm; 3) the new Tasks extension natively supports "kick off a job that takes a while to finish" tools (like batch data processing) — if you were previously hand-rolling polling to fake this, consider migrating to the official mechanism once the final spec ships.
+
+### Claude Code's Latest Tweaks: /doctor Now Flags Bloated CLAUDE.md Files, and the Weekly-Limit Boost Just Expired
+`🟡 Intermediate ｜ Claude Code · Claude`  ·  Claude Code Changelog（2026-07）
+
+> Claude Code recently shipped a handful of small updates: idle background shell processes now get their memory reclaimed automatically; /config gained a new "Dynamic workflow size" setting; /cd now suggests candidate directory paths as you type, matching the experience of /add-dir; and /doctor added a check that proactively flags an overly long CLAUDE.md file in your project and suggests trimming it. Also worth noting: the limited-time "50% higher weekly usage limit" benefit for Pro/Max/Team users, in effect since May 13, expired on July 13. Practical tips: 1) if your CLAUDE.md has grown to several hundred lines full of project minutiae, run /doctor and act on its suggestion — strip out anything stale or already derivable from the code, keeping the file to core conventions and preferences; 2) /cd now shows path candidates as you type, so lean on it instead of typing full directory paths from memory when switching context; 3) if you're a heavy user, check your usage dashboard this week — now that the boosted limit has expired, your weekly quota drops back to the standard level, so plan task scheduling accordingly rather than getting caught off guard by throttling.
 
 ## 💡 Prompt Craft
 

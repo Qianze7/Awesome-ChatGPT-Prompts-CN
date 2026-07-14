@@ -6793,5 +6793,114 @@ window.PROMPTS = [
     ],
     "source": "IT之家 / 百度文心官方公告（2026-07）",
     "updated": "2026-07-13"
+  },
+  {
+    "id": "start-doubao-qwen-agent-shutdown-0715",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "豆包、通义千问「AI 智能体」功能 7 月 15 日下线：今天必须把数据导出",
+    "title_en": "Doubao and Qwen Pull Their \"AI Agent\" Features on July 15 — Export Your Data Today",
+    "body_zh": "字节跳动豆包 App 与阿里通义千问先后在 7 月 3-4 日发布公告，宣布各自 App 内的核心「AI 智能体」创建与对话功能将于 2026 年 7 月 15 日正式下线，时间点与《人工智能拟人化互动服务管理暂行办法》同日生效，被认为与新规直接相关；字节旗下的猫箱 App 目前仍保留智能体创建能力，暂不受影响。给普通用户的实操建议：①如果你在豆包或通义千问里创建过自定义智能体、保存过重要对话记录，今天之内务必手动导出或截图保存，下线后大概率无法找回；②如果你依赖这类智能体做日常任务（写作助手、学习陪练等），可以先把提示词本身另存一份，之后迁到 ChatGPT、Claude、Kimi 等仍支持自定义智能体/GPTs 的平台上重建；③后续如果常用某个国产 App 的智能体功能，建议养成定期导出对话和角色设定的习惯，避免政策或产品调整时措手不及。",
+    "body_en": "ByteDance's Doubao app and Alibaba's Qwen app each announced on July 3-4 that their core \"AI Agent\" creation and chat features will be fully discontinued on July 15, 2026 — the same day China's new \"Interim Measures for AI Anthropomorphic Interactive Services\" takes effect, which is widely seen as the direct cause. ByteDance's separate Maoxiang (猫箱) app still allows agent creation for now. Practical steps: 1) if you've built a custom agent or saved important conversations in Doubao or Qwen, export or screenshot them today — they likely won't be recoverable after the cutoff; 2) if you rely on these agents for daily tasks (writing assistants, study companions, etc.), save the underlying prompt text separately so you can rebuild the same setup on ChatGPT, Claude, Kimi, or another platform that still supports custom agents/GPTs; 3) going forward, if you regularly use an agent feature inside a domestic app, build a habit of periodically exporting conversations and persona configs so a sudden policy or product change doesn't catch you off guard.",
+    "models": [
+      "豆包",
+      "通义千问",
+      "Doubao",
+      "Qwen"
+    ],
+    "tags": [
+      "豆包",
+      "通义千问",
+      "AI智能体",
+      "政策"
+    ],
+    "source": "chinaz.com / 新浪新闻（2026-07-03～07-04）",
+    "updated": "2026-07-14"
+  },
+  {
+    "id": "start-kimi-k3-launch",
+    "category": "start",
+    "level": "intermediate",
+    "title_zh": "月之暗面官宣 Kimi K3：2.5 万亿参数登顶国产模型，100 万字上下文原生多模态",
+    "title_en": "Moonshot AI Confirms Kimi K3: 2.5-Trillion-Parameter Domestic Model With Native Multimodal and 1M-Token Context",
+    "body_zh": "月之暗面在 2026 年 7 月官宣新一代旗舰模型 Kimi K3 将于本月正式发布，采用 2.5 万亿参数的 MoE 架构，参数规模超过 DeepSeek V4 Pro（1.6 万亿）和文心 5.0（2.4 万亿），成为目前公开信息里参数最大的国产大模型；同时具备 100 万字上下文窗口，以及把视频理解、图表分析、语音转译统一放进同一个模型的原生多模态能力。月之暗面同期估值传出已达 315 亿美元，ARR 突破 3 亿美元。实操建议：①参数规模大不等于每个任务都更好用，日常聊天、写作这类轻量任务不必第一时间切过去，等正式版上线后再看实测的响应速度和成本；②如果你手头有长文档、长视频、复杂图表这类需要「一个模型通吃多种输入」的任务，K3 上线后值得优先拿来试跑；③目前官方口径仍是「本月发布」，没有给出精确日期和定价，正式使用前建议先关注月之暗面官方渠道确认价格档位，避免用错入口多付费。",
+    "body_en": "In July 2026, Moonshot AI confirmed its next flagship model, Kimi K3, will launch this month with a 2.5-trillion-parameter MoE architecture — surpassing DeepSeek V4 Pro (1.6T) and ERNIE 5.0 (2.4T) to become the largest publicly disclosed domestic model. It also ships a 1-million-character context window and native multimodal capability that unifies video understanding, chart analysis, and audio transcription in a single model. Moonshot's valuation reportedly hit $31.5B with ARR past $300M around the same time. Practical tips: 1) a bigger parameter count doesn't automatically make every task better — for light everyday chat or writing, there's no rush to switch until you've seen real-world speed and cost after launch; 2) if you regularly work with long documents, long videos, or complex charts that need one model to handle multiple input types at once, K3 is worth testing first once it's live; 3) Moonshot has only committed to a \"this month\" launch window without a firm date or pricing yet, so check its official channels for confirmed pricing tiers before committing, rather than paying through the wrong entry point.",
+    "models": [
+      "Kimi",
+      "Kimi K3",
+      "月之暗面"
+    ],
+    "tags": [
+      "Kimi K3",
+      "月之暗面",
+      "国产大模型",
+      "多模态"
+    ],
+    "source": "新浪科技 / AI工具宝箱（2026-07）",
+    "updated": "2026-07-14"
+  },
+  {
+    "id": "skill-kimi-code-k2-7-speed-mode",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "Kimi Code 的 K2.7 高速模式转正：编程 Agent 提速 5-6 倍，不加钱就能切",
+    "title_en": "Kimi Code's K2.7 High-Speed Mode Goes Permanent: 5-6x Faster Agentic Coding at No Extra Cost",
+    "body_zh": "2026 年 7 月 11 日，Kimi Code 里的 K2.7 Code 高速版结束 Beta 测试，转为常驻可选模式，官方数据显示输出速度比普通版快 5-6 倍，6 月的 SWE-Bench Pro 测评得分为 58.6%，速度提升的同时准确率没有明显下降。实操建议：①如果你已经在用 Kimi Code 做 Agentic 编程（让模型自己读代码、改代码、跑测试），直接在设置里把模型切到 K2.7 高速版，同样的订阅额度能跑更多轮迭代；②高速版更适合「代码改动量大、需要模型多轮自己验证」的任务，比如批量重构、修复一堆同类型 bug，这类场景速度提升的收益最明显；③如果任务本身对准确率要求极高（比如涉及金融计算、安全相关代码），建议先在小范围改动上对比普通版和高速版的结果一致性，再决定是否全量切换。",
+    "body_en": "On July 11, 2026, Kimi Code's K2.7 Code high-speed edition exited beta and became a permanent, selectable mode. Official figures show 5-6x faster output than the standard version, with a June SWE-Bench Pro score of 58.6% — meaning the speed gain didn't come with a noticeable accuracy trade-off. Practical tips: 1) if you're already using Kimi Code for agentic coding (letting the model read code, make edits, and run tests on its own), switch to the K2.7 high-speed mode in settings right away — the same subscription quota now covers more iteration rounds; 2) the high-speed mode shines most on tasks with a large volume of changes that need multiple self-verification passes, like batch refactors or fixing a pile of similar bugs; 3) for tasks where accuracy is critical — financial calculations, security-sensitive code — compare the standard and high-speed outputs on a small change first before switching over entirely.",
+    "models": [
+      "Kimi",
+      "Kimi Code",
+      "K2.7"
+    ],
+    "tags": [
+      "Kimi Code",
+      "K2.7",
+      "Agentic编程",
+      "月之暗面"
+    ],
+    "source": "新浪科技（2026-07-11）",
+    "updated": "2026-07-14"
+  },
+  {
+    "id": "plugin-mcp-2026-07-spec-rc",
+    "category": "plugin",
+    "level": "advanced",
+    "title_zh": "MCP 协议史上最大改版发布候选版：无状态核心 + 长任务支持，自建 MCP server 的人要留意",
+    "title_en": "MCP's Biggest-Ever Spec Revision Hits Release Candidate: Stateless Core Plus Long-Running Task Support",
+    "body_zh": "Model Context Protocol 官方博客发布了 2026-07-28 规范的发布候选版（Release Candidate），被官方称为「自协议诞生以来最大的一次修订」：核心协议从有状态改为无状态，可以直接跑在普通 HTTP 负载均衡器后面、不再需要粘性会话；新增 Extensions 扩展框架、支持长时间运行任务的 Tasks 扩展、支持服务端渲染界面的 MCP Apps，鉴权方式也向标准的 OAuth/OIDC 靠拢。正式版预计 7 月 28 日发布，官方给 SDK 维护者留了大约 10 周的适配窗口。实操建议：①如果你只是把 Claude Code、Cursor 等工具接到别人已经维护好的 MCP server 上，这次改版基本无感，等对方更新 SDK 即可；②如果你自己搭建了 MCP server（比如接内部知识库、内部工具），趁这几周先看一眼官方博客里的迁移说明，尤其是鉴权部分改成 OAuth/OIDC 后，原来简单的 API Key 校验可能需要调整；③新增的 Tasks 扩展对「调用后台跑很久才有结果」的工具（比如批量数据处理）是个原生支持，如果你之前是自己拿轮询硬凑这个效果，正式版发布后可以考虑迁移到官方方案。",
+    "body_en": "The Model Context Protocol's official blog published the release candidate for its 2026-07-28 spec — described by the maintainers as \"the biggest revision since the protocol launched.\" The core protocol moves from stateful to stateless, so it can run directly behind a plain HTTP load balancer without sticky sessions; the update also adds an Extensions framework, a Tasks extension for long-running jobs, MCP Apps for server-rendered UI, and brings authentication in line with standard OAuth/OIDC. The final spec is expected July 28, with roughly a 10-week adaptation window given to SDK maintainers. Practical tips: 1) if you just connect Claude Code, Cursor, or similar tools to someone else's already-maintained MCP server, this revision is mostly invisible to you — just wait for their SDK update; 2) if you run your own MCP server (say, wiring in an internal knowledge base or internal tool), skim the official migration notes over the next few weeks, especially the auth section — a simple API-key check may need adjusting once OAuth/OIDC becomes the norm; 3) the new Tasks extension natively supports \"kick off a job that takes a while to finish\" tools (like batch data processing) — if you were previously hand-rolling polling to fake this, consider migrating to the official mechanism once the final spec ships.",
+    "models": [
+      "MCP",
+      "Claude Code",
+      "Model Context Protocol"
+    ],
+    "tags": [
+      "MCP",
+      "协议更新",
+      "Claude Code",
+      "开发者"
+    ],
+    "source": "MCP 官方博客（2026-07）",
+    "updated": "2026-07-14"
+  },
+  {
+    "id": "plugin-claude-code-july-updates",
+    "category": "plugin",
+    "level": "intermediate",
+    "title_zh": "Claude Code 近期更新：/doctor 会提醒精简 CLAUDE.md，周用量限额上调权益 7 月 13 日到期",
+    "title_en": "Claude Code's Latest Tweaks: /doctor Now Flags Bloated CLAUDE.md Files, and the Weekly-Limit Boost Just Expired",
+    "body_zh": "Claude Code 近期上线几处小更新：空闲的后台 shell 进程会自动回收内存；/config 里新增「Dynamic workflow size」设置项；/cd 命令支持边输入边提示候选目录路径，体验和 /add-dir 对齐；/doctor 新增检查项，如果项目里的 CLAUDE.md 文件写得过长会主动提示精简。另外需要注意，此前从 5 月 13 日起为 Pro / Max / 团队版用户提供的「周用量限额上调 50%」限时权益已在 7 月 13 日到期。实操建议：①如果你的 CLAUDE.md 已经写了几百行、夹杂大量项目细节，跑一次 /doctor 看看提示，把过时或可以从代码里直接读到的内容删掉，控制在核心约定+偏好范围内；②/cd 现在打字就能看到候选路径，切目录时不用再记完整路径，直接用这个替代手写路径的习惯；③如果你是重度用户，这几天先看一眼自己的账号用量面板，权益到期后周限额会回落到常规水平，早做好任务排期上的心理准备，避免临时被限速打断。",
+    "body_en": "Claude Code recently shipped a handful of small updates: idle background shell processes now get their memory reclaimed automatically; /config gained a new \"Dynamic workflow size\" setting; /cd now suggests candidate directory paths as you type, matching the experience of /add-dir; and /doctor added a check that proactively flags an overly long CLAUDE.md file in your project and suggests trimming it. Also worth noting: the limited-time \"50% higher weekly usage limit\" benefit for Pro/Max/Team users, in effect since May 13, expired on July 13. Practical tips: 1) if your CLAUDE.md has grown to several hundred lines full of project minutiae, run /doctor and act on its suggestion — strip out anything stale or already derivable from the code, keeping the file to core conventions and preferences; 2) /cd now shows path candidates as you type, so lean on it instead of typing full directory paths from memory when switching context; 3) if you're a heavy user, check your usage dashboard this week — now that the boosted limit has expired, your weekly quota drops back to the standard level, so plan task scheduling accordingly rather than getting caught off guard by throttling.",
+    "models": [
+      "Claude Code",
+      "Claude"
+    ],
+    "tags": [
+      "Claude Code",
+      "CLAUDE.md",
+      "更新日志"
+    ],
+    "source": "Claude Code Changelog（2026-07）",
+    "updated": "2026-07-14"
   }
 ];
