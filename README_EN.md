@@ -18,10 +18,10 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 - 🚀 **Getting Started** (31)
 - 🎭 **Role Prompts** (149)
-- 🖼️ **Text-to-Image** (19)
-- 🎬 **Text-to-Video** (25)
-- 🧩 **Skills** (33)
-- 🔌 **Plugins / MCP** (22)
+- 🖼️ **Text-to-Image** (20)
+- 🎬 **Text-to-Video** (26)
+- 🧩 **Skills** (35)
+- 🔌 **Plugins / MCP** (23)
 - 💡 **Prompt Craft** (59)
 
 ## 🚀 Getting Started
@@ -1034,6 +1034,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > Midjourney V8 is currently in open Alpha testing — available only on the standalone site alpha.midjourney.com, not yet on Discord or the main site — with speed and canvas size as its headline upgrades: standard generation is roughly 5x faster than the previous version, typically finishing in under 10 seconds. A new `--hd` mode renders natively at 2K resolution, and pairing it with `--q 4` further improves image coherence and detail. The maximum aspect ratio has also widened to an extreme 14:1 (up to 4:1 with HD mode on), making compositions like long banners — previously hard to generate in one pass — much easier. Prompt comprehension and text rendering are also improved: the model follows detailed instructions and mood-board/style references more faithfully, and in-image text is more legible. A few things to keep in mind: 1) advanced features like `--hd`, `--q 4`, and style references/mood boards currently run about 4x slower and 4x more expensive, so scout directions in normal mode first and only apply the high-quality parameters on your final pick; 2) V7 personalization profiles, mood boards, and style references remain compatible in V8, so there's no need to retrain or re-prepare references; 3) since it's only available on the Alpha standalone site for now, features and parameters may still shift before it merges into Discord/the main site — treat it as an early preview rather than betting a critical project entirely on parameters that aren't finalized yet.
 
+### Kling Image 3.0 Fully Rolls Out: The Canvas Agent Mode Storyboards From One Prompt, Plus Batch Image Sets
+`🟡 Intermediate ｜ 可灵 · Kling`  ·  快手可灵 AI 官方发布记录整理（2026-07）
+
+> Kling's Image 3.0 model series has now fully rolled out, with native 4K output and noticeably better narrative coherence and image quality than the 2.x line. The standout addition is the Canvas's new Agent mode: give it one sentence describing your scene, and it automatically breaks it into shots, plans multi-angle compositions, and lays out a full storyboard draft in one pass — no more generating and stitching images one at a time. There's also a new batch "image set" feature, well suited for product galleries, comic storyboards, or social carousel posts where you need a stylistically consistent set of images at once, which is far less fiddly than generating and re-matching style shot by shot. Tip: describe the overall story or scene in one sentence first, then use Canvas mode to fine-tune the composition and angle of individual shots.
+
 ## 🎬 Text-to-Video
 
 ### Kling/Sora camera-motion prompt
@@ -1167,6 +1172,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🔴 Advanced ｜ Gemini · Gemini Omni Flash`  ·  Google Blog / Gemini API 官方文档（2026-06-30）
 
 > Google opened Gemini Omni Flash (model ID gemini-omni-flash-preview) to developers on 2026-06-30 via the Gemini API and Google AI Studio, built around native multimodal video generation and conversational editing — it accepts text, image, and video simultaneously as input and generates or edits video from that combined context. What sets it apart from a typical text-to-video tool is that it's conversational: powered by the Interactions API, the model keeps session context alive so you can issue up to 3 sequential edits in natural language — say "change the background from day to night," then "add a red jacket to the main character," then "pull the camera back a bit" — with each step building on the last instead of you re-describing the whole scene every time. Practical tips: 1) lock in the overall scene with one generation first, then refine step by step through conversation — this is more controllable than writing one giant prompt upfront; 2) during public preview, generations are capped at 10 seconds and billed by output duration (~$0.10/second, on par with Veo 3.1 Fast), so it's best to validate your editing logic on short clips before deciding whether to apply it across segments of a longer video; 3) this "multimodal reference plus conversational editing" approach is a better fit than one-shot text-to-video for use cases needing repeated fine detail changes, like product re-styling or scene swaps.
+
+### Sora's App Is Gone and Its API Shuts Down September 24 — Here's What to Use Instead
+`🟢 Beginner ｜ Sora · 可灵 · 即梦 · Midjourney · Veo`  ·  OpenAI 官方停服公告及第三方报道整理（2026-07）
+
+> OpenAI's Sora app was shut down on April 26, and the Sora API is scheduled to be fully discontinued on September 24, 2026 — along with any videos and account data still stored there. If you have unexported work sitting in Sora, log in and save it now. For everyday text-to-video needs, Kling 3.0, Jimeng's Seedance 2.0, and Midjourney V8's video features are solid replacements — all three now support text/image-to-video, camera control, and character consistency on par with Sora. If your workflow calls the Sora API for batch generation, start evaluating Kling's or Jimeng's open APIs, or fall back to Google Veo, before the September 24 cutoff breaks your pipeline.
 
 ## 🧩 Skills
 
@@ -1335,6 +1345,16 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > On July 11, 2026, Kimi Code's K2.7 Code high-speed edition exited beta and became a permanent, selectable mode. Official figures show 5-6x faster output than the standard version, with a June SWE-Bench Pro score of 58.6% — meaning the speed gain didn't come with a noticeable accuracy trade-off. Practical tips: 1) if you're already using Kimi Code for agentic coding (letting the model read code, make edits, and run tests on its own), switch to the K2.7 high-speed mode in settings right away — the same subscription quota now covers more iteration rounds; 2) the high-speed mode shines most on tasks with a large volume of changes that need multiple self-verification passes, like batch refactors or fixing a pile of similar bugs; 3) for tasks where accuracy is critical — financial calculations, security-sensitive code — compare the standard and high-speed outputs on a small change first before switching over entirely.
 
+### Claude's Agent Skills Get a Major Relaunch: Share Skills Like Google Docs, With One-Click Rollback
+`🟡 Intermediate ｜ Claude`  ·  Anthropic / Agentman 相关报道整理（2026-07-06）
+
+> On July 6, Anthropic shipped a major "six weeks of work in one release" update to Agent Skills. The most useful parts: skills can now be shared with teammates for collaborative editing, Google-Docs style; a new "use-only" permission lets others call your skill without seeing its internal implementation, protecting your prompts and scripts from being copied; version history was upgraded to 2.0 with one-click restore to any previous version; a batch-import tool lets you pull all your scattered existing skills into the new library at once; and pricing now starts free. If you already have a pile of loose Skill files, this is a good moment to consolidate them into the shared library — team collaboration gets much smoother.
+
+### A New GitHub Repo Open-Sources 337 Skills for Claude and Cursor — Engineering, Marketing, PM, Compliance, All Ready to Use
+`🟢 Beginner ｜ Claude · Cursor · Codex · Gemini CLI`  ·  GitHub alirezarezvani/claude-skills（2026-07-07）
+
+> On July 7, developer alirezarezvani released an open-source repo called claude-skills, packing in 337 ready-to-use skills, plugins, and agents in one go — over 30 specialized agents and 70 custom commands, compatible not just with Claude Code but also Codex, Gemini CLI, and Cursor. Beyond coding skills, it covers marketing, product management, compliance review, executive consulting, research, and business operations — great if you'd rather not write a SKILL.md from scratch. Usage is simple: find the folder matching your use case and drop it into your tool's skills directory per the repo's README, no extra configuration needed.
+
 ## 🔌 Plugins / MCP
 
 ### Claude Code: Split Work into Specialized Subagents
@@ -1446,6 +1466,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ Claude Code · Claude`  ·  Claude Code Changelog（2026-07）
 
 > Claude Code recently shipped a handful of small updates: idle background shell processes now get their memory reclaimed automatically; /config gained a new "Dynamic workflow size" setting; /cd now suggests candidate directory paths as you type, matching the experience of /add-dir; and /doctor added a check that proactively flags an overly long CLAUDE.md file in your project and suggests trimming it. Also worth noting: the limited-time "50% higher weekly usage limit" benefit for Pro/Max/Team users, in effect since May 13, expired on July 13. Practical tips: 1) if your CLAUDE.md has grown to several hundred lines full of project minutiae, run /doctor and act on its suggestion — strip out anything stale or already derivable from the code, keeping the file to core conventions and preferences; 2) /cd now shows path candidates as you type, so lean on it instead of typing full directory paths from memory when switching context; 3) if you're a heavy user, check your usage dashboard this week — now that the boosted limit has expired, your weekly quota drops back to the standard level, so plan task scheduling accordingly rather than getting caught off guard by throttling.
+
+### Claude Code Desktop Now Has a Built-In Browser — No More Alt-Tabbing for Docs or Dev Previews
+`🟡 Intermediate ｜ Claude Code`  ·  Anthropic Claude Code 更新日志整理（2026-07）
+
+> Claude Code's desktop app now ships with a built-in browser: Claude can open documentation, a design file, or any web page on its own, then read, click through, and interact with it the same way it already does with your local dev server previews — no more manually switching to Chrome and pasting content back. Typical uses: having it open an API doc to check a parameter, pull up a Figma file to verify spacing, or click through a running localhost page itself to confirm a bug fix actually worked. Compared to feeding it screenshots or pasted text, this lets Claude genuinely "see" and "click" pages — handy for frontend debugging and doc lookups.
 
 ## 💡 Prompt Craft
 

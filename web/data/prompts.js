@@ -6795,7 +6795,7 @@ window.PROMPTS = [
     "updated": "2026-07-13"
   },
   {
-    "id": "start-doubao-qwen-agent-shutdown-0715",
+    "id": "start-doubao-qwen-export-data-today",
     "category": "start",
     "level": "beginner",
     "title_zh": "豆包、通义千问「AI 智能体」功能 7 月 15 日下线：今天必须把数据导出",
@@ -6902,5 +6902,113 @@ window.PROMPTS = [
     ],
     "source": "Claude Code Changelog（2026-07）",
     "updated": "2026-07-14"
+  },
+  {
+    "id": "video-sora-app-api-shutdown",
+    "category": "video",
+    "level": "beginner",
+    "title_zh": "Sora App 已停用、API 9 月 24 日关停：还在等 Sora 的话，现在该看看这几个替代",
+    "title_en": "Sora's App Is Gone and Its API Shuts Down September 24 — Here's What to Use Instead",
+    "body_zh": "OpenAI 的 Sora App 已于 4 月 26 日下线，API 也计划在 2026 年 9 月 24 日彻底停止服务，之前生成的视频、账号数据届时也会一并清空。如果你手里还留着没导出的作品，建议现在就登录导出保存。日常文生视频需求可以直接转向可灵 3.0、即梦 Seedance 2.0、Midjourney V8 的视频能力，三家目前都支持文本/图片生成视频、镜头控制和角色一致性，功能覆盖已经不输 Sora。如果你之前的工作流是调用 Sora API 做批量生成，建议提前评估可灵、即梦的开放 API 或者继续使用 Google Veo，避免 9 月 24 日断档影响线上服务。",
+    "body_en": "OpenAI's Sora app was shut down on April 26, and the Sora API is scheduled to be fully discontinued on September 24, 2026 — along with any videos and account data still stored there. If you have unexported work sitting in Sora, log in and save it now. For everyday text-to-video needs, Kling 3.0, Jimeng's Seedance 2.0, and Midjourney V8's video features are solid replacements — all three now support text/image-to-video, camera control, and character consistency on par with Sora. If your workflow calls the Sora API for batch generation, start evaluating Kling's or Jimeng's open APIs, or fall back to Google Veo, before the September 24 cutoff breaks your pipeline.",
+    "models": [
+      "Sora",
+      "可灵",
+      "即梦",
+      "Midjourney",
+      "Veo"
+    ],
+    "tags": [
+      "Sora",
+      "下线",
+      "替代方案",
+      "文生视频"
+    ],
+    "source": "OpenAI 官方停服公告及第三方报道整理（2026-07）",
+    "updated": "2026-07-15"
+  },
+  {
+    "id": "skill-agent-skills-relaunch-sharing",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "Claude Agent Skills 大版本重制：像共享 Google 文档一样共享技能，还带版本回滚",
+    "title_en": "Claude's Agent Skills Get a Major Relaunch: Share Skills Like Google Docs, With One-Click Rollback",
+    "body_zh": "Anthropic 在 7 月 6 日给 Agent Skills 做了一次「六周攒一次」的大更新。最实用的几点：技能现在可以像 Google 文档一样直接分享给同事协作编辑；新增「仅使用」权限，团队成员能调用你的技能但看不到内部实现，方便保护你的 prompt/脚本不被复制；版本历史升级到 2.0，改坏了可以一键回滚到任意历史版本；批量导入功能可以把你之前零散写的技能一次性搬进新的技能库；定价从免费档起步。如果你已经在用 Claude 写了一堆零散的 Skill 文件，这次更新之后建议整理进技能库统一管理，团队协作会顺畅很多。",
+    "body_en": "On July 6, Anthropic shipped a major \"six weeks of work in one release\" update to Agent Skills. The most useful parts: skills can now be shared with teammates for collaborative editing, Google-Docs style; a new \"use-only\" permission lets others call your skill without seeing its internal implementation, protecting your prompts and scripts from being copied; version history was upgraded to 2.0 with one-click restore to any previous version; a batch-import tool lets you pull all your scattered existing skills into the new library at once; and pricing now starts free. If you already have a pile of loose Skill files, this is a good moment to consolidate them into the shared library — team collaboration gets much smoother.",
+    "models": [
+      "Claude"
+    ],
+    "tags": [
+      "Claude",
+      "Agent Skills",
+      "协作",
+      "版本管理"
+    ],
+    "source": "Anthropic / Agentman 相关报道整理（2026-07-06）",
+    "updated": "2026-07-15"
+  },
+  {
+    "id": "plugin-claude-code-desktop-browser",
+    "category": "plugin",
+    "level": "intermediate",
+    "title_zh": "Claude Code 桌面版内置浏览器：不用切窗口，AI 自己打开文档和你的开发预览页",
+    "title_en": "Claude Code Desktop Now Has a Built-In Browser — No More Alt-Tabbing for Docs or Dev Previews",
+    "body_zh": "Claude Code 桌面版新增了内置浏览器，Claude 可以自己打开文档、设计稿或者任意网页，像操作你本地开发服务器预览一样去读取、点击、和页面交互，不用你手动切到 Chrome 再把内容贴回来。典型用法：让它自己打开某个 API 文档页面查参数、打开 Figma 设计稿核对间距、或者打开本地跑起来的 localhost 页面自己点一遍交互流程验证 bug 是否修好。比起之前只能靠截图或粘贴文本喂给它，这次是真的能「看」和「点」网页了，适合前端调试和查文档场景。",
+    "body_en": "Claude Code's desktop app now ships with a built-in browser: Claude can open documentation, a design file, or any web page on its own, then read, click through, and interact with it the same way it already does with your local dev server previews — no more manually switching to Chrome and pasting content back. Typical uses: having it open an API doc to check a parameter, pull up a Figma file to verify spacing, or click through a running localhost page itself to confirm a bug fix actually worked. Compared to feeding it screenshots or pasted text, this lets Claude genuinely \"see\" and \"click\" pages — handy for frontend debugging and doc lookups.",
+    "models": [
+      "Claude Code"
+    ],
+    "tags": [
+      "Claude Code",
+      "浏览器",
+      "调试",
+      "前端"
+    ],
+    "source": "Anthropic Claude Code 更新日志整理（2026-07）",
+    "updated": "2026-07-15"
+  },
+  {
+    "id": "skill-claude-skills-337-repo",
+    "category": "skill",
+    "level": "beginner",
+    "title_zh": "GitHub 一口气开源 337 个 Claude/Cursor 技能包，工程、市场、产品、合规都有现成的",
+    "title_en": "A New GitHub Repo Open-Sources 337 Skills for Claude and Cursor — Engineering, Marketing, PM, Compliance, All Ready to Use",
+    "body_zh": "开发者 alirezarezvani 在 7 月 7 日发布了一个叫 claude-skills 的开源仓库，一口气收录了 337 个可直接用的技能、插件和 Agent，覆盖 30+ 专用 Agent 和 70+ 自定义命令，不只支持 Claude Code，Codex、Gemini CLI、Cursor 也能直接用。除了写代码相关的技能，还有市场营销、产品管理、合规审查、高管咨询、研究和业务运营方向的技能包，适合不想从零开始写 SKILL.md 的人直接抄作业。用法很简单：找到匹配自己场景的技能文件夹，按仓库 README 的说明放进对应工具的技能目录即可，不需要额外配置。",
+    "body_en": "On July 7, developer alirezarezvani released an open-source repo called claude-skills, packing in 337 ready-to-use skills, plugins, and agents in one go — over 30 specialized agents and 70 custom commands, compatible not just with Claude Code but also Codex, Gemini CLI, and Cursor. Beyond coding skills, it covers marketing, product management, compliance review, executive consulting, research, and business operations — great if you'd rather not write a SKILL.md from scratch. Usage is simple: find the folder matching your use case and drop it into your tool's skills directory per the repo's README, no extra configuration needed.",
+    "models": [
+      "Claude",
+      "Cursor",
+      "Codex",
+      "Gemini CLI"
+    ],
+    "tags": [
+      "Skill",
+      "开源",
+      "Claude Code",
+      "效率工具"
+    ],
+    "source": "GitHub alirezarezvani/claude-skills（2026-07-07）",
+    "updated": "2026-07-15"
+  },
+  {
+    "id": "image-kling3-canvas-agent-batch",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "可灵图片 3.0 全量开放：灵动画布 Agent 模式一句话出分镜，还能批量出组图",
+    "title_en": "Kling Image 3.0 Fully Rolls Out: The Canvas Agent Mode Storyboards From One Prompt, Plus Batch Image Sets",
+    "body_zh": "可灵图片 3.0 系列模型已经全量开放，直出 4K 分辨率、叙事能力和画面质感都比 2.x 有明显提升。这次更新里最值得关注的是「灵动画布」的 Agent 模式：输入一句话描述，它能自动帮你拆分镜头、规划多角度构图，一次性把一个短片需要的分镜草图铺出来，不用你自己一张张单独出图再拼。另外新增了「组图」功能，适合做产品图集、漫画分镜或者社媒轮播图这种需要一次性出一组风格统一图片的场景，比逐张单独生成再调风格要省事很多。上手建议：先用一句话把整体故事/场景描述清楚，再用画布模式微调单张镜头的构图和角度。",
+    "body_en": "Kling's Image 3.0 model series has now fully rolled out, with native 4K output and noticeably better narrative coherence and image quality than the 2.x line. The standout addition is the Canvas's new Agent mode: give it one sentence describing your scene, and it automatically breaks it into shots, plans multi-angle compositions, and lays out a full storyboard draft in one pass — no more generating and stitching images one at a time. There's also a new batch \"image set\" feature, well suited for product galleries, comic storyboards, or social carousel posts where you need a stylistically consistent set of images at once, which is far less fiddly than generating and re-matching style shot by shot. Tip: describe the overall story or scene in one sentence first, then use Canvas mode to fine-tune the composition and angle of individual shots.",
+    "models": [
+      "可灵",
+      "Kling"
+    ],
+    "tags": [
+      "可灵",
+      "文生图",
+      "批量生成",
+      "分镜"
+    ],
+    "source": "快手可灵 AI 官方发布记录整理（2026-07）",
+    "updated": "2026-07-15"
   }
 ];
