@@ -7010,5 +7010,92 @@ window.PROMPTS = [
     ],
     "source": "快手可灵 AI 官方发布记录整理（2026-07）",
     "updated": "2026-07-15"
+  },
+  {
+    "id": "start-kimi-k3-official-launch",
+    "category": "start",
+    "level": "intermediate",
+    "title_zh": "Kimi K3 正式上线：2.8 万亿参数登顶前端代码竞技场，完整权重月底开源",
+    "title_en": "Kimi K3 Officially Launches: 2.8T Params Take #1 on the Frontend Code Arena, Full Weights Open-Sourcing by Month's End",
+    "body_zh": "月之暗面于 7 月 16 日正式发布 Kimi K3，参数规模从此前官宣的 2.5 万亿再涨到 2.8 万亿，是目前全球公开的参数规模最大的开源模型。K3 采用 KDA 混合线性注意力机制和注意力残差架构，原生支持视觉理解，具备 100 万 token 上下文窗口。在 Frontend Code Arena（WebDev Arena）榜单上，K3 以 1679 分登顶全球第一，超过 Claude Fable 5（1631 分）和 GPT-5.6 Sol（1618 分），7 个细分领域里拿下 6 个第一；但综合智能指数只有 57 分，仍落后于 Fable 5 和 GPT-5.6 Sol，说明前端能力强不等于全面领先。目前可通过 kimi.com、Kimi App、Kimi Work 桌面客户端、Kimi Code 和 API 使用，默认思考强度为「max」（最慢最贵），后续会补充 low/high 档位；完整模型权重计划在 7 月 27 日前开源。实操建议：①主要做前端/网页开发、出组件和原型的话，现在就可以在 Kimi Code 里切到 K3，对比一下还原设计稿、写 CSS 的效果和你现在用的模型有多大差距；②默认「max」档速度慢、消耗高，日常小改动没必要用，先拿小任务测一下响应时间和费用心里有数，等 low/high 档上线再按任务复杂度选；③写文章、逻辑推理这类非前端任务 K3 还没到第一梯队，不用急着切过去；④需要私有化部署或二次训练的话，权重要等 7 月 27 日前才放出来，先做好评估和资源规划。",
+    "body_en": "Moonshot AI officially launched Kimi K3 on July 16 — its parameter count grew from the previously announced 2.5 trillion to 2.8 trillion, making it the largest publicly disclosed open-source model in the world. K3 uses a KDA hybrid linear-attention mechanism with attention residuals, natively supports visual understanding, and ships a 1-million-token context window. On the Frontend Code Arena (WebDev Arena) leaderboard, K3 scored 1679 to take #1 globally, beating Claude Fable 5 (1631) and GPT-5.6 Sol (1618), topping 6 of 7 sub-categories — but its overall intelligence index is only 57, still behind Fable 5 and GPT-5.6 Sol, so strong front-end skills don't mean it leads across the board. It's available now via kimi.com, the Kimi app, the Kimi Work desktop client, Kimi Code, and the API, defaulting to \"max\" thinking effort (slowest and priciest, with low/high tiers coming later); full model weights are set to open-source by July 27. Practical tips: 1) if you do front-end or web work — components, prototypes — switch to K3 in Kimi Code now and compare how well it reproduces designs and writes CSS against your current model; 2) the default \"max\" mode is slow and costly, so test it on a small task first to gauge speed and cost before committing, and wait for the low/high tiers for routine edits; 3) for non-front-end work like writing or logical reasoning, K3 isn't yet top-tier, so there's no rush to switch; 4) if you need self-hosting or fine-tuning, the weights aren't out until July 27, so use the time to plan your evaluation and resources.",
+    "models": [
+      "Kimi",
+      "Kimi K3",
+      "月之暗面",
+      "Kimi Code"
+    ],
+    "tags": [
+      "Kimi K3",
+      "月之暗面",
+      "开源模型",
+      "前端开发"
+    ],
+    "source": "腾讯新闻 / 51CTO / 新浪科技（2026-07-16~17）",
+    "updated": "2026-07-18"
+  },
+  {
+    "id": "start-gemini-3-5-pro-launch",
+    "category": "start",
+    "level": "intermediate",
+    "title_zh": "Gemini 3.5 Pro 发布：放弃微调重新预训练，前端生成能力对标 Claude Fable 5",
+    "title_en": "Gemini 3.5 Pro Launches: Google Retrains From Scratch, Front-End Generation Now Rivals Claude Fable 5",
+    "body_zh": "谷歌于 7 月 17 日正式发布 Gemini 3.5 Pro，这次不是在 2.5 Pro 基础上微调，而是重新预训练的全新基座，发布时间也因此从原定的 6 月推迟到 7 月 17 日。升级重点在「前端与视觉代码生成」：UI 设计品味、精简代码生成、SVG 矢量图构建都有明显提升，多项前端测试据称压过 Claude Fable 5，但硬核推理和复杂工程任务上仍落后于头部对手。同时多模态理解（图像/视频/3D 解析）和数学科研能力也有强化，传闻上下文窗口扩大到 200 万 token，并带有 Deep Think 深度推理模式。实操建议：①之前用 Gemini 做长文档/长视频分析的话，先用新模型跑一遍原来的任务，感受一下多模态理解和更大上下文带来的差别；②做前端原型、网页/组件生成、把设计稿转代码这类任务，值得把 Gemini 3.5 Pro 和你现在用的模型（Claude、GPT-5.6 等）都跑一遍同一个需求，对比生成的 UI 质感和代码简洁度；③复杂系统设计、高难度算法这类硬核推理任务，官方口径是 Gemini 3.5 Pro 还落后于头部对手，不用急着换，继续用你验证过的模型；④Deep Think 如果需要额外订阅或算力开销，先用小任务测一次性价比，再决定要不要切日常工作流。",
+    "body_en": "Google officially launched Gemini 3.5 Pro on July 17 — rather than fine-tuning on top of 2.5 Pro, this is a fresh pretrain from scratch, which is why the release slipped from its original June target to July 17. The upgrade's focus is front-end and visual code generation: UI design sense, cleaner code output, and SVG vector construction all saw clear gains, reportedly beating Claude Fable 5 on several front-end benchmarks, though it still trails top rivals on hardcore reasoning and complex engineering tasks. Multimodal understanding (image/video/3D parsing) and math/research capability were also strengthened, with a rumored 2-million-token context window and a new Deep Think reasoning mode. Practical tips: 1) if you use Gemini for long-document or long-video analysis, rerun your existing tasks on the new model to feel the difference in multimodal understanding and the larger context; 2) for front-end prototyping, web/component generation, or turning designs into code, run the same request through Gemini 3.5 Pro and your current model (Claude, GPT-5.6, etc.) and compare UI quality and code cleanliness; 3) for complex system design or hard algorithmic work, Google itself says Gemini 3.5 Pro still lags top rivals, so there's no need to switch — stick with your proven model; 4) if Deep Think requires extra subscription cost or compute, test it on a small task first to judge whether it's worth folding into your daily workflow.",
+    "models": [
+      "Gemini",
+      "Gemini 3.5 Pro"
+    ],
+    "tags": [
+      "Gemini 3.5 Pro",
+      "谷歌",
+      "前端生成",
+      "多模态"
+    ],
+    "source": "36氪 / 腾讯新闻 / Gate US（2026-07-17）",
+    "updated": "2026-07-18"
+  },
+  {
+    "id": "plugin-claude-code-forward-subagent-text",
+    "category": "plugin",
+    "level": "advanced",
+    "title_zh": "Claude Code 2.1.211：子代理输出可透传进 stream-json，云端默认换成 Opus 4.8",
+    "title_en": "Claude Code 2.1.211: Subagent Output Can Now Flow Into stream-json, Cloud Default Switches to Opus 4.8",
+    "body_zh": "Claude Code 近期发布 2.1.211 版本，带来一批稳定性和安全更新：新增 --forward-subagent-text 参数和 CLAUDE_CODE_FORWARD_SUBAGENT_TEXT 环境变量，可以把子代理（subagent）的文字输出和思考过程一起转发进 stream-json 输出流，方便做日志记录、调试或接自己的监控面板；权限确认弹窗修复了一个可视化欺骗漏洞——之前工具输入里可能藏有双向控制符、零宽字符或look-alike 引号，会让审批弹窗显示的内容和实际执行的命令不一致，现在已统一过滤；后台空闲 shell 进程的内存回收、Windows 和 Chrome 相关的若干 bug 也一并修复。同时在 Bedrock、Vertex AI、AWS 这几个云端渠道，Claude Code 的默认模型已切换为 Claude Opus 4.8。实操建议：①如果你在用 Claude Code 搭多代理工作流，需要把每个子代理具体在想什么、输出了什么完整记录下来做审计或调试，升级后加上 --forward-subagent-text（或设置对应环境变量）就能拿到完整轨迹，不用自己额外埋点；②团队里如果有人通过聊天工具或外部渠道审批 Claude Code 的操作权限，这次的权限弹窗防伪修复值得让大家都升级一遍，避免被精心构造的输入内容误导审批；③用 Bedrock/Vertex/AWS 跑 Claude Code 的团队，注意默认模型已变成 Opus 4.8，如果你的成本预算是按之前默认模型估算的，升级前最好重新核对预算和限流设置。",
+    "body_en": "Claude Code recently shipped version 2.1.211 with a batch of stability and security updates: a new --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable let you forward a subagent's text output and thinking into the stream-json output stream, useful for logging, debugging, or feeding your own monitoring dashboard; the permission-confirmation dialog fixed a visual-spoofing bug where tool input could hide bidirectional-override characters, zero-width characters, or look-alike quote marks that made the approval prompt show something different from what would actually run — all of that is now filtered; memory reclamation for idle background shell processes, plus several Windows and Chrome fixes, also landed. On Bedrock, Vertex AI, and AWS, Claude Code's default model has also switched to Claude Opus 4.8. Practical tips: 1) if you run multi-agent workflows in Claude Code and need a full audit trail of what each subagent was thinking and outputting, add --forward-subagent-text (or the equivalent env var) after upgrading to capture it without building your own instrumentation; 2) if anyone on your team approves Claude Code's action permissions via chat tools or external channels, this fix is worth rolling out everywhere to prevent crafted inputs from spoofing the approval prompt; 3) teams running Claude Code on Bedrock/Vertex/AWS should note the default model is now Opus 4.8 — if your cost estimates were based on the old default, recheck your budget and rate limits before upgrading.",
+    "models": [
+      "Claude Code",
+      "Claude Opus 4.8"
+    ],
+    "tags": [
+      "Claude Code",
+      "更新日志",
+      "多代理",
+      "stream-json"
+    ],
+    "source": "Claude Code Changelog / GitHub Releases（2026-07）",
+    "updated": "2026-07-18"
+  },
+  {
+    "id": "video-seedance-2-5-api-full-rollout",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "即梦 Seedance 2.5 API 全量开放：单条视频冲到 30 秒，一次能塞 50 个参考素材",
+    "title_en": "Jimeng's Seedance 2.5 API Fully Opens: 30-Second Clips, Up to 50 Reference Assets in One Generation",
+    "body_zh": "字节跳动即梦（Dreamina）旗下 Seedance 2.5 已于 7 月 16 日全量开放 API，单段视频生成时长从 2.0 版本的 15 秒直接翻倍到 30 秒原生直出，同时支持一次导入最多 50 个全模态参考素材（文本、图片、视频、音频混合），可控性和精细化程度明显提升，官方定位为「电影级」AI 视频生成。实操建议：①之前受限于 15 秒时长要靠多段拼接做完整叙事的话，现在可以直接用 30 秒一镜到底，减少拼接痕迹和转场穿帮；②做角色/产品一致性内容（同一个虚拟人反复出镜、同一款产品在不同场景展示），可以把角色或产品的多张参考图、参考视频一次性全部喂给模型（上限 50 个），不用每次都重新描述外观细节；③API 刚全量开放，正式跑量之前先用少量测试用例核对计费方式和配额，官网积分价格近期有过调整，避免上线后成本超预期；④和可灵、Midjourney 视频功能对比时，可以拿同一个分镜脚本分别跑一遍，重点看运动流畅度和长镜头一致性谁更稳。",
+    "body_en": "ByteDance's Jimeng (Dreamina) fully opened the Seedance 2.5 API on July 16 — single-clip generation length doubled from 15 seconds in version 2.0 to a native 30 seconds, and it now supports importing up to 50 fully multimodal reference assets (mixing text, images, video, and audio) in one go, with noticeably better controllability and detail; the team is positioning it as \"cinema-grade\" AI video generation. Practical tips: 1) if 15-second clips previously forced you to stitch multiple segments together for a full narrative, you can now shoot a continuous 30-second take instead, cutting down on visible seams and transition glitches; 2) for character or product consistency — the same virtual character or product appearing across scenes — feed the model multiple reference images or videos of that subject at once (up to 50), instead of re-describing its appearance every time; 3) since the API just fully opened, run a small batch of test cases to confirm pricing and quota before scaling up — the official credit pricing has changed recently, so check costs before going live; 4) when comparing against Kling or Midjourney's video features, run the same storyboard script through each and focus on which one holds up better on motion smoothness and long-shot consistency.",
+    "models": [
+      "即梦",
+      "Seedance",
+      "Seedance 2.5"
+    ],
+    "tags": [
+      "即梦",
+      "Seedance",
+      "文生视频",
+      "API"
+    ],
+    "source": "UIED 学习社区 / 流媒体网（2026-07-16）",
+    "updated": "2026-07-18"
   }
 ];

@@ -16,12 +16,12 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 ### Categories
 
-- 🚀 **Getting Started** (31)
+- 🚀 **Getting Started** (33)
 - 🎭 **Role Prompts** (149)
 - 🖼️ **Text-to-Image** (20)
-- 🎬 **Text-to-Video** (26)
+- 🎬 **Text-to-Video** (27)
 - 🧩 **Skills** (35)
-- 🔌 **Plugins / MCP** (23)
+- 🔌 **Plugins / MCP** (24)
 - 💡 **Prompt Craft** (59)
 
 ## 🚀 Getting Started
@@ -180,6 +180,16 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ Kimi · Kimi K3 · 月之暗面`  ·  新浪科技 / AI工具宝箱（2026-07）
 
 > In July 2026, Moonshot AI confirmed its next flagship model, Kimi K3, will launch this month with a 2.5-trillion-parameter MoE architecture — surpassing DeepSeek V4 Pro (1.6T) and ERNIE 5.0 (2.4T) to become the largest publicly disclosed domestic model. It also ships a 1-million-character context window and native multimodal capability that unifies video understanding, chart analysis, and audio transcription in a single model. Moonshot's valuation reportedly hit $31.5B with ARR past $300M around the same time. Practical tips: 1) a bigger parameter count doesn't automatically make every task better — for light everyday chat or writing, there's no rush to switch until you've seen real-world speed and cost after launch; 2) if you regularly work with long documents, long videos, or complex charts that need one model to handle multiple input types at once, K3 is worth testing first once it's live; 3) Moonshot has only committed to a "this month" launch window without a firm date or pricing yet, so check its official channels for confirmed pricing tiers before committing, rather than paying through the wrong entry point.
+
+### Kimi K3 Officially Launches: 2.8T Params Take #1 on the Frontend Code Arena, Full Weights Open-Sourcing by Month's End
+`🟡 Intermediate ｜ Kimi · Kimi K3 · 月之暗面 · Kimi Code`  ·  腾讯新闻 / 51CTO / 新浪科技（2026-07-16~17）
+
+> Moonshot AI officially launched Kimi K3 on July 16 — its parameter count grew from the previously announced 2.5 trillion to 2.8 trillion, making it the largest publicly disclosed open-source model in the world. K3 uses a KDA hybrid linear-attention mechanism with attention residuals, natively supports visual understanding, and ships a 1-million-token context window. On the Frontend Code Arena (WebDev Arena) leaderboard, K3 scored 1679 to take #1 globally, beating Claude Fable 5 (1631) and GPT-5.6 Sol (1618), topping 6 of 7 sub-categories — but its overall intelligence index is only 57, still behind Fable 5 and GPT-5.6 Sol, so strong front-end skills don't mean it leads across the board. It's available now via kimi.com, the Kimi app, the Kimi Work desktop client, Kimi Code, and the API, defaulting to "max" thinking effort (slowest and priciest, with low/high tiers coming later); full model weights are set to open-source by July 27. Practical tips: 1) if you do front-end or web work — components, prototypes — switch to K3 in Kimi Code now and compare how well it reproduces designs and writes CSS against your current model; 2) the default "max" mode is slow and costly, so test it on a small task first to gauge speed and cost before committing, and wait for the low/high tiers for routine edits; 3) for non-front-end work like writing or logical reasoning, K3 isn't yet top-tier, so there's no rush to switch; 4) if you need self-hosting or fine-tuning, the weights aren't out until July 27, so use the time to plan your evaluation and resources.
+
+### Gemini 3.5 Pro Launches: Google Retrains From Scratch, Front-End Generation Now Rivals Claude Fable 5
+`🟡 Intermediate ｜ Gemini · Gemini 3.5 Pro`  ·  36氪 / 腾讯新闻 / Gate US（2026-07-17）
+
+> Google officially launched Gemini 3.5 Pro on July 17 — rather than fine-tuning on top of 2.5 Pro, this is a fresh pretrain from scratch, which is why the release slipped from its original June target to July 17. The upgrade's focus is front-end and visual code generation: UI design sense, cleaner code output, and SVG vector construction all saw clear gains, reportedly beating Claude Fable 5 on several front-end benchmarks, though it still trails top rivals on hardcore reasoning and complex engineering tasks. Multimodal understanding (image/video/3D parsing) and math/research capability were also strengthened, with a rumored 2-million-token context window and a new Deep Think reasoning mode. Practical tips: 1) if you use Gemini for long-document or long-video analysis, rerun your existing tasks on the new model to feel the difference in multimodal understanding and the larger context; 2) for front-end prototyping, web/component generation, or turning designs into code, run the same request through Gemini 3.5 Pro and your current model (Claude, GPT-5.6, etc.) and compare UI quality and code cleanliness; 3) for complex system design or hard algorithmic work, Google itself says Gemini 3.5 Pro still lags top rivals, so there's no need to switch — stick with your proven model; 4) if Deep Think requires extra subscription cost or compute, test it on a small task first to judge whether it's worth folding into your daily workflow.
 
 ## 🎭 Role Prompts
 
@@ -1178,6 +1188,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > OpenAI's Sora app was shut down on April 26, and the Sora API is scheduled to be fully discontinued on September 24, 2026 — along with any videos and account data still stored there. If you have unexported work sitting in Sora, log in and save it now. For everyday text-to-video needs, Kling 3.0, Jimeng's Seedance 2.0, and Midjourney V8's video features are solid replacements — all three now support text/image-to-video, camera control, and character consistency on par with Sora. If your workflow calls the Sora API for batch generation, start evaluating Kling's or Jimeng's open APIs, or fall back to Google Veo, before the September 24 cutoff breaks your pipeline.
 
+### Jimeng's Seedance 2.5 API Fully Opens: 30-Second Clips, Up to 50 Reference Assets in One Generation
+`🟡 Intermediate ｜ 即梦 · Seedance · Seedance 2.5`  ·  UIED 学习社区 / 流媒体网（2026-07-16）
+
+> ByteDance's Jimeng (Dreamina) fully opened the Seedance 2.5 API on July 16 — single-clip generation length doubled from 15 seconds in version 2.0 to a native 30 seconds, and it now supports importing up to 50 fully multimodal reference assets (mixing text, images, video, and audio) in one go, with noticeably better controllability and detail; the team is positioning it as "cinema-grade" AI video generation. Practical tips: 1) if 15-second clips previously forced you to stitch multiple segments together for a full narrative, you can now shoot a continuous 30-second take instead, cutting down on visible seams and transition glitches; 2) for character or product consistency — the same virtual character or product appearing across scenes — feed the model multiple reference images or videos of that subject at once (up to 50), instead of re-describing its appearance every time; 3) since the API just fully opened, run a small batch of test cases to confirm pricing and quota before scaling up — the official credit pricing has changed recently, so check costs before going live; 4) when comparing against Kling or Midjourney's video features, run the same storyboard script through each and focus on which one holds up better on motion smoothness and long-shot consistency.
+
 ## 🧩 Skills
 
 ### Skill: prompt auto-optimizer
@@ -1471,6 +1486,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ Claude Code`  ·  Anthropic Claude Code 更新日志整理（2026-07）
 
 > Claude Code's desktop app now ships with a built-in browser: Claude can open documentation, a design file, or any web page on its own, then read, click through, and interact with it the same way it already does with your local dev server previews — no more manually switching to Chrome and pasting content back. Typical uses: having it open an API doc to check a parameter, pull up a Figma file to verify spacing, or click through a running localhost page itself to confirm a bug fix actually worked. Compared to feeding it screenshots or pasted text, this lets Claude genuinely "see" and "click" pages — handy for frontend debugging and doc lookups.
+
+### Claude Code 2.1.211: Subagent Output Can Now Flow Into stream-json, Cloud Default Switches to Opus 4.8
+`🔴 Advanced ｜ Claude Code · Claude Opus 4.8`  ·  Claude Code Changelog / GitHub Releases（2026-07）
+
+> Claude Code recently shipped version 2.1.211 with a batch of stability and security updates: a new --forward-subagent-text flag and CLAUDE_CODE_FORWARD_SUBAGENT_TEXT environment variable let you forward a subagent's text output and thinking into the stream-json output stream, useful for logging, debugging, or feeding your own monitoring dashboard; the permission-confirmation dialog fixed a visual-spoofing bug where tool input could hide bidirectional-override characters, zero-width characters, or look-alike quote marks that made the approval prompt show something different from what would actually run — all of that is now filtered; memory reclamation for idle background shell processes, plus several Windows and Chrome fixes, also landed. On Bedrock, Vertex AI, and AWS, Claude Code's default model has also switched to Claude Opus 4.8. Practical tips: 1) if you run multi-agent workflows in Claude Code and need a full audit trail of what each subagent was thinking and outputting, add --forward-subagent-text (or the equivalent env var) after upgrading to capture it without building your own instrumentation; 2) if anyone on your team approves Claude Code's action permissions via chat tools or external channels, this fix is worth rolling out everywhere to prevent crafted inputs from spoofing the approval prompt; 3) teams running Claude Code on Bedrock/Vertex/AWS should note the default model is now Opus 4.8 — if your cost estimates were based on the old default, recheck your budget and rate limits before upgrading.
 
 ## 💡 Prompt Craft
 
