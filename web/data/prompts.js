@@ -7097,5 +7097,90 @@ window.PROMPTS = [
     ],
     "source": "UIED 学习社区 / 流媒体网（2026-07-16）",
     "updated": "2026-07-18"
+  },
+  {
+    "id": "start-grok-4-5-launch",
+    "category": "start",
+    "level": "intermediate",
+    "title_zh": "Grok 4.5 正式发布：联合 Cursor 打造编程旗舰，价格砍到对手六成以下",
+    "title_en": "Grok 4.5 Launches: Built With Cursor for Coding, Priced Under 40% of Rivals",
+    "body_zh": "xAI（现更名 SpaceXAI）于 7 月 9 日正式发布 Grok 4.5，基于 1.5 万亿参数的 V9 底座，联合 Cursor 引入海量真实开发者编程交互数据训练而成，专为编码和 Agent 场景打造。核心跑分上，Grok 4.5 在 SWE-bench Pro 拿到 64.7%，超过 GPT-5.5；Terminal-Bench 2.1 以 83.3% 逼近 GPT-5.5（仅差 0.1 分）；官方称推理速度达 80 TPS，token 消耗只有 Claude Opus 4.8 的四分之一。最大亮点是价格：每百万 token 输入 2 美元、输出 6 美元，比同代一线模型便宜六成以上，同时保留联网获取实时资讯的能力，回答时效性问题更可靠。马斯克已预告 Grok 4.5 上下文窗口将扩到 100 万 token，并有 2 万亿参数的 Grok 4.6 在路上（7 月 18 日消息称已进入训练最后阶段）。实操建议：①做编码 Agent、CLI 工具类任务，尤其是和 Cursor 搭配使用的场景，值得把 Grok 4.5 加入模型对比池，用同一个真实 issue 跑一遍类似 SWE-bench 的任务，感受下解决率和速度；②涉及需要联网核实最新事件、价格、新闻类的问答，可以优先试 Grok 4.5，它的实时信息获取是强项；③预算敏感、调用量大的团队，可以先用小规模流量测试 Grok 4.5 的输出质量，如果能顶上目前用 GPT/Claude 处理的部分任务，长期成本能省下不少；④不要着急锁定长期集成，2 万亿参数的 Grok 4.6 已经在路上，近期做技术选型时预留好切换空间。",
+    "body_en": "xAI (now rebranded SpaceXAI) officially launched Grok 4.5 on July 9 — built on a 1.5-trillion-parameter V9 base and trained jointly with Cursor on massive volumes of real developer coding interaction data, purpose-built for coding and agent scenarios. On benchmarks, Grok 4.5 scored 64.7% on SWE-bench Pro (beating GPT-5.5), 83.3% on Terminal-Bench 2.1 (just 0.1 points behind GPT-5.5), and xAI claims 80 TPS inference speed with token consumption at just a quarter of Claude Opus 4.8's. The biggest draw is pricing: $2 per million input tokens and $6 per million output tokens — over 60% cheaper than comparable flagship models — while retaining real-time web access, making it more reliable for time-sensitive questions. Musk has already teased a 1-million-token context window upgrade, with a 2-trillion-parameter Grok 4.6 reportedly entering its final training stage as of July 18. Practical tips: 1) for coding-agent or CLI-tool work, especially paired with Cursor, add Grok 4.5 to your model comparison pool and run it against the same real-world issue you'd use for an SWE-bench-style test to gauge resolve rate and speed; 2) for questions needing up-to-date facts, prices, or news, try Grok 4.5 first since real-time web access is its strength; 3) budget-conscious, high-volume teams should test Grok 4.5 on a small slice of traffic — if it can take over tasks you're currently running on GPT or Claude, the long-term savings add up; 4) don't lock in long-term integrations just yet — the 2-trillion-parameter Grok 4.6 is already on the way, so leave room to switch when you make near-term tooling decisions.",
+    "models": [
+      "Grok",
+      "Grok 4.5",
+      "xAI"
+    ],
+    "tags": [
+      "Grok 4.5",
+      "xAI",
+      "编程模型",
+      "低价"
+    ],
+    "source": "OSCHINA / 搜狐 / 新浪科技（2026-07-09~18）",
+    "updated": "2026-07-19"
+  },
+  {
+    "id": "start-claude-fable5-credit-switch",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "Claude Fable 5 今天最后免费：7 月 20 日起全面切换按量计费",
+    "title_en": "Today's the Last Free Day for Claude Fable 5 — Metered Credits Kick In July 20",
+    "body_zh": "Anthropic 已经两次延长 Claude Fable 5 的限时免费额度，从最早的 7 月 7 日先延到 7 月 12 日，再延到 7 月 19 日（太平洋时间晚上 11:59），这是目前官方给出的最后一个免费节点。7 月 19 日之前，Pro、Max、Team 以及部分按坐席收费的 Enterprise 用户，每周额度中最多 50% 可以免费用在 Fable 5 上；过了这个时间点，全部切换成按量付费的 usage credits，确认费率是输入每百万 token 10 美元、输出每百万 token 50 美元。如果额度耗尽又没有提前开通 usage credits，Fable 5 会直接停止响应——不管你是在写到一半还是刚开始新会话，没有自动降级到其他模型的兜底机制。实操建议：①今天之内检查一下自己的账号计划（Pro/Max/Team/Enterprise）和账单页面，确认 usage credits 有没有开通，避免明天需要用的时候突然卡住；②手头有用 Fable 5 处理到一半的长文档解析、复杂推理任务，尽量今天之内跑完，明天开始每次调用都要算钱；③长期高频使用 Fable 5 的话，提前估算一下输入输出 token 量，按 10 美元/50 美元每百万 token 的单价粗算月度成本，跟你现在的订阅费对比一下值不值；④如果暂时不想开通按量付费，也可以在明天起临时切回 Claude Opus 或者其他模型，等评估清楚成本再决定要不要长期用 Fable 5。",
+    "body_en": "Anthropic has already extended Claude Fable 5's free included access twice — first from July 7 to July 12, then to July 19 at 11:59pm Pacific — and this is the last extension announced so far. Through July 19, up to 50% of weekly usage on Pro, Max, Team, and select seat-based Enterprise plans can go toward Fable 5 at no extra cost; after that, everything switches to metered usage credits at the confirmed rate of $10 per million input tokens and $50 per million output tokens. If your allowance runs out and you haven't set up usage credits in advance, Fable 5 simply stops responding — mid-task or mid-session, with no automatic fallback to another model. Practical tips: 1) check your plan (Pro/Max/Team/Enterprise) and billing page today to confirm whether usage credits are set up, so you're not caught off guard tomorrow; 2) if you have a long-document parse or complex reasoning task half-done in Fable 5, try to finish it today — every call costs money starting tomorrow; 3) if you're a heavy, ongoing Fable 5 user, roughly estimate your input/output token volume and multiply by the $10/$50-per-million rate to see how it compares to what you're paying now; 4) if you'd rather not commit to metered billing yet, you can temporarily switch back to Claude Opus or another model starting tomorrow while you work out whether Fable 5's cost is worth it long-term.",
+    "models": [
+      "Claude",
+      "Claude Fable 5",
+      "Claude Opus 4.8"
+    ],
+    "tags": [
+      "Claude Fable 5",
+      "计费",
+      "Anthropic",
+      "usage credits"
+    ],
+    "source": "Forbes / BleepingComputer / Anthropic Newsroom（2026-07-13~19）",
+    "updated": "2026-07-19"
+  },
+  {
+    "id": "start-tencent-hunyuan-hy3-quantized-local-deploy",
+    "category": "start",
+    "level": "advanced",
+    "title_zh": "腾讯混元 Hy3 出极限量化版：单张显卡就能跑 295B 大模型",
+    "title_en": "Tencent's Hunyuan Hy3 Gets an Extreme Quantized Build — Run a 295B Model on a Single GPU",
+    "body_zh": "腾讯混元 Hy3 于 7 月 6 日正式开源（Apache 2.0 协议，GitHub / HuggingFace / 魔搭 ModelScope 均已上线），是腾讯自研的 MoE 架构旗舰模型，总参数 295B，推理时只激活 21B，原生支持 256K 超长上下文，Agent 任务解决率据称跃升至 90%。7 月 14 日，官方追加发布了极限量化版本，专门解决「参数量太大、本地跑不动」的问题：IQ1_M（1bit）版权重压到 85.5GiB，压缩比 6.7 倍，单张 96GB 显卡就能完整加载；Q4_K_M（4bit）版体积 169.9GiB，双卡就能稳定运行，官方实测输出质量已经很接近满血原版。开源不到 24 小时就被 OpenCode 等工具接入、免费提供给用户使用。实操建议：①手头有 96GB 显存单卡（如 H100/H200）或者能凑双卡环境的话，可以直接下载 IQ1_M 或 Q4_K_M 量化包本地部署，用来跑长文档、代码或 Agent 类任务，不用再迁就云端 API 的速率限制；②本地部署前先用官方或社区提供的 benchmark 跑一遍，对比量化版和你计划替代的云端模型在关键任务上的效果差异，1bit 版本压缩到极限，个别复杂任务上可能有轻微精度损失；③如果没有量化经验，优先选择已经被 OpenCode 等主流工具打包接入的版本，配置门槛更低；④做隐私敏感或者需要离线跑的项目（内部文档处理、代码审计），Hy3 量化版是目前少数能在消费级/准专业级硬件上跑得动的 295B 级别开源模型，值得纳入本地化方案的候选清单。",
+    "body_en": "Tencent's Hunyuan Hy3 went fully open-source on July 6 (Apache 2.0, live on GitHub, HuggingFace, and ModelScope) — it's Tencent's in-house flagship MoE model with 295B total parameters but only 21B active during inference, a native 256K context window, and a reported 90% success rate on agent tasks. On July 14, the team followed up with an extreme quantization release aimed squarely at the \"too big to run locally\" problem: the IQ1_M (1-bit) build compresses weights to just 85.5GiB (a 6.7x reduction), fitting entirely on a single 96GB GPU, while the Q4_K_M (4-bit) build comes in at 169.9GiB and runs stably across two GPUs — with reported output quality staying very close to the full-precision original. Within 24 hours of the open-source release, tools like OpenCode had already wired it in and made it free to use. Practical tips: 1) if you have a single 96GB-VRAM card (e.g. H100/H200) or can put together a two-GPU setup, download the IQ1_M or Q4_K_M quantized build and deploy locally for long-document, code, or agent workloads without fighting cloud API rate limits; 2) before committing, run the official or community benchmarks to compare the quantized build against whatever cloud model you're replacing — the 1-bit build is compressed to the extreme and may show slight accuracy loss on especially complex tasks; 3) if you have no quantization experience, start with a build already packaged by a mainstream tool like OpenCode for a lower setup bar; 4) for privacy-sensitive or offline projects (internal document processing, code audits), Hy3's quantized build is one of the few 295B-class open models that actually runs on consumer/prosumer hardware — worth adding to your local-deployment shortlist.",
+    "models": [
+      "腾讯混元",
+      "Hunyuan Hy3"
+    ],
+    "tags": [
+      "腾讯混元",
+      "开源模型",
+      "本地部署",
+      "量化"
+    ],
+    "source": "新浪财经 / AI工具宝箱 / CSDN（2026-07-06~14）",
+    "updated": "2026-07-19"
+  },
+  {
+    "id": "plugin-claude-code-v2-1-212-fork-limits",
+    "category": "plugin",
+    "level": "advanced",
+    "title_zh": "Claude Code 2.1.212：新增 /fork 分支会话，给 WebSearch 和子代理加上「安全阀」",
+    "title_en": "Claude Code 2.1.212: New /fork Command, Plus Safety Caps on WebSearch and Subagent Spawning",
+    "body_zh": "继 2.1.211 之后，Claude Code 很快发布了 2.1.212 版本。这次的重点是给「失控」场景加安全阀：新增 /fork 命令，可以把当前对话完整复制到一个新的后台会话里独立运行，原会话不受影响，适合想在不打断当前进度的情况下「分叉」出去试错或探索另一条路径；新增会话级 WebSearch 调用上限（默认 200 次）和子智能体（subagent）生成上限（默认 200 个），防止多代理工作流或搜索循环意外失控、无限消耗配额；MCP 工具调用如果超过 2 分钟没返回，会自动挪到后台执行，不再卡住主流程；同时修复了计划模式（plan mode）下会误自动执行文件修改命令等多个问题。实操建议：①想在同一个复杂任务上并行尝试两种不同思路，又不想搞丢已有进度的话，直接用 /fork 开一个分支会话，两条路径互不干扰，效果好的那条留下即可；②如果你的工作流本身需要超过 200 次 WebSearch 或 200 个子代理（比如大规模爬取、超大批量任务拆解），记得升级后检查默认上限，需要的话通过配置项调高，否则任务可能提前被截断；③长耗时的 MCP 工具调用不用再担心卡住整个会话，但要留意后台任务的完成通知机制，避免结果生成了却没注意到；④用 plan mode 审核 AI 改动计划的团队，这次修复了自动执行文件修改的漏洞，值得尽快升级，避免计划阶段的操作被「抢跑」。",
+    "body_en": "Right after 2.1.211, Claude Code quickly shipped 2.1.212, this time focused on adding safety valves for runaway scenarios: a new /fork command lets you clone the current conversation into a new background session that runs independently, leaving the original untouched — handy for branching off to try a different approach without losing your current progress; new session-level caps on WebSearch calls (default 200) and subagent spawning (default 200) prevent multi-agent workflows or search loops from spiraling out of control and burning through quota; MCP tool calls that take longer than 2 minutes now automatically move to the background instead of blocking the main flow; and several bugs were fixed, including one where plan mode could accidentally auto-execute file-modification commands. Practical tips: 1) if you want to try two different approaches on the same complex task in parallel without risking your existing progress, use /fork to branch off a new session — keep whichever path works out; 2) if your workflow genuinely needs more than 200 WebSearch calls or 200 subagents (large-scale crawling, huge task decomposition), check the new default caps after upgrading and raise them via config if needed, or tasks may get cut short; 3) long-running MCP tool calls no longer block your whole session, but keep an eye on how background task completion is surfaced so you don't miss a result; 4) teams that rely on plan mode to review AI's intended changes before they run should upgrade soon — this fix closes a gap where file-modification commands could jump ahead of the review step.",
+    "models": [
+      "Claude Code"
+    ],
+    "tags": [
+      "Claude Code",
+      "更新日志",
+      "fork",
+      "安全"
+    ],
+    "source": "Claude Code Changelog / GitHub Releases（2026-07-18）",
+    "updated": "2026-07-19"
   }
 ];
