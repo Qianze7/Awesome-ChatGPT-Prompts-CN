@@ -16,13 +16,13 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 ### Categories
 
-- 🚀 **Getting Started** (36)
+- 🚀 **Getting Started** (37)
 - 🎭 **Role Prompts** (149)
 - 🖼️ **Text-to-Image** (20)
 - 🎬 **Text-to-Video** (27)
 - 🧩 **Skills** (35)
-- 🔌 **Plugins / MCP** (25)
-- 💡 **Prompt Craft** (59)
+- 🔌 **Plugins / MCP** (26)
+- 💡 **Prompt Craft** (61)
 
 ## 🚀 Getting Started
 
@@ -205,6 +205,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🔴 Advanced ｜ 腾讯混元 · Hunyuan Hy3`  ·  新浪财经 / AI工具宝箱 / CSDN（2026-07-06~14）
 
 > Tencent's Hunyuan Hy3 went fully open-source on July 6 (Apache 2.0, live on GitHub, HuggingFace, and ModelScope) — it's Tencent's in-house flagship MoE model with 295B total parameters but only 21B active during inference, a native 256K context window, and a reported 90% success rate on agent tasks. On July 14, the team followed up with an extreme quantization release aimed squarely at the "too big to run locally" problem: the IQ1_M (1-bit) build compresses weights to just 85.5GiB (a 6.7x reduction), fitting entirely on a single 96GB GPU, while the Q4_K_M (4-bit) build comes in at 169.9GiB and runs stably across two GPUs — with reported output quality staying very close to the full-precision original. Within 24 hours of the open-source release, tools like OpenCode had already wired it in and made it free to use. Practical tips: 1) if you have a single 96GB-VRAM card (e.g. H100/H200) or can put together a two-GPU setup, download the IQ1_M or Q4_K_M quantized build and deploy locally for long-document, code, or agent workloads without fighting cloud API rate limits; 2) before committing, run the official or community benchmarks to compare the quantized build against whatever cloud model you're replacing — the 1-bit build is compressed to the extreme and may show slight accuracy loss on especially complex tasks; 3) if you have no quantization experience, start with a build already packaged by a mainstream tool like OpenCode for a lower setup bar; 4) for privacy-sensitive or offline projects (internal document processing, code audits), Hy3's quantized build is one of the few 295B-class open models that actually runs on consumer/prosumer hardware — worth adding to your local-deployment shortlist.
+
+### ChatGPT Rolls Out Unified Search Across Chats, Projects, Images and Documents
+`🟢 Beginner ｜ ChatGPT · OpenAI`  ·  Notebookcheck / Progressive Robot（2026-07-14）
+
+> On July 14, 2026, OpenAI rolled out unified search across ChatGPT web, iOS, and Android to all plans — Free, Plus, Pro, Team, and Enterprise. Previously, finding a plan you discussed weeks ago, an image you generated, or a document you uploaded meant manually scrolling back through chat history; now a single search box covers everything, with filters for chats, projects, images, and documents. Practical tips: 1) if you use ChatGPT as a long-term store of material (interview prep, project plans, generated illustrations), you can now search with natural-language keywords instead of maintaining your own "chat index"; 2) results can be filtered by type, so filter to "images" when hunting for a picture instead of opening dozens of conversations one by one; 3) for team/enterprise accounts, this effectively turns ChatGPT into a lightweight knowledge base — keep important outputs (retros, plans) inside the same Project so search works even better alongside it.
 
 ## 🎭 Role Prompts
 
@@ -1512,6 +1517,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > Right after 2.1.211, Claude Code quickly shipped 2.1.212, this time focused on adding safety valves for runaway scenarios: a new /fork command lets you clone the current conversation into a new background session that runs independently, leaving the original untouched — handy for branching off to try a different approach without losing your current progress; new session-level caps on WebSearch calls (default 200) and subagent spawning (default 200) prevent multi-agent workflows or search loops from spiraling out of control and burning through quota; MCP tool calls that take longer than 2 minutes now automatically move to the background instead of blocking the main flow; and several bugs were fixed, including one where plan mode could accidentally auto-execute file-modification commands. Practical tips: 1) if you want to try two different approaches on the same complex task in parallel without risking your existing progress, use /fork to branch off a new session — keep whichever path works out; 2) if your workflow genuinely needs more than 200 WebSearch calls or 200 subagents (large-scale crawling, huge task decomposition), check the new default caps after upgrading and raise them via config if needed, or tasks may get cut short; 3) long-running MCP tool calls no longer block your whole session, but keep an eye on how background task completion is surfaced so you don't miss a result; 4) teams that rely on plan mode to review AI's intended changes before they run should upgrade soon — this fix closes a gap where file-modification commands could jump ahead of the review step.
 
+### Claude Code Ships Screen Reader Mode and an EndConversation Tool to Cut Off Abusive Sessions
+`🟡 Intermediate ｜ Claude Code · Anthropic`  ·  Claude Code Docs · Week 29, 2026-07-13～07-17
+
+> In its Week 29 (July 13-17, 2026) update, Claude Code shipped a "screen reader mode" that replaces the terminal's visual elements — boxes, spinners, in-place redraws — with plain, linear, labeled text lines that a screen reader can read cleanly; enable it with `claude --ax-screen-reader` at launch, the `CLAUDE_AX_SCREEN_READER=1` environment variable, or `"axScreenReader": true` in settings. The same update batch added an EndConversation tool and progress heartbeats for long-running tasks. Practical tips: 1) developers who are blind or rely on screen readers can enable any of the three methods above — terminal tables get rendered as "Field: value" pairs that are far easier to read aloud; 2) the mode applies globally in settings, so on a shared team machine, prefer the environment variable or launch flag if only you need it, to avoid changing the terminal experience for collaborators; 3) the EndConversation tool is a safety mechanism Claude uses on its own to end sessions with highly abusive users or clear jailbreak attempts — normal usage never triggers it, so there's nothing to configure.
+
 ## 💡 Prompt Craft
 
 ### Tip: show examples, don't just describe
@@ -1834,5 +1844,15 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ DeepSeek · DeepSeek V4 · DeepSeek V4-Pro · DeepSeek V4-Flash`  ·  DeepSeek 官方发布 / API 文档（2026-07）
 
 > In July 2026 DeepSeek officially launched its V4 series API with two versions at once: V4-Pro (1.6T parameters, 49B activated), built for complex engineering and hard reasoning tasks and billed as a "code-generation ceiling," and V4-Flash (284B parameters, 13B activated), which comes close to Pro's intelligence at roughly a tenth of the price. Both natively support a 1M-token context window, a deep-thinking mode, structured output, and function calling. The price gap is large: on input tokens, Pro runs about ¥12/million vs. Flash's ¥1/million; on output, Pro is about ¥24/million vs. Flash's ¥2/million — a 12x difference. How to choose: 1) for high-frequency, everyday coding and Q&A tasks — small bug fixes, routine functions, simple questions — default to Flash, since the cost-performance is much better; 2) reserve Pro for tasks that genuinely justify the strongest model — complex system design, hard algorithmic problems, mission-critical code that needs top accuracy; 3) if you're still on the old API, note that DeepSeek has announced it will retire the old model names (deepseek-chat / deepseek-reasoner) in late July — update your code to deepseek-v4-pro or deepseek-v4-flash ahead of time, and keep the previously announced peak/off-peak pricing in mind (weekday 9-12 and 14-18 are peak hours with doubled API prices).
+
+### ChatGPT Custom Instructions Limit Triples to 5,000 Characters — Time to Rewrite Your System Prompt
+`🟢 Beginner ｜ ChatGPT · OpenAI`  ·  Cryptobriefing / KuCoin News（2026-07-15）
+
+> On July 15, 2026, OpenAI tripled ChatGPT's Custom Instructions character limit from 1,500 to 5,000, covering Plus, Pro, Enterprise, Business, and Education accounts (free users are unaffected for now); the change applies to both past and future chats. The old 1,500-character limit was roughly enough for one detailed text message, forcing many users to strip out background context — 5,000 characters gets you close to a proper briefing document. Practical tips: 1) if you previously had to compress your custom instructions (dropping industry context, common terminology, output-format preferences) to fit the limit, you can now restore all of it and stop re-explaining yourself every conversation; 2) consider restructuring around five sections — who you are, who I am, common tasks, output format preferences, things to avoid — the extra room makes each section easier to spell out clearly; 3) more characters isn't automatically better — padding it out dilutes the important parts, so prioritize rules that apply to every conversation and leave occasional preferences to be stated in the specific question instead.
+
+### Claude Lets You Highlight a Section of a Draft and Edit Just That Part In Place
+`🟢 Beginner ｜ Claude · Claude Cowork · Anthropic`  ·  Anthropic release notes（2026-07）
+
+> In a recent Claude update, when Claude drafts a long document for you in chat or Claude Cowork — a report, a plan, a brief — the content opens in a separate editing pane next to the conversation. You can highlight the exact section you want changed, type your edit request, and Claude edits only the marked spot instead of you having to copy the whole draft back and ask for a full rewrite. Practical tips: 1) for long documents, get a first draft from Claude, then highlight and request edits only for specific problems ("this paragraph's logic is off," "this sentence is too blunt") instead of issuing whole-document instructions like "rewrite paragraph three as..." — it's both faster and more precise; 2) highlight-editing is especially good when you're mostly happy with a draft but not with one part — say the overall plan is fine but one data reference needs updating, just select that sentence and fix it without touching the rest; 3) this currently applies to long-document drafting in Claude chat and Cowork, not everyday short back-and-forth chat — watch for the editing pane to open when you're working on a long document that needs iterative revision.
 
 <!-- AUTO-PROMPTS:END -->

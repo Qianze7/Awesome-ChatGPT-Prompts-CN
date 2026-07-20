@@ -7182,5 +7182,90 @@ window.PROMPTS = [
     ],
     "source": "Claude Code Changelog / GitHub Releases（2026-07-18）",
     "updated": "2026-07-19"
+  },
+  {
+    "id": "start-chatgpt-unified-search-0714",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "ChatGPT 上线跨聊天/项目/图片/文档统一搜索：老对话再也不用往回翻",
+    "title_en": "ChatGPT Rolls Out Unified Search Across Chats, Projects, Images and Documents",
+    "body_zh": "OpenAI 在 2026 年 7 月 14 日为 ChatGPT 网页版、iOS、Android 全量上线统一搜索功能，覆盖 Free、Plus、Pro、Team、Enterprise 所有套餐：以前想找几周前聊过的某个方案、生成过的某张图、上传过的某份文档，只能靠人肉往回翻聊天记录，现在可以在一个搜索框里直接查，还能按「对话 / 项目 / 图片 / 文档」筛选类型。实操建议：①如果你习惯用 ChatGPT 长期攒资料（面试准备、项目方案、生成的插画），从今天起可以放心用自然语言描述关键词去搜，不用再自己维护一份「聊天记录索引」；②搜索结果支持按类型过滤，找图的时候直接筛「图片」，能省掉在几十条对话里逐条打开确认的时间；③如果你是团队 /企业账号，这个功能等于把 ChatGPT 变成一个轻量知识库，建议把重要产出（复盘、方案）固定放在同一个 Project 里，配合搜索使用效果更好。",
+    "body_en": "On July 14, 2026, OpenAI rolled out unified search across ChatGPT web, iOS, and Android to all plans — Free, Plus, Pro, Team, and Enterprise. Previously, finding a plan you discussed weeks ago, an image you generated, or a document you uploaded meant manually scrolling back through chat history; now a single search box covers everything, with filters for chats, projects, images, and documents. Practical tips: 1) if you use ChatGPT as a long-term store of material (interview prep, project plans, generated illustrations), you can now search with natural-language keywords instead of maintaining your own \"chat index\"; 2) results can be filtered by type, so filter to \"images\" when hunting for a picture instead of opening dozens of conversations one by one; 3) for team/enterprise accounts, this effectively turns ChatGPT into a lightweight knowledge base — keep important outputs (retros, plans) inside the same Project so search works even better alongside it.",
+    "models": [
+      "ChatGPT",
+      "OpenAI"
+    ],
+    "tags": [
+      "ChatGPT",
+      "搜索",
+      "效率",
+      "知识管理"
+    ],
+    "source": "Notebookcheck / Progressive Robot（2026-07-14）",
+    "updated": "2026-07-20"
+  },
+  {
+    "id": "craft-chatgpt-custom-instructions-5000",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "ChatGPT 自定义指令上限从 1500 字扩到 5000 字：该重写你的「人设说明」了",
+    "title_en": "ChatGPT Custom Instructions Limit Triples to 5,000 Characters — Time to Rewrite Your System Prompt",
+    "body_zh": "OpenAI 在 2026 年 7 月 15 日把 ChatGPT「自定义指令」（Custom Instructions）的字符上限从 1500 字提升到 5000 字，覆盖 Plus、Pro、Enterprise、Business、Education 账号，免费用户暂不受影响，改动对新旧对话同时生效。以前 1500 字大概只够写一条详细短信，很多人不得不精简掉背景信息；5000 字已经接近一份正式简报的长度。实操建议：①如果你之前因为字数限制被迫压缩自定义指令（省略了行业背景、常用术语、输出格式偏好），现在可以把这些内容原样补全，减少每次对话都要重新解释一遍的麻烦；②建议按「你是谁 / 我是谁 / 常见任务 / 输出格式偏好 / 禁止事项」五段式重新组织，字数富余后更容易写清楚每一段；③不是字数用满就好，写太长反而会稀释重点，优先把「每次对话都要遵守」的规则放进去，偶尔才用到的偏好可以留在具体提问里单独说明。",
+    "body_en": "On July 15, 2026, OpenAI tripled ChatGPT's Custom Instructions character limit from 1,500 to 5,000, covering Plus, Pro, Enterprise, Business, and Education accounts (free users are unaffected for now); the change applies to both past and future chats. The old 1,500-character limit was roughly enough for one detailed text message, forcing many users to strip out background context — 5,000 characters gets you close to a proper briefing document. Practical tips: 1) if you previously had to compress your custom instructions (dropping industry context, common terminology, output-format preferences) to fit the limit, you can now restore all of it and stop re-explaining yourself every conversation; 2) consider restructuring around five sections — who you are, who I am, common tasks, output format preferences, things to avoid — the extra room makes each section easier to spell out clearly; 3) more characters isn't automatically better — padding it out dilutes the important parts, so prioritize rules that apply to every conversation and leave occasional preferences to be stated in the specific question instead.",
+    "models": [
+      "ChatGPT",
+      "OpenAI"
+    ],
+    "tags": [
+      "ChatGPT",
+      "自定义指令",
+      "提示词技巧",
+      "System Prompt"
+    ],
+    "source": "Cryptobriefing / KuCoin News（2026-07-15）",
+    "updated": "2026-07-20"
+  },
+  {
+    "id": "plugin-claude-code-accessibility-screen-reader",
+    "category": "plugin",
+    "level": "intermediate",
+    "title_zh": "Claude Code 上线屏幕阅读器模式，还加了能主动结束恶意会话的 EndConversation 工具",
+    "title_en": "Claude Code Ships Screen Reader Mode and an EndConversation Tool to Cut Off Abusive Sessions",
+    "body_zh": "Claude Code 在 2026 年 7 月第 29 周（7 月 13-17 日）的更新里加入了「屏幕阅读器模式」：把终端里的方框、加载动画、原地刷新这类视觉元素，替换成一行行带标签的纯文本，方便屏幕阅读器逐行朗读；开启方式是启动时加 `claude --ax-screen-reader`、设置环境变量 `CLAUDE_AX_SCREEN_READER=1`，或在配置里加 `\"axScreenReader\": true`。同一批更新里还加入了 EndConversation 工具和长任务的「进度心跳」提示。实操建议：①视障或依赖屏幕阅读器的开发者，直接用上面三种方式之一开启，终端表格会被转成「字段名: 值」这种更容易朗读的格式；②这个模式对配置里全局生效，团队共用机器时如果只是自己需要，优先用环境变量或启动参数，避免影响其他协作者的终端体验；③EndConversation 工具是 Claude 自己在遇到高度辱骂或明显越狱攻击时用来主动终止会话的安全机制，普通正常使用不会触发，不用特意配置。",
+    "body_en": "In its Week 29 (July 13-17, 2026) update, Claude Code shipped a \"screen reader mode\" that replaces the terminal's visual elements — boxes, spinners, in-place redraws — with plain, linear, labeled text lines that a screen reader can read cleanly; enable it with `claude --ax-screen-reader` at launch, the `CLAUDE_AX_SCREEN_READER=1` environment variable, or `\"axScreenReader\": true` in settings. The same update batch added an EndConversation tool and progress heartbeats for long-running tasks. Practical tips: 1) developers who are blind or rely on screen readers can enable any of the three methods above — terminal tables get rendered as \"Field: value\" pairs that are far easier to read aloud; 2) the mode applies globally in settings, so on a shared team machine, prefer the environment variable or launch flag if only you need it, to avoid changing the terminal experience for collaborators; 3) the EndConversation tool is a safety mechanism Claude uses on its own to end sessions with highly abusive users or clear jailbreak attempts — normal usage never triggers it, so there's nothing to configure.",
+    "models": [
+      "Claude Code",
+      "Anthropic"
+    ],
+    "tags": [
+      "Claude Code",
+      "无障碍",
+      "安全",
+      "开发者工具"
+    ],
+    "source": "Claude Code Docs · Week 29, 2026-07-13～07-17",
+    "updated": "2026-07-20"
+  },
+  {
+    "id": "craft-claude-highlight-edit-draft",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "Claude 写报告/方案时可以直接划线改哪段改哪段，不用整段重新贴回去",
+    "title_en": "Claude Lets You Highlight a Section of a Draft and Edit Just That Part In Place",
+    "body_zh": "Claude 近期更新里，当它在聊天或 Claude Cowork 里帮你写报告、计划、简介这类长草稿时，内容会在对话旁边单独打开一个编辑区；你可以直接用鼠标划选想改的那一段文字，输入修改要求，Claude 只会在你标记的位置做修改，不用像以前那样把整篇内容重新复制粘贴一遍再让它整体重写。实操建议：①写长文档时先让 Claude 出一版初稿，之后每次只挑「这段逻辑不对」「这句话语气太硬」这类局部问题划线提修改，比每次都发「把第三段改成……」这种指令更省事也更准；②划线修改特别适合「大部分满意、只有个别地方不满意」的场景，比如方案整体框架 OK 但某个数据引用需要更新，直接选中那句话改就行，不影响其他段落的措辞；③这个功能目前在 Claude 聊天和 Cowork 里的「起草长文档」场景下生效，日常一问一答式的短对话用不上，遇到需要来回改稿的长文档任务时记得留意编辑区是否已经打开。",
+    "body_en": "In a recent Claude update, when Claude drafts a long document for you in chat or Claude Cowork — a report, a plan, a brief — the content opens in a separate editing pane next to the conversation. You can highlight the exact section you want changed, type your edit request, and Claude edits only the marked spot instead of you having to copy the whole draft back and ask for a full rewrite. Practical tips: 1) for long documents, get a first draft from Claude, then highlight and request edits only for specific problems (\"this paragraph's logic is off,\" \"this sentence is too blunt\") instead of issuing whole-document instructions like \"rewrite paragraph three as...\" — it's both faster and more precise; 2) highlight-editing is especially good when you're mostly happy with a draft but not with one part — say the overall plan is fine but one data reference needs updating, just select that sentence and fix it without touching the rest; 3) this currently applies to long-document drafting in Claude chat and Cowork, not everyday short back-and-forth chat — watch for the editing pane to open when you're working on a long document that needs iterative revision.",
+    "models": [
+      "Claude",
+      "Claude Cowork",
+      "Anthropic"
+    ],
+    "tags": [
+      "Claude",
+      "Claude Cowork",
+      "提示词技巧",
+      "文档协作"
+    ],
+    "source": "Anthropic release notes（2026-07）",
+    "updated": "2026-07-20"
   }
 ];
