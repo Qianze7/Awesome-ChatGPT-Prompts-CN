@@ -16,11 +16,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 ### Categories
 
-- 🚀 **Getting Started** (37)
+- 🚀 **Getting Started** (38)
 - 🎭 **Role Prompts** (149)
-- 🖼️ **Text-to-Image** (20)
-- 🎬 **Text-to-Video** (27)
-- 🧩 **Skills** (35)
+- 🖼️ **Text-to-Image** (21)
+- 🎬 **Text-to-Video** (28)
+- 🧩 **Skills** (36)
 - 🔌 **Plugins / MCP** (26)
 - 💡 **Prompt Craft** (61)
 
@@ -211,20 +211,25 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > On July 14, 2026, OpenAI rolled out unified search across ChatGPT web, iOS, and Android to all plans — Free, Plus, Pro, Team, and Enterprise. Previously, finding a plan you discussed weeks ago, an image you generated, or a document you uploaded meant manually scrolling back through chat history; now a single search box covers everything, with filters for chats, projects, images, and documents. Practical tips: 1) if you use ChatGPT as a long-term store of material (interview prep, project plans, generated illustrations), you can now search with natural-language keywords instead of maintaining your own "chat index"; 2) results can be filtered by type, so filter to "images" when hunting for a picture instead of opening dozens of conversations one by one; 3) for team/enterprise accounts, this effectively turns ChatGPT into a lightweight knowledge base — keep important outputs (retros, plans) inside the same Project so search works even better alongside it.
 
+### Meta Launches Its First Paid Agent Model, Muse Spark 1.1: 1M-Token Context at a Quarter of Rivals' Price
+`🟢 Beginner ｜ Muse Spark 1.1 · Claude · GPT`  ·  Meta AI 官方博客 / DataCamp 报道（2026-07-09）
+
+> On 2026-07-09, Meta released Muse Spark 1.1, the first paid developer-API model from Meta's Superintelligence Labs. It's built for agentic tasks: tool calling, computer use, code generation, and it can act as a lead agent that hands off work to parallel sub-agents. Its context window reaches 1 million tokens, and it actively manages that context during long tasks — remembering earlier actions, pulling up information from much earlier in the session, and compacting away detail it doesn't need while keeping the steps that matter for later work. API pricing is roughly $1.25 per million input tokens and $4.25 per million output tokens — about a quarter of comparable OpenAI and Anthropic models — with $20 in free credits to try it. If you're building agents that run long, call tools frequently, or need to operate a computer interface, it's worth adding to your model comparison. Practical tips: 1) spend the free credits on a small multi-step, tool-calling task (e.g. "check prices on these three sites and summarize into a table") to see how reliably it splits sub-tasks and calls tools; 2) for scenarios needing long-document or long-session memory, deliberately stretch a task to dozens of turns and check whether it truly remembers earlier instructions instead of just truncating; 3) if budget is tight but you need heavy agent usage, treat it as a cost-effective option and A/B it against GPT/Claude flagship models on both quality and cost.
+
 ## 🎭 Role Prompts
 
 ### Act as a Linux terminal
-`🟡 Intermediate ｜ GPT · Claude · Gemini · DeepSeek`  ·  @f
+`🟡 Intermediate ｜ GPT · Claude · Gemini · DeepSeek`
 
 > I want you to act as a Linux terminal. I will type commands and you will reply with what the terminal should show, inside a single code block, nothing else. Do not write explanations or type commands unless I instruct you to. When I need to tell you something in English, I'll wrap it in curly braces {like this}. My first command is pwd
 
 ### English translator & improver
-`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek · Kimi`  ·  @f
+`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek · Kimi`
 
 > I want you to act as an English translator and improver. I'll speak in any language; detect it, translate to English, and rewrite it in more elegant, idiomatic, upper-level English. Reply only with the improved English, no explanations. My first sentence is: "It's a nice day, perfect for a walk."
 
 ### Act as an interviewer
-`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek`  ·  @f
+`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek`
 
 > I want you to act as an interviewer. I'm the candidate; ask me interview questions for the [position: e.g. frontend developer]. Reply only as the interviewer, one question at a time, and wait for my answer before the next. Don't list everything at once or write explanations. My first line is "Hi".
 
@@ -239,12 +244,12 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 > I want you to act as a javascript console. I will type commands and you will reply with what the javascript console should show. I want you to only reply with the terminal output inside one unique code block, and nothing else. Do not write explanations. Do not type commands unless I instruct you to do so. When I need to tell you something in English, I will do so by putting text inside curly brackets {like this}. My first command is console.log(“Hello World”);
 
 ### Act as an Excel Sheet
-`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek`  ·  @f
+`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek`
 
 > I want you to act as a text based excel. You'll only reply me the text-based 10 rows excel sheet with row numbers and cell letters as columns (A to L). First column header should be empty to reference row number. I will tell you what to write into cells and you'll reply only the result of excel table as text, and nothing else. Do not write explanations. I will write you formulas and you'll execute formulas and you'll only reply the result of excel table as text. First, reply me the empty sheet.
 
 ### Act as an English Pronunciation Helper
-`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek`  ·  @f
+`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek`
 
 > I want you to act as an English pronunciation assistant for Turkish speaking people. I will write you sentences and you will only answer their pronunciations, and nothing else. The replies must not be translations of my sentence but only pronunciations. Pronunciations should use Turkish Latin letters for phonetics. Do not write explanations on replies. My first sentence is “how the weather is in Istanbul?”
 
@@ -579,7 +584,7 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 > I want you to act as a psychologist. I will provide you my thoughts. I want you to give me scientific suggestions that will make me feel better. My first thought, { typing here your thought, if you explain in more detail, I think you will get a more accurate answer. }
 
 ### Act as a Smart Domain Name Generator
-`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek`  ·  @f
+`🟢 Beginner ｜ GPT · Claude · Gemini · DeepSeek`
 
 > I want you to act as a smart domain name generator. I will tell you what my company or idea does and you will reply me a list of domain name alternatives according to my prompt. You will only reply the domain list, and nothing else. Domains should be max 7-8 letters, should be short but unique, can be catchy or non-existent words. Do not write explanations. Reply "OK" to confirm.
 
@@ -1069,6 +1074,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > Kling's Image 3.0 model series has now fully rolled out, with native 4K output and noticeably better narrative coherence and image quality than the 2.x line. The standout addition is the Canvas's new Agent mode: give it one sentence describing your scene, and it automatically breaks it into shots, plans multi-angle compositions, and lays out a full storyboard draft in one pass — no more generating and stitching images one at a time. There's also a new batch "image set" feature, well suited for product galleries, comic storyboards, or social carousel posts where you need a stylistically consistent set of images at once, which is far less fiddly than generating and re-matching style shot by shot. Tip: describe the overall story or scene in one sentence first, then use Canvas mode to fine-tune the composition and angle of individual shots.
 
+### Tencent Yuanbao Adds 'Edit Photos With One Sentence': Swap Backgrounds, Add Lighting, Restyle — No Photoshop Needed
+`🟢 Beginner ｜ 腾讯元宝 · 混元`  ·  腾讯云开发者社区（2026-07-16）
+
+> On 2026-07-16, Tencent Yuanbao rolled out AI photo editing: no Photoshop needed — just describe what you want in a sentence, and Yuanbao swaps backgrounds, adds lighting, retouches photos, and can restyle ordinary photos into pixel art, anime, watercolor, or Chinese-style illustration — handy for social posts, memes, or creative portraits. Practical tips: 1) for background swaps or relighting, separate what to keep from what to change, e.g. "keep the person and pose, swap the background for a dusk beach, add warm backlighting" — this gets more accurate results than a vague "make it look nicer"; 2) when restyling, name the reference style clearly (pixel art / Chinese-style / watercolor / cel-shaded anime) and add "keep the face and hairstyle recognizable" to noticeably reduce facial distortion; 3) if the first result isn't quite right, just add a follow-up instruction in the same conversation ("warmer lighting," "push the background further back") — Yuanbao will keep editing from the last version instead of you having to restate the whole request.
+
 ## 🎬 Text-to-Video
 
 ### Kling/Sora camera-motion prompt
@@ -1212,6 +1222,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ 即梦 · Seedance · Seedance 2.5`  ·  UIED 学习社区 / 流媒体网（2026-07-16）
 
 > ByteDance's Jimeng (Dreamina) fully opened the Seedance 2.5 API on July 16 — single-clip generation length doubled from 15 seconds in version 2.0 to a native 30 seconds, and it now supports importing up to 50 fully multimodal reference assets (mixing text, images, video, and audio) in one go, with noticeably better controllability and detail; the team is positioning it as "cinema-grade" AI video generation. Practical tips: 1) if 15-second clips previously forced you to stitch multiple segments together for a full narrative, you can now shoot a continuous 30-second take instead, cutting down on visible seams and transition glitches; 2) for character or product consistency — the same virtual character or product appearing across scenes — feed the model multiple reference images or videos of that subject at once (up to 50), instead of re-describing its appearance every time; 3) since the API just fully opened, run a small batch of test cases to confirm pricing and quota before scaling up — the official credit pricing has changed recently, so check costs before going live; 4) when comparing against Kling or Midjourney's video features, run the same storyboard script through each and focus on which one holds up better on motion smoothness and long-shot consistency.
+
+### ShengShu's Vidu S1: From 'Generate a Video Clip' to Real-Time Interactive Digital Humans
+`🟡 Intermediate ｜ Vidu S1 · 可灵 · 即梦`  ·  中国日报网 / 生数科技官方发布（2026-07-03）
+
+> On 2026-07-03, ShengShu Technology released Vidu S1, built for real-time interactive scenarios. Unlike traditional digital humans that rely on audio-driven lip sync plus a preset motion library, Vidu S1 uses real-time video generation to turn speech into a live instruction that controls a character's expressions, gaze, gestures, and full-body motion — the model reads the semantics, intent, and emotion behind what you say and generates a matching reaction on the fly. It's the first to achieve unlimited-length real-time generation, at 540P resolution and up to 42 FPS, running smoothly without stutter. It fits scenarios that need continuous conversation rather than a finished clip — real-time digital customer service, livestream interaction, virtual hosts. Practical tips: 1) when prompting Vidu S1, describe the emotion/tone, not just the line — e.g. "say 'I didn't expect you to show up too' with surprise and a bit of shyness" — this reads far more natural than the line alone; 2) for long livestreams or customer-service use, test whether expressions and motion drift or degrade over dozens of consecutive turns before putting it into production; 3) it's optimized for real-time interaction, not high-fidelity finished footage — for cinematic long shots or precise camera moves, models built for finished clips like Kling or Jimeng are still the better choice.
 
 ## 🧩 Skills
 
@@ -1389,6 +1404,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ Claude · Cursor · Codex · Gemini CLI`  ·  GitHub alirezarezvani/claude-skills（2026-07-07）
 
 > On July 7, developer alirezarezvani released an open-source repo called claude-skills, packing in 337 ready-to-use skills, plugins, and agents in one go — over 30 specialized agents and 70 custom commands, compatible not just with Claude Code but also Codex, Gemini CLI, and Cursor. Beyond coding skills, it covers marketing, product management, compliance review, executive consulting, research, and business operations — great if you'd rather not write a SKILL.md from scratch. Usage is simple: find the folder matching your use case and drop it into your tool's skills directory per the repo's README, no extra configuration needed.
+
+### NotebookLM Is Now Gemini Notebook, With a Cloud Sandbox That Can Run Code
+`🟢 Beginner ｜ Gemini · NotebookLM`  ·  9to5Google / Google Workspace Updates（2026-07-16）
+
+> On 2026-07-16, Google renamed NotebookLM to Gemini Notebook, folding it into the Gemini brand (with a new blue-purple gradient logo) — it now has over 30 million users across 600,000 organizations. The rename isn't just cosmetic: every notebook now comes with a secure cloud sandbox that can write and run code, rolling out first to AI Ultra and Workspace's higher-tier subscribers, with Pro web users to follow; Google also says these notebooks will eventually surface inside Google Search's AI mode. The core workflow is unchanged: upload sources — papers, meeting notes, reports — and it answers questions, summarizes, and generates podcast-style explainers grounded only in those sources, without inventing anything they don't contain. Practical tips: 1) after uploading sources, start with "summarize this material's core arguments and flag anything the sources don't have enough information to answer" to quickly gauge whether your sources are sufficient; 2) once you have code-execution access, ask it directly to "chart the trend in this data and show me the code" instead of exporting the data to a separate tool; 3) for shared team knowledge bases, keep a standing notebook with your regular sources rather than re-uploading files every time — it also keeps everyone looking at the same source set.
 
 ## 🔌 Plugins / MCP
 

@@ -138,7 +138,7 @@ window.PROMPTS = [
       "命令行",
       "Linux"
     ],
-    "source": "@f",
+    "source": "",
     "updated": "2026-06-07"
   },
   {
@@ -162,7 +162,7 @@ window.PROMPTS = [
       "英语",
       "润色"
     ],
-    "source": "@f",
+    "source": "",
     "updated": "2026-06-07"
   },
   {
@@ -184,7 +184,7 @@ window.PROMPTS = [
       "面试",
       "求职"
     ],
-    "source": "@f",
+    "source": "",
     "updated": "2026-06-07"
   },
   {
@@ -379,7 +379,7 @@ window.PROMPTS = [
       "DeepSeek"
     ],
     "tags": [],
-    "source": "@f",
+    "source": "",
     "updated": "2026-06-07"
   },
   {
@@ -397,7 +397,7 @@ window.PROMPTS = [
       "DeepSeek"
     ],
     "tags": [],
-    "source": "@f",
+    "source": "",
     "updated": "2026-06-07"
   },
   {
@@ -1603,7 +1603,7 @@ window.PROMPTS = [
       "DeepSeek"
     ],
     "tags": [],
-    "source": "@f",
+    "source": "",
     "updated": "2026-06-07"
   },
   {
@@ -2574,7 +2574,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "网络",
+      "浏览器",
+      "模拟"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2592,7 +2596,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "前端",
+      "React",
+      "开发"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2610,7 +2618,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "搜索引擎",
+      "数据库",
+      "开发"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2628,7 +2640,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "创业",
+      "商业计划",
+      "创意"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2664,7 +2680,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "娱乐",
+      "角色扮演",
+      "趣味"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2682,7 +2702,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "语言",
+      "检测",
+      "翻译"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2700,7 +2724,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "销售",
+      "营销",
+      "话术"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2718,7 +2746,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "Git",
+      "提交信息",
+      "开发"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2736,7 +2768,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "管理",
+      "战略",
+      "商业"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2754,7 +2790,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "图表",
+      "Graphviz",
+      "可视化"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -2772,7 +2812,11 @@ window.PROMPTS = [
       "Gemini",
       "DeepSeek"
     ],
-    "tags": [],
+    "tags": [
+      "医疗",
+      "语言病理",
+      "健康"
+    ],
     "source": "",
     "updated": "2026-06-07"
   },
@@ -7267,5 +7311,91 @@ window.PROMPTS = [
     ],
     "source": "Anthropic release notes（2026-07）",
     "updated": "2026-07-20"
+  },
+  {
+    "id": "start-meta-muse-spark11-launch",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "Meta 发布首个收费 Agent 模型 Muse Spark 1.1：100 万 token 上下文，价格只要对手的四分之一",
+    "title_en": "Meta Launches Its First Paid Agent Model, Muse Spark 1.1: 1M-Token Context at a Quarter of Rivals' Price",
+    "body_zh": "Meta 在 2026-07-09 发布了 Muse Spark 1.1，这是 Meta 超级智能实验室第一个收费的开发者 API 模型，主打「智能体任务」：支持工具调用、电脑操作（computer use）、代码生成，还能当主 Agent 把任务拆给多个子 Agent 并行处理。它的上下文窗口做到 100 万 token，并且能在长任务里主动管理上下文——记住之前做过的动作、翻回很早之前的信息、压缩掉不重要的细节，只留住后续要用的关键步骤。API 定价约为输入每百万 token 1.25 美元、输出 4.25 美元，大概是 OpenAI、Anthropic 同类模型的四分之一，官方还送 20 美元额度方便试用。如果你在搭建需要长时间跑、频繁调用工具或需要操作电脑界面的 Agent，值得把它加进选型对比表。实操建议：①先用免费额度跑一个「多步骤+工具调用」的小任务（比如「查一下这三个网站的价格再汇总成表格」），看它拆分子任务、调用工具的稳定性；②需要长文档/长会话记忆的场景，故意把任务拉长到几十轮，观察它是否真的能记住早期指令而不是简单截断；③预算有限但要跑大量 Agent 调用时，可以把它当作性价比备选，和 GPT/Claude 系的旗舰模型做 A/B 对比效果和成本。",
+    "body_en": "On 2026-07-09, Meta released Muse Spark 1.1, the first paid developer-API model from Meta's Superintelligence Labs. It's built for agentic tasks: tool calling, computer use, code generation, and it can act as a lead agent that hands off work to parallel sub-agents. Its context window reaches 1 million tokens, and it actively manages that context during long tasks — remembering earlier actions, pulling up information from much earlier in the session, and compacting away detail it doesn't need while keeping the steps that matter for later work. API pricing is roughly $1.25 per million input tokens and $4.25 per million output tokens — about a quarter of comparable OpenAI and Anthropic models — with $20 in free credits to try it. If you're building agents that run long, call tools frequently, or need to operate a computer interface, it's worth adding to your model comparison. Practical tips: 1) spend the free credits on a small multi-step, tool-calling task (e.g. \"check prices on these three sites and summarize into a table\") to see how reliably it splits sub-tasks and calls tools; 2) for scenarios needing long-document or long-session memory, deliberately stretch a task to dozens of turns and check whether it truly remembers earlier instructions instead of just truncating; 3) if budget is tight but you need heavy agent usage, treat it as a cost-effective option and A/B it against GPT/Claude flagship models on both quality and cost.",
+    "models": [
+      "Muse Spark 1.1",
+      "Claude",
+      "GPT"
+    ],
+    "tags": [
+      "Meta",
+      "Agent",
+      "新模型",
+      "长上下文"
+    ],
+    "source": "Meta AI 官方博客 / DataCamp 报道（2026-07-09）",
+    "updated": "2026-07-21"
+  },
+  {
+    "id": "image-yuanbao-chat-photo-edit",
+    "category": "image",
+    "level": "beginner",
+    "title_zh": "腾讯元宝上线『一句话P图』：换背景、加光效、转风格化大片不用会 PS",
+    "title_en": "Tencent Yuanbao Adds 'Edit Photos With One Sentence': Swap Backgrounds, Add Lighting, Restyle — No Photoshop Needed",
+    "body_zh": "腾讯元宝在 2026-07-16 正式上线了图片 AI 编辑能力：不用会 PS，直接用一句话描述想要的效果，元宝就能帮你换背景、加光效、修图，还能把普通照片转成像素风、动漫、水彩、国风等风格化作品，适合发朋友圈、做梗图、做创意写真这类日常创作场景。实操建议：①换背景/加光效类需求，把「主体保留」和「新背景描述」分开说清楚，例如「保留人像和姿势，把背景换成黄昏海边，给画面加一点暖色逆光」，比笼统说「P 得好看点」出图更准；②转风格化时先说清楚参考风格的关键词（像素风/国风/水彩/赛璐璐动漫），再补一句「保留人物五官和发型不要走样」，能明显减少人脸变形的问题；③一次生成不满意可以直接在同一个对话里追加修改指令（比如「光效再暖一点」「背景再远一点」），元宝会在上一版基础上继续改，不用重新描述一遍全部需求。",
+    "body_en": "On 2026-07-16, Tencent Yuanbao rolled out AI photo editing: no Photoshop needed — just describe what you want in a sentence, and Yuanbao swaps backgrounds, adds lighting, retouches photos, and can restyle ordinary photos into pixel art, anime, watercolor, or Chinese-style illustration — handy for social posts, memes, or creative portraits. Practical tips: 1) for background swaps or relighting, separate what to keep from what to change, e.g. \"keep the person and pose, swap the background for a dusk beach, add warm backlighting\" — this gets more accurate results than a vague \"make it look nicer\"; 2) when restyling, name the reference style clearly (pixel art / Chinese-style / watercolor / cel-shaded anime) and add \"keep the face and hairstyle recognizable\" to noticeably reduce facial distortion; 3) if the first result isn't quite right, just add a follow-up instruction in the same conversation (\"warmer lighting,\" \"push the background further back\") — Yuanbao will keep editing from the last version instead of you having to restate the whole request.",
+    "models": [
+      "腾讯元宝",
+      "混元"
+    ],
+    "tags": [
+      "元宝",
+      "图片编辑",
+      "文生图",
+      "国产模型"
+    ],
+    "source": "腾讯云开发者社区（2026-07-16）",
+    "updated": "2026-07-21"
+  },
+  {
+    "id": "video-vidu-s1-realtime-interactive",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "生数科技发布 Vidu S1：从『生成一段视频』到『实时互动』的数字人模型",
+    "title_en": "ShengShu's Vidu S1: From 'Generate a Video Clip' to Real-Time Interactive Digital Humans",
+    "body_zh": "生数科技在 2026-07-03 发布了面向实时交互场景的 Vidu S1。和传统数字人「音频驱动口型 + 预设动作库」不同，Vidu S1 用实时视频生成技术，把语音升级成能控制角色表情、眼神、手势和全身动作的实时指令——模型会理解你说话的语义、意图和情绪，同步生成匹配的反应，还首次做到了无限时长的实时生成，分辨率 540P、帧率最高 42FPS，看起来流畅不卡顿。适合做实时数字人客服、直播互动、虚拟主播这类需要「持续对话」而不是「出一段成片」的场景。实操建议：①和 Vidu S1 互动时，指令要包含情绪/语气描述而不只是台词内容，比如「用惊喜又有点害羞的语气说『没想到你也来了』」，效果比只给台词明显更自然；②做长时间直播或客服场景，先测试模型在连续几十轮对话里表情/动作是否会「漂移」走样，再决定要不要接入生产环境；③目前主打实时互动而非高精度成片，如果你需要电影级长镜头或精细运镜，还是优先选可灵、即梦这类专门做「成片」的模型。",
+    "body_en": "On 2026-07-03, ShengShu Technology released Vidu S1, built for real-time interactive scenarios. Unlike traditional digital humans that rely on audio-driven lip sync plus a preset motion library, Vidu S1 uses real-time video generation to turn speech into a live instruction that controls a character's expressions, gaze, gestures, and full-body motion — the model reads the semantics, intent, and emotion behind what you say and generates a matching reaction on the fly. It's the first to achieve unlimited-length real-time generation, at 540P resolution and up to 42 FPS, running smoothly without stutter. It fits scenarios that need continuous conversation rather than a finished clip — real-time digital customer service, livestream interaction, virtual hosts. Practical tips: 1) when prompting Vidu S1, describe the emotion/tone, not just the line — e.g. \"say 'I didn't expect you to show up too' with surprise and a bit of shyness\" — this reads far more natural than the line alone; 2) for long livestreams or customer-service use, test whether expressions and motion drift or degrade over dozens of consecutive turns before putting it into production; 3) it's optimized for real-time interaction, not high-fidelity finished footage — for cinematic long shots or precise camera moves, models built for finished clips like Kling or Jimeng are still the better choice.",
+    "models": [
+      "Vidu S1",
+      "可灵",
+      "即梦"
+    ],
+    "tags": [
+      "Vidu",
+      "数字人",
+      "实时视频",
+      "直播"
+    ],
+    "source": "中国日报网 / 生数科技官方发布（2026-07-03）",
+    "updated": "2026-07-21"
+  },
+  {
+    "id": "skill-notebooklm-gemini-notebook-rename",
+    "category": "skill",
+    "level": "beginner",
+    "title_zh": "NotebookLM 改名 Gemini Notebook，新增能跑代码的云端小电脑",
+    "title_en": "NotebookLM Is Now Gemini Notebook, With a Cloud Sandbox That Can Run Code",
+    "body_zh": "Google 在 2026-07-16 把 NotebookLM 改名为 Gemini Notebook，正式并入 Gemini 生态（图标也换成了蓝紫渐变），目前已有超过 3000 万用户、60 万个组织在用。这次改名不只是换皮：每个 notebook 现在都配了一个安全的云端小电脑，能帮你编写并运行代码，先对 AI Ultra 和 Workspace 高级订阅用户开放，随后会推给 Pro 网页版用户；官方还预告这些 notebook 之后会出现在 Google 搜索的 AI 模式里。核心用法没变：上传论文、会议记录、报告等资料源，让它只依据这些资料回答问题、生成摘要、做播客式讲解，不会编造资料里没有的内容。实操建议：①上传资料后先问一句「总结这份资料的核心论点，并标出信息不足以回答的地方」，能快速判断资料是否够用；②拿到「代码执行」权限后，可以直接要求它「用这份数据画一张趋势图并给出代码」，不用再手动导出数据去别的工具画图；③团队共享资料库场景，把常用的资料源整理成一个固定 notebook，比每次重新上传文件更省事，也能保证团队看到的是同一批信息源。",
+    "body_en": "On 2026-07-16, Google renamed NotebookLM to Gemini Notebook, folding it into the Gemini brand (with a new blue-purple gradient logo) — it now has over 30 million users across 600,000 organizations. The rename isn't just cosmetic: every notebook now comes with a secure cloud sandbox that can write and run code, rolling out first to AI Ultra and Workspace's higher-tier subscribers, with Pro web users to follow; Google also says these notebooks will eventually surface inside Google Search's AI mode. The core workflow is unchanged: upload sources — papers, meeting notes, reports — and it answers questions, summarizes, and generates podcast-style explainers grounded only in those sources, without inventing anything they don't contain. Practical tips: 1) after uploading sources, start with \"summarize this material's core arguments and flag anything the sources don't have enough information to answer\" to quickly gauge whether your sources are sufficient; 2) once you have code-execution access, ask it directly to \"chart the trend in this data and show me the code\" instead of exporting the data to a separate tool; 3) for shared team knowledge bases, keep a standing notebook with your regular sources rather than re-uploading files every time — it also keeps everyone looking at the same source set.",
+    "models": [
+      "Gemini",
+      "NotebookLM"
+    ],
+    "tags": [
+      "Gemini",
+      "NotebookLM",
+      "知识库",
+      "效率工具"
+    ],
+    "source": "9to5Google / Google Workspace Updates（2026-07-16）",
+    "updated": "2026-07-21"
   }
 ];
