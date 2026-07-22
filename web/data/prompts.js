@@ -7484,5 +7484,94 @@ window.PROMPTS = [
     ],
     "source": "Anthropic 官方发布 / Chalkbeat / The Hill（2026-07-14 Claude for Teachers 上线）",
     "updated": "2026-07-22"
+  },
+  {
+    "id": "plugin-anthropic-mcp-registry-ga",
+    "category": "plugin",
+    "level": "intermediate",
+    "title_zh": "Anthropic 发布 MCP Registry 正式版：官方索引 5000+ 服务器，支持签名校验",
+    "title_en": "Anthropic Ships MCP Registry GA: An Official Index of 5,000+ Servers With Signature Verification",
+    "body_zh": "Anthropic 在 2026-07-17 把此前测试了几个月的 MCP Registry 转正，官方索引已经收录超过 5000 个 MCP 服务器，覆盖数据库、办公软件、代码工具、支付等场景。这次正式版最大的变化是加了发布者签名校验，装之前能看到「谁发布的、有没有改过代码」，Claude Code、Claude Desktop 都已经接入，装服务器从「找 GitHub 链接手动配置」变成搜索框直接搜。实操建议：①装第三方 MCP 服务器前，先看 Registry 页面的签名状态和权限申请列表，权限申请超出功能描述的（比如一个「查天气」的服务器却要文件系统权限）直接跳过；②同类服务器优先选下载量/评分高的官方认证版本，功能相近但来源不明的服务器容易踩坑；③给 Claude Code 配置多个 MCP 服务器时，在系统提示词里写清楚「什么任务用哪个服务器」，避免模型在功能重叠的服务器之间选错。",
+    "body_en": "On 2026-07-17, Anthropic graduated the MCP Registry — in testing for several months — to general availability, with an official index now covering more than 5,000 MCP servers spanning databases, office tools, coding utilities, and payments. The biggest change in this GA release is publisher signature verification: before installing, you can see who published a server and whether its code has been modified since. Claude Code and Claude Desktop are both already wired up, turning server installation from \"find a GitHub link and hand-configure it\" into a plain search-box lookup. Practical tips: 1) before installing a third-party MCP server, check the Registry page's signature status and requested permissions — skip anything asking for more than its stated function needs (e.g. a \"weather lookup\" server requesting filesystem access); 2) among similar servers, prefer the officially certified option with higher downloads/ratings — a server from an unclear source with overlapping functionality is where trouble tends to start; 3) when wiring multiple MCP servers into Claude Code, spell out in the system prompt which server handles which kind of task, so the model doesn't pick the wrong one among overlapping servers.",
+    "models": [
+      "Claude",
+      "MCP"
+    ],
+    "tags": [
+      "MCP",
+      "插件",
+      "Anthropic",
+      "Claude Code",
+      "签名校验"
+    ],
+    "source": "Anthropic 官方发布 / InfoQ（2026-07-17 MCP Registry 正式版上线）",
+    "updated": "2026-07-22"
+  },
+  {
+    "id": "craft-ernie-5-role-lock-technique",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "百度文心一言 5.0 发布「角色锁定」提示词写法：长对话不再「人设漂移」",
+    "title_en": "Baidu Ernie 5.0 Ships a \"Persona Lock\" Prompting Pattern to Stop Long Chats From Drifting Off-Character",
+    "body_zh": "百度在 2026-07-18 更新文心一言 5.0，官方文档里给出一个「角色锁定」写法，专门解决长对话里 AI 设定的角色慢慢「演走样」的问题：把角色设定拆成「身份+说话习惯+绝不做的事」三段，放在对话最开头，并且每隔十来轮用一句「请继续保持刚才设定的身份和语气」提醒模型。百度测算这个写法能让长对话（50 轮以上）的人设一致性明显提升。这个技巧不挑模型，ChatGPT、Claude、Kimi 上同样好用。实操建议：①「绝不做的事」这一段最容易被忽略但最关键，比如「不主动打广告、不说自己是 AI」，直接点出边界比正面描述更有效；②对话进行到一半发现人设跑偏，别重开对话，直接发一句「请回到你刚才设定的身份」，通常一轮就能拉回来；③如果是客服/角色扮演类长期部署场景，把这句提醒做成定时插入的系统消息，比人工盯着聊天记录省事。",
+    "body_en": "On 2026-07-18, Baidu updated Ernie 5.0 and published official guidance for a \"persona lock\" prompting pattern that specifically targets a well-known long-chat problem: an AI's assigned persona gradually drifting away from its original setup. Split the persona definition into three parts — identity, speaking habits, and things it must never do — place them at the very start of the conversation, and every ten or so turns, add a one-line reminder: \"please keep maintaining the identity and tone set earlier.\" Baidu's internal testing found this noticeably improves persona consistency in long chats (50+ turns). The technique isn't model-specific — it works just as well on ChatGPT, Claude, or Kimi. Practical tips: 1) the \"things it must never do\" section is the part people skip most but matters most — e.g. \"never volunteer ads, never say you're an AI\" — stating boundaries directly works better than only describing the positive persona; 2) if you notice the persona drifting mid-conversation, don't restart the chat — just send \"please return to the identity you set earlier,\" which usually snaps it back within one turn; 3) for long-running deployments like customer service or roleplay bots, turn that reminder into a scheduled system message instead of manually watching the transcript.",
+    "models": [
+      "文心一言",
+      "Ernie"
+    ],
+    "tags": [
+      "提示词技巧",
+      "文心一言",
+      "角色锁定",
+      "长对话",
+      "人设一致性"
+    ],
+    "source": "百度官方发布 / 澎湃科技（2026-07-18 文心一言 5.0 更新）",
+    "updated": "2026-07-22"
+  },
+  {
+    "id": "skill-coze-skill-marketplace-launch",
+    "category": "skill",
+    "level": "beginner",
+    "title_zh": "字节扣子（Coze）上线技能市场：官方认证 Skill 一键接进企业微信/钉钉机器人",
+    "title_en": "ByteDance's Coze Launches a Skill Marketplace: Add Certified Skills to Your WeCom/DingTalk Bot in One Click",
+    "body_zh": "字节跳动旗下 Coze（扣子）在 2026-07-19 上线技能市场，收录官方和第三方认证的 Skill（比如查快递、订会议室、生成周报、连接飞书文档），可以直接挂载到你已有的 Agent 上，不用自己写工具调用代码。目前已经打通企业微信和钉钉机器人，装完技能后机器人直接就能在群里响应对应指令。实操建议：①先给 Agent 的系统提示词里加一句「优先使用已挂载的技能完成任务，技能覆盖不到的部分才用自己的知识回答」，避免模型明明有工具却硬答错；②装多个技能后容易「选错工具」，在提示词里给每个技能配一句「什么情况下用」的说明，比如「订会议室技能：仅当用户明确提到时间+地点+人数时使用」；③企业场景建议先在小范围群里灰度测试技能的响应准确率，确认没问题再全员推广。",
+    "body_en": "On 2026-07-19, ByteDance's Coze platform launched a skill marketplace containing official and third-party certified skills — tracking a package, booking a meeting room, generating a weekly report, connecting to Feishu docs — that you can attach directly to an existing agent without writing your own tool-calling code. It already integrates with WeCom and DingTalk bots, so once a skill is installed, the bot can respond to the matching command directly inside a group chat. Practical tips: 1) add a line to your agent's system prompt saying \"prefer an attached skill to complete a task; only fall back to your own knowledge for what no skill covers,\" to stop the model guessing wrong when a tool was actually available; 2) with multiple skills installed, tool mis-selection gets common — give each skill a one-line \"when to use this\" note in the prompt, e.g. \"meeting-room skill: only use when the user explicitly states time + location + headcount\"; 3) for enterprise rollouts, pilot the skill in a small group chat first to verify response accuracy before rolling it out company-wide.",
+    "models": [
+      "扣子",
+      "Coze"
+    ],
+    "tags": [
+      "Skill",
+      "扣子",
+      "Coze",
+      "技能市场",
+      "企业微信",
+      "钉钉"
+    ],
+    "source": "扣子官方发布 / 36氪（2026-07-19 Coze 技能市场上线）",
+    "updated": "2026-07-22"
+  },
+  {
+    "id": "video-kling-multishot-continuity",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "快手可灵上线 Kling 2.6：新增「分镜续写」，多镜头长视频画风保持一致",
+    "title_en": "Kuaishou Kling 2.6 Launches Multi-Shot Continuation: Keep Long-Form Video Consistent Across Cuts",
+    "body_zh": "快手可灵在 2026-07-20 发布 Kling 2.6，核心新增「分镜续写」功能：先用一条提示词生成第一个镜头，后续每个新镜头都可以「续写」在同一个任务里，模型会自动读取上一镜头的人物形象、光线、镜头语言，避免多段视频拼接时出现「一集换一个脸」的老问题。同时新增运镜库预设（推拉摇移+跟随+环绕），可以直接在提示词里点名调用。实操建议：①第一镜先把「主体外观+场景基调+光线方向」写死当作「基准描述」，后续每个分镜提示词开头都重复这段基准描述，模型续写时才不会跑偏；②分镜之间用「承接词」衔接，比如「镜头切换到同一人物侧面，保持刚才的暖光」，比直接开一段新描述更稳；③长视频优先用官方运镜预设名而不是自己造词，命中率更高。",
+    "body_en": "On 2026-07-20, Kuaishou's Kling released version 2.6, headlined by a new \"shot continuation\" feature: generate the first shot from one prompt, then continue every subsequent shot inside the same task — the model automatically reads the prior shot's character appearance, lighting, and camera language, fixing the old problem of characters subtly changing face between clips. It also ships a preset camera-motion library (push/pull/pan/tilt, follow, orbit) you can call by name directly in the prompt. Practical tips: 1) lock a \"baseline description\" for subject appearance, scene tone, and light direction in your first shot, and repeat that baseline at the start of every later shot prompt so continuation doesn't drift; 2) bridge shots with connective phrasing like \"cut to the same character's profile, keep the warm lighting from before\" rather than starting a fresh description each time; 3) for long-form video, prefer the official camera-motion preset names over inventing your own wording — they hit far more reliably.",
+    "models": [
+      "快手可灵",
+      "Kling"
+    ],
+    "tags": [
+      "文生视频",
+      "可灵",
+      "分镜续写",
+      "运镜预设",
+      "长视频一致性"
+    ],
+    "source": "快手可灵官方发布 / 量子位（2026-07-20 Kling 2.6 上线）",
+    "updated": "2026-07-22"
   }
 ];

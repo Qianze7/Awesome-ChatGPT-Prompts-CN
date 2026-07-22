@@ -19,10 +19,10 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 - 🚀 **Getting Started** (38)
 - 🎭 **Role Prompts** (150)
 - 🖼️ **Text-to-Image** (22)
-- 🎬 **Text-to-Video** (28)
-- 🧩 **Skills** (37)
-- 🔌 **Plugins / MCP** (27)
-- 💡 **Prompt Craft** (61)
+- 🎬 **Text-to-Video** (29)
+- 🧩 **Skills** (38)
+- 🔌 **Plugins / MCP** (28)
+- 💡 **Prompt Craft** (62)
 
 ## 🚀 Getting Started
 
@@ -1238,6 +1238,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > On 2026-07-03, ShengShu Technology released Vidu S1, built for real-time interactive scenarios. Unlike traditional digital humans that rely on audio-driven lip sync plus a preset motion library, Vidu S1 uses real-time video generation to turn speech into a live instruction that controls a character's expressions, gaze, gestures, and full-body motion — the model reads the semantics, intent, and emotion behind what you say and generates a matching reaction on the fly. It's the first to achieve unlimited-length real-time generation, at 540P resolution and up to 42 FPS, running smoothly without stutter. It fits scenarios that need continuous conversation rather than a finished clip — real-time digital customer service, livestream interaction, virtual hosts. Practical tips: 1) when prompting Vidu S1, describe the emotion/tone, not just the line — e.g. "say 'I didn't expect you to show up too' with surprise and a bit of shyness" — this reads far more natural than the line alone; 2) for long livestreams or customer-service use, test whether expressions and motion drift or degrade over dozens of consecutive turns before putting it into production; 3) it's optimized for real-time interaction, not high-fidelity finished footage — for cinematic long shots or precise camera moves, models built for finished clips like Kling or Jimeng are still the better choice.
 
+### Kuaishou Kling 2.6 Launches Multi-Shot Continuation: Keep Long-Form Video Consistent Across Cuts
+`🟡 Intermediate ｜ 快手可灵 · Kling`  ·  快手可灵官方发布 / 量子位（2026-07-20 Kling 2.6 上线）
+
+> On 2026-07-20, Kuaishou's Kling released version 2.6, headlined by a new "shot continuation" feature: generate the first shot from one prompt, then continue every subsequent shot inside the same task — the model automatically reads the prior shot's character appearance, lighting, and camera language, fixing the old problem of characters subtly changing face between clips. It also ships a preset camera-motion library (push/pull/pan/tilt, follow, orbit) you can call by name directly in the prompt. Practical tips: 1) lock a "baseline description" for subject appearance, scene tone, and light direction in your first shot, and repeat that baseline at the start of every later shot prompt so continuation doesn't drift; 2) bridge shots with connective phrasing like "cut to the same character's profile, keep the warm lighting from before" rather than starting a fresh description each time; 3) for long-form video, prefer the official camera-motion preset names over inventing your own wording — they hit far more reliably.
+
 ## 🧩 Skills
 
 ### Skill: prompt auto-optimizer
@@ -1425,6 +1430,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > On 2026-07-16, xAI shipped Automations for Grok: describe a task once in plain language, and Grok will keep running it automatically afterward — no need to start a fresh chat each time. Two trigger types: (1) Scheduled — run once, daily, on weekdays, weekly, monthly, or yearly in your own timezone, available to everyone; (2) Email-triggered — when an incoming email matches your sender/recipient/subject filters, the automation fires with that email as context and Grok responds to the actual message, available to SuperGrok subscribers only. It's live on grok.com and the iOS/Android apps. Practical tips: 1) test with "run once" first to confirm your task description is clear and the output matches what you expect, then switch it to daily/weekly repetition once it's solid; 2) spell out what to do, what format to output, and who it's for — e.g. "every morning at 8am, summarize today's calendar and weather into three bullet points" works far more reliably than a vague "remind me about today"; 3) email triggers suit auto-categorizing support replies or digesting subscription newsletters — start with a narrow filter (a specific sender, say) and watch it for a few days before widening the scope.
 
+### ByteDance's Coze Launches a Skill Marketplace: Add Certified Skills to Your WeCom/DingTalk Bot in One Click
+`🟢 Beginner ｜ 扣子 · Coze`  ·  扣子官方发布 / 36氪（2026-07-19 Coze 技能市场上线）
+
+> On 2026-07-19, ByteDance's Coze platform launched a skill marketplace containing official and third-party certified skills — tracking a package, booking a meeting room, generating a weekly report, connecting to Feishu docs — that you can attach directly to an existing agent without writing your own tool-calling code. It already integrates with WeCom and DingTalk bots, so once a skill is installed, the bot can respond to the matching command directly inside a group chat. Practical tips: 1) add a line to your agent's system prompt saying "prefer an attached skill to complete a task; only fall back to your own knowledge for what no skill covers," to stop the model guessing wrong when a tool was actually available; 2) with multiple skills installed, tool mis-selection gets common — give each skill a one-line "when to use this" note in the prompt, e.g. "meeting-room skill: only use when the user explicitly states time + location + headcount"; 3) for enterprise rollouts, pilot the skill in a small group chat first to verify response accuracy before rolling it out company-wide.
+
 ## 🔌 Plugins / MCP
 
 ### Claude Code: Split Work into Specialized Subagents
@@ -1561,6 +1571,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ Grok`  ·  MarkTechPost / x.ai 官方发布（2026-07-15 Grok Build 开源）
 
 > On 2026-07-15, xAI open-sourced its internal coding agent tool, Grok Build, under the Apache 2.0 license, with the code hosted at xai-org/grok-build. It's a fullscreen, mouse-interactive terminal UI (TUI) coding assistant that understands your repo's structure, edits files directly, executes shell commands, and searches the web — positioning it alongside terminal-based coding agents like Claude Code and Codex CLI. The open-source release covers the full stack: the agent harness (the orchestration core), the TUI, the CLI shell, and the developer tooling; it had previously run as an early beta starting 2026-05-25. Practical tips: 1) on your first run against a real project, give it a read-only task first — e.g. "map out this repo's directory structure and what each core module is responsible for, don't change any files yet" — to gauge its understanding and style before granting write access; 2) for tasks that run shell commands or edit files, run it on a test branch or a separate git worktree rather than directly on main to avoid mistakes landing in production code; 3) since it's now open, its tool layer can be extended — if your team already uses Claude Code or Codex CLI workflows, try Grok Build as a third option and benchmark which one fits your codebase style best.
+
+### Anthropic Ships MCP Registry GA: An Official Index of 5,000+ Servers With Signature Verification
+`🟡 Intermediate ｜ Claude · MCP`  ·  Anthropic 官方发布 / InfoQ（2026-07-17 MCP Registry 正式版上线）
+
+> On 2026-07-17, Anthropic graduated the MCP Registry — in testing for several months — to general availability, with an official index now covering more than 5,000 MCP servers spanning databases, office tools, coding utilities, and payments. The biggest change in this GA release is publisher signature verification: before installing, you can see who published a server and whether its code has been modified since. Claude Code and Claude Desktop are both already wired up, turning server installation from "find a GitHub link and hand-configure it" into a plain search-box lookup. Practical tips: 1) before installing a third-party MCP server, check the Registry page's signature status and requested permissions — skip anything asking for more than its stated function needs (e.g. a "weather lookup" server requesting filesystem access); 2) among similar servers, prefer the officially certified option with higher downloads/ratings — a server from an unclear source with overlapping functionality is where trouble tends to start; 3) when wiring multiple MCP servers into Claude Code, spell out in the system prompt which server handles which kind of task, so the model doesn't pick the wrong one among overlapping servers.
 
 ## 💡 Prompt Craft
 
@@ -1894,5 +1909,10 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ Claude · Claude Cowork · Anthropic`  ·  Anthropic release notes（2026-07）
 
 > In a recent Claude update, when Claude drafts a long document for you in chat or Claude Cowork — a report, a plan, a brief — the content opens in a separate editing pane next to the conversation. You can highlight the exact section you want changed, type your edit request, and Claude edits only the marked spot instead of you having to copy the whole draft back and ask for a full rewrite. Practical tips: 1) for long documents, get a first draft from Claude, then highlight and request edits only for specific problems ("this paragraph's logic is off," "this sentence is too blunt") instead of issuing whole-document instructions like "rewrite paragraph three as..." — it's both faster and more precise; 2) highlight-editing is especially good when you're mostly happy with a draft but not with one part — say the overall plan is fine but one data reference needs updating, just select that sentence and fix it without touching the rest; 3) this currently applies to long-document drafting in Claude chat and Cowork, not everyday short back-and-forth chat — watch for the editing pane to open when you're working on a long document that needs iterative revision.
+
+### Baidu Ernie 5.0 Ships a "Persona Lock" Prompting Pattern to Stop Long Chats From Drifting Off-Character
+`🟢 Beginner ｜ 文心一言 · Ernie`  ·  百度官方发布 / 澎湃科技（2026-07-18 文心一言 5.0 更新）
+
+> On 2026-07-18, Baidu updated Ernie 5.0 and published official guidance for a "persona lock" prompting pattern that specifically targets a well-known long-chat problem: an AI's assigned persona gradually drifting away from its original setup. Split the persona definition into three parts — identity, speaking habits, and things it must never do — place them at the very start of the conversation, and every ten or so turns, add a one-line reminder: "please keep maintaining the identity and tone set earlier." Baidu's internal testing found this noticeably improves persona consistency in long chats (50+ turns). The technique isn't model-specific — it works just as well on ChatGPT, Claude, or Kimi. Practical tips: 1) the "things it must never do" section is the part people skip most but matters most — e.g. "never volunteer ads, never say you're an AI" — stating boundaries directly works better than only describing the positive persona; 2) if you notice the persona drifting mid-conversation, don't restart the chat — just send "please return to the identity you set earlier," which usually snaps it back within one turn; 3) for long-running deployments like customer service or roleplay bots, turn that reminder into a scheduled system message instead of manually watching the transcript.
 
 <!-- AUTO-PROMPTS:END -->
