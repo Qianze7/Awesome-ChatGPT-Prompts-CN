@@ -7397,5 +7397,92 @@ window.PROMPTS = [
     ],
     "source": "9to5Google / Google Workspace Updates（2026-07-16）",
     "updated": "2026-07-21"
+  },
+  {
+    "id": "image-qwen-image3-ultra-long-diagram",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "通义千问上线 Qwen-Image-3.0：4500 token 超长指令一次画出公式图解和复杂 UI",
+    "title_en": "Qwen-Image-3.0 Launches: 4,500-Token Prompts for Formula Diagrams and Complex UI in One Pass",
+    "body_zh": "阿里通义在 2026-07-21 发布图像生成基础模型 Qwen-Image-3.0，是千问「生编一体」图像系列的第三代。相比上一代，它把可接受的指令长度从约 1000 token 提到最长 4500 token，能一次性把公式符号、几何图形、逻辑推导步骤等多种元素融合进同一张知识图解或复杂 UI 界面里；同时原生支持 12 国语言和 20 多款字体的文字渲染，中文书法级细节也能还原。目前阿里云百炼、千问 AI 平台已开放 API 邀测，Qwen App 和 Qwen Studio 即将上线。实操建议：①既然支持超长指令，就别再「一句话」出图——把版式、每个区块要展示的文字、字体风格、配色一次性写全，模型才能按你的结构还原，而不是自由发挥；②做知识图解/教学板报类图片时，用分步描述——「左上角公式区：写出______；右侧流程图：按顺序展示①______②______③______；底部小结：______」，比堆一段话更准；③涉及多语言混排时，明确标出每种语言对应哪一块内容，避免模型把语言搞混。",
+    "body_en": "On 2026-07-21, Alibaba's Tongyi team released Qwen-Image-3.0, the third generation of its unified generate-and-edit image model family. Compared to the previous version, it raises the usable prompt length from roughly 1,000 tokens to as much as 4,500 tokens, letting it fuse formula symbols, geometric shapes, and step-by-step derivations into a single knowledge diagram or complex UI mockup in one pass. It also natively renders text in 12 languages across 20+ fonts, down to calligraphy-level detail for Chinese. Alibaba Cloud Bailian and the Qwen AI platform have opened API previews, with the Qwen App and Qwen Studio to follow. Practical tips: 1) since it now accepts much longer prompts, stop writing one-line requests — spell out the layout, the exact text for every section, the font style, and the color scheme in one go so the model follows your structure instead of improvising; 2) for knowledge diagrams or teaching posters, describe section by section — \"top-left formula box: write ______; right-side flowchart: show in order ① ______ ② ______ ③ ______; bottom summary: ______\" — this is far more accurate than one long paragraph; 3) for multilingual layouts, explicitly state which language belongs in which section so the model doesn't mix them up.",
+    "models": [
+      "通义",
+      "Qwen-Image"
+    ],
+    "tags": [
+      "文生图",
+      "通义",
+      "Qwen-Image-3.0",
+      "超长指令",
+      "知识图解",
+      "多语言"
+    ],
+    "source": "东方财富网 / 新浪科技（2026-07-21 阿里通义 Qwen-Image-3.0 发布）",
+    "updated": "2026-07-22"
+  },
+  {
+    "id": "skill-grok-automations-schedule-trigger",
+    "category": "skill",
+    "level": "beginner",
+    "title_zh": "Grok 上线 Automations：把重复任务交给它按时或按邮件自动跑",
+    "title_en": "Grok Ships Automations: Hand Off Recurring Tasks to Run on a Schedule or Email Trigger",
+    "body_zh": "xAI 在 2026-07-16 为 Grok 上线 Automations 功能，你只需要用一句话描述一个任务，就能让 Grok 之后自动重复执行，不用每次手动开对话。两种触发方式：①定时——可以设置只跑一次、每天、工作日、每周、每月或每年，在你所在时区自动运行，所有人都能用；②邮件触发——收件箱里一旦有匹配「发件人/收件人/主题」条件的新邮件，就会自动带着这封邮件的内容触发任务，让 Grok 直接回应这条邮件，该功能仅 SuperGrok 用户可用。已在 grok.com 和 iOS/Android App 上线。实操建议：①先用「只跑一次」模式测试你的任务描述是否清晰、结果是否符合预期，确认没问题再改成每天/每周重复；②任务描述里把「做什么、用什么格式输出、发给谁看」都写清楚，比如「每天早上 8 点，帮我整理今天的日历安排和天气，输出成三行要点」，比模糊的「提醒我今天的安排」效果稳定得多；③邮件触发适合客服自动分类回复、订阅内容摘要这类场景，建议先用范围较窄的筛选条件（比如指定发件人）小范围试跑，观察几天效果稳定后再放开范围。",
+    "body_en": "On 2026-07-16, xAI shipped Automations for Grok: describe a task once in plain language, and Grok will keep running it automatically afterward — no need to start a fresh chat each time. Two trigger types: (1) Scheduled — run once, daily, on weekdays, weekly, monthly, or yearly in your own timezone, available to everyone; (2) Email-triggered — when an incoming email matches your sender/recipient/subject filters, the automation fires with that email as context and Grok responds to the actual message, available to SuperGrok subscribers only. It's live on grok.com and the iOS/Android apps. Practical tips: 1) test with \"run once\" first to confirm your task description is clear and the output matches what you expect, then switch it to daily/weekly repetition once it's solid; 2) spell out what to do, what format to output, and who it's for — e.g. \"every morning at 8am, summarize today's calendar and weather into three bullet points\" works far more reliably than a vague \"remind me about today\"; 3) email triggers suit auto-categorizing support replies or digesting subscription newsletters — start with a narrow filter (a specific sender, say) and watch it for a few days before widening the scope.",
+    "models": [
+      "Grok"
+    ],
+    "tags": [
+      "Grok",
+      "自动化",
+      "定时任务",
+      "邮件触发",
+      "工作流"
+    ],
+    "source": "x.ai 官方发布 / MindStudio 解读（2026-07-16 Grok Automations 上线）",
+    "updated": "2026-07-22"
+  },
+  {
+    "id": "plugin-grok-build-opensource-coding-agent",
+    "category": "plugin",
+    "level": "intermediate",
+    "title_zh": "xAI 开源 Grok Build：Rust 写的终端编程 Agent，能读代码库、跑命令、搜网页",
+    "title_en": "xAI Open-Sources Grok Build: A Rust Coding Agent That Reads Your Repo, Runs Commands, and Searches the Web",
+    "body_zh": "xAI 在 2026-07-15 把内部编程 Agent 工具 Grok Build 开源，采用 Apache 2.0 协议，代码托管在 xai-org/grok-build。它是一个全屏、支持鼠标交互的终端 UI（TUI）编程助手：能理解你的代码库结构、直接编辑文件、执行 shell 命令、还能联网搜索资料，定位类似 Claude Code、Codex CLI 这类「终端里的编程 Agent」。此次开源覆盖了 agent harness（智能体调度核心）、TUI 界面、CLI shell 和开发者工具链全部代码，此前它以早期测试版形式在 2026-05-25 上线过一段时间。实操建议：①第一次接入项目时，先让它做只读式的「代码库概览」任务——比如「帮我梳理这个仓库的目录结构和核心模块职责，先别改任何文件」，摸清它的理解能力和风格后再放开写权限；②涉及执行 shell 命令和改文件的操作，建议在测试分支或者独立的 git worktree 里跑，避免直接在主分支上出错；③它开源后可以自行扩展工具层，如果团队已经在用 Claude Code / Codex CLI 的工作流，可以把它当作第三种选择做对比评测，选出最适合团队代码风格的那个。",
+    "body_en": "On 2026-07-15, xAI open-sourced its internal coding agent tool, Grok Build, under the Apache 2.0 license, with the code hosted at xai-org/grok-build. It's a fullscreen, mouse-interactive terminal UI (TUI) coding assistant that understands your repo's structure, edits files directly, executes shell commands, and searches the web — positioning it alongside terminal-based coding agents like Claude Code and Codex CLI. The open-source release covers the full stack: the agent harness (the orchestration core), the TUI, the CLI shell, and the developer tooling; it had previously run as an early beta starting 2026-05-25. Practical tips: 1) on your first run against a real project, give it a read-only task first — e.g. \"map out this repo's directory structure and what each core module is responsible for, don't change any files yet\" — to gauge its understanding and style before granting write access; 2) for tasks that run shell commands or edit files, run it on a test branch or a separate git worktree rather than directly on main to avoid mistakes landing in production code; 3) since it's now open, its tool layer can be extended — if your team already uses Claude Code or Codex CLI workflows, try Grok Build as a third option and benchmark which one fits your codebase style best.",
+    "models": [
+      "Grok"
+    ],
+    "tags": [
+      "Grok Build",
+      "开源",
+      "编程 Agent",
+      "终端工具",
+      "Claude Code",
+      "Codex CLI"
+    ],
+    "source": "MarkTechPost / x.ai 官方发布（2026-07-15 Grok Build 开源）",
+    "updated": "2026-07-22"
+  },
+  {
+    "id": "role-claude-for-teachers-lesson-plan",
+    "category": "role",
+    "level": "beginner",
+    "title_zh": "Anthropic 推出 Claude for Teachers：美国 K-12 教师免费用，附标准对齐教案提示词",
+    "title_en": "Anthropic Launches Claude for Teachers: Free for US K-12 Educators, With a Standards-Aligned Lesson Plan Prompt",
+    "body_zh": "Anthropic 在 2026-07-14 推出 Claude for Teachers，面向美国 K-12 已认证教师免费开放（可注册使用至 2027-06-30），主打把全美 50 个州的教学标准内置进产品，帮教师生成教案、按学生水平做差异化教学材料，并配套了和 Teach for America 合作开发的 AI Fluency 课程，以及与美国教师联合会（AFT）合作的培训者培训项目。核心价值是「教学准确性前置」——生成内容时直接对齐官方标准，减少教师事后逐条核对的时间。如果你是教师（不论哪个国家、用的是 Claude 还是其他 AI），都可以参考这个提示词模板来生成教案：「我教【年级/学科】，本节课主题是【主题】，课时【时长】。请按以下结构给我一份教案：①对齐的课标要点（如果你不确定我所在地区的课标，请先问我要具体标准文本）；②学习目标（3条以内，可观察可测量）；③课堂环节时间轴；④差异化教学建议（分别给「基础」「中等」「拓展」三档学生的调整方案）；⑤课后检测题（5道，附答案）。」用这个结构逼 AI 别跳过差异化和课标对齐这两块，是最容易被普通「帮我出个教案」提示词漏掉的部分。",
+    "body_en": "On 2026-07-14, Anthropic launched Claude for Teachers, free for verified US K-12 educators (registration open through 2027-06-30). It bakes standards from all 50 states directly into the product, helping teachers generate lesson plans and differentiate materials by student level, alongside an AI Fluency course built with Teach for America and a train-the-trainer program with the American Federation of Teachers. The core value proposition is accuracy up front — content is generated aligned to official standards from the start, cutting down the time teachers spend fact-checking afterward. If you teach anywhere — not just the US, and whether you use Claude or another AI — you can adapt this lesson-plan prompt template: \"I teach [grade/subject]. Today's topic is [topic], class length [duration]. Structure the lesson plan as: (1) aligned standard(s) — if you're unsure which standard applies to my region, ask me for the exact standard text first; (2) learning objectives (3 max, observable and measurable); (3) a timed classroom activity outline; (4) differentiation notes for 'foundational,' 'on-level,' and 'extension' student groups; (5) a 5-question exit check with an answer key.\" This structure forces the AI not to skip the two parts a generic 'write me a lesson plan' prompt usually misses: differentiation and standards alignment.",
+    "models": [
+      "Claude"
+    ],
+    "tags": [
+      "Claude",
+      "教育",
+      "教案",
+      "K-12",
+      "差异化教学"
+    ],
+    "source": "Anthropic 官方发布 / Chalkbeat / The Hill（2026-07-14 Claude for Teachers 上线）",
+    "updated": "2026-07-22"
   }
 ];

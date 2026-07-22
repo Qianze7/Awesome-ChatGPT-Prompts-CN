@@ -17,11 +17,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 ### Categories
 
 - 🚀 **Getting Started** (38)
-- 🎭 **Role Prompts** (149)
-- 🖼️ **Text-to-Image** (21)
+- 🎭 **Role Prompts** (150)
+- 🖼️ **Text-to-Image** (22)
 - 🎬 **Text-to-Video** (28)
-- 🧩 **Skills** (36)
-- 🔌 **Plugins / MCP** (26)
+- 🧩 **Skills** (37)
+- 🔌 **Plugins / MCP** (27)
 - 💡 **Prompt Craft** (61)
 
 ## 🚀 Getting Started
@@ -963,6 +963,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > DeepSeek-V3.1 is a hybrid reasoning model — it has both a "quick answer" mode and a "deep thinking" mode in the same model, so you no longer need to switch to R1 separately just for reasoning power. Tell it explicitly which mode you want: This requires multi-step reasoning / a rigorous code review — please switch to deep thinking mode and show your intermediate reasoning steps before the conclusion. For simple factual questions or format conversions, just say please answer in quick mode, no need to show your reasoning — that saves both wait time and tokens.
 
+### Anthropic Launches Claude for Teachers: Free for US K-12 Educators, With a Standards-Aligned Lesson Plan Prompt
+`🟢 Beginner ｜ Claude`  ·  Anthropic 官方发布 / Chalkbeat / The Hill（2026-07-14 Claude for Teachers 上线）
+
+> On 2026-07-14, Anthropic launched Claude for Teachers, free for verified US K-12 educators (registration open through 2027-06-30). It bakes standards from all 50 states directly into the product, helping teachers generate lesson plans and differentiate materials by student level, alongside an AI Fluency course built with Teach for America and a train-the-trainer program with the American Federation of Teachers. The core value proposition is accuracy up front — content is generated aligned to official standards from the start, cutting down the time teachers spend fact-checking afterward. If you teach anywhere — not just the US, and whether you use Claude or another AI — you can adapt this lesson-plan prompt template: "I teach [grade/subject]. Today's topic is [topic], class length [duration]. Structure the lesson plan as: (1) aligned standard(s) — if you're unsure which standard applies to my region, ask me for the exact standard text first; (2) learning objectives (3 max, observable and measurable); (3) a timed classroom activity outline; (4) differentiation notes for 'foundational,' 'on-level,' and 'extension' student groups; (5) a 5-question exit check with an answer key." This structure forces the AI not to skip the two parts a generic 'write me a lesson plan' prompt usually misses: differentiation and standards alignment.
+
 ## 🖼️ Text-to-Image
 
 ### Midjourney realistic portrait formula
@@ -1078,6 +1083,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ 腾讯元宝 · 混元`  ·  腾讯云开发者社区（2026-07-16）
 
 > On 2026-07-16, Tencent Yuanbao rolled out AI photo editing: no Photoshop needed — just describe what you want in a sentence, and Yuanbao swaps backgrounds, adds lighting, retouches photos, and can restyle ordinary photos into pixel art, anime, watercolor, or Chinese-style illustration — handy for social posts, memes, or creative portraits. Practical tips: 1) for background swaps or relighting, separate what to keep from what to change, e.g. "keep the person and pose, swap the background for a dusk beach, add warm backlighting" — this gets more accurate results than a vague "make it look nicer"; 2) when restyling, name the reference style clearly (pixel art / Chinese-style / watercolor / cel-shaded anime) and add "keep the face and hairstyle recognizable" to noticeably reduce facial distortion; 3) if the first result isn't quite right, just add a follow-up instruction in the same conversation ("warmer lighting," "push the background further back") — Yuanbao will keep editing from the last version instead of you having to restate the whole request.
+
+### Qwen-Image-3.0 Launches: 4,500-Token Prompts for Formula Diagrams and Complex UI in One Pass
+`🟡 Intermediate ｜ 通义 · Qwen-Image`  ·  东方财富网 / 新浪科技（2026-07-21 阿里通义 Qwen-Image-3.0 发布）
+
+> On 2026-07-21, Alibaba's Tongyi team released Qwen-Image-3.0, the third generation of its unified generate-and-edit image model family. Compared to the previous version, it raises the usable prompt length from roughly 1,000 tokens to as much as 4,500 tokens, letting it fuse formula symbols, geometric shapes, and step-by-step derivations into a single knowledge diagram or complex UI mockup in one pass. It also natively renders text in 12 languages across 20+ fonts, down to calligraphy-level detail for Chinese. Alibaba Cloud Bailian and the Qwen AI platform have opened API previews, with the Qwen App and Qwen Studio to follow. Practical tips: 1) since it now accepts much longer prompts, stop writing one-line requests — spell out the layout, the exact text for every section, the font style, and the color scheme in one go so the model follows your structure instead of improvising; 2) for knowledge diagrams or teaching posters, describe section by section — "top-left formula box: write ______; right-side flowchart: show in order ① ______ ② ______ ③ ______; bottom summary: ______" — this is far more accurate than one long paragraph; 3) for multilingual layouts, explicitly state which language belongs in which section so the model doesn't mix them up.
 
 ## 🎬 Text-to-Video
 
@@ -1410,6 +1420,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > On 2026-07-16, Google renamed NotebookLM to Gemini Notebook, folding it into the Gemini brand (with a new blue-purple gradient logo) — it now has over 30 million users across 600,000 organizations. The rename isn't just cosmetic: every notebook now comes with a secure cloud sandbox that can write and run code, rolling out first to AI Ultra and Workspace's higher-tier subscribers, with Pro web users to follow; Google also says these notebooks will eventually surface inside Google Search's AI mode. The core workflow is unchanged: upload sources — papers, meeting notes, reports — and it answers questions, summarizes, and generates podcast-style explainers grounded only in those sources, without inventing anything they don't contain. Practical tips: 1) after uploading sources, start with "summarize this material's core arguments and flag anything the sources don't have enough information to answer" to quickly gauge whether your sources are sufficient; 2) once you have code-execution access, ask it directly to "chart the trend in this data and show me the code" instead of exporting the data to a separate tool; 3) for shared team knowledge bases, keep a standing notebook with your regular sources rather than re-uploading files every time — it also keeps everyone looking at the same source set.
 
+### Grok Ships Automations: Hand Off Recurring Tasks to Run on a Schedule or Email Trigger
+`🟢 Beginner ｜ Grok`  ·  x.ai 官方发布 / MindStudio 解读（2026-07-16 Grok Automations 上线）
+
+> On 2026-07-16, xAI shipped Automations for Grok: describe a task once in plain language, and Grok will keep running it automatically afterward — no need to start a fresh chat each time. Two trigger types: (1) Scheduled — run once, daily, on weekdays, weekly, monthly, or yearly in your own timezone, available to everyone; (2) Email-triggered — when an incoming email matches your sender/recipient/subject filters, the automation fires with that email as context and Grok responds to the actual message, available to SuperGrok subscribers only. It's live on grok.com and the iOS/Android apps. Practical tips: 1) test with "run once" first to confirm your task description is clear and the output matches what you expect, then switch it to daily/weekly repetition once it's solid; 2) spell out what to do, what format to output, and who it's for — e.g. "every morning at 8am, summarize today's calendar and weather into three bullet points" works far more reliably than a vague "remind me about today"; 3) email triggers suit auto-categorizing support replies or digesting subscription newsletters — start with a narrow filter (a specific sender, say) and watch it for a few days before widening the scope.
+
 ## 🔌 Plugins / MCP
 
 ### Claude Code: Split Work into Specialized Subagents
@@ -1541,6 +1556,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ Claude Code · Anthropic`  ·  Claude Code Docs · Week 29, 2026-07-13～07-17
 
 > In its Week 29 (July 13-17, 2026) update, Claude Code shipped a "screen reader mode" that replaces the terminal's visual elements — boxes, spinners, in-place redraws — with plain, linear, labeled text lines that a screen reader can read cleanly; enable it with `claude --ax-screen-reader` at launch, the `CLAUDE_AX_SCREEN_READER=1` environment variable, or `"axScreenReader": true` in settings. The same update batch added an EndConversation tool and progress heartbeats for long-running tasks. Practical tips: 1) developers who are blind or rely on screen readers can enable any of the three methods above — terminal tables get rendered as "Field: value" pairs that are far easier to read aloud; 2) the mode applies globally in settings, so on a shared team machine, prefer the environment variable or launch flag if only you need it, to avoid changing the terminal experience for collaborators; 3) the EndConversation tool is a safety mechanism Claude uses on its own to end sessions with highly abusive users or clear jailbreak attempts — normal usage never triggers it, so there's nothing to configure.
+
+### xAI Open-Sources Grok Build: A Rust Coding Agent That Reads Your Repo, Runs Commands, and Searches the Web
+`🟡 Intermediate ｜ Grok`  ·  MarkTechPost / x.ai 官方发布（2026-07-15 Grok Build 开源）
+
+> On 2026-07-15, xAI open-sourced its internal coding agent tool, Grok Build, under the Apache 2.0 license, with the code hosted at xai-org/grok-build. It's a fullscreen, mouse-interactive terminal UI (TUI) coding assistant that understands your repo's structure, edits files directly, executes shell commands, and searches the web — positioning it alongside terminal-based coding agents like Claude Code and Codex CLI. The open-source release covers the full stack: the agent harness (the orchestration core), the TUI, the CLI shell, and the developer tooling; it had previously run as an early beta starting 2026-05-25. Practical tips: 1) on your first run against a real project, give it a read-only task first — e.g. "map out this repo's directory structure and what each core module is responsible for, don't change any files yet" — to gauge its understanding and style before granting write access; 2) for tasks that run shell commands or edit files, run it on a test branch or a separate git worktree rather than directly on main to avoid mistakes landing in production code; 3) since it's now open, its tool layer can be extended — if your team already uses Claude Code or Codex CLI workflows, try Grok Build as a third option and benchmark which one fits your codebase style best.
 
 ## 💡 Prompt Craft
 
