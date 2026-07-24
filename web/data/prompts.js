@@ -7573,5 +7573,255 @@ window.PROMPTS = [
     ],
     "source": "快手可灵官方发布 / 量子位（2026-07-20 Kling 2.6 上线）",
     "updated": "2026-07-22"
+  },
+  {
+    "id": "start-gemini-3-6-flash-knowledge-cutoff",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "Gemini 3.6 Flash 知识截止日期跳到 2026 年 3 月：问「最近发生了什么」该选哪个模型",
+    "title_en": "Gemini 3.6 Flash's Knowledge Cutoff Jumps to March 2026: Which Model to Pick for \"What Just Happened\" Questions",
+    "body_zh": "Google 在 2026 年 7 月 21 日一次性发布三款新模型——Gemini 3.6 Flash、Gemini 3.5 Flash-Lite，以及仅面向政府和受信任合作伙伴开放的安全加固版 Gemini 3.5 Flash Cyber。普通用户最该关注的是 Gemini 3.6 Flash：它的训练知识截止日期从上一代的 2025 年 1 月一口气跳到 2026 年 3 月，跨度超过一年，对过去一年多的新产品发布、政策变化、时事都「知道」得更多，答案更不容易过时。实操建议：①问任何带时效性的问题（「某公司最近发布了什么」「某项政策现在还有效吗」）之前，先确认自己用的是 Gemini 3.6 Flash 而不是旧版本，不同版本知识截止日期可能差一年以上，答案可信度天差地别；②即便知识截止日期更新了，2026 年 3 月之后发生的事情模型依然不知道，遇到「最近几天/这周」这类问题还是要主动要求模型联网搜索确认，不要单纯依赖训练记忆；③Flash-Lite 定位是速度和成本优先、时效性要求不高的批量任务，日常问答优先选 3.6 Flash 而不是 Lite 版本。",
+    "body_en": "On July 21, 2026, Google released three new models at once — Gemini 3.6 Flash, Gemini 3.5 Flash-Lite, and a security-hardened Gemini 3.5 Flash Cyber available only to government and trusted partners. The one everyday users should care about is Gemini 3.6 Flash: its training knowledge cutoff jumps from the prior generation's January 2025 to March 2026, over a year further forward, so it \"knows\" far more about the past year-plus of product launches, policy changes, and current events, making answers less likely to be stale. Practical tips: 1) before asking any time-sensitive question (\"what did company X recently launch\", \"is policy Y still in effect\"), confirm you're actually on Gemini 3.6 Flash and not an older version — cutoff dates can differ by more than a year across versions, and that swings answer reliability a lot; 2) even with the newer cutoff, anything after March 2026 is still unknown to the model — for \"the past few days/this week\" questions, explicitly ask it to search the web rather than relying on training memory; 3) Flash-Lite is positioned for speed- and cost-sensitive bulk tasks with low timeliness needs — for everyday Q&A, default to 3.6 Flash over the Lite variant.",
+    "models": ["Gemini", "Gemini 3.6 Flash", "Google"],
+    "tags": ["Gemini", "知识截止日期", "模型选择", "时效性"],
+    "source": "Google 官方发布 / llm-stats.com、buildfastwithai（2026-07-21 发布，2026-07-22～23 报道）",
+    "updated": "2026-07-23"
+  },
+  {
+    "id": "image-grok-aurora-prompt-tips",
+    "category": "image",
+    "level": "beginner",
+    "title_zh": "Grok 文生图 Aurora：X 上出图想要「拍出来的质感」，提示词该怎么堆",
+    "title_en": "Grok's Aurora Image Model: How to Prompt for That \"Actually Photographed\" Look on X",
+    "body_zh": "xAI 的文生图模型 Aurora 内置在 X（原 Twitter）的 Grok 里，强项是照片级真实感、更宽松的内容尺度，以及少见的高准确率文字渲染（招牌、T恤、文档上的文字都能基本写对），适合做产品图、包装视觉、电商图。2026 年 4 月起图片生成从免费层下线，至少需要 SuperGrok Lite（约 10 美元/月）订阅才能用。实操建议：①提示词按「场景描述（1-2句话）+ 艺术风格 + 打光 + 色调 + 情绪 + 质量标签」的顺序堆叠，比如先写清楚画面里有什么，再补「赛璐璐风格/水彩/纪实摄影」这类风格词；②想要「像真拍出来的」质感，加具体的摄影术语——「85mm 镜头拍摄」「柔和轮廓光」「真实皮肤质感」「4k」，这几个词对 Aurora 的引导效果比堆形容词更明显；③明确点出艺术风格名称（赛璐璐/水彩/漫画）能精确控制画面被重新演绎的方式，不写风格词时 Aurora 默认偏向照片级写实。",
+    "body_en": "xAI's image model Aurora is built into Grok on X (formerly Twitter). Its strengths are photorealism, looser content restrictions, and unusually accurate text rendering (signage, T-shirts, and on-page document text mostly come out correct) — good fit for product shots, packaging visuals, and e-commerce images. Since April 2026 image generation has been pulled from the free tier, requiring at least a SuperGrok Lite subscription (~$10/month). Practical tips: 1) stack prompts in the order scene description (1-2 sentences) + art style + lighting + color tone + mood + quality tags — describe what's in frame first, then add style words like \"cel-shaded / watercolor / documentary photography\"; 2) for that \"actually photographed\" texture, add concrete photography terms — \"shot on 85mm lens\", \"soft rim light\", \"realistic skin texture\", \"4k\" — these guide Aurora more effectively than piling on adjectives; 3) explicitly naming an art style (cel-shaded / watercolor / comic) precisely controls how the scene gets reinterpreted; without a style word, Aurora defaults toward photorealism.",
+    "models": ["Grok", "Aurora", "xAI"],
+    "tags": ["Grok", "文生图", "提示词技巧", "摄影质感"],
+    "source": "xAI 产品文档 / pxz.ai、shiori.ai、xsoneconsultants（2026-07 汇总测评）",
+    "updated": "2026-07-23"
+  },
+  {
+    "id": "skill-grok-build-goal-autonomous-mode",
+    "category": "skill",
+    "level": "advanced",
+    "title_zh": "Grok Build 上线「/goal」自主模式：丢一个目标，Agent 自己规划、执行、验收",
+    "title_en": "Grok Build Ships \"/goal\" Autonomous Mode: Hand It a Goal and the Agent Plans, Executes, and Verifies Itself",
+    "body_zh": "xAI 在 Grok Build（Grok 的终端编程 Agent，已开源）里上线了 /goal 命令，主打「长时间自主执行」：你只需要描述一个目标，Agent 会自己拆解成一份任务清单，逐项执行、观察结果，遇到和预期不符的情况会重新规划，完成后还会跑一遍验证（检查代码、运行测试、实际打开页面看行为是否正常）才标记任务完成，不需要你一步步盯着改。命令层面还提供 /goal status 看实时进度、/goal pause 暂停但保留目标、/goal resume 继续、/goal clear 放弃目标，需要 SuperGrok 或 X Premium Plus 订阅才能用。实操建议：①目标描述要包含「做什么」和「验收标准」两部分，比如不要只说「把登录页面重构一下」，而要说「把登录页面重构成响应式布局，验收标准是手机端和桌面端都要过现有的 E2E 测试」，Agent 有明确验收标准才不容易在中途跑偏；②适合用来处理「步骤多、单步都不难、但盯着做很烦」的任务（批量重构、多文件迁移、重复性修复），而不是需要频繁人工判断的模糊任务；③执行过程中善用 /goal status 定期检查进度，发现方向不对及时 /goal pause 纠正，比等它全部跑完再返工省时间。",
+    "body_en": "xAI added a /goal command to Grok Build (Grok's open-sourced terminal coding agent), built for long-running autonomous execution: describe a goal, and the agent breaks it into a task list, works through each item, observes results, and re-plans when something doesn't match expectations — then runs a verification pass (checking code, running tests, actually opening the page to confirm behavior) before marking the task complete, without you babysitting each step. Command-level controls include /goal status for live progress, /goal pause to pause while keeping the goal, /goal resume to continue, and /goal clear to abandon it; it requires a SuperGrok or X Premium Plus subscription. Practical tips: 1) a goal description needs both \"what to do\" and \"acceptance criteria\" — instead of just \"refactor the login page\", say \"refactor the login page into a responsive layout; acceptance criteria: both mobile and desktop must pass the existing E2E tests\" — a clear acceptance bar keeps the agent from drifting mid-task; 2) it's well suited to tasks that are \"many steps, none individually hard, but tedious to babysit\" (bulk refactors, multi-file migrations, repetitive fixes) rather than ambiguous tasks needing frequent human judgment calls; 3) check in periodically with /goal status during execution and /goal pause promptly if it's heading the wrong way — cheaper than letting it finish and redoing the work.",
+    "models": ["Grok", "Grok Build", "Grok 4.5", "xAI"],
+    "tags": ["Grok Build", "自主 Agent", "编程助手", "任务验收"],
+    "source": "xAI 官方发布（x.ai/news） / MarkTechPost、Tech Times（2026-06-22～06-24 报道，2026-07-15 随 Grok Build 开源沿用）",
+    "updated": "2026-07-23"
+  },
+  {
+    "id": "skill-claude-cowork-record-a-skill",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "Claude Cowork 上线「录一个 Skill」：录屏 + 讲解，自动把重复操作变成可复用技能",
+    "title_en": "Claude Cowork Ships \"Record a Skill\": Screen-Record a Task and Claude Turns It Into a Reusable Skill",
+    "body_zh": "Anthropic 在 2026 年 7 月 21 日为 Claude 桌面版 Cowork 界面上线「Teach Claude a skill」（录一个 Skill）功能，面向 Pro、Max、Team 订阅用户开放，入口在桌面 App 「+」菜单里的「Record a skill」。用法很直接：点击开始录制，一边操作屏幕一边用语音讲清楚每一步在做什么（比如「先打开这个报销系统，填金额，再上传发票」），Claude 会读取屏幕内容、鼠标点击、键盘输入和你的语音讲解，自动整理成一个可以反复调用的技能，下次同类任务直接喊它跑一遍，不用再重新写一整段提示词。实操建议：①录制前先在脑子里过一遍步骤顺序，讲解时用「现在我要做 X，因为 Y」这种带因果的说法，Claude 提炼技能时更容易抓住「为什么这么做」而不只是「点了哪里」；②优先把那些「文字很难说清楚、但一看操作就懂」的任务（复杂表格填报、多步骤审批、固定格式的文件整理）录成技能，纯聊天类任务用普通提示词反而更快；③录完之后花一分钟检查 Claude 总结出的技能步骤描述，发现遗漏或误解的地方直接用文字纠正，比重新录一遍更省时间。",
+    "body_en": "On July 21, 2026, Anthropic shipped \"Teach Claude a skill\" (Record a Skill) in the Claude desktop app's Cowork interface, available to Pro, Max, and Team subscribers under \"Record a skill\" in the app's \"+\" menu. The workflow is direct: start recording, perform the task on screen while narrating each step out loud (\"now I'm opening the expense system, entering the amount, then uploading the receipt\"), and Claude reads the screen activity, clicks, keystrokes, and your voice commentary to assemble a reusable skill you can invoke again later — no need to re-write a long prompt for the same task next time. Practical tips: 1) mentally rehearse the step order before recording, and narrate with cause-and-effect phrasing like \"now I do X because Y\" — it helps Claude capture the reasoning behind each step, not just the clicks; 2) prioritize recording tasks that are hard to describe in words but obvious once demonstrated (complex form filling, multi-step approvals, fixed-format file organizing) — for purely conversational tasks, a normal prompt is still faster; 3) after recording, spend a minute reviewing the skill summary Claude produced and correct any gaps or misreadings in text — that's quicker than re-recording from scratch.",
+    "models": [
+      "Claude",
+      "Claude Cowork",
+      "Anthropic"
+    ],
+    "tags": [
+      "Claude Cowork",
+      "Skill",
+      "录屏教学",
+      "自动化",
+      "工作流"
+    ],
+    "source": "Anthropic 官方发布（@claudeai） / Dataconomy（2026-07-22 报道，功能 2026-07-21 上线）",
+    "updated": "2026-07-23"
+  },
+  {
+    "id": "video-gemini-omni-video-rollout",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "Gemini App 全量上线 Omni 视频模型：文字/图片/音频/视频混合输入直接生成视频",
+    "title_en": "Gemini App Rolls Out Omni Video Model: Mix Text, Image, Audio and Video Inputs to Generate Video Directly",
+    "body_zh": "Google 在 2026 年 7 月 21 日对 Gemini 生态做了一次大版本更新，其中面向全球所有年满 18 岁的 Google AI 订阅用户开放的 Gemini Omni（含针对高速生成优化的 Omni Flash）最值得关注：它支持文字、图片、音频、视频四种模态混合输入生成视频，不再局限于「只能打字描述画面」。同批更新还包括新的 Gemini 3.6 Flash 模型、浏览器侧边常驻面板（可以在不离开当前网页的情况下总结文章、起草邮件）。实操建议：①想让生成的视频动作和参考素材对齐，直接上传一段参考视频或音频（比如一段配音、一段运镜），再用文字补充你想改变的部分，比纯文字描述镜头运动更准；②图片+文字混合输入适合「保留某张图的人物/场景，但换一个动作或镜头」这类需求，先传图定基调，再用文字描述要新增的动作；③侧边面板适合边看长文章边让 Gemini 顺手总结要点或起草回复，不用来回切标签页，日常刷资料时可以常开着用。",
+    "body_en": "On July 21, 2026, Google pushed a major coordinated update across the Gemini ecosystem. The standout piece is Gemini Omni (plus a speed-optimized Omni Flash variant), rolling out to all Google AI subscribers 18 and over worldwide: it accepts text, image, audio, and video as mixed inputs to generate video, moving beyond \"describe the shot in words only.\" The same batch added the new Gemini 3.6 Flash model and a persistent browser side panel that summarizes articles or drafts emails without leaving the current tab. Practical tips: 1) to align the generated video's motion with a reference, upload an actual reference clip or audio track (a voiceover, a camera move) and add text only for what you want changed — this is far more accurate than describing camera motion in words alone; 2) mixed image-plus-text input is ideal for \"keep this character/scene but change the action or angle\" requests — upload the image to set the baseline, then describe the new action in text; 3) the side panel is handy for summarizing or drafting replies while reading a long article without tab-switching — worth keeping open during everyday research.",
+    "models": [
+      "Gemini",
+      "Gemini Omni",
+      "Google"
+    ],
+    "tags": [
+      "Gemini",
+      "文生视频",
+      "多模态输入",
+      "浏览器插件"
+    ],
+    "source": "Google 官方发布 / IndianAI（2026-07-21 Gemini 生态更新）",
+    "updated": "2026-07-23"
+  },
+  {
+    "id": "craft-kimi-k3-million-context-tips",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "Kimi K3 上下文扩到 100 万 token：整份代码库/合同一次性丢进去怎么问更准",
+    "title_en": "Kimi K3's 1M-Token Context: How to Ask Better Questions When You Dump a Whole Codebase or Contract In",
+    "body_zh": "月之暗面在 2026 年 7 月 17 日发布 Kimi K3，参数规模 2.8 万亿，上下文窗口从上一代 K2 的 25.6 万 token 扩大到 100 万 token，原生支持图片和视频理解，发布后 48 小时内请求量逼近算力上限，官方一度在 7 月 19 日暂停新增 C 端付费订阅优先保障存量用户。100 万 token 大约能装下一整个中型代码仓库或几百页合同文档，但「塞得下」不等于「问得准」。实操建议：①不要把整份材料丢进去之后只问一句「帮我看看有什么问题」，先明确「你要检查的是哪个维度」（比如「只看合同里的付款条款和违约责任，其他部分不用管」），范围越窄，模型漏答的概率越低；②超长文档建议先让模型输出一份「章节/模块目录」确认它读完了整份材料，再针对目录里的具体条目追问，比一次性问复杂问题的准确率更高；③如果是代码库，先问「这个仓库的整体架构和模块依赖关系」建立基础认知，再问具体某个函数或某段逻辑，避免模型在缺少全局上下文的情况下给出局部正确但方向错误的建议。",
+    "body_en": "On July 17, 2026, Moonshot AI released Kimi K3, a 2.8-trillion-parameter model with its context window expanded from K2's 256K tokens to 1 million tokens, plus native image and video understanding. Demand surged so fast that within 48 hours request volume approached compute capacity, prompting Moonshot to pause new consumer paid subscriptions on July 19 to protect service for existing members. A million tokens is roughly enough to fit an entire mid-size code repository or a few hundred pages of contract text — but fitting it in doesn't mean you'll get accurate answers out. Practical tips: 1) don't dump the whole document and just ask \"anything wrong here?\" — specify which dimension to check first (\"only look at the payment terms and liability clauses, ignore the rest\"); a narrower scope sharply reduces the chance the model misses something; 2) for very long documents, first ask the model to output a table of sections/modules to confirm it actually processed the whole thing, then drill into specific entries from that outline — this beats asking one big complex question upfront; 3) for a codebase, first ask about overall architecture and module dependencies to establish context, then ask about a specific function or block of logic — this avoids advice that's locally correct but directionally wrong due to missing the big picture.",
+    "models": [
+      "Kimi",
+      "Kimi K3",
+      "月之暗面",
+      "Moonshot AI"
+    ],
+    "tags": [
+      "Kimi",
+      "长上下文",
+      "提示词技巧",
+      "代码库分析",
+      "合同审查"
+    ],
+    "source": "月之暗面官方发布 / 财新网、21世纪经济报道（2026-07-17～07-21）",
+    "updated": "2026-07-23"
+  },
+  {
+    "id": "craft-chatgpt-sites-generate-webapp",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "ChatGPT Sites：聊天里描述一句话，直接生成带链接的看板/原型网站",
+    "title_en": "ChatGPT Sites: Describe a Page in Chat and Get a Hosted Dashboard or Prototype With a Shareable Link",
+    "body_zh": "OpenAI 在 2026 年 7 月 9 日为 ChatGPT Work 上线 ChatGPT Sites 公测（Pro、Pro Lite、Enterprise、Edu 先开放，Plus、Business 随后跟进），核心能力是：在聊天里用文字描述一个看板、项目追踪表、上线日历、原型页面或内部门户，ChatGPT 直接生成代码、自动托管，并给你一个可以分享的网址，不用自己找地方部署。实操建议：①描述需求时把「这个页面给谁看」和「需要哪几块信息」说清楚，比如「给团队看的项目进度看板，要有任务名、负责人、状态三列，按状态分组」，比笼统说「做个项目管理页面」生成结果更贴近预期；②先要一个简化版本跑通，确认信息结构对了之后再补充筛选、排序这类交互细节，一次性堆太多要求容易让生成结果顾此失彼；③这类页面适合内部使用的轻量工具（周报看板、活动报名表、需求跟踪表），不建议直接拿来做面向外部客户的正式产品页面，权限和长期维护责任要提前跟团队说清楚。",
+    "body_en": "On July 9, 2026, OpenAI launched a public beta of ChatGPT Sites inside ChatGPT Work — Pro, Pro Lite, Enterprise, and Edu got it first, with Plus and Business following shortly after. The core capability: describe a dashboard, project tracker, launch calendar, prototype, or internal portal in chat, and ChatGPT generates the code, hosts it automatically, and gives you a shareable URL — no separate deployment needed. Practical tips: 1) be specific about who the page is for and which pieces of information it needs — e.g. \"a team-facing project status dashboard with task name, owner, and status columns, grouped by status\" — rather than a vague \"build me a project management page\"; being specific gets you much closer to what you actually wanted; 2) ask for a simplified version first, confirm the information structure is right, then layer on filtering and sorting details — piling on every requirement at once tends to produce a result that gets some parts right at the expense of others; 3) this is best suited to lightweight internal tools (a weekly status board, an event sign-up form, a request tracker) — it's not meant for a customer-facing production page, so clarify access permissions and long-term maintenance ownership with your team upfront.",
+    "models": [
+      "ChatGPT",
+      "ChatGPT Sites",
+      "OpenAI"
+    ],
+    "tags": [
+      "ChatGPT",
+      "网页生成",
+      "看板",
+      "提示词技巧",
+      "无代码"
+    ],
+    "source": "OpenAI 官方发布 / The AI Career Lab、reconnAI（2026-07-09 公测上线）",
+    "updated": "2026-07-23"
+  },
+  {
+    "id": "craft-deepseek-v4-api-alias-retirement",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "DeepSeek 旧模型名今天(7月24日)硬下线：deepseek-chat/reasoner 怎么5分钟迁移完",
+    "title_en": "DeepSeek Retires deepseek-chat/deepseek-reasoner Today (July 24): A 5-Minute Migration Checklist",
+    "body_zh": "DeepSeek 官方公告将于 2026 年 7 月 24 日 UTC 15:59（北京时间 23:59）彻底下线 deepseek-chat 和 deepseek-reasoner 这两个旧模型别名，过了这个点用旧名字调用 API 会直接报错。迁移路径很明确：deepseek-chat 对应新模型 deepseek-v4-flash 的非思考模式，deepseek-reasoner 对应 deepseek-v4-flash 的思考模式（也可以按需求换成能力更强的 deepseek-v4-pro）；思考模式统一改用请求参数控制，加一行 thinking: {\"type\": \"enabled\"} 就能开关推理，不用再靠模型名区分。实操建议：①先在代码里全局搜索 \"deepseek-chat\" 和 \"deepseek-reasoner\" 这两个字符串，替换成对应新模型名，是一次纯粹的查找替换，大部分项目几分钟能搞定；②替换完先在测试环境跑一轮完整回归，尤其是长文本推理类任务，V4 架构和上一代不完全一样，输出可能有细微漂移，别直接上生产；③如果你在用 Claude Code 或其他 Anthropic 生态的客户端调用 DeepSeek，官方新开了 https://api.deepseek.com/anthropic 这个 Anthropic 格式的专用端点，不用自己写协议转换层，直接换 base_url 就行。",
+    "body_en": "DeepSeek announced that the legacy model aliases deepseek-chat and deepseek-reasoner will be fully retired at 15:59 UTC on July 24, 2026 (23:59 Beijing time) — any API call using the old names after that point returns a hard error. The migration path is clear: deepseek-chat maps to the non-thinking mode of the new deepseek-v4-flash model, and deepseek-reasoner maps to deepseek-v4-flash's thinking mode (or you can move up to the more capable deepseek-v4-pro if you need it). Thinking mode is now controlled by a request parameter instead of the model name — just add thinking: {\"type\": \"enabled\"} to toggle reasoning on or off. Practical tips: 1) search your codebase globally for the strings \"deepseek-chat\" and \"deepseek-reasoner\" and swap in the new model names — for most projects this is a pure find-and-replace that takes minutes; 2) after replacing, run a full regression pass in a test environment first, especially for long-form reasoning tasks — the V4 architecture differs enough from the previous generation that outputs may shift slightly, so don't push straight to production; 3) if you're calling DeepSeek from Claude Code or another Anthropic-ecosystem client, DeepSeek has opened a dedicated Anthropic-format endpoint at https://api.deepseek.com/anthropic — just swap the base_url instead of writing your own protocol translation layer.",
+    "models": [
+      "DeepSeek",
+      "DeepSeek V4",
+      "deepseek-v4-flash",
+      "deepseek-v4-pro"
+    ],
+    "tags": [
+      "DeepSeek",
+      "API迁移",
+      "模型下线",
+      "提示词技巧",
+      "开发者工具"
+    ],
+    "source": "DeepSeek 官方公告 / Enterprise DNA、TheRouter.ai、byteiota（2026-07-24 迁移截止日报道）",
+    "updated": "2026-07-24"
+  },
+  {
+    "id": "craft-chatgpt-voice-desktop-codex-multitask",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "ChatGPT 语音登陆桌面版：边说话边跑 Codex，一句话开多路后台任务",
+    "title_en": "ChatGPT Voice Lands on Desktop: Talk While Codex Codes, Kick Off Multiple Background Tasks in One Chat",
+    "body_zh": "OpenAI 在 2026 年 7 月 23 日为桌面版 ChatGPT 上线全新语音功能「ChatGPT Voice」，底层换上新一代 GPT-Live 技术，支持边说边听的自然对话（不再是「你说完我才能说」的对讲机式轮流发言），还能和编程产品 Codex 联动——一边写代码一边用语音指挥，同时能在一次对话里同时开出多路任务，之后继续说话时后台任务不受打断，各自跑各自的。实操建议：①用语音下达任务时把「目标」和「边界」说清楚（比如「帮我把这几个文件的日志格式统一改成 JSON，其他逻辑不要动」），语音输入容易语序松散，收尾时补一句复述确认能明显减少后台任务跑偏的概率；②同时开多路任务前，先确认每路任务之间没有互相依赖的文件改动，不然容易出现两个后台任务同时改同一个文件的冲突；③语音打断功能虽然支持实时插话，但涉及删除、覆盖这类不可逆操作时，还是手动打字确认一遍更稳妥，别单纯靠语音里一句「对，就这么改」拍板。",
+    "body_en": "On July 23, 2026, OpenAI shipped a new \"ChatGPT Voice\" feature on the desktop app, powered by its new-generation GPT-Live technology: it supports natural simultaneous listening-and-speaking conversation (no more walkie-talkie-style \"you finish, then I talk\" turn-taking), and it hooks into Codex, OpenAI's coding product — you can talk while Codex writes code, and a single conversation can kick off multiple work streams that keep running in the background uninterrupted while you keep talking. Practical tips: 1) when giving a task by voice, state both the goal and the boundary clearly (\"unify the log format in these files to JSON, don't touch anything else\") — voice input tends to ramble, and a quick spoken recap at the end noticeably cuts the odds of a background task drifting off track; 2) before spinning up multiple tasks at once, confirm they don't touch overlapping files — otherwise two background tasks can end up editing the same file and conflicting; 3) even though voice supports real-time interruption, for irreversible actions like deletes or overwrites, type out a manual confirmation instead of just saying \"yes, do that\" and moving on.",
+    "models": [
+      "ChatGPT",
+      "ChatGPT Voice",
+      "Codex",
+      "OpenAI"
+    ],
+    "tags": [
+      "ChatGPT",
+      "语音交互",
+      "Codex",
+      "多任务",
+      "提示词技巧"
+    ],
+    "source": "OpenAI 官方发布 / Fortune、openai.com（2026-07-23 发布）",
+    "updated": "2026-07-24"
+  },
+  {
+    "id": "start-claude-voice-mode-model-inherit",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "Claude 语音模式更新：默认沿用你文字对话里选的模型，选错模型语音跟着错",
+    "title_en": "Claude Voice Mode Update: It Inherits Whatever Model You Picked in Text Chat",
+    "body_zh": "Anthropic 在 2026 年 7 月 23 日更新了 Claude 的语音模式，让它更「会说话」——这是继 OpenAI 升级 ChatGPT 语音之后的针对性回应。语音模式支持在 Opus、Sonnet、Haiku 三档模型之间选择，更新后默认行为是：语音对话会自动沿用你最近一次文字聊天用过的模型，并优先用它的「最快版本」响应，而不是每次都重新问你选哪个。实操建议：①开语音对话前先看一眼自己上一次文字聊天用的是哪个模型——如果那次是随手用 Haiku 处理简单任务，语音模式也会沿用 Haiku，遇到需要深度推理的问题时答案质量可能不如预期，想用 Opus 就先在文字里切一次模型再开语音；②语音场景默认追求响应速度用的是「最快版本」，如果任务本身需要更长的思考链条（比如复杂的多步骤规划），语音里明确说「不用赶时间，仔细想清楚再回答」，能一定程度上换取更完整的推理；③三档模型语音语气和响应习惯不完全一致，第一次用某个模型的语音模式时，建议先用一个简单问题试探一下它的说话风格，再开始正式任务。",
+    "body_en": "On July 23, 2026, Anthropic updated Claude's voice mode to sound more natural — a direct response following OpenAI's ChatGPT voice upgrade. Voice mode lets you choose among the Opus, Sonnet, and Haiku model tiers, and the new default behavior is: a voice conversation automatically inherits whichever model you last used in text chat, and responds using that model's fastest variant, instead of asking you to pick each time. Practical tips: 1) before starting a voice chat, check which model you last used in text — if that was a quick Haiku session for a trivial task, voice mode will default to Haiku too, and answer quality on anything requiring deep reasoning may fall short; switch to Opus in text chat first if that's what you actually want for the voice session; 2) voice mode defaults to the fastest variant for responsiveness — if the task genuinely needs a longer reasoning chain (a complex multi-step plan), explicitly say \"no rush, think it through carefully\" to trade some speed for more complete reasoning; 3) the three model tiers don't sound or respond quite the same in voice — the first time you use voice mode with a given model, test it with a simple question first to get a feel for its style before diving into the real task.",
+    "models": [
+      "Claude",
+      "Claude Voice Mode",
+      "Opus",
+      "Sonnet",
+      "Haiku",
+      "Anthropic"
+    ],
+    "tags": [
+      "Claude",
+      "语音模式",
+      "模型选择",
+      "新手入门"
+    ],
+    "source": "Anthropic 官方发布 / TechCrunch（2026-07-23 报道）",
+    "updated": "2026-07-24"
+  },
+  {
+    "id": "plugin-mcp-spec-2026-07-28-stateless-rewrite",
+    "category": "plugin",
+    "level": "advanced",
+    "title_zh": "MCP 迎来史上最大改版：7月28日无状态化正式生效，接了 MCP 的项目该提前测什么",
+    "title_en": "MCP's Biggest Rewrite Yet Ships July 28: The Protocol Goes Stateless — What to Test Before It Lands",
+    "body_zh": "Model Context Protocol（MCP）规范的候选版本已于 2026 年 5 月 21 日锁定，最终正式版将在 2026 年 7 月 28 日生效，是 MCP 自发布以来幅度最大的一次重写。核心变化：①协议核心从「有状态」改为「无状态」，服务端不再需要为每个会话维持长连接，可以直接跑在普通 HTTP 基础设施（比如常规的负载均衡、Serverless 网关）上做水平扩展，不用再为长连接单独搭一套架构；②新增 MCP Apps（服务端渲染 UI）和 Tasks（长任务）两个扩展，前者让 MCP 工具能直接返回可交互界面而不只是文本，后者专门处理跑得比较久、不能一次请求就返回结果的任务；③鉴权机制向标准 OAuth / OpenID Connect 靠拢，并第一次引入正式的弃用政策，以后协议变更会有明确的过渡期而不是说改就改。实操建议：①如果项目里接了自建 MCP Server，7 月 28 日前先在测试环境跑一遍现有工具调用，重点看长连接、会话保持相关的逻辑有没有硬编码依赖，无状态改造最容易在这里踩坑；②用的是第三方 MCP Server（比如 Claude Code 里配置的那些），升级窗口内多留意对应仓库的 changelog，Tier 1 的 SDK 预计会在这十周窗口内跟进适配，不用抢首批升级；③如果之前用 MCP 只做纯文本工具调用，暂时不用改代码；但如果计划做交互式界面或长任务，可以提前了解 MCP Apps / Tasks 这两个扩展，正式版落地后直接用，不用等下一轮规范。",
+    "body_en": "The Model Context Protocol (MCP) specification's release candidate was locked on May 21, 2026, and the final version takes effect July 28, 2026 — the largest rewrite MCP has seen since launch. Key changes: 1) the protocol core moves from stateful to stateless, so servers no longer need to hold a long-lived connection per session and can scale horizontally on ordinary HTTP infrastructure (standard load balancers, serverless gateways) instead of requiring a dedicated architecture for persistent connections; 2) two new extensions land — MCP Apps (server-rendered UI), letting tools return interactive interfaces instead of just text, and Tasks, purpose-built for long-running work that can't return a result in a single request; 3) authorization moves closer to standard OAuth / OpenID Connect, and MCP gets a formal deprecation policy for the first time, so future protocol changes come with a defined transition window instead of breaking overnight. Practical tips: 1) if your project runs a self-hosted MCP server, run your existing tool calls through a staging environment before July 28 and specifically check for hardcoded assumptions around long-lived connections or session persistence — that's where the stateless rewrite is most likely to break something; 2) if you rely on third-party MCP servers (like the ones configured in Claude Code), watch their changelogs during the rollout window — Tier 1 SDKs are expected to catch up within the ten-week window, so there's no need to rush being an early adopter; 3) if you've only used MCP for plain text tool calls, no code changes are needed yet; but if interactive UIs or long-running tasks are on your roadmap, it's worth reading up on the MCP Apps / Tasks extensions now so you can use them as soon as the final spec lands.",
+    "models": [
+      "MCP",
+      "Model Context Protocol",
+      "Claude Code"
+    ],
+    "tags": [
+      "MCP",
+      "协议规范",
+      "无状态架构",
+      "插件开发",
+      "Claude Code"
+    ],
+    "source": "Model Context Protocol 官方博客 / SecurityWeek、WorkOS（规范锁定于 2026-05-21，正式生效 2026-07-28）",
+    "updated": "2026-07-24"
+  },
+  {
+    "id": "craft-qwen-3-8-max-native-multimodal-preview",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "Qwen3.8-Max-Preview 上线：2.4万亿参数原生全模态，一个模型吃下文本图片视频文档",
+    "title_en": "Qwen3.8-Max-Preview Ships: A 2.4-Trillion-Parameter Native Multimodal Flagship That Handles Text, Image, Video, and Documents in One Model",
+    "body_zh": "阿里云通义千问在 2026 年 7 月 19 日发布 Qwen3.8-Max-Preview，参数规模 2.4 万亿，是通义千问系列首个突破万亿参数的「原生」多模态旗舰模型——文本、图像、视频、多格式文档的解析与生成能力整合进同一个模型，不再是「主模型 + 外挂视觉/视频插件」的拼接方案。预览期通过 Token Plan、Qoder、QoderWork 渠道可享受官方价 10% 的限时优惠。实操建议：①原生多模态意味着可以在同一次对话里混合丢文本、图片、文档，不用像以前那样先用专门的图片理解接口转成文字描述再喂给主模型，一次性把材料都丢进去、需求写清楚即可；②处理长文档或多文件资料时，先明确问它「这些材料分别是什么类型、大致讲了什么」，确认模型准确识别了各类输入的边界，再展开细节提问，混合输入场景下模型偶尔会把不同文件的内容串在一起，先做一次边界确认能提前发现这类问题；③限时 10% 折扣是预览期定价，用于生产环境前建议先跑一轮成本估算，确认正式定价后是否仍在预算内，避免预览期习惯了低价后正式版成本超出预期。",
+    "body_en": "On July 19, 2026, Alibaba Cloud's Tongyi Qianwen team released Qwen3.8-Max-Preview, a 2.4-trillion-parameter model — the Qwen series' first flagship to break past a trillion parameters as a natively multimodal model, meaning text, image, video, and multi-format document parsing and generation are integrated into a single model rather than a main model bolted onto separate vision/video plugins. During the preview period, the Token Plan, Qoder, and QoderWork channels offer a limited-time 10% discount off the official price. Practical tips: 1) native multimodality means you can mix text, images, and documents in the same conversation without first running images through a separate vision API to convert them to text descriptions for the main model — just drop everything in at once with a clear request; 2) when working with long documents or multiple files, first ask it to identify what each piece of material is and roughly summarize it, to confirm the model correctly recognized the boundaries between different inputs, before drilling into details — mixed-input scenarios occasionally cause content from different files to bleed together, and this boundary check catches that early; 3) the 10% discount is preview-period pricing — before moving anything to production, run a cost estimate against the eventual standard pricing so you're not surprised by higher costs once the preview period ends.",
+    "models": [
+      "Qwen",
+      "Qwen3.8-Max-Preview",
+      "阿里云",
+      "通义千问"
+    ],
+    "tags": [
+      "Qwen",
+      "多模态",
+      "旗舰模型",
+      "提示词技巧"
+    ],
+    "source": "阿里云官方发布 / MarkTechPost、developer.aliyun.com（2026-07-19 发布）",
+    "updated": "2026-07-24"
   }
 ];
