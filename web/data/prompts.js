@@ -7823,5 +7823,96 @@ window.PROMPTS = [
     ],
     "source": "阿里云官方发布 / MarkTechPost、developer.aliyun.com（2026-07-19 发布）",
     "updated": "2026-07-24"
+  },
+  {
+    "id": "craft-claude-opus5-fastmode-when-to-use",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "Claude Opus 5 上线：Claude Code 里的 Fast Mode 到底该什么时候开",
+    "title_en": "Claude Opus 5 Ships: When to Actually Turn On Fast Mode in Claude Code",
+    "body_zh": "Anthropic 发布 Claude Opus 5，成为 Claude Max 套餐的默认模型、Pro 套餐里能力最强的选项，默认且唯一的上下文窗口就是 100 万 token，最大输出 12.8 万 token，默认开启思考模式。普通模式定价与 Opus 4.8 持平（输入 5 美元/输出 25 美元每百万 token），Claude Code 里新增的 Fast Mode 能把推理速度提到 2.5 倍，但价格也翻倍（输入 10 美元/输出 50 美元每百万 token），Pro/Max/Team/Enterprise 订阅用户都能用。实操建议：①日常写代码、改小函数、回答不复杂的问题，用普通模式就够，没必要为了「快」多花一倍钱；②真正该开 Fast Mode 的场景是「等待本身在拖慢你」——比如结对编程时你在等它跑完一轮改动才能继续手动验证、或者调试时需要来回好几轮快速试错，这时候 2.5 倍速度换来的时间价值，通常超过多花的那一倍成本；③长文档、大代码库分析这类本来就要吃满 100 万上下文的任务，先用普通模式跑一遍摸清大致耗时和 token 量，再决定要不要为后续几轮迭代切到 Fast Mode；④团队/企业账号建议先圈定 1-2 个高频、时间敏感的工作流（比如 CI 报错自动修复）试点 Fast Mode，而不是全员默认打开，避免账单突然翻倍。",
+    "body_en": "Anthropic released Claude Opus 5, now the default model on Claude Max and the most capable option on Claude Pro. Its context window is a fixed 1 million tokens (no smaller variant), max output is 128K tokens, and extended thinking is on by default. Standard-mode pricing matches Opus 4.8 ($5 input / $25 output per million tokens); Claude Code's new Fast Mode pushes inference speed to 2.5x but doubles the price ($10 input / $50 output per million tokens), available to Pro/Max/Team/Enterprise subscribers. Practical guidance: 1) for everyday coding, small function edits, and straightforward questions, standard mode is plenty — no need to pay double just for speed; 2) the scenario where Fast Mode actually pays off is when waiting itself is the bottleneck — pair programming where you're blocked until a round of edits finishes so you can manually verify, or debugging loops that need several fast back-and-forth iterations — the time saved from 2.5x speed usually outweighs the extra cost; 3) for tasks that genuinely need the full 1M context (long documents, large codebase analysis), run one pass in standard mode first to gauge time and token usage before deciding whether to switch to Fast Mode for later iterations; 4) teams and enterprise accounts should pilot Fast Mode on 1-2 high-frequency, time-sensitive workflows (like auto-fixing CI failures) rather than flipping it on for everyone by default, to avoid an unexpected doubling of the bill.",
+    "models": [
+      "Claude",
+      "Opus 5",
+      "Claude Code"
+    ],
+    "tags": [
+      "Claude",
+      "Opus 5",
+      "Fast Mode",
+      "Claude Code",
+      "定价"
+    ],
+    "source": "Anthropic 官方文档 / OpenRouter、the-decoder 报道（2026-07）",
+    "updated": "2026-07-25"
+  },
+  {
+    "id": "image-jimeng5-model-pick-brush-edit",
+    "category": "image",
+    "level": "beginner",
+    "title_zh": "即梦 5.0 正式版：三个模型怎么选，新增笔刷局部重绘别再整图重来",
+    "title_en": "Jimeng 5.0 Goes Live: Which Model to Pick, and Use the New Brush Tool Instead of Regenerating the Whole Image",
+    "body_zh": "即梦 5.0 图片生成正式上线，官方建议默认选「5.0 Lite」——带联网搜索能力，日常出图实测效果最好；只有两种场景例外：要做极精致的商业人像时用 4.5，纯做 Logo、海报文字排版这类对文字排布要求高的场景用 3.0。提示词写法建议严格按「主体 → 场景 → 光影 → 风格 → 画质」的顺序、逗号分隔，单次控制在 30-80 个词，5.0 的一大进步是不用写得特别精确也能理解意图。这一版最实用的新功能是「笔刷编辑」：以前对图片局部不满意（比如手部畸形、某个物件位置不对）只能推倒重来，现在可以直接用笔刷圈出要改的区域，只重绘这一小块，其余部分保持不变。反向提示词建议按场景加：人像类补一句「大小眼、手部畸形」，商品图补一句「产品变形、划痕污渍」，能明显减少这两类常见翻车。导出目前官方支持到 2K，4K 直出还在推进中，追求更高分辨率暂时还是要靠后期放大工具。",
+    "body_en": "Jimeng 5.0 image generation has officially launched. The team recommends defaulting to \"5.0 Lite\" — it has web-search capability and tests best for everyday image generation — with two exceptions: use 4.5 for highly polished commercial portraits, and use 3.0 for logos or posters where precise text layout matters most. For prompts, follow the order subject → scene → lighting → style → quality, comma-separated, kept to 30-80 words; one of 5.0's biggest improvements is that it understands intent even without hyper-precise wording. The most practical new feature in this version is brush editing: previously, if part of an image was off (malformed hands, a misplaced object), you had to regenerate the whole thing — now you can circle just the area to fix with a brush and only that region gets redrawn, leaving the rest untouched. For negative prompts, add scenario-specific lines: for portraits, include \"uneven eyes, malformed hands\"; for product shots, include \"product distortion, scratches or stains\" — both noticeably cut down on the most common failure modes. Export currently tops out at 2K officially; native 4K output is still rolling out, so for now higher resolution still requires an upscaling tool afterward.",
+    "models": [
+      "即梦",
+      "Jimeng"
+    ],
+    "tags": [
+      "文生图",
+      "即梦",
+      "模型选择",
+      "笔刷编辑",
+      "进阶"
+    ],
+    "source": "腾讯云开发者社区 / 知乎、青瓜传媒即梦 5.0 实测与教程整理（2026-07）",
+    "updated": "2026-07-25"
+  },
+  {
+    "id": "role-grok41-emotional-creative-writing",
+    "category": "role",
+    "level": "beginner",
+    "title_zh": "Grok 4.1 写走心文案：情感智能升级后，怎么用提示词把「故事感」榨出来",
+    "title_en": "Grok 4.1 for Heartfelt Copy: How to Prompt for Genuine Emotional Storytelling",
+    "body_zh": "Grok 4.1 这次升级重点在「情感智能」和写作能力，官方称在纯写作能力的 LMArena 榜单上排到第二，仅次于 Gemini 3，尤其擅长带情绪递进的创意文案、故事类内容。想让它发挥这块长处，别只给一句「写个走心文案」，试试这个角色提示词模板：「你是一位擅长情感叙事的资深文案，请为【产品/主题】写一段【字数】的文案。要求：①开头用一个具体的场景或细节切入，不要直接讲道理；②情绪要有递进——从【起始情绪，如平静/怀念】过渡到【结尾情绪，如释然/期待】；③避免空洞的形容词堆砌，用具体的感官细节（声音、触感、光线）代替『美好』『温暖』这类词；④结尾留一句让人回味的话，不要总结陈词。」这套模板同样适用于品牌故事、纪念日文案、告别/感谢信这类需要「情绪曲线」的场景。写完可以追问一句「哪一句最容易让人划走不看，帮我改掉」，让它自我审视薄弱环节。",
+    "body_en": "Grok 4.1's upgrade focuses on emotional intelligence and writing quality — xAI says it now ranks second on LMArena's pure-writing leaderboard, just behind Gemini 3, and is especially strong at creative copy and story-driven content with emotional build. To get the most out of that strength, don't just ask for \"heartfelt copy\" — try this role-prompt template: \"You're a senior copywriter known for emotional storytelling. Write a [word count] piece of copy for [product/theme]. Requirements: 1) open with a specific scene or detail, not a stated point; 2) the emotion should build — moving from [starting emotion, e.g. calm/nostalgic] to [ending emotion, e.g. at peace/hopeful]; 3) avoid stacking vague adjectives — use concrete sensory details (sound, touch, light) instead of words like 'beautiful' or 'warm'; 4) end with one memorable line, not a summary.\" This template also works well for brand stories, anniversary copy, and farewell/thank-you messages — anything that needs an emotional arc. After a draft, follow up with \"which line is most likely to make someone scroll away — help me fix it\" to get it to self-critique the weak spots.",
+    "models": [
+      "Grok",
+      "Grok 4.1",
+      "xAI"
+    ],
+    "tags": [
+      "角色扮演",
+      "Grok",
+      "情感写作",
+      "文案",
+      "新手"
+    ],
+    "source": "Tom's Guide / Yahoo Tech 报道 Grok 4.1 创意与情感写作能力（2026-07）",
+    "updated": "2026-07-25"
+  },
+  {
+    "id": "skill-multi-model-council-brainstorm",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "「模型议事会」Skill：让 Claude Code 先拉 ChatGPT、Gemini 开个会，再给你出方案",
+    "title_en": "The 'Model Council' Skill: Have Claude Code Consult ChatGPT and Gemini Before Presenting a Plan",
+    "body_zh": "社区最近流行一类叫「模型议事会（Model Council）」的 Claude Skill：在 Claude Code 里正式动手实现之前，先自动把同一个问题分别丢给 ChatGPT 和 Gemini 头脑风暴，收集它们的思路差异，再综合成一份实施计划呈现给你确认，而不是 Claude 一个人闷头想方案。背后逻辑是 Skill 属于「触发先行」——只要对话里出现关键词就会自动被唤起，不需要你提前手动进入某个项目，这点和「场景先行」的 Projects 不一样，用来做「遇到复杂决策就自动拉个会」的工作流很顺手。适合用的场景：架构选型、有争议的技术方案、需要多个视角交叉验证的判断题；不适合用在已经很明确、只是照做的执行类任务上，白白多等两轮外部调用。上手方式：跟 Claude 说「帮我做一个 skill，遇到需要架构决策的问题时，先把方案分别发给 ChatGPT 和 Gemini 征求意见，总结出共识和分歧点，再给我一份综合建议」，让它按这个思路生成一份 SKILL.md，之后类似场景会自动触发。",
+    "body_en": "A community-favorite Claude Skill pattern called the \"Model Council\" has been gaining traction: before implementing anything in Claude Code, it automatically sends the same problem to ChatGPT and Gemini for brainstorming, collects where their thinking diverges, and synthesizes that into one implementation plan for you to confirm — instead of Claude reasoning it out alone. The logic behind it: Skills are trigger-first, automatically invoked whenever a keyword shows up in conversation, unlike scenario-first Projects that require you to manually enter a workspace first — which makes it a natural fit for a \"pull in outside opinions automatically whenever a hard decision comes up\" workflow. Good fits: architecture choices, contested technical approaches, judgment calls that benefit from cross-checking multiple perspectives. Not a good fit: execution tasks that are already unambiguous, where the extra round-trips to other models just add latency for no benefit. To set it up, tell Claude: \"Build me a skill that, whenever there's an architecture decision to make, first sends the proposal to ChatGPT and Gemini for input, summarizes where they agree and disagree, then gives me one combined recommendation.\" Have it generate a SKILL.md along those lines, and it'll auto-trigger for similar situations going forward.",
+    "models": [
+      "Claude",
+      "ChatGPT",
+      "Gemini"
+    ],
+    "tags": [
+      "Skill",
+      "Claude Code",
+      "跨模型协作",
+      "工作流",
+      "进阶"
+    ],
+    "source": "GitHub 开源项目 llm-council-skill / 社区实践整理（2026-07）",
+    "updated": "2026-07-25"
   }
 ];

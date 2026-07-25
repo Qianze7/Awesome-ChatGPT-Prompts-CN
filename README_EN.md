@@ -17,12 +17,12 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 ### Categories
 
 - 🚀 **Getting Started** (40)
-- 🎭 **Role Prompts** (150)
-- 🖼️ **Text-to-Image** (23)
+- 🎭 **Role Prompts** (151)
+- 🖼️ **Text-to-Image** (24)
 - 🎬 **Text-to-Video** (30)
-- 🧩 **Skills** (40)
+- 🧩 **Skills** (41)
 - 🔌 **Plugins / MCP** (29)
-- 💡 **Prompt Craft** (67)
+- 💡 **Prompt Craft** (68)
 
 ## 🚀 Getting Started
 
@@ -978,6 +978,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > On 2026-07-14, Anthropic launched Claude for Teachers, free for verified US K-12 educators (registration open through 2027-06-30). It bakes standards from all 50 states directly into the product, helping teachers generate lesson plans and differentiate materials by student level, alongside an AI Fluency course built with Teach for America and a train-the-trainer program with the American Federation of Teachers. The core value proposition is accuracy up front — content is generated aligned to official standards from the start, cutting down the time teachers spend fact-checking afterward. If you teach anywhere — not just the US, and whether you use Claude or another AI — you can adapt this lesson-plan prompt template: "I teach [grade/subject]. Today's topic is [topic], class length [duration]. Structure the lesson plan as: (1) aligned standard(s) — if you're unsure which standard applies to my region, ask me for the exact standard text first; (2) learning objectives (3 max, observable and measurable); (3) a timed classroom activity outline; (4) differentiation notes for 'foundational,' 'on-level,' and 'extension' student groups; (5) a 5-question exit check with an answer key." This structure forces the AI not to skip the two parts a generic 'write me a lesson plan' prompt usually misses: differentiation and standards alignment.
 
+### Grok 4.1 for Heartfelt Copy: How to Prompt for Genuine Emotional Storytelling
+`🟢 Beginner ｜ Grok · Grok 4.1 · xAI`  ·  Tom's Guide / Yahoo Tech 报道 Grok 4.1 创意与情感写作能力（2026-07）
+
+> Grok 4.1's upgrade focuses on emotional intelligence and writing quality — xAI says it now ranks second on LMArena's pure-writing leaderboard, just behind Gemini 3, and is especially strong at creative copy and story-driven content with emotional build. To get the most out of that strength, don't just ask for "heartfelt copy" — try this role-prompt template: "You're a senior copywriter known for emotional storytelling. Write a [word count] piece of copy for [product/theme]. Requirements: 1) open with a specific scene or detail, not a stated point; 2) the emotion should build — moving from [starting emotion, e.g. calm/nostalgic] to [ending emotion, e.g. at peace/hopeful]; 3) avoid stacking vague adjectives — use concrete sensory details (sound, touch, light) instead of words like 'beautiful' or 'warm'; 4) end with one memorable line, not a summary." This template also works well for brand stories, anniversary copy, and farewell/thank-you messages — anything that needs an emotional arc. After a draft, follow up with "which line is most likely to make someone scroll away — help me fix it" to get it to self-critique the weak spots.
+
 ## 🖼️ Text-to-Image
 
 ### Midjourney realistic portrait formula
@@ -1103,6 +1108,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ Grok · Aurora · xAI`  ·  xAI 产品文档 / pxz.ai、shiori.ai、xsoneconsultants（2026-07 汇总测评）
 
 > xAI's image model Aurora is built into Grok on X (formerly Twitter). Its strengths are photorealism, looser content restrictions, and unusually accurate text rendering (signage, T-shirts, and on-page document text mostly come out correct) — good fit for product shots, packaging visuals, and e-commerce images. Since April 2026 image generation has been pulled from the free tier, requiring at least a SuperGrok Lite subscription (~$10/month). Practical tips: 1) stack prompts in the order scene description (1-2 sentences) + art style + lighting + color tone + mood + quality tags — describe what's in frame first, then add style words like "cel-shaded / watercolor / documentary photography"; 2) for that "actually photographed" texture, add concrete photography terms — "shot on 85mm lens", "soft rim light", "realistic skin texture", "4k" — these guide Aurora more effectively than piling on adjectives; 3) explicitly naming an art style (cel-shaded / watercolor / comic) precisely controls how the scene gets reinterpreted; without a style word, Aurora defaults toward photorealism.
+
+### Jimeng 5.0 Goes Live: Which Model to Pick, and Use the New Brush Tool Instead of Regenerating the Whole Image
+`🟢 Beginner ｜ 即梦 · Jimeng`  ·  腾讯云开发者社区 / 知乎、青瓜传媒即梦 5.0 实测与教程整理（2026-07）
+
+> Jimeng 5.0 image generation has officially launched. The team recommends defaulting to "5.0 Lite" — it has web-search capability and tests best for everyday image generation — with two exceptions: use 4.5 for highly polished commercial portraits, and use 3.0 for logos or posters where precise text layout matters most. For prompts, follow the order subject → scene → lighting → style → quality, comma-separated, kept to 30-80 words; one of 5.0's biggest improvements is that it understands intent even without hyper-precise wording. The most practical new feature in this version is brush editing: previously, if part of an image was off (malformed hands, a misplaced object), you had to regenerate the whole thing — now you can circle just the area to fix with a brush and only that region gets redrawn, leaving the rest untouched. For negative prompts, add scenario-specific lines: for portraits, include "uneven eyes, malformed hands"; for product shots, include "product distortion, scratches or stains" — both noticeably cut down on the most common failure modes. Export currently tops out at 2K officially; native 4K output is still rolling out, so for now higher resolution still requires an upscaling tool afterward.
 
 ## 🎬 Text-to-Video
 
@@ -1464,6 +1474,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ Claude · Claude Cowork · Anthropic`  ·  Anthropic 官方发布（@claudeai） / Dataconomy（2026-07-22 报道，功能 2026-07-21 上线）
 
 > On July 21, 2026, Anthropic shipped "Teach Claude a skill" (Record a Skill) in the Claude desktop app's Cowork interface, available to Pro, Max, and Team subscribers under "Record a skill" in the app's "+" menu. The workflow is direct: start recording, perform the task on screen while narrating each step out loud ("now I'm opening the expense system, entering the amount, then uploading the receipt"), and Claude reads the screen activity, clicks, keystrokes, and your voice commentary to assemble a reusable skill you can invoke again later — no need to re-write a long prompt for the same task next time. Practical tips: 1) mentally rehearse the step order before recording, and narrate with cause-and-effect phrasing like "now I do X because Y" — it helps Claude capture the reasoning behind each step, not just the clicks; 2) prioritize recording tasks that are hard to describe in words but obvious once demonstrated (complex form filling, multi-step approvals, fixed-format file organizing) — for purely conversational tasks, a normal prompt is still faster; 3) after recording, spend a minute reviewing the skill summary Claude produced and correct any gaps or misreadings in text — that's quicker than re-recording from scratch.
+
+### The 'Model Council' Skill: Have Claude Code Consult ChatGPT and Gemini Before Presenting a Plan
+`🟡 Intermediate ｜ Claude · ChatGPT · Gemini`  ·  GitHub 开源项目 llm-council-skill / 社区实践整理（2026-07）
+
+> A community-favorite Claude Skill pattern called the "Model Council" has been gaining traction: before implementing anything in Claude Code, it automatically sends the same problem to ChatGPT and Gemini for brainstorming, collects where their thinking diverges, and synthesizes that into one implementation plan for you to confirm — instead of Claude reasoning it out alone. The logic behind it: Skills are trigger-first, automatically invoked whenever a keyword shows up in conversation, unlike scenario-first Projects that require you to manually enter a workspace first — which makes it a natural fit for a "pull in outside opinions automatically whenever a hard decision comes up" workflow. Good fits: architecture choices, contested technical approaches, judgment calls that benefit from cross-checking multiple perspectives. Not a good fit: execution tasks that are already unambiguous, where the extra round-trips to other models just add latency for no benefit. To set it up, tell Claude: "Build me a skill that, whenever there's an architecture decision to make, first sends the proposal to ChatGPT and Gemini for input, summarizes where they agree and disagree, then gives me one combined recommendation." Have it generate a SKILL.md along those lines, and it'll auto-trigger for similar situations going forward.
 
 ## 🔌 Plugins / MCP
 
@@ -1974,5 +1989,10 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ Qwen · Qwen3.8-Max-Preview · 阿里云 · 通义千问`  ·  阿里云官方发布 / MarkTechPost、developer.aliyun.com（2026-07-19 发布）
 
 > On July 19, 2026, Alibaba Cloud's Tongyi Qianwen team released Qwen3.8-Max-Preview, a 2.4-trillion-parameter model — the Qwen series' first flagship to break past a trillion parameters as a natively multimodal model, meaning text, image, video, and multi-format document parsing and generation are integrated into a single model rather than a main model bolted onto separate vision/video plugins. During the preview period, the Token Plan, Qoder, and QoderWork channels offer a limited-time 10% discount off the official price. Practical tips: 1) native multimodality means you can mix text, images, and documents in the same conversation without first running images through a separate vision API to convert them to text descriptions for the main model — just drop everything in at once with a clear request; 2) when working with long documents or multiple files, first ask it to identify what each piece of material is and roughly summarize it, to confirm the model correctly recognized the boundaries between different inputs, before drilling into details — mixed-input scenarios occasionally cause content from different files to bleed together, and this boundary check catches that early; 3) the 10% discount is preview-period pricing — before moving anything to production, run a cost estimate against the eventual standard pricing so you're not surprised by higher costs once the preview period ends.
+
+### Claude Opus 5 Ships: When to Actually Turn On Fast Mode in Claude Code
+`🟡 Intermediate ｜ Claude · Opus 5 · Claude Code`  ·  Anthropic 官方文档 / OpenRouter、the-decoder 报道（2026-07）
+
+> Anthropic released Claude Opus 5, now the default model on Claude Max and the most capable option on Claude Pro. Its context window is a fixed 1 million tokens (no smaller variant), max output is 128K tokens, and extended thinking is on by default. Standard-mode pricing matches Opus 4.8 ($5 input / $25 output per million tokens); Claude Code's new Fast Mode pushes inference speed to 2.5x but doubles the price ($10 input / $50 output per million tokens), available to Pro/Max/Team/Enterprise subscribers. Practical guidance: 1) for everyday coding, small function edits, and straightforward questions, standard mode is plenty — no need to pay double just for speed; 2) the scenario where Fast Mode actually pays off is when waiting itself is the bottleneck — pair programming where you're blocked until a round of edits finishes so you can manually verify, or debugging loops that need several fast back-and-forth iterations — the time saved from 2.5x speed usually outweighs the extra cost; 3) for tasks that genuinely need the full 1M context (long documents, large codebase analysis), run one pass in standard mode first to gauge time and token usage before deciding whether to switch to Fast Mode for later iterations; 4) teams and enterprise accounts should pilot Fast Mode on 1-2 high-frequency, time-sensitive workflows (like auto-fixing CI failures) rather than flipping it on for everyone by default, to avoid an unexpected doubling of the bill.
 
 <!-- AUTO-PROMPTS:END -->
