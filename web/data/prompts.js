@@ -7914,5 +7914,97 @@ window.PROMPTS = [
     ],
     "source": "GitHub 开源项目 llm-council-skill / 社区实践整理（2026-07）",
     "updated": "2026-07-25"
+  },
+  {
+    "id": "image-midjourney-v82-preview",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "Midjourney V8.2 预览版又更新：默认模型还是 V8.1，想抢先体验美学升级怎么用",
+    "title_en": "Midjourney V8.2 Preview Gets Another Quiet Update: V8.1 Is Still Default — Here's How to Try the New Look Early",
+    "body_zh": "Midjourney 从 2026 年 6 月 25 日起开放 V8.2 预览，用法是在任意提示词末尾加 --preview 参数，目前它并不是默认模型（默认仍是 V8.1），官方也没有公布定价、跑分或正式发布时间表。V8.2 的定位很明确：这是一次「美学、图像质量与个性化」升级，而不是架构上的重做——官方描述出图会更「大胆、精致、有 edge」，风格参考（Sref）和情绪板的一致性更稳，随机出低质量图的概率明显降低；个性化方面，V8.2 会更准地读取你在 Explore 页面积累的点赞数据，账号历史点赞越多，生成结果越贴合你的审美偏好。7 月社区还反馈预览版又经历了一次「静默更新」，风格特征有细微变化，说明它仍在持续调优阶段。实操建议：①想抢先体验，直接在提示词末尾加 --preview 就行，不用改任何版本设置；②V8.2 目前主打「好看」而非「读懂复杂描述」，构图理解和文字渲染大致和 V8.1 持平，别指望它比 V8.1 更能处理复杂指令；③个性化效果依赖历史点赞积累，账号点赞少的话，建议先去 Explore 页面多给喜欢的风格点赞，再测试 --preview，效果差异会明显很多；④因为预览版行为可能随时调整，正式交付、赶稿这类关键任务建议继续用稳定的 V8.1，把 V8.2 留给风格探索和小范围试测。",
+    "body_en": "Since June 25, 2026, Midjourney has offered a V8.2 preview accessible by appending --preview to any prompt. It's not the default model yet (V8.1 still is), and no pricing, benchmark, or full release date has been announced. Midjourney has been clear about the scope: this is an \"aesthetics, image quality, and personalization\" upgrade rather than a new architecture — official notes describe outputs as more \"creative, bold, sophisticated, and edgy,\" with steadier style-reference (Sref) and moodboard consistency and a sharp drop in random low-quality generations. On personalization, V8.2 reads your accumulated likes from the Explore page more accurately, so the more history you have there, the closer results track your taste. Community reports in July also flagged another \"quiet update\" to the preview that shifted its aesthetic character slightly, a reminder that it's still actively being tuned. Practical tips: 1) to try it early, just add --preview to the end of any prompt — no version setting to change; 2) V8.2 is currently about looking better, not understanding complex prompts better — expect composition handling and text rendering to be roughly on par with V8.1, not a leap forward; 3) personalization depends on your like history, so if your account doesn't have much of it, spend a few minutes liking styles you enjoy on the Explore page before testing --preview — the difference will be much more visible; 4) because preview behavior can shift without notice, keep using the stable V8.1 for deadline-critical deliverables and save V8.2 for style exploration and small experiments.",
+    "models": [
+      "Midjourney",
+      "Midjourney V8.2",
+      "Midjourney V8.1"
+    ],
+    "tags": [
+      "Midjourney",
+      "文生图",
+      "预览版",
+      "风格参考",
+      "个性化"
+    ],
+    "source": "Midjourney 官方发布 / kie.ai、Pexo、geekycuriosity（2026-07-19 前后报道）",
+    "updated": "2026-07-26"
+  },
+  {
+    "id": "craft-chatgpt-atlas-shutdown-migration",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "ChatGPT Atlas 浏览器 8 月 9 日停服：书签/密码/标签页现在就该往哪儿搬",
+    "title_en": "ChatGPT Atlas Browser Shuts Down August 9: Where to Move Your Bookmarks, Passwords and Open Tabs Now",
+    "body_zh": "OpenAI 宣布把浏览器智能体能力并入 ChatGPT 和 Codex 桌面应用，独立的 Atlas 浏览器将在 2026 年 8 月 9 日彻底停止工作。Atlas 里的书签、打开的标签页和浏览历史不会自动迁移，需要用户在停服前自己动手导出：官方给出的路径是把 cookies 和密码导出到 ChatGPT 桌面应用，把书签导出到 Chrome。好消息是聊天记录本身独立存储，不受这次停服影响，停服前后都能照常在 ChatGPT 里访问。以后网页操作、跨标签总结这类浏览器智能体能力，会统一收进新版 ChatGPT 桌面应用里的 ChatGPT Work。实操建议：①现在就打开 Atlas，把还在用的书签导出成 Chrome 能识别的格式，标签页里没读完的重要网页先加进书签或存成 PDF，别拖到 8 月 9 日当天手忙脚乱；②密码和 cookies 走官方给的导出路径搬到 ChatGPT 桌面应用，别自己手抄截图存本地，减少泄露风险；③如果你用 Atlas 的浏览器智能体做过「自动填表」「跨标签比价」这类工作流，提前去 ChatGPT 桌面应用里的 ChatGPT Work 试跑一遍，确认功能对齐了再切换，避免停服当天工作流断档；④聊天记录不用特意备份，只要账号还在，停服后依然能在 ChatGPT 里正常看到。",
+    "body_en": "OpenAI is folding browser-based agentic capabilities into ChatGPT and Codex, and the standalone Atlas browser will stop working entirely on August 9, 2026. Bookmarks, open tabs, and browsing history stored in Atlas will not transfer automatically — you need to export them yourself before the deadline. The official path: export cookies and passwords to the ChatGPT desktop app, and export bookmarks to Chrome. The good news is that your chat history is stored separately and unaffected by the shutdown — it remains accessible in ChatGPT before and after August 9. Browser-agent capabilities like on-page actions and cross-tab summarization are moving into ChatGPT Work inside the new ChatGPT desktop app. Practical tips: 1) open Atlas now and export the bookmarks you still use into a Chrome-readable format; for any important open tab you haven't finished reading, save it as a bookmark or a PDF rather than waiting until August 9; 2) move passwords and cookies through the official export path into the ChatGPT desktop app instead of copying them down manually, to reduce leak risk; 3) if you built workflows around Atlas's browser agent — auto-filling forms, comparing prices across tabs — trial the equivalent in ChatGPT Work inside the desktop app ahead of time and confirm parity before you switch over, so nothing breaks on shutdown day; 4) chat history needs no special backup — as long as your account exists, it stays visible in ChatGPT after the shutdown.",
+    "models": [
+      "ChatGPT",
+      "ChatGPT Atlas",
+      "ChatGPT Work",
+      "OpenAI"
+    ],
+    "tags": [
+      "ChatGPT",
+      "Atlas",
+      "产品停服",
+      "迁移指南",
+      "浏览器智能体"
+    ],
+    "source": "OpenAI 官方公告 / SearchEngineLand、TechTimes、ChatForest（2026-07 报道，8 月 9 日停服）",
+    "updated": "2026-07-26"
+  },
+  {
+    "id": "plugin-claude-code-subagent-nested-depth3",
+    "category": "plugin",
+    "level": "advanced",
+    "title_zh": "Claude Code 子代理默认可嵌套 3 层：并发上限和预算控制该怎么调",
+    "title_en": "Claude Code Subagents Now Nest 3 Levels Deep by Default: Tuning Concurrency Caps and Budget Limits",
+    "body_zh": "Claude Code 2026 年 7 月的更新把子代理（subagent）嵌套生成的默认深度从 1 层提到了 3 层——也就是说一个子代理现在默认就可以再生成自己的子代理，最多套三层，不用手动开启。不想要这种行为的话，设置环境变量 CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1 就能关掉嵌套，回到只有一层的旧行为。同一批更新还加了「同时运行子代理数量」的上限，默认 20 个，通过 CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS 环境变量调整，避免一条消息意外拉出无限多个后台代理；另外修复了 --max-budget-usd 预算上限之前对后台子代理不生效的问题。实操建议：①如果你搭的是「主代理拆任务 → 子代理再拆子任务」这种多层工作流，升级后不用自己写调度逻辑控制嵌套，默认就能跑三层，复杂任务分解更省心；②嵌套变深意味着一次描述不清的任务可能意外拉出比预期多得多的后台代理，算力和费用消耗更快，建议先用小任务测试，确认嵌套行为符合预期再上生产；③预算敏感的团队一定要重新核对 --max-budget-usd 现在是不是真的卡住了所有层级子代理的花费——这次修复之前它对后台子代理并不生效，之前设的预算可能一直没起作用；④默认并发 20 个子代理对大部分场景够用，大规模批处理任务需要更高上限的话，记得显式设置 CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS，否则任务会被限流排队。",
+    "body_en": "Claude Code's July 2026 update raised the default nested subagent spawn depth from 1 to 3 — meaning a subagent can now spawn its own subagents up to three levels deep by default, no opt-in required. To disable nesting and go back to the old single-level behavior, set the environment variable CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1. The same update batch added a cap on concurrently running subagents, defaulting to 20 and adjustable via CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS, to stop one message from accidentally fanning out unbounded background agents. It also fixed a bug where --max-budget-usd previously didn't apply to background subagents. Practical tips: 1) if you're building a \"lead agent breaks down the task, subagents break it down further\" workflow, you no longer need to hand-roll nesting logic — three levels now work out of the box, making complex task decomposition much less work; 2) deeper nesting also means a loosely specified task description can spawn far more background agents than you expected, burning compute and cost faster — test with a small task first and confirm the nesting behavior is what you want before running it in production; 3) budget-conscious teams should re-verify that --max-budget-usd now actually caps spend across every level of subagents — before this fix it didn't apply to background subagents, so budgets you set earlier may not have been enforced; 4) the default cap of 20 concurrent subagents is enough for most cases, but for large batch-processing tasks that need more, set CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS explicitly or your tasks will get throttled and queued.",
+    "models": [
+      "Claude Code",
+      "Anthropic"
+    ],
+    "tags": [
+      "Claude Code",
+      "子代理",
+      "subagent",
+      "并发控制",
+      "预算控制"
+    ],
+    "source": "Claude Code 官方 Changelog / gradually.ai（2026 年 7 月更新）",
+    "updated": "2026-07-26"
+  },
+  {
+    "id": "image-chrome-gemini-nano-banana-sidebar",
+    "category": "image",
+    "level": "beginner",
+    "title_zh": "Chrome 侧边栏直接出图：Gemini + Nano Banana 组合怎么用不用切标签页",
+    "title_en": "Generate Images Right in Chrome's Sidebar: Using Gemini + Nano Banana Without Leaving Your Tab",
+    "body_zh": "Google 把 Nano Banana 的图像生成能力接进了 Chrome 里的 Gemini 侧边栏：不用跳到 Gemini 网站或 App，浏览网页的同时点开侧边栏图标，直接用文字提示词就能生成图片。这个功能已经在美国全量开放，2026 年 7 月中旬起逐步扩展到英国等更多市场；同一侧边栏还能跨标签页总结内容，联动 Gmail、Calendar、YouTube 起草邮件或安排日程，不用离开当前网页。实操建议：①正在写邮件、做演示文稿或整理网页素材时，不用另外开一个 Gemini 标签页来回切换，直接在侧边栏出图，生成完的图片可以直接拖回当前正在编辑的网页或文档；②侧边栏 Gemini 能读取当前标签页的内容，想让生成的图片风格贴合正在看的网页（比如给某篇文章配图），可以在提示词里加一句「参考当前页面的主题/配色」，让它带着上下文去生成，比另开对话窗口描述半天更准；③如果所在地区还没开放，可以先检查 Chrome 地址栏右上角有没有出现带闪光图标的「Ask Gemini」按钮，出现了才代表账号已经拿到这个功能，暂时没有的话耐心等区域扩展。",
+    "body_en": "Google has wired Nano Banana's image generation into Chrome's Gemini sidebar: instead of switching to the Gemini website or app, you can open the sidebar icon while browsing and generate an image straight from a text prompt. The feature is fully rolled out in the US and has been expanding to more markets, including the UK, since mid-July 2026; the same sidebar can also summarize content across tabs and draft emails or schedule events by tapping into Gmail, Calendar, and YouTube without leaving the current page. Practical tips: 1) when you're writing an email, building a presentation, or gathering material from a webpage, skip opening a separate Gemini tab — generate the image right in the sidebar and drag it straight into whatever you're editing; 2) the sidebar's Gemini can read the content of your current tab, so if you want a generated image's style to match the page you're on (say, an illustration for an article), add a line like \"match the theme/colors of the current page\" to your prompt — it'll generate with that context instead of you having to describe it all over again in a separate chat; 3) if the feature isn't available in your region yet, check whether a sparkle-icon \"Ask Gemini\" button has appeared in the top-right of Chrome's address bar — that's the sign your account has it; if not, the regional rollout is still expanding.",
+    "models": [
+      "Gemini",
+      "Nano Banana",
+      "Google Chrome"
+    ],
+    "tags": [
+      "Gemini",
+      "Nano Banana",
+      "文生图",
+      "浏览器插件",
+      "Chrome"
+    ],
+    "source": "Google 官方发布 / MacRumors、Engadget、TechBuzz（2026-07-14 起区域扩展报道）",
+    "updated": "2026-07-26"
   }
 ];
