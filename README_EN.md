@@ -16,13 +16,13 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 ### Categories
 
-- 🚀 **Getting Started** (40)
+- 🚀 **Getting Started** (41)
 - 🎭 **Role Prompts** (151)
 - 🖼️ **Text-to-Image** (26)
 - 🎬 **Text-to-Video** (30)
 - 🧩 **Skills** (41)
 - 🔌 **Plugins / MCP** (30)
-- 💡 **Prompt Craft** (69)
+- 💡 **Prompt Craft** (72)
 
 ## 🚀 Getting Started
 
@@ -225,6 +225,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ Claude · Claude Voice Mode · Opus · Sonnet · Haiku · Anthropic`  ·  Anthropic 官方发布 / TechCrunch（2026-07-23 报道）
 
 > On July 23, 2026, Anthropic updated Claude's voice mode to sound more natural — a direct response following OpenAI's ChatGPT voice upgrade. Voice mode lets you choose among the Opus, Sonnet, and Haiku model tiers, and the new default behavior is: a voice conversation automatically inherits whichever model you last used in text chat, and responds using that model's fastest variant, instead of asking you to pick each time. Practical tips: 1) before starting a voice chat, check which model you last used in text — if that was a quick Haiku session for a trivial task, voice mode will default to Haiku too, and answer quality on anything requiring deep reasoning may fall short; switch to Opus in text chat first if that's what you actually want for the voice session; 2) voice mode defaults to the fastest variant for responsiveness — if the task genuinely needs a longer reasoning chain (a complex multi-step plan), explicitly say "no rush, think it through carefully" to trade some speed for more complete reasoning; 3) the three model tiers don't sound or respond quite the same in voice — the first time you use voice mode with a given model, test it with a simple question first to get a feel for its style before diving into the real task.
+
+### Perplexity Comet Browser Update: Max Users Can Switch Between Opus 4.6 and Sonnet 4.5, Plus New Tab Shortcuts
+`🟡 Intermediate ｜ Perplexity · Comet · Claude Opus 4.6 · Claude Sonnet 4.5 · Claude Sonnet 4.6`  ·  Perplexity 官方 Changelog / releasebot.io（2026-07）
+
+> Perplexity's AI browser Comet just shipped an update: Max subscribers can now switch the model powering the browser agent, with Claude Opus 4.6 as the new default (better reasoning, suited to analyzing complex web data, tracing GitHub commit history, or walking through a competitor's onboarding flow) and Sonnet 4.5 available as an alternative; Pro users' Comet Agent now defaults to Sonnet 4.6. There's also a new tab-switching shortcut — Option+Tab on Mac, Ctrl+Tab on Windows — to jump between your 5 most recent tabs (opt-in via settings). The Finance Hub got an upgrade too: stock pages now show analyst rating consensus and 52-week price targets, plus one-tap links straight to the relevant page of SEC filings. Practical tips: 1) for browsing tasks that need deep reasoning — comparing data across pages, competitor research — make sure you've switched to Opus 4.6; for plain lookups, Sonnet is actually faster; 2) enterprise users should check out the new granular permission controls and audit logs, handy for rolling out Comet access by role; 3) if you routinely run dozens of tabs, build Option+Tab / Ctrl+Tab into muscle memory — it beats clicking through the tab bar.
 
 ## 🎭 Role Prompts
 
@@ -2014,5 +2019,20 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ ChatGPT · ChatGPT Atlas · ChatGPT Work · OpenAI`  ·  OpenAI 官方公告 / SearchEngineLand、TechTimes、ChatForest（2026-07 报道，8 月 9 日停服）
 
 > OpenAI is folding browser-based agentic capabilities into ChatGPT and Codex, and the standalone Atlas browser will stop working entirely on August 9, 2026. Bookmarks, open tabs, and browsing history stored in Atlas will not transfer automatically — you need to export them yourself before the deadline. The official path: export cookies and passwords to the ChatGPT desktop app, and export bookmarks to Chrome. The good news is that your chat history is stored separately and unaffected by the shutdown — it remains accessible in ChatGPT before and after August 9. Browser-agent capabilities like on-page actions and cross-tab summarization are moving into ChatGPT Work inside the new ChatGPT desktop app. Practical tips: 1) open Atlas now and export the bookmarks you still use into a Chrome-readable format; for any important open tab you haven't finished reading, save it as a bookmark or a PDF rather than waiting until August 9; 2) move passwords and cookies through the official export path into the ChatGPT desktop app instead of copying them down manually, to reduce leak risk; 3) if you built workflows around Atlas's browser agent — auto-filling forms, comparing prices across tabs — trial the equivalent in ChatGPT Work inside the desktop app ahead of time and confirm parity before you switch over, so nothing breaks on shutdown day; 4) chat history needs no special backup — as long as your account exists, it stays visible in ChatGPT after the shutdown.
+
+### Kimi K3 Weights Go Open Today (July 27): The 594GB Download and What It Takes to Self-Host
+`🔴 Advanced ｜ Kimi K3 · Moonshot AI`  ·  wan27.org / kimi-k2.org（2026-07-27）
+
+> Moonshot AI has followed through on its promise: Kimi K3's full weights went live on HuggingFace (the moonshotai repo) on July 27, totaling about 594GB in Safetensors format. K3 is a 2.8-trillion-parameter model with a 16/896 mixture-of-experts architecture, and it's "open-weight" rather than open-source in the strict sense — you can download, run inference, fine-tune, and use it commercially, but the training data and code aren't public. Fully loading 594GB of weights into GPU memory takes roughly 640GB of VRAM by official estimates — equivalent to 8x H100 80GB or A800 80GB cards; a single consumer GPU (even a 4090/5090) can't run the full model, so you'll need to wait for community quantized versions (GGUF, AWQ, etc.). Practical tips: 1) individual developers or small teams don't need to rush the full-weight download — watch for community quantized builds and Ollama support instead, which will drop the VRAM bar dramatically; 2) if you do need a private deployment, budget both the GPU cost and storage space up front (594GB is just the model — you also need headroom for the inference-time KV cache); 3) if you just want to try K3's capabilities, kimi.com or the Kimi API is enough — there's no need to force a local deployment just because it's "open"; 4) teams planning further fine-tuning or deep customization should read the license terms first — K3 is open-weight, not fully open-source, so confirm the scope of permitted commercial use before you build on it.
+
+### Choosing Between DeepSeek V4-Pro and V4-Flash: Reasoning Power vs. Speed
+`🟡 Intermediate ｜ DeepSeek V4 · DeepSeek V4-Pro · DeepSeek V4-Flash`  ·  阿里云开发者社区 / 53AI / meshlaunch.com（2026-07）
+
+> DeepSeek V4's general-availability release is fully live, shipping two variants side by side: V4-Pro, with 1.6 trillion total parameters (about 49 billion active), built for deep reasoning and complex agent tasks; and V4-Flash, with 284 billion total parameters (about 13 billion active), built for fast responses and high-concurrency, low-cost workloads. Both use a new hybrid attention architecture (compressed sparse attention plus heavily compressed attention), support a 1-million-token context window, and cut inference compute to 27% of the prior V3.2 generation with a much smaller memory footprint. Practical tips: 1) for coding, multi-step agent orchestration, or parsing long contracts and reports that need deep reasoning, default to V4-Pro — it's slower but more accurate; 2) for customer support, bulk summarization, or simple classification at volume, go straight to V4-Flash for fast, cheap responses that are plenty for everyday use; 3) if you're unsure which to pick, run the same real task on both and compare output quality and latency before deciding; 4) for very long documents (hundred-thousand-word contracts, whole codebases), both versions support million-token context, but Pro's long-context comprehension tends to be more reliable — run important files through Pro first.
+
+### Grok 4.5 in Cursor: Fix the Output Format First, Then Run a Cheap Verification Pass
+`🟡 Intermediate ｜ Grok 4.5 · Cursor · xAI`  ·  cursor.com/blog/grok-4-5 / mer.vin（2026-07）
+
+> Grok 4.5 is xAI's coding-flagship model, trained jointly with Cursor on massive volumes of real developer-agent interaction data — it scores 83.3% on Terminal-Bench 2.1, close to Claude Fable 5 and GPT-5.6 Sol, at only 30-40% of their price. A few prompting techniques that hold up in practice when using it inside Cursor: 1) fix the output structure up front — ask for a four-part format like "## Conclusion / ## Options / ## Recommendation / ## Unknowns" — the answers come back noticeably better organized and easier to scan; 2) after a first pass, add a follow-up like "list every claim that isn't backed by the code" to make the model self-audit — a cheap way to catch fabricated or unsupported claims; 3) when feeding it long docs or multi-file notes, paste only the curated key excerpts rather than dumping the whole repo or folder — it saves tokens and keeps the model on track; 4) if one generation muddles several conflicting options together, rerun it as a single, focused pass with a fixed template instead of asking the model to "reconcile" them itself — that's usually more reliable; 5) the first time you wire it in, run a baseline comparison on your own real repo (task completion, rework rate, latency, token spend) before deciding whether to migrate your everyday coding work over.
 
 <!-- AUTO-PROMPTS:END -->

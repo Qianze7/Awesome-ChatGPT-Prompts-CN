@@ -8006,5 +8006,94 @@ window.PROMPTS = [
     ],
     "source": "Google 官方发布 / MacRumors、Engadget、TechBuzz（2026-07-14 起区域扩展报道）",
     "updated": "2026-07-26"
+  },
+  {
+    "id": "craft-kimi-k3-open-weights-deploy",
+    "category": "craft",
+    "level": "advanced",
+    "title_zh": "Kimi K3 权重今天(7月27日)开源：594GB 怎么下、本地部署门槛有多高",
+    "title_en": "Kimi K3 Weights Go Open Today (July 27): The 594GB Download and What It Takes to Self-Host",
+    "body_zh": "月之暗面兑现承诺，Kimi K3 完整权重于 7 月 27 日在 HuggingFace（moonshotai 仓库）开源，总大小约 594GB，格式为 Safetensors。K3 是 2.8 万亿参数、16/896 混合专家（MoE）架构模型，属于「开放权重」而非严格意义上的开源——可下载、推理、微调、商用，但训练数据和代码不公开。要把 594GB 权重完整加载进显存，官方测算至少需要约 640GB GPU 显存，相当于 8 张 H100 80GB 或 A800 80GB；普通消费级显卡（如单卡 4090/5090）跑不动全量模型，只能等社区量化版本（GGUF/AWQ 等）。实操建议：①个人开发者/小团队不用急着下载全量权重，先关注社区量化版本和 Ollama 适配进展，量化后显存门槛会大幅降低；②真要做私有化部署，先核算 GPU 预算和存储空间（594GB 只是模型本身，还要预留推理时的 KV cache 空间）；③如果只是想体验 K3 能力，直接用 kimi.com 或 Kimi API 就够了，没必要为了「开源」两个字硬上本地部署；④做二次训练或深度定制的团队，记得先读许可证条款，K3 是开放权重不是完全开源，商用前确认许可范围。",
+    "body_en": "Moonshot AI has followed through on its promise: Kimi K3's full weights went live on HuggingFace (the moonshotai repo) on July 27, totaling about 594GB in Safetensors format. K3 is a 2.8-trillion-parameter model with a 16/896 mixture-of-experts architecture, and it's \"open-weight\" rather than open-source in the strict sense — you can download, run inference, fine-tune, and use it commercially, but the training data and code aren't public. Fully loading 594GB of weights into GPU memory takes roughly 640GB of VRAM by official estimates — equivalent to 8x H100 80GB or A800 80GB cards; a single consumer GPU (even a 4090/5090) can't run the full model, so you'll need to wait for community quantized versions (GGUF, AWQ, etc.). Practical tips: 1) individual developers or small teams don't need to rush the full-weight download — watch for community quantized builds and Ollama support instead, which will drop the VRAM bar dramatically; 2) if you do need a private deployment, budget both the GPU cost and storage space up front (594GB is just the model — you also need headroom for the inference-time KV cache); 3) if you just want to try K3's capabilities, kimi.com or the Kimi API is enough — there's no need to force a local deployment just because it's \"open\"; 4) teams planning further fine-tuning or deep customization should read the license terms first — K3 is open-weight, not fully open-source, so confirm the scope of permitted commercial use before you build on it.",
+    "models": [
+      "Kimi K3",
+      "Moonshot AI"
+    ],
+    "tags": [
+      "Kimi K3",
+      "开源权重",
+      "本地部署",
+      "月之暗面"
+    ],
+    "source": "wan27.org / kimi-k2.org（2026-07-27）",
+    "updated": "2026-07-27"
+  },
+  {
+    "id": "start-perplexity-comet-model-picker",
+    "category": "start",
+    "level": "intermediate",
+    "title_zh": "Perplexity Comet 浏览器更新：Max 用户可切 Opus 4.6/Sonnet 4.5，标签页快捷键也来了",
+    "title_en": "Perplexity Comet Browser Update: Max Users Can Switch Between Opus 4.6 and Sonnet 4.5, Plus New Tab Shortcuts",
+    "body_zh": "Perplexity 旗下 AI 浏览器 Comet 近期更新：Max 订阅用户现在可以在浏览器 Agent 背后的模型之间自由切换，默认换成 Claude Opus 4.6（推理能力更强，适合分析复杂网页数据、追溯 GitHub 提交历史、走查竞品注册流程等任务），也可以切回 Sonnet 4.5；Pro 用户的 Comet Agent 默认换成 Sonnet 4.6。同时新增标签页快捷切换：Mac 上 Option+Tab、Windows 上 Ctrl+Tab 可以在最近 5 个标签页间快速跳转（需要在设置里手动开启）。Finance Hub 板块也升级了，个股页面新增分析师评级共识和 52 周目标价，还能一键跳转到 SEC 文件的对应页面。实操建议：①用 Comet 处理需要深度推理的浏览任务（比如比较多个页面数据、做竞品调研）时，先确认切到了 Opus 4.6，普通检索用 Sonnet 反而更快；②企业用户可以留意新增的细粒度权限控制和审计日志，适合给团队分角色开放 Comet 权限；③常年开几十个标签页的人，把 Option+Tab / Ctrl+Tab 加进日常肌肉记忆，比鼠标点标签栏快很多。",
+    "body_en": "Perplexity's AI browser Comet just shipped an update: Max subscribers can now switch the model powering the browser agent, with Claude Opus 4.6 as the new default (better reasoning, suited to analyzing complex web data, tracing GitHub commit history, or walking through a competitor's onboarding flow) and Sonnet 4.5 available as an alternative; Pro users' Comet Agent now defaults to Sonnet 4.6. There's also a new tab-switching shortcut — Option+Tab on Mac, Ctrl+Tab on Windows — to jump between your 5 most recent tabs (opt-in via settings). The Finance Hub got an upgrade too: stock pages now show analyst rating consensus and 52-week price targets, plus one-tap links straight to the relevant page of SEC filings. Practical tips: 1) for browsing tasks that need deep reasoning — comparing data across pages, competitor research — make sure you've switched to Opus 4.6; for plain lookups, Sonnet is actually faster; 2) enterprise users should check out the new granular permission controls and audit logs, handy for rolling out Comet access by role; 3) if you routinely run dozens of tabs, build Option+Tab / Ctrl+Tab into muscle memory — it beats clicking through the tab bar.",
+    "models": [
+      "Perplexity",
+      "Comet",
+      "Claude Opus 4.6",
+      "Claude Sonnet 4.5",
+      "Claude Sonnet 4.6"
+    ],
+    "tags": [
+      "Perplexity",
+      "Comet",
+      "AI浏览器",
+      "Claude"
+    ],
+    "source": "Perplexity 官方 Changelog / releasebot.io（2026-07）",
+    "updated": "2026-07-27"
+  },
+  {
+    "id": "craft-deepseek-v4-pro-flash-pick",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "DeepSeek V4 满血版双模型怎么选：V4-Pro 拼推理，V4-Flash 拼速度",
+    "title_en": "Choosing Between DeepSeek V4-Pro and V4-Flash: Reasoning Power vs. Speed",
+    "body_zh": "DeepSeek V4 正式版（GA）已全量上线，同步开放 V4-Pro 和 V4-Flash 两个版本：V4-Pro 总参数 1.6 万亿（激活约 490 亿），主打深度推理和复杂 Agent 任务；V4-Flash 总参数 2840 亿（激活约 130 亿），主打响应速度和低成本高并发场景。两者都用新的混合注意力架构（压缩稀疏注意力+重度压缩注意力），支持 100 万 token 超长上下文，推理计算量比上一代 V3.2 降到 27%，显存占用也大幅下降。实操建议：①写代码、做多步 Agent 编排、分析长合同/长报告这类需要深度推理的任务，优先选 V4-Pro，虽然慢一点但准确率更高；②客服问答、批量摘要、简单分类这类走量场景，直接上 V4-Flash，响应快、成本低，日常够用；③不确定用哪个的话，可以先用同一个真实任务在两个模型上各跑一次，比较结果质量和耗时再定；④涉及超长文档（几十万字合同、代码库）时，两个版本都支持百万 token 上下文，但 Pro 模式下的长文本理解通常更稳，重要文件优先用 Pro 过一遍。",
+    "body_en": "DeepSeek V4's general-availability release is fully live, shipping two variants side by side: V4-Pro, with 1.6 trillion total parameters (about 49 billion active), built for deep reasoning and complex agent tasks; and V4-Flash, with 284 billion total parameters (about 13 billion active), built for fast responses and high-concurrency, low-cost workloads. Both use a new hybrid attention architecture (compressed sparse attention plus heavily compressed attention), support a 1-million-token context window, and cut inference compute to 27% of the prior V3.2 generation with a much smaller memory footprint. Practical tips: 1) for coding, multi-step agent orchestration, or parsing long contracts and reports that need deep reasoning, default to V4-Pro — it's slower but more accurate; 2) for customer support, bulk summarization, or simple classification at volume, go straight to V4-Flash for fast, cheap responses that are plenty for everyday use; 3) if you're unsure which to pick, run the same real task on both and compare output quality and latency before deciding; 4) for very long documents (hundred-thousand-word contracts, whole codebases), both versions support million-token context, but Pro's long-context comprehension tends to be more reliable — run important files through Pro first.",
+    "models": [
+      "DeepSeek V4",
+      "DeepSeek V4-Pro",
+      "DeepSeek V4-Flash"
+    ],
+    "tags": [
+      "DeepSeek",
+      "DeepSeek V4",
+      "模型选型",
+      "长上下文"
+    ],
+    "source": "阿里云开发者社区 / 53AI / meshlaunch.com（2026-07）",
+    "updated": "2026-07-27"
+  },
+  {
+    "id": "craft-grok45-cursor-prompt-tips",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "Grok 4.5 配 Cursor 写代码：先定输出格式、再加一遍事实核查，省钱又准",
+    "title_en": "Grok 4.5 in Cursor: Fix the Output Format First, Then Run a Cheap Verification Pass",
+    "body_zh": "Grok 4.5 是 xAI 联合 Cursor 用海量真实开发者-Agent 交互数据训练出来的编程旗舰，Terminal-Bench 2.1 跑分 83.3%，逼近 Claude Fable 5 和 GPT-5.6 Sol，价格却只有对手的三到四成。用在 Cursor 里写代码时，几个实测有效的提示词技巧：①先固定输出结构，比如要求「## 结论 / ## 可选方案 / ## 推荐做法 / ## 未知项」四段式，模型的回答会明显更有条理，也方便你快速定位重点；②做完一次生成后，追加一句「列出所有没有依据的表述」让模型自己复核一遍，用很低的成本抓出编造或没有代码支撑的结论；③整理长文档、多文件笔记时，只贴经过筛选的关键片段，不要把整个仓库/文件夹一股脑丢进去，既省 token 又减少模型跑偏；④如果一次生成结果把几个矛盾的方案混在一起说不清楚，用固定模板重新单独跑一遍，往往比让模型自己「消化」更可靠；⑤第一次接入时，先在自己的真实仓库上做个基线对比（对比任务完成度、返工次数、耗时、token 消耗），再决定要不要把日常编码任务迁过来。",
+    "body_en": "Grok 4.5 is xAI's coding-flagship model, trained jointly with Cursor on massive volumes of real developer-agent interaction data — it scores 83.3% on Terminal-Bench 2.1, close to Claude Fable 5 and GPT-5.6 Sol, at only 30-40% of their price. A few prompting techniques that hold up in practice when using it inside Cursor: 1) fix the output structure up front — ask for a four-part format like \"## Conclusion / ## Options / ## Recommendation / ## Unknowns\" — the answers come back noticeably better organized and easier to scan; 2) after a first pass, add a follow-up like \"list every claim that isn't backed by the code\" to make the model self-audit — a cheap way to catch fabricated or unsupported claims; 3) when feeding it long docs or multi-file notes, paste only the curated key excerpts rather than dumping the whole repo or folder — it saves tokens and keeps the model on track; 4) if one generation muddles several conflicting options together, rerun it as a single, focused pass with a fixed template instead of asking the model to \"reconcile\" them itself — that's usually more reliable; 5) the first time you wire it in, run a baseline comparison on your own real repo (task completion, rework rate, latency, token spend) before deciding whether to migrate your everyday coding work over.",
+    "models": [
+      "Grok 4.5",
+      "Cursor",
+      "xAI"
+    ],
+    "tags": [
+      "Grok 4.5",
+      "Cursor",
+      "编程",
+      "提示词技巧"
+    ],
+    "source": "cursor.com/blog/grok-4-5 / mer.vin（2026-07）",
+    "updated": "2026-07-27"
   }
 ];
