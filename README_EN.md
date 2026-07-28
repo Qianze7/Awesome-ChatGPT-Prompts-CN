@@ -18,11 +18,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 - 🚀 **Getting Started** (41)
 - 🎭 **Role Prompts** (151)
-- 🖼️ **Text-to-Image** (26)
+- 🖼️ **Text-to-Image** (27)
 - 🎬 **Text-to-Video** (30)
 - 🧩 **Skills** (41)
-- 🔌 **Plugins / MCP** (30)
-- 💡 **Prompt Craft** (72)
+- 🔌 **Plugins / MCP** (31)
+- 💡 **Prompt Craft** (74)
 
 ## 🚀 Getting Started
 
@@ -1129,6 +1129,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > Google has wired Nano Banana's image generation into Chrome's Gemini sidebar: instead of switching to the Gemini website or app, you can open the sidebar icon while browsing and generate an image straight from a text prompt. The feature is fully rolled out in the US and has been expanding to more markets, including the UK, since mid-July 2026; the same sidebar can also summarize content across tabs and draft emails or schedule events by tapping into Gmail, Calendar, and YouTube without leaving the current page. Practical tips: 1) when you're writing an email, building a presentation, or gathering material from a webpage, skip opening a separate Gemini tab — generate the image right in the sidebar and drag it straight into whatever you're editing; 2) the sidebar's Gemini can read the content of your current tab, so if you want a generated image's style to match the page you're on (say, an illustration for an article), add a line like "match the theme/colors of the current page" to your prompt — it'll generate with that context instead of you having to describe it all over again in a separate chat; 3) if the feature isn't available in your region yet, check whether a sparkle-icon "Ask Gemini" button has appeared in the top-right of Chrome's address bar — that's the sign your account has it; if not, the regional rollout is still expanding.
 
+### Doubao Seedream 5.0 Pro: Draw an Arrow to Edit Precisely, Split Layers, and Generate Text in 10+ Languages
+`🟡 Intermediate ｜ 豆包 · Seedream 5.0 Pro`  ·  新浪科技 / 知乎 / 火山引擎（2026-06~07）
+
+> Doubao's image model Seedream 5.0 Pro is now available via API, built around "interactive precision editing": instead of writing a long prompt, you draw an arrow or circle a region right on the image, and the model understands what to change and how — recoloring, material swaps, and local repaints all land with pixel-level precision. It also supports "layer separation" — anything from a single line of text to one object to a whole layout can be split into its own layer on demand, making follow-up drag-and-resize edits easy — and it handles information-dense visuals like charts, infographics, and full PPT-style slides cleanly. It also natively generates text in a dozen-plus languages (Spanish, Arabic, Japanese, Korean, and more), not just Chinese and English. Practical tips: 1) for e-commerce listing images or posters that need repeated tweaks, generate a rough draft first, then refine step by step with arrows/circles — it's faster than rewriting the prompt from scratch; 2) for multi-language marketing assets, just state the target language and copy in the prompt instead of translating separately and pasting it in; 3) if an element needs future edits (logo, price tag, button), decide upfront whether to split it into its own layer so it's easy to swap out later.
+
 ## 🎬 Text-to-Video
 
 ### Kling/Sora camera-motion prompt
@@ -1647,6 +1652,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > Claude Code's July 2026 update raised the default nested subagent spawn depth from 1 to 3 — meaning a subagent can now spawn its own subagents up to three levels deep by default, no opt-in required. To disable nesting and go back to the old single-level behavior, set the environment variable CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1. The same update batch added a cap on concurrently running subagents, defaulting to 20 and adjustable via CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS, to stop one message from accidentally fanning out unbounded background agents. It also fixed a bug where --max-budget-usd previously didn't apply to background subagents. Practical tips: 1) if you're building a "lead agent breaks down the task, subagents break it down further" workflow, you no longer need to hand-roll nesting logic — three levels now work out of the box, making complex task decomposition much less work; 2) deeper nesting also means a loosely specified task description can spawn far more background agents than you expected, burning compute and cost faster — test with a small task first and confirm the nesting behavior is what you want before running it in production; 3) budget-conscious teams should re-verify that --max-budget-usd now actually caps spend across every level of subagents — before this fix it didn't apply to background subagents, so budgets you set earlier may not have been enforced; 4) the default cap of 20 concurrent subagents is enough for most cases, but for large batch-processing tasks that need more, set CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS explicitly or your tasks will get throttled and queued.
 
+### Codex Remote Goes GA, /import Gets Bigger: Monitor Tasks From Your Phone, Migrate Cursor/Claude Code Settings in One Command
+`🟡 Intermediate ｜ ChatGPT · Codex · Cursor · Claude Code`  ·  OpenAI Codex What's New / releasebot.io（2026-07）
+
+> OpenAI has rolled out Codex Remote to every ChatGPT paid plan: as long as Codex is running on a connected Mac or Windows machine, you can check task progress and approve or reject the next action right from your phone — no need to stay glued to your computer. At the same time, the /import command got bigger: it can now migrate settings, MCP servers, plugins, session history, custom commands, and project-scoped memories from Cursor and Claude Code in one shot, so switching tools or spinning up a new machine doesn't mean starting from zero. Practical tips: 1) when a new teammate joins a project, run /import first to inherit the MCP configs and go-to commands the rest of the team already built up in Cursor/Claude Code; 2) before kicking off a long-running task (bulk refactors, test runs), make sure your phone is signed into the same account — if the task stalls waiting on approval, you can handle it from your phone instead of sitting there; 3) preview what /import is about to bring over before running it, so you don't overwrite configs you've already tuned in the new environment.
+
 ## 💡 Prompt Craft
 
 ### Tip: show examples, don't just describe
@@ -2034,5 +2044,15 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ Grok 4.5 · Cursor · xAI`  ·  cursor.com/blog/grok-4-5 / mer.vin（2026-07）
 
 > Grok 4.5 is xAI's coding-flagship model, trained jointly with Cursor on massive volumes of real developer-agent interaction data — it scores 83.3% on Terminal-Bench 2.1, close to Claude Fable 5 and GPT-5.6 Sol, at only 30-40% of their price. A few prompting techniques that hold up in practice when using it inside Cursor: 1) fix the output structure up front — ask for a four-part format like "## Conclusion / ## Options / ## Recommendation / ## Unknowns" — the answers come back noticeably better organized and easier to scan; 2) after a first pass, add a follow-up like "list every claim that isn't backed by the code" to make the model self-audit — a cheap way to catch fabricated or unsupported claims; 3) when feeding it long docs or multi-file notes, paste only the curated key excerpts rather than dumping the whole repo or folder — it saves tokens and keeps the model on track; 4) if one generation muddles several conflicting options together, rerun it as a single, focused pass with a fixed template instead of asking the model to "reconcile" them itself — that's usually more reliable; 5) the first time you wire it in, run a baseline comparison on your own real repo (task completion, rework rate, latency, token spend) before deciding whether to migrate your everyday coding work over.
+
+### Gemini 3.5 Flash Cyber: A Small Model Built Just to Hunt Vulnerabilities — 55 Confirmed Bugs on the V8 Engine
+`🔴 Advanced ｜ Gemini 3.5 Flash Cyber · Gemini`  ·  Google DeepMind / thehackernews.com（2026-07）
+
+> Alongside Gemini 3.6 Flash, Google also launched a purpose-built small model: Gemini 3.5 Flash Cyber, fine-tuned on top of 3.5 Flash specifically to find, validate, and patch code vulnerabilities fast. In Google's own tests it found 55 confirmed issues on the V8 JavaScript engine — more than mainline 3.5 Flash (47) and Claude Opus 4.6 (36) — and because it's lightweight, it runs far cheaper than large dedicated security models. For now it's only available through a limited CodeMender pilot for governments and trusted partners, so everyday developers can't get at it yet. Practical takeaways: 1) if you're on a security team or doing code audits, watch for CodeMender's rollout rather than looking for a public API right now; 2) for day-to-day code security review, keep using flagship general models like Opus/GPT alongside dedicated static-analysis tools; 3) the underlying idea is worth remembering — for narrow but high-frequency tasks (vulnerability hunting, format conversion), a small fine-tuned model often beats throwing more parameters at the problem.
+
+### Claude's Memory Overhaul: From a Daily Summary to Categorized Entries, Plus a Monthly Reflect Recap
+`🟢 Beginner ｜ Claude`  ·  Anthropic Release Notes / testingcatalog.com（2026-07）
+
+> Anthropic has overhauled how Claude's memory works: instead of generating one "today's summary" each day, memory is now a set of individual entries grouped by category, which Claude reads and updates in real time as you chat rather than on a fixed daily schedule. The Memory panel in Settings lists everything Claude remembers by category, so you can review, edit, or delete entries one at a time instead of wrestling with one big undifferentiated block of text. There's also a new monthly recap at Settings → Reflect (in beta on Free, Pro, and Max, web and desktop), which shows what topics you spent the most time on, your most active day and hour, and observations about how you work with Claude. Practical tips: 1) the first time you open the Memory panel, go through it and manually delete or fix anything wrong or outdated — later answers will be more accurate; 2) if Claude keeps forgetting or misremembering a specific category of info (project context, writing style preferences), just add an entry directly in the Memory panel instead of repeating it in conversation over and over; 3) check the monthly Reflect recap to spot questions you ask repeatedly, and consider turning those into a fixed prompt template or Skill.
 
 <!-- AUTO-PROMPTS:END -->

@@ -8095,5 +8095,90 @@ window.PROMPTS = [
     ],
     "source": "cursor.com/blog/grok-4-5 / mer.vin（2026-07）",
     "updated": "2026-07-27"
+  },
+  {
+    "id": "plugin-codex-remote-ga-import-migrate",
+    "category": "plugin",
+    "level": "intermediate",
+    "title_zh": "Codex Remote 全量开放 + /import 扩容：手机远程盯任务，一键搬家 Cursor/Claude Code 配置",
+    "title_en": "Codex Remote Goes GA, /import Gets Bigger: Monitor Tasks From Your Phone, Migrate Cursor/Claude Code Settings in One Command",
+    "body_zh": "OpenAI 把 Codex Remote 面向所有 ChatGPT 付费计划全量开放：只要电脑（Mac/Windows）上跑着 Codex，就能在手机上查看任务进度、批准或拒绝下一步操作，不用守在电脑前。同时 /import 命令也扩容了，能一次性把 Cursor、Claude Code 里的设置、MCP Server、插件、会话记录、自定义命令和项目级记忆都搬过来，换工具/加机器不用从零配置。实操建议：①团队新成员加入项目时，先跑一遍 /import，把老成员在 Cursor/Claude Code 里攒的 MCP 配置和常用命令直接继承过来；②跑长任务（比如批量重构、跑测试）前，确认手机端已经登录同一账号，任务卡住等待批准时可以直接在手机上处理，不用干等；③迁移前先看一眼 /import 的预览列表，确认哪些内容会被覆盖，避免把新环境里已经调好的配置盖掉。",
+    "body_en": "OpenAI has rolled out Codex Remote to every ChatGPT paid plan: as long as Codex is running on a connected Mac or Windows machine, you can check task progress and approve or reject the next action right from your phone — no need to stay glued to your computer. At the same time, the /import command got bigger: it can now migrate settings, MCP servers, plugins, session history, custom commands, and project-scoped memories from Cursor and Claude Code in one shot, so switching tools or spinning up a new machine doesn't mean starting from zero. Practical tips: 1) when a new teammate joins a project, run /import first to inherit the MCP configs and go-to commands the rest of the team already built up in Cursor/Claude Code; 2) before kicking off a long-running task (bulk refactors, test runs), make sure your phone is signed into the same account — if the task stalls waiting on approval, you can handle it from your phone instead of sitting there; 3) preview what /import is about to bring over before running it, so you don't overwrite configs you've already tuned in the new environment.",
+    "models": [
+      "ChatGPT",
+      "Codex",
+      "Cursor",
+      "Claude Code"
+    ],
+    "tags": [
+      "Codex",
+      "远程",
+      "迁移配置",
+      "MCP"
+    ],
+    "source": "OpenAI Codex What's New / releasebot.io（2026-07）",
+    "updated": "2026-07-28"
+  },
+  {
+    "id": "craft-gemini-35-flash-cyber-vuln-model",
+    "category": "craft",
+    "level": "advanced",
+    "title_zh": "Gemini 3.5 Flash Cyber：专啃漏洞的小模型，V8 引擎实测挖出 55 个真问题",
+    "title_en": "Gemini 3.5 Flash Cyber: A Small Model Built Just to Hunt Vulnerabilities — 55 Confirmed Bugs on the V8 Engine",
+    "body_zh": "谷歌在发布 Gemini 3.6 Flash 的同时，也上线了一个专用小模型 Gemini 3.5 Flash Cyber：在 3.5 Flash 基础上专门微调，用来快速发现、验证、修补代码漏洞。官方测试中，它在 V8 JavaScript 引擎上挖出 55 个确认漏洞，比通用款 3.5 Flash（47 个）和 Claude Opus 4.6（36 个）都多，而且因为是轻量模型，跑起来比大型专用安全模型省钱得多。目前它只通过 CodeMender 平台，面向政府机构和受信合作伙伴做限量内测，普通开发者暂时用不到。实操建议：①如果你是安全团队或者需要做代码审计，先关注 CodeMender 的开放进度，别急着找 API；②普通开发者日常的代码安全审查，现在依然优先用 Opus/GPT 这类通用旗舰模型配合专门的静态扫描工具；③这类「专用小模型打赢大模型」的思路值得记住：遇到范围很窄但很高频的任务（比如漏洞挖掘、格式转换），一个精调过的小模型往往比堆参数量更划算。",
+    "body_en": "Alongside Gemini 3.6 Flash, Google also launched a purpose-built small model: Gemini 3.5 Flash Cyber, fine-tuned on top of 3.5 Flash specifically to find, validate, and patch code vulnerabilities fast. In Google's own tests it found 55 confirmed issues on the V8 JavaScript engine — more than mainline 3.5 Flash (47) and Claude Opus 4.6 (36) — and because it's lightweight, it runs far cheaper than large dedicated security models. For now it's only available through a limited CodeMender pilot for governments and trusted partners, so everyday developers can't get at it yet. Practical takeaways: 1) if you're on a security team or doing code audits, watch for CodeMender's rollout rather than looking for a public API right now; 2) for day-to-day code security review, keep using flagship general models like Opus/GPT alongside dedicated static-analysis tools; 3) the underlying idea is worth remembering — for narrow but high-frequency tasks (vulnerability hunting, format conversion), a small fine-tuned model often beats throwing more parameters at the problem.",
+    "models": [
+      "Gemini 3.5 Flash Cyber",
+      "Gemini"
+    ],
+    "tags": [
+      "Gemini",
+      "代码安全",
+      "模型选型",
+      "漏洞挖掘"
+    ],
+    "source": "Google DeepMind / thehackernews.com（2026-07）",
+    "updated": "2026-07-28"
+  },
+  {
+    "id": "image-doubao-seedream5-pro-editable",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "豆包 Seedream 5.0 Pro：画个箭头就能精准改图，还能拆图层、出多语言文字",
+    "title_en": "Doubao Seedream 5.0 Pro: Draw an Arrow to Edit Precisely, Split Layers, and Generate Text in 10+ Languages",
+    "body_zh": "豆包图像模型 Seedream 5.0 Pro 已经开放 API，主打「交互式精准编辑」：不用写长提示词，直接在图上画个箭头、圈一块区域，模型就能理解你想改哪、怎么改，换色、换材质、局部重绘都能做到像素级精度。它还支持「多图层分离」——不管是一行字、一个物体还是整块版面，都能按需单独拆成图层，方便二次拖拽调整；面对图表、信息图、整页 PPT 这类信息密度很高的画面也能画得清楚工整；同时原生支持西班牙语、阿拉伯语、日语、韩语等十几种语言的文字直接生成，不再只会处理中英文。实操建议：①做电商详情页、海报这类需要反复微调的图，先出一版草图，再用「画箭头/圈选」的方式逐步精修，比重新写提示词更快；②需要多语言物料（比如出海广告）时，直接在提示词里写清目标语言和文案，不用先翻译再补图；③需要二次编辑的元素（logo、价格标签、按钮）提前想好要不要单独拆层，方便后续替换。",
+    "body_en": "Doubao's image model Seedream 5.0 Pro is now available via API, built around \"interactive precision editing\": instead of writing a long prompt, you draw an arrow or circle a region right on the image, and the model understands what to change and how — recoloring, material swaps, and local repaints all land with pixel-level precision. It also supports \"layer separation\" — anything from a single line of text to one object to a whole layout can be split into its own layer on demand, making follow-up drag-and-resize edits easy — and it handles information-dense visuals like charts, infographics, and full PPT-style slides cleanly. It also natively generates text in a dozen-plus languages (Spanish, Arabic, Japanese, Korean, and more), not just Chinese and English. Practical tips: 1) for e-commerce listing images or posters that need repeated tweaks, generate a rough draft first, then refine step by step with arrows/circles — it's faster than rewriting the prompt from scratch; 2) for multi-language marketing assets, just state the target language and copy in the prompt instead of translating separately and pasting it in; 3) if an element needs future edits (logo, price tag, button), decide upfront whether to split it into its own layer so it's easy to swap out later.",
+    "models": [
+      "豆包",
+      "Seedream 5.0 Pro"
+    ],
+    "tags": [
+      "豆包",
+      "Seedream",
+      "图层编辑",
+      "多语言"
+    ],
+    "source": "新浪科技 / 知乎 / 火山引擎（2026-06~07）",
+    "updated": "2026-07-28"
+  },
+  {
+    "id": "craft-claude-memory-categorized-entries",
+    "category": "craft",
+    "level": "beginner",
+    "title_zh": "Claude 记忆大改版：从「每日摘要」变成「分类条目」，还多了月度 Reflect 回顾",
+    "title_en": "Claude's Memory Overhaul: From a Daily Summary to Categorized Entries, Plus a Monthly Reflect Recap",
+    "body_zh": "Anthropic 把 Claude 的记忆机制做了一次大改版：以前是每天生成一份「今日摘要」，现在变成一条条按类别分组的独立记忆条目，Claude 会在你聊天的过程中实时读取和更新这些条目，而不是等到固定时间点才汇总。设置里的「记忆」面板会把 Claude 记住的一切按类别列出来，你可以逐条查看、编辑或删除，不再是一整块不好拆的文字。同时 Settings → Reflect 里新增了月度回顾功能（Free/Pro/Max 网页版和桌面版测试中），会告诉你这个月主要聊了哪些主题、最活跃的一天和时段，以及你和 Claude 的协作习惯。实操建议：①第一次打开记忆面板时，先整体过一遍，把记错的、过时的条目手动删掉或改掉，之后的回答会更准；②如果发现某类信息（比如项目背景、写作风格偏好）Claude 老是记不住或记错，可以直接在记忆面板里手动补一条，比反复在对话里重复更省事；③每月看一眼 Reflect 回顾，能帮你发现自己习惯性重复问的问题，考虑把这些整理成固定的提示词模板或 Skill。",
+    "body_en": "Anthropic has overhauled how Claude's memory works: instead of generating one \"today's summary\" each day, memory is now a set of individual entries grouped by category, which Claude reads and updates in real time as you chat rather than on a fixed daily schedule. The Memory panel in Settings lists everything Claude remembers by category, so you can review, edit, or delete entries one at a time instead of wrestling with one big undifferentiated block of text. There's also a new monthly recap at Settings → Reflect (in beta on Free, Pro, and Max, web and desktop), which shows what topics you spent the most time on, your most active day and hour, and observations about how you work with Claude. Practical tips: 1) the first time you open the Memory panel, go through it and manually delete or fix anything wrong or outdated — later answers will be more accurate; 2) if Claude keeps forgetting or misremembering a specific category of info (project context, writing style preferences), just add an entry directly in the Memory panel instead of repeating it in conversation over and over; 3) check the monthly Reflect recap to spot questions you ask repeatedly, and consider turning those into a fixed prompt template or Skill.",
+    "models": [
+      "Claude"
+    ],
+    "tags": [
+      "Claude",
+      "记忆",
+      "Memory",
+      "Reflect"
+    ],
+    "source": "Anthropic Release Notes / testingcatalog.com（2026-07）",
+    "updated": "2026-07-28"
   }
 ];
