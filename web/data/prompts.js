@@ -8180,5 +8180,91 @@ window.PROMPTS = [
     ],
     "source": "Anthropic Release Notes / testingcatalog.com（2026-07）",
     "updated": "2026-07-28"
+  },
+  {
+    "id": "craft-claude-opus5-stop-double-check-prompt",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "Claude Opus 5 提示词反常识：别再让它「double-check」，会越改越差",
+    "title_en": "Claude Opus 5 Prompting: Stop Telling It to 'Double-Check' — It Backfires",
+    "body_zh": "Anthropic 发布 Claude Opus 5 时随模型一起发布了官方 prompting 指南，里面有一条违反直觉的建议：不少在 Opus 4.8 时代管用的「让它更好」的话术，放到 Opus 5 反而会拖累效果。具体来说，如果你的提示词里还留着「再检查一遍」「加一个最终校验步骤」「用子 agent 复核一下」这类叮嘱，官方建议直接删掉——因为 Opus 5 默认已经会自我核查、按需思考，你再补一句「double-check」，模型不会因此更准，只会多跑一轮验证，多烧 token、拖慢速度，答案质量却没提升。实操建议：①把老提示词模板里的「请仔细检查」「确保正确」「验证后再回答」这类收尾话术先删掉，观察输出质量和速度有没有变化；②如果确实需要额外验证（比如金融计算、法律条款核对），改用「明确列出你验证过的关键点」这种具体指令，而不是笼统喊「再查一遍」；③从 Opus 4.8 迁移过来的团队，建议先挑 3-5 个高频提示词模板做 A/B 对比（带 double-check 话术 vs 不带），用实际输出判断要不要精简；④Claude Code 里跑长任务时同理，减少冗余校验指令能省下来的 token，往往比你想象的多。",
+    "body_en": "When Anthropic shipped Claude Opus 5, it released an official prompting guide alongside it — and one piece of advice is counterintuitive: several instructions that used to make Opus 4.8 better now make Opus 5 worse. If your prompts still include lines like \"double-check your answer,\" \"add a final verification step,\" or \"use a subagent to verify,\" Anthropic's own guidance says to cut them. Opus 5 already verifies itself and decides on its own how much to think — tacking on \"double-check\" doesn't make it more accurate, it just triggers an extra verification pass that burns tokens and slows things down without improving quality. Practical tips: 1) strip out closing instructions like \"please check carefully,\" \"make sure it's correct,\" or \"verify before answering\" from your old prompt templates and see whether output quality or speed changes; 2) if you genuinely need extra verification (financial calculations, legal clause checks), replace vague \"double-check it\" language with a specific instruction like \"explicitly list the key points you verified\"; 3) teams migrating from Opus 4.8 should A/B test 3-5 high-frequency prompt templates (with vs. without double-check language) and let real output decide whether to trim it; 4) the same applies to long-running Claude Code tasks — cutting redundant verification instructions often saves more tokens than you'd expect.",
+    "models": [
+      "Claude",
+      "Opus 5"
+    ],
+    "tags": [
+      "Claude",
+      "Opus 5",
+      "提示词",
+      "prompt engineering"
+    ],
+    "source": "Anthropic 官方 Prompting Guide / apidog.com 报道（2026-07）",
+    "updated": "2026-07-29"
+  },
+  {
+    "id": "video-capcut-sora2-veo31-desktop",
+    "category": "video",
+    "level": "beginner",
+    "title_zh": "剪映桌面版一键接入 Sora 2 + Veo 3.1：不用切平台，剪辑生成一条龙",
+    "title_en": "CapCut Desktop Adds Sora 2 and Veo 3.1 In-App: Generate and Edit Without Switching Platforms",
+    "body_zh": "剪映（CapCut）桌面版和手机 App 现在直接把 Sora 2、Google Veo 3.1 两个视频模型接进了素材库里，不用再跳出去单独开 Sora 或 Gemini 账号生成完素材再导入剪辑——在剪映里输入文字描述或上传一张参考图，就能直接调用 Sora 2 / Veo 3.1 出片段，生成完立刻能拖进时间线继续剪。Veo 3.1 这边的优势是自带「音画同出」，生成视频时能一并出同步的环境音/对白，不用再单独配音；Sora 2 则偏爱镜头语言和运动表现。需要注意的是目前只有桌面版和 App 端支持，网页版剪映还没跟进。实操建议：①先用低分辨率/短时长跑一版看运镜和构图对不对，满意了再加时长或换更高规格出正式版，省算力额度；②同一个分镜可以分别用 Sora 2 和 Veo 3.1 各生成一条，直接在时间线上对比选更合适的，比脑内判断准；③需要对白或环境音的镜头优先选 Veo 3.1，能省掉后期配音这一步；④生成素材后不要直接用，先在剪映里加转场、调色统一一下调性，避免不同模型生成的片段风格割裂。",
+    "body_en": "CapCut's desktop app and mobile app have plugged Sora 2 and Google Veo 3.1 directly into the media library — no more generating clips in a separate Sora or Gemini account and importing them afterward. Type a text prompt or upload a reference image right inside CapCut, call Sora 2 or Veo 3.1, and drag the finished clip straight onto your timeline. Veo 3.1's edge is native audio-visual sync — it generates ambient sound and dialogue along with the picture, skipping a separate dubbing pass — while Sora 2 leans toward stronger camera movement and motion. Note this currently only works in the desktop app and mobile app; CapCut Web hasn't caught up yet. Practical tips: 1) generate a short, low-res test pass first to check camera work and composition before spending your generation quota on a longer, higher-spec final version; 2) generate the same shot with both Sora 2 and Veo 3.1 and compare them side by side on the timeline — it's more reliable than guessing which will look better; 3) default to Veo 3.1 for shots that need dialogue or ambient sound, since it skips the separate audio pass; 4) don't drop generated clips straight into your edit — pass them through CapCut's transitions and color grading first so clips from different models don't clash stylistically.",
+    "models": [
+      "Sora 2",
+      "Veo 3.1",
+      "CapCut",
+      "剪映"
+    ],
+    "tags": [
+      "剪映",
+      "CapCut",
+      "Sora",
+      "Veo",
+      "文生视频"
+    ],
+    "source": "CapCut 官方工具页 / YouTube 测评（2026-07）",
+    "updated": "2026-07-29"
+  },
+  {
+    "id": "skill-genspark-workspace6-secondbrain",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "Genspark AI Workspace 6.0：云端记忆 SecondBrain + 团队协作空间 GenTeam 上线",
+    "title_en": "Genspark AI Workspace 6.0 Launches: Cloud Memory SecondBrain and the GenTeam Collaboration Space",
+    "body_zh": "Genspark 发布 AI Workspace 6.0，核心新增三块：①SecondBrain——一个云端持久记忆层，能记住你之前跑过的任务、上传的文件和习惯偏好，配套的语音记录工具 SecondBrain Note 可以直接把语音笔记转成结构化记忆存进去；②GenTeam——一个跟 AI 协作用的团队空间，多人可以在同一个工作区里给 AI 派任务、看进度、共享上下文，不用各自开单独对话；③AgentBase——把多个第三方工具和数据源接起来，自己拖拽搭一个自定义仪表盘。同时还加了一个 Design 功能，输入描述就能出视觉设计稿。实操建议：①先把常用的项目背景、术语表、写作风格喂给 SecondBrain，后续新任务不用每次重新说明背景；②团队协作场景优先用 GenTeam 建一个共享空间，把「谁负责哪块」写清楚，避免多人重复给 AI 下同样的指令；③AgentBase 适合做「多数据源汇总」类需求（比如把几个平台的数据拉到一个仪表盘），先明确要看哪几个指标再动手连接，别一次接太多工具增加维护成本；④Design 功能出的稿子建议当草稿用，关键页面还是要设计师或专业工具再过一遍精修。",
+    "body_en": "Genspark launched AI Workspace 6.0 with three major additions: SecondBrain, a persistent cloud memory layer that remembers past tasks, uploaded files, and your preferences, paired with SecondBrain Note, a voice recorder that turns spoken notes directly into structured memory entries; GenTeam, a collaboration space where multiple people can assign tasks to AI, track progress, and share context in one shared workspace instead of running separate conversations; and AgentBase, which connects multiple third-party tools and data sources so you can drag-and-drop a custom dashboard. A new Design feature was also added, generating visual design drafts from a text description. Practical tips: 1) feed SecondBrain your recurring project background, glossary, and writing style up front so future tasks don't need the same context re-explained every time; 2) for team collaboration, set up a shared GenTeam space and clearly assign who owns what, to avoid multiple people giving the AI the same instructions redundantly; 3) AgentBase works well for \"aggregate data from several sources\" needs (like pulling metrics from multiple platforms into one dashboard) — decide which metrics matter before connecting tools, rather than wiring up everything at once and adding maintenance overhead; 4) treat Design's output as a draft — have a designer or a dedicated tool polish anything customer-facing before shipping it.",
+    "models": [
+      "Genspark"
+    ],
+    "tags": [
+      "Genspark",
+      "AI Agent",
+      "团队协作",
+      "记忆"
+    ],
+    "source": "Genspark 官方发布 / AI 媒体报道（2026-07）",
+    "updated": "2026-07-29"
+  },
+  {
+    "id": "plugin-github-copilot-vscode-agent-browser-parallel",
+    "category": "plugin",
+    "level": "intermediate",
+    "title_zh": "GitHub Copilot in VS Code 更新：agent 能自己开浏览器测页面，还支持并行跑多个会话",
+    "title_en": "GitHub Copilot in VS Code Update: Agents Can Now Browse Pages Themselves and Run Parallel Sessions",
+    "body_zh": "VS Code 里的 GitHub Copilot 在 6-7 月的几个版本里连续加了几项跟 agent 工作流有关的更新：①「agentic browser tools」正式转正（GA），Copilot 的 agent 现在能自己打开网页、点击、截图、校验 Web 应用的实际渲染效果，不用你手动切浏览器去核对；②Agent 窗口支持并行会话——可以同时开好几个独立的 agent 任务，各跑各的，互不干扰，也能在同一个会话里开多个聊天分支；③费用可见性变强，整个会话和被委派出去的任务花了多少 token/额度，界面上直接能看到，接近额度上限或超额时会提前提醒；④手机端 GitHub App 新增一键操作，Copilot coding agent 能直接在手机上调查并修复 PR 里跑挂的 CI 检查。实操建议：①做前端改动时优先让 agent 用浏览器工具自己截图核对渲染结果，比你事后手动测更省一轮来回；②跑几个互不相关的重构/修复任务时，用并行会话分开跑，别塞进同一个会话里排队等；③团队/企业账号建议定期看一眼费用可见性面板，找出哪类任务最烧额度，针对性优化提示词或改用轻量模型；④CI 挂了不用非得守在电脑前，手机上批一下 Copilot 的修复方案就行。",
+    "body_en": "GitHub Copilot in VS Code picked up several agent-workflow updates across its June and July releases: agentic browser tools reached general availability, letting Copilot's agent open pages, click, take screenshots, and verify how a web app actually renders — no need to manually switch to a browser to check; the agent window now supports parallel sessions, so you can run several independent agent tasks side by side without them interfering, plus multiple chat branches within a single session; cost visibility got clearer, showing token/quota usage across a whole session and any delegated work directly in the UI, with proactive alerts as you approach limits or go over; and the GitHub mobile app added a one-tap workflow letting the Copilot coding agent investigate and fix failed CI checks on a PR straight from your phone. Practical tips: 1) for frontend changes, let the agent use its browser tools to screenshot and verify rendering itself — it saves a manual back-and-forth check afterward; 2) when running several unrelated refactors or fixes, use parallel sessions instead of queuing them one after another in the same session; 3) teams and enterprise accounts should periodically check the cost visibility panel to spot which tasks burn the most quota and tune prompts or switch to lighter models accordingly; 4) you don't have to be at your computer when CI breaks — you can approve Copilot's fix from your phone.",
+    "models": [
+      "GitHub Copilot",
+      "VS Code"
+    ],
+    "tags": [
+      "GitHub Copilot",
+      "VS Code",
+      "Agent",
+      "MCP"
+    ],
+    "source": "GitHub Changelog（2026-07）",
+    "updated": "2026-07-29"
   }
 ];

@@ -19,10 +19,10 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 - 🚀 **Getting Started** (41)
 - 🎭 **Role Prompts** (151)
 - 🖼️ **Text-to-Image** (27)
-- 🎬 **Text-to-Video** (30)
-- 🧩 **Skills** (41)
-- 🔌 **Plugins / MCP** (31)
-- 💡 **Prompt Craft** (74)
+- 🎬 **Text-to-Video** (31)
+- 🧩 **Skills** (42)
+- 🔌 **Plugins / MCP** (32)
+- 💡 **Prompt Craft** (75)
 
 ## 🚀 Getting Started
 
@@ -1293,6 +1293,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > On July 21, 2026, Google pushed a major coordinated update across the Gemini ecosystem. The standout piece is Gemini Omni (plus a speed-optimized Omni Flash variant), rolling out to all Google AI subscribers 18 and over worldwide: it accepts text, image, audio, and video as mixed inputs to generate video, moving beyond "describe the shot in words only." The same batch added the new Gemini 3.6 Flash model and a persistent browser side panel that summarizes articles or drafts emails without leaving the current tab. Practical tips: 1) to align the generated video's motion with a reference, upload an actual reference clip or audio track (a voiceover, a camera move) and add text only for what you want changed — this is far more accurate than describing camera motion in words alone; 2) mixed image-plus-text input is ideal for "keep this character/scene but change the action or angle" requests — upload the image to set the baseline, then describe the new action in text; 3) the side panel is handy for summarizing or drafting replies while reading a long article without tab-switching — worth keeping open during everyday research.
 
+### CapCut Desktop Adds Sora 2 and Veo 3.1 In-App: Generate and Edit Without Switching Platforms
+`🟢 Beginner ｜ Sora 2 · Veo 3.1 · CapCut · 剪映`  ·  CapCut 官方工具页 / YouTube 测评（2026-07）
+
+> CapCut's desktop app and mobile app have plugged Sora 2 and Google Veo 3.1 directly into the media library — no more generating clips in a separate Sora or Gemini account and importing them afterward. Type a text prompt or upload a reference image right inside CapCut, call Sora 2 or Veo 3.1, and drag the finished clip straight onto your timeline. Veo 3.1's edge is native audio-visual sync — it generates ambient sound and dialogue along with the picture, skipping a separate dubbing pass — while Sora 2 leans toward stronger camera movement and motion. Note this currently only works in the desktop app and mobile app; CapCut Web hasn't caught up yet. Practical tips: 1) generate a short, low-res test pass first to check camera work and composition before spending your generation quota on a longer, higher-spec final version; 2) generate the same shot with both Sora 2 and Veo 3.1 and compare them side by side on the timeline — it's more reliable than guessing which will look better; 3) default to Veo 3.1 for shots that need dialogue or ambient sound, since it skips the separate audio pass; 4) don't drop generated clips straight into your edit — pass them through CapCut's transitions and color grading first so clips from different models don't clash stylistically.
+
 ## 🧩 Skills
 
 ### Skill: prompt auto-optimizer
@@ -1500,6 +1505,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 
 > A community-favorite Claude Skill pattern called the "Model Council" has been gaining traction: before implementing anything in Claude Code, it automatically sends the same problem to ChatGPT and Gemini for brainstorming, collects where their thinking diverges, and synthesizes that into one implementation plan for you to confirm — instead of Claude reasoning it out alone. The logic behind it: Skills are trigger-first, automatically invoked whenever a keyword shows up in conversation, unlike scenario-first Projects that require you to manually enter a workspace first — which makes it a natural fit for a "pull in outside opinions automatically whenever a hard decision comes up" workflow. Good fits: architecture choices, contested technical approaches, judgment calls that benefit from cross-checking multiple perspectives. Not a good fit: execution tasks that are already unambiguous, where the extra round-trips to other models just add latency for no benefit. To set it up, tell Claude: "Build me a skill that, whenever there's an architecture decision to make, first sends the proposal to ChatGPT and Gemini for input, summarizes where they agree and disagree, then gives me one combined recommendation." Have it generate a SKILL.md along those lines, and it'll auto-trigger for similar situations going forward.
 
+### Genspark AI Workspace 6.0 Launches: Cloud Memory SecondBrain and the GenTeam Collaboration Space
+`🟡 Intermediate ｜ Genspark`  ·  Genspark 官方发布 / AI 媒体报道（2026-07）
+
+> Genspark launched AI Workspace 6.0 with three major additions: SecondBrain, a persistent cloud memory layer that remembers past tasks, uploaded files, and your preferences, paired with SecondBrain Note, a voice recorder that turns spoken notes directly into structured memory entries; GenTeam, a collaboration space where multiple people can assign tasks to AI, track progress, and share context in one shared workspace instead of running separate conversations; and AgentBase, which connects multiple third-party tools and data sources so you can drag-and-drop a custom dashboard. A new Design feature was also added, generating visual design drafts from a text description. Practical tips: 1) feed SecondBrain your recurring project background, glossary, and writing style up front so future tasks don't need the same context re-explained every time; 2) for team collaboration, set up a shared GenTeam space and clearly assign who owns what, to avoid multiple people giving the AI the same instructions redundantly; 3) AgentBase works well for "aggregate data from several sources" needs (like pulling metrics from multiple platforms into one dashboard) — decide which metrics matter before connecting tools, rather than wiring up everything at once and adding maintenance overhead; 4) treat Design's output as a draft — have a designer or a dedicated tool polish anything customer-facing before shipping it.
+
 ## 🔌 Plugins / MCP
 
 ### Claude Code: Split Work into Specialized Subagents
@@ -1656,6 +1666,11 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟡 Intermediate ｜ ChatGPT · Codex · Cursor · Claude Code`  ·  OpenAI Codex What's New / releasebot.io（2026-07）
 
 > OpenAI has rolled out Codex Remote to every ChatGPT paid plan: as long as Codex is running on a connected Mac or Windows machine, you can check task progress and approve or reject the next action right from your phone — no need to stay glued to your computer. At the same time, the /import command got bigger: it can now migrate settings, MCP servers, plugins, session history, custom commands, and project-scoped memories from Cursor and Claude Code in one shot, so switching tools or spinning up a new machine doesn't mean starting from zero. Practical tips: 1) when a new teammate joins a project, run /import first to inherit the MCP configs and go-to commands the rest of the team already built up in Cursor/Claude Code; 2) before kicking off a long-running task (bulk refactors, test runs), make sure your phone is signed into the same account — if the task stalls waiting on approval, you can handle it from your phone instead of sitting there; 3) preview what /import is about to bring over before running it, so you don't overwrite configs you've already tuned in the new environment.
+
+### GitHub Copilot in VS Code Update: Agents Can Now Browse Pages Themselves and Run Parallel Sessions
+`🟡 Intermediate ｜ GitHub Copilot · VS Code`  ·  GitHub Changelog（2026-07）
+
+> GitHub Copilot in VS Code picked up several agent-workflow updates across its June and July releases: agentic browser tools reached general availability, letting Copilot's agent open pages, click, take screenshots, and verify how a web app actually renders — no need to manually switch to a browser to check; the agent window now supports parallel sessions, so you can run several independent agent tasks side by side without them interfering, plus multiple chat branches within a single session; cost visibility got clearer, showing token/quota usage across a whole session and any delegated work directly in the UI, with proactive alerts as you approach limits or go over; and the GitHub mobile app added a one-tap workflow letting the Copilot coding agent investigate and fix failed CI checks on a PR straight from your phone. Practical tips: 1) for frontend changes, let the agent use its browser tools to screenshot and verify rendering itself — it saves a manual back-and-forth check afterward; 2) when running several unrelated refactors or fixes, use parallel sessions instead of queuing them one after another in the same session; 3) teams and enterprise accounts should periodically check the cost visibility panel to spot which tasks burn the most quota and tune prompts or switch to lighter models accordingly; 4) you don't have to be at your computer when CI breaks — you can approve Copilot's fix from your phone.
 
 ## 💡 Prompt Craft
 
@@ -2054,5 +2069,10 @@ A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **pr
 `🟢 Beginner ｜ Claude`  ·  Anthropic Release Notes / testingcatalog.com（2026-07）
 
 > Anthropic has overhauled how Claude's memory works: instead of generating one "today's summary" each day, memory is now a set of individual entries grouped by category, which Claude reads and updates in real time as you chat rather than on a fixed daily schedule. The Memory panel in Settings lists everything Claude remembers by category, so you can review, edit, or delete entries one at a time instead of wrestling with one big undifferentiated block of text. There's also a new monthly recap at Settings → Reflect (in beta on Free, Pro, and Max, web and desktop), which shows what topics you spent the most time on, your most active day and hour, and observations about how you work with Claude. Practical tips: 1) the first time you open the Memory panel, go through it and manually delete or fix anything wrong or outdated — later answers will be more accurate; 2) if Claude keeps forgetting or misremembering a specific category of info (project context, writing style preferences), just add an entry directly in the Memory panel instead of repeating it in conversation over and over; 3) check the monthly Reflect recap to spot questions you ask repeatedly, and consider turning those into a fixed prompt template or Skill.
+
+### Claude Opus 5 Prompting: Stop Telling It to 'Double-Check' — It Backfires
+`🟡 Intermediate ｜ Claude · Opus 5`  ·  Anthropic 官方 Prompting Guide / apidog.com 报道（2026-07）
+
+> When Anthropic shipped Claude Opus 5, it released an official prompting guide alongside it — and one piece of advice is counterintuitive: several instructions that used to make Opus 4.8 better now make Opus 5 worse. If your prompts still include lines like "double-check your answer," "add a final verification step," or "use a subagent to verify," Anthropic's own guidance says to cut them. Opus 5 already verifies itself and decides on its own how much to think — tacking on "double-check" doesn't make it more accurate, it just triggers an extra verification pass that burns tokens and slows things down without improving quality. Practical tips: 1) strip out closing instructions like "please check carefully," "make sure it's correct," or "verify before answering" from your old prompt templates and see whether output quality or speed changes; 2) if you genuinely need extra verification (financial calculations, legal clause checks), replace vague "double-check it" language with a specific instruction like "explicitly list the key points you verified"; 3) teams migrating from Opus 4.8 should A/B test 3-5 high-frequency prompt templates (with vs. without double-check language) and let real output decide whether to trim it; 4) the same applies to long-running Claude Code tasks — cutting redundant verification instructions often saves more tokens than you'd expect.
 
 <!-- AUTO-PROMPTS:END -->
