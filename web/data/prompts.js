@@ -7582,8 +7582,17 @@ window.PROMPTS = [
     "title_en": "Gemini 3.6 Flash's Knowledge Cutoff Jumps to March 2026: Which Model to Pick for \"What Just Happened\" Questions",
     "body_zh": "Google 在 2026 年 7 月 21 日一次性发布三款新模型——Gemini 3.6 Flash、Gemini 3.5 Flash-Lite，以及仅面向政府和受信任合作伙伴开放的安全加固版 Gemini 3.5 Flash Cyber。普通用户最该关注的是 Gemini 3.6 Flash：它的训练知识截止日期从上一代的 2025 年 1 月一口气跳到 2026 年 3 月，跨度超过一年，对过去一年多的新产品发布、政策变化、时事都「知道」得更多，答案更不容易过时。实操建议：①问任何带时效性的问题（「某公司最近发布了什么」「某项政策现在还有效吗」）之前，先确认自己用的是 Gemini 3.6 Flash 而不是旧版本，不同版本知识截止日期可能差一年以上，答案可信度天差地别；②即便知识截止日期更新了，2026 年 3 月之后发生的事情模型依然不知道，遇到「最近几天/这周」这类问题还是要主动要求模型联网搜索确认，不要单纯依赖训练记忆；③Flash-Lite 定位是速度和成本优先、时效性要求不高的批量任务，日常问答优先选 3.6 Flash 而不是 Lite 版本。",
     "body_en": "On July 21, 2026, Google released three new models at once — Gemini 3.6 Flash, Gemini 3.5 Flash-Lite, and a security-hardened Gemini 3.5 Flash Cyber available only to government and trusted partners. The one everyday users should care about is Gemini 3.6 Flash: its training knowledge cutoff jumps from the prior generation's January 2025 to March 2026, over a year further forward, so it \"knows\" far more about the past year-plus of product launches, policy changes, and current events, making answers less likely to be stale. Practical tips: 1) before asking any time-sensitive question (\"what did company X recently launch\", \"is policy Y still in effect\"), confirm you're actually on Gemini 3.6 Flash and not an older version — cutoff dates can differ by more than a year across versions, and that swings answer reliability a lot; 2) even with the newer cutoff, anything after March 2026 is still unknown to the model — for \"the past few days/this week\" questions, explicitly ask it to search the web rather than relying on training memory; 3) Flash-Lite is positioned for speed- and cost-sensitive bulk tasks with low timeliness needs — for everyday Q&A, default to 3.6 Flash over the Lite variant.",
-    "models": ["Gemini", "Gemini 3.6 Flash", "Google"],
-    "tags": ["Gemini", "知识截止日期", "模型选择", "时效性"],
+    "models": [
+      "Gemini",
+      "Gemini 3.6 Flash",
+      "Google"
+    ],
+    "tags": [
+      "Gemini",
+      "知识截止日期",
+      "模型选择",
+      "时效性"
+    ],
     "source": "Google 官方发布 / llm-stats.com、buildfastwithai（2026-07-21 发布，2026-07-22～23 报道）",
     "updated": "2026-07-23"
   },
@@ -7595,8 +7604,17 @@ window.PROMPTS = [
     "title_en": "Grok's Aurora Image Model: How to Prompt for That \"Actually Photographed\" Look on X",
     "body_zh": "xAI 的文生图模型 Aurora 内置在 X（原 Twitter）的 Grok 里，强项是照片级真实感、更宽松的内容尺度，以及少见的高准确率文字渲染（招牌、T恤、文档上的文字都能基本写对），适合做产品图、包装视觉、电商图。2026 年 4 月起图片生成从免费层下线，至少需要 SuperGrok Lite（约 10 美元/月）订阅才能用。实操建议：①提示词按「场景描述（1-2句话）+ 艺术风格 + 打光 + 色调 + 情绪 + 质量标签」的顺序堆叠，比如先写清楚画面里有什么，再补「赛璐璐风格/水彩/纪实摄影」这类风格词；②想要「像真拍出来的」质感，加具体的摄影术语——「85mm 镜头拍摄」「柔和轮廓光」「真实皮肤质感」「4k」，这几个词对 Aurora 的引导效果比堆形容词更明显；③明确点出艺术风格名称（赛璐璐/水彩/漫画）能精确控制画面被重新演绎的方式，不写风格词时 Aurora 默认偏向照片级写实。",
     "body_en": "xAI's image model Aurora is built into Grok on X (formerly Twitter). Its strengths are photorealism, looser content restrictions, and unusually accurate text rendering (signage, T-shirts, and on-page document text mostly come out correct) — good fit for product shots, packaging visuals, and e-commerce images. Since April 2026 image generation has been pulled from the free tier, requiring at least a SuperGrok Lite subscription (~$10/month). Practical tips: 1) stack prompts in the order scene description (1-2 sentences) + art style + lighting + color tone + mood + quality tags — describe what's in frame first, then add style words like \"cel-shaded / watercolor / documentary photography\"; 2) for that \"actually photographed\" texture, add concrete photography terms — \"shot on 85mm lens\", \"soft rim light\", \"realistic skin texture\", \"4k\" — these guide Aurora more effectively than piling on adjectives; 3) explicitly naming an art style (cel-shaded / watercolor / comic) precisely controls how the scene gets reinterpreted; without a style word, Aurora defaults toward photorealism.",
-    "models": ["Grok", "Aurora", "xAI"],
-    "tags": ["Grok", "文生图", "提示词技巧", "摄影质感"],
+    "models": [
+      "Grok",
+      "Aurora",
+      "xAI"
+    ],
+    "tags": [
+      "Grok",
+      "文生图",
+      "提示词技巧",
+      "摄影质感"
+    ],
     "source": "xAI 产品文档 / pxz.ai、shiori.ai、xsoneconsultants（2026-07 汇总测评）",
     "updated": "2026-07-23"
   },
@@ -7608,8 +7626,18 @@ window.PROMPTS = [
     "title_en": "Grok Build Ships \"/goal\" Autonomous Mode: Hand It a Goal and the Agent Plans, Executes, and Verifies Itself",
     "body_zh": "xAI 在 Grok Build（Grok 的终端编程 Agent，已开源）里上线了 /goal 命令，主打「长时间自主执行」：你只需要描述一个目标，Agent 会自己拆解成一份任务清单，逐项执行、观察结果，遇到和预期不符的情况会重新规划，完成后还会跑一遍验证（检查代码、运行测试、实际打开页面看行为是否正常）才标记任务完成，不需要你一步步盯着改。命令层面还提供 /goal status 看实时进度、/goal pause 暂停但保留目标、/goal resume 继续、/goal clear 放弃目标，需要 SuperGrok 或 X Premium Plus 订阅才能用。实操建议：①目标描述要包含「做什么」和「验收标准」两部分，比如不要只说「把登录页面重构一下」，而要说「把登录页面重构成响应式布局，验收标准是手机端和桌面端都要过现有的 E2E 测试」，Agent 有明确验收标准才不容易在中途跑偏；②适合用来处理「步骤多、单步都不难、但盯着做很烦」的任务（批量重构、多文件迁移、重复性修复），而不是需要频繁人工判断的模糊任务；③执行过程中善用 /goal status 定期检查进度，发现方向不对及时 /goal pause 纠正，比等它全部跑完再返工省时间。",
     "body_en": "xAI added a /goal command to Grok Build (Grok's open-sourced terminal coding agent), built for long-running autonomous execution: describe a goal, and the agent breaks it into a task list, works through each item, observes results, and re-plans when something doesn't match expectations — then runs a verification pass (checking code, running tests, actually opening the page to confirm behavior) before marking the task complete, without you babysitting each step. Command-level controls include /goal status for live progress, /goal pause to pause while keeping the goal, /goal resume to continue, and /goal clear to abandon it; it requires a SuperGrok or X Premium Plus subscription. Practical tips: 1) a goal description needs both \"what to do\" and \"acceptance criteria\" — instead of just \"refactor the login page\", say \"refactor the login page into a responsive layout; acceptance criteria: both mobile and desktop must pass the existing E2E tests\" — a clear acceptance bar keeps the agent from drifting mid-task; 2) it's well suited to tasks that are \"many steps, none individually hard, but tedious to babysit\" (bulk refactors, multi-file migrations, repetitive fixes) rather than ambiguous tasks needing frequent human judgment calls; 3) check in periodically with /goal status during execution and /goal pause promptly if it's heading the wrong way — cheaper than letting it finish and redoing the work.",
-    "models": ["Grok", "Grok Build", "Grok 4.5", "xAI"],
-    "tags": ["Grok Build", "自主 Agent", "编程助手", "任务验收"],
+    "models": [
+      "Grok",
+      "Grok Build",
+      "Grok 4.5",
+      "xAI"
+    ],
+    "tags": [
+      "Grok Build",
+      "自主 Agent",
+      "编程助手",
+      "任务验收"
+    ],
     "source": "xAI 官方发布（x.ai/news） / MarkTechPost、Tech Times（2026-06-22～06-24 报道，2026-07-15 随 Grok Build 开源沿用）",
     "updated": "2026-07-23"
   },
@@ -8375,5 +8403,111 @@ window.PROMPTS = [
     ],
     "source": "福布斯中国 / 搜狐 / 新浪新闻（2026-05 上线，持续讨论至 2026-07）",
     "updated": "2026-07-30"
+  },
+  {
+    "id": "video-google-vids-gemini-omni-edit",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "Google Vids 接入 Gemini Omni：说一句话就能改视频，还能生成你的数字分身出镜",
+    "title_en": "Google Vids Adds Gemini Omni: Edit Videos by Just Describing the Change, Plus AI Avatars That Look Like You",
+    "body_zh": "Google 从 7 月 16 日起（Rapid Release 域名先上，Scheduled Release 域名 8 月 5 日跟进）为 Workspace 旗下的视频工具 Google Vids 接入 Gemini Omni，带来两个核心能力：一是「对话式视频编辑」——不用学剪辑软件，直接用自然语言描述想要的改动，比如「把背景换成办公室」「修一下这段的曝光」「去掉背景噪音」，Omni 就能理解画面内容并执行调整；二是「文生视频」升级——输入文字描述或上传参考图/草图，生成的视频质量比上一代模型明显提升，还能用照片生成属于你自己的「数字分身」，让分身代替真人出镜念稿。目前功能仅对 Workspace 付费用户开放。实操建议：①改视频时把指令拆成一句一个动作（先「去噪」再「调色」再「换背景」），比一次塞多个要求的长句更容易让 Omni 准确执行，也方便逐步检查效果；②做企业培训、产品讲解类视频，先用文字描述生成初版，再用对话式编辑一步步修正镜头细节，比重新生成整段视频省时间；③生成数字分身前，准备清晰正脸、光线均匀的参考照片，分身的口型和语气匹配度会明显更好；④目前只在 Rapid Release 域名生效，企业管理员如果还没看到入口，先确认自己域名的发布通道，或等 8 月 5 日 Scheduled Release 跟进。",
+    "body_en": "Starting July 16 (Rapid Release domains first, Scheduled Release domains following on August 5), Google has added Gemini Omni to Google Vids, its Workspace video tool, bringing two core capabilities. First, conversational editing: instead of learning editing software, you describe the change you want in plain language — \"swap the background for an office,\" \"fix the exposure on this clip,\" \"remove the background noise\" — and Omni understands the footage and applies the edit. Second, an upgraded text-to-video engine: type a description or upload a reference image/sketch and Omni generates noticeably higher-quality video than the previous model, and it can also turn a photo of you into a personal AI avatar that can deliver a script on camera in your place. The feature is currently limited to paying Workspace users. Practical tips: 1) when editing, break instructions into one action per sentence (\"denoise\" first, then \"color correct,\" then \"swap background\") rather than one long request packed with multiple asks — Omni executes it more accurately and it's easier to check results step by step; 2) for corporate training or product-explainer videos, generate a first draft from a text description, then refine shot details with conversational edits — it's faster than regenerating the whole clip from scratch; 3) before generating an avatar, use a clear, evenly lit, front-facing reference photo — lip-sync and tone matching are noticeably better with good source material; 4) the feature currently only works on Rapid Release domains, so if your admin console doesn't show it yet, check your domain's release track or wait for the August 5 Scheduled Release rollout.",
+    "models": [
+      "Gemini",
+      "Gemini Omni"
+    ],
+    "tags": [
+      "Google Vids",
+      "视频编辑",
+      "对话式编辑",
+      "数字分身"
+    ],
+    "source": "Google Workspace Updates Blog（2026-07-16~18）",
+    "updated": "2026-07-31"
+  },
+  {
+    "id": "image-midjourney-v82-official-default",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "Midjourney V8.2 转正当默认模型：从「抢先体验」到人人可用，这些美学参数值得重新调",
+    "title_en": "Midjourney V8.2 Becomes the Default Model: From Early Preview to Everyone's Default — Which Aesthetic Settings Are Worth Re-Tuning",
+    "body_zh": "Midjourney 已于 7 月 24 日正式把 V8.2 设为默认模型，取代此前的 V8.1，不再需要在提示词末尾加 --preview 才能用（之前收录过的「V8.2 预览版」用法现在已经过时，直接用默认模型即可）。V8.2 延续了预览期的定位——「美学、图像质量与个性化」升级而非架构重做：出图整体更「大胆、精致、有 edge」，风格参考（Sref）和情绪板一致性更稳，低质量图出现概率进一步下降；个性化方面会更精准地读取你在 Explore 页面的历史点赞数据，账号点赞积累越多，出图越贴合个人审美。实操建议：①切换到 V8.2 后老提示词不用大改，但如果发现出图风格「偏个人化」跟预期不符，去 Explore 页面重新整理点赞记录（取消误点的赞、多点几张真正喜欢的风格），能明显改善后续生成的贴合度；②过去依赖 V8.1「出图更快」的工作流（比如草稿模式批量海选构图）要重新测速，V8.2 定位在美学而非速度，批量试稿阶段可以视情况保留 --v 8.1 手动指定旧版本；③做统一视觉风格的项目（系列插画、品牌物料），趁转正的时机重新跑一版 Sref 风格库，确保新默认模型下的一致性效果符合预期；④客户交付对稳定性要求极高时，建议先用小样本验证 V8.2 是否会改变既有构图理解或文字渲染表现，再批量切换生产流程。",
+    "body_en": "Midjourney officially made V8.2 the default model on July 24, replacing V8.1 — you no longer need to append --preview to your prompt to use it (an earlier entry on the V8.2 preview is now outdated; just use the default model). V8.2 keeps the same scope it had during preview: an \"aesthetics, image quality, and personalization\" upgrade rather than a new architecture. Outputs are described as more \"bold, sophisticated, and edgy,\" style-reference (Sref) and moodboard consistency is steadier, and low-quality generations are rarer. On personalization, it reads your Explore-page like history more accurately, so the more likes you've accumulated, the closer results track your taste. Practical tips: 1) after the switch, old prompts don't need major rewrites, but if outputs feel \"too personalized\" and off from what you expected, clean up your Explore likes (undo accidental likes, add more likes for styles you actually want) — it noticeably improves how closely results match; 2) workflows that relied on V8.1 being faster (like draft-mode bulk composition testing) should re-benchmark speed, since V8.2 is about aesthetics rather than speed — you can still manually pin --v 8.1 for bulk drafting if needed; 3) for projects needing a consistent visual style (illustration series, brand assets), use this switch as an opportunity to rebuild your Sref style library and confirm consistency holds under the new default; 4) for deliverables where stability really matters, validate on a small sample first to check whether V8.2 shifts composition understanding or text rendering before switching your whole production pipeline over.",
+    "models": [
+      "Midjourney",
+      "Midjourney V8.2"
+    ],
+    "tags": [
+      "Midjourney",
+      "文生图",
+      "默认模型",
+      "风格参考"
+    ],
+    "source": "Midjourney 官方公告 / Medium《Enthusiastically Midjourney》（2026-07-24）",
+    "updated": "2026-07-31"
+  },
+  {
+    "id": "start-baidu-ernie-assistant-merge",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "文心一言并入「文心助手」：老账号数据 7 月 25 日截止迁移，现在该去哪儿用百度大模型",
+    "title_en": "ERNIE Bot Merges Into 'Wenxin Assistant': Old-Account Data Migration Closed July 25 — Where to Use Baidu's AI Now",
+    "body_zh": "百度已在 6 月 25 日宣布，将文心一言网页版、文心 APP、百度文心助手三个入口合并，统一以「百度文心助手」网页版作为百度 AI 服务的唯一入口；原文心一言网页版用户的个人数据可下载备份的截止时间是 7 月 25 日 23:59:59（已过期），逾期数据不再保证可迁移，但不影响百度账号本身及其他产品数据。合并后的文心助手基于文心大模型 5.1，功能矩阵比原来更全，覆盖学习、工作、生活、娱乐场景，新增 Office 文档在线编辑（PPT/Excel/Word 直接改）、定时任务、基于深度检索的「深入研究」模式，同时保留原有的智能创作、AI 绘图、AI 阅读等能力。实操建议：①如果还在用旧版文心一言网页链接，现在直接改用「百度文心助手」网页版入口，功能不会丢，只是界面和菜单换了位置；②需要处理 Office 文档（做 PPT 大纲、改 Excel 公式、润色 Word 长文）时，可以直接在文心助手里在线编辑，不用再导出到本地软件来回传；③做需要多信息源交叉验证的任务（写报告、做竞品调研），试试新的「深入研究」模式，它会自动做深度检索再整合成结构化答案，比普通问答更适合长报告场景；④重复性任务（比如每天定时生成一份简报）可以用「定时任务」功能直接设置好，不用每天手动重新提问。",
+    "body_en": "Baidu announced on June 25 that it is merging three entry points — the ERNIE Bot (文心一言) web app, the ERNIE mobile app, and Baidu Wenxin Assistant — into a single web portal, \"Baidu Wenxin Assistant.\" The deadline for downloading personal data from the old ERNIE Bot web app was July 25 at 23:59:59 (already passed); data not backed up by then is no longer guaranteed to be migratable, though this doesn't affect your Baidu account itself or data in other Baidu products. The merged Wenxin Assistant runs on ERNIE 5.1 and has a broader feature set covering learning, work, life, and entertainment, adding online Office document editing (edit PPT/Excel/Word directly), scheduled tasks, and a \"Deep Research\" mode built on deep retrieval, while keeping existing capabilities like AI writing, AI image generation, and AI reading. Practical tips: 1) if you're still using the old ERNIE Bot web link, switch to the \"Baidu Wenxin Assistant\" web portal now — nothing is lost, the menus have just moved; 2) for Office document work (drafting a slide outline, fixing Excel formulas, polishing a long Word doc), you can edit directly inside Wenxin Assistant instead of exporting to local software and importing back; 3) for tasks needing cross-referenced sources (writing a report, competitor research), try the new Deep Research mode — it runs deep retrieval automatically and synthesizes a structured answer, better suited to long-report scenarios than plain Q&A; 4) for repetitive tasks (like generating a daily briefing), set them up once with the scheduled-task feature instead of re-prompting manually every day.",
+    "models": [
+      "文心一言",
+      "文心大模型5.1"
+    ],
+    "tags": [
+      "文心一言",
+      "百度",
+      "文心助手",
+      "账号迁移"
+    ],
+    "source": "百度官方公告 / datalearner.com（2026-06-25 合并公告，2026-07-25 数据迁移截止）",
+    "updated": "2026-07-31"
+  },
+  {
+    "id": "start-chatgpt-academic-researchers-free",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "OpenAI 面向科研人员免费开放 ChatGPT：10 万名学者可用旗舰模型，怎么申请",
+    "title_en": "OpenAI Opens Free ChatGPT Access to Academic Researchers: 100,000 Scientists Get Frontier Models — How to Apply",
+    "body_zh": "OpenAI 上线「ChatGPT for Academic Researchers」项目，计划面向全球 10 万名学术研究人员免费开放旗舰模型（首批含 GPT-5.6 Sol Pro），今年夏天先覆盖 1 万人（普林斯顿高等研究院、巴黎高等师范学院等机构已开通），到 2027 年逐步扩展到 10 万人，背后是 OpenAI 承诺到 2027 年投入超过 2.5 亿美元支持外部科研。通过审核的工作区可获得最多 5 个免费席位、有效期 12 个月，结算需要绑卡但周期内账单为 0；工作区支持邀请最多 4 名同机构合作者一起用，且承诺不用聊天数据训练模型，符合企业级隐私标准。申请时需要验证机构邮箱/身份，并说明当前在研项目和具体的科研用途。实操建议：①符合条件的科研人员建议尽早去 OpenAI 官网填写申请表——名额是分批放量的，早申请早排上第一批；②拿到席位后优先用来处理需要旗舰模型能力的任务（文献综述、长论文润色、复杂数据分析代码），日常问答用免费版模型即可，把配额留给真正需要的场景；③记得邀请同项目的合作者加入同一工作区，5 个席位是团队共享额度，单人用不完很浪费；④申请材料里如实写清楚研究方向和用途，机构审核和 OpenAI 审核都会看这部分，写得越具体通过率越高。",
+    "body_en": "OpenAI has launched \"ChatGPT for Academic Researchers,\" a program aiming to give 100,000 academic researchers worldwide free access to frontier models, starting with GPT-5.6 Sol Pro. It's rolling out to the first 10,000 researchers this summer (institutions like the Institute for Advanced Study and École normale supérieure already have access), expanding toward 100,000 through 2027, backed by OpenAI's pledge to commit more than $250 million to external scientific research by 2027. Approved workspaces get up to five free seats for 12 months — a payment card is required at checkout, but the bill comes to $0 for the complimentary period. Workspaces can invite up to four collaborators from the same institution, and OpenAI commits to not training on chat data, meeting business-grade privacy standards. Applicants must verify their institutional affiliation and describe their current research and intended use. Practical tips: 1) eligible researchers should apply on OpenAI's site as early as possible — seats are being released in batches, so early applicants get into the first wave; 2) once you have a seat, prioritize it for tasks that genuinely need a frontier model (literature reviews, polishing long papers, complex data-analysis code) and use free-tier models for everyday questions, saving your quota for what actually needs it; 3) remember to invite collaborators from your project into the same workspace — the five seats are a shared team allocation, and it's wasteful for one person to sit on all of them; 4) be specific and honest about your research area and intended use in the application — both your institution's review and OpenAI's review weigh this section, and specificity improves your approval odds.",
+    "models": [
+      "GPT",
+      "GPT-5.6"
+    ],
+    "tags": [
+      "ChatGPT",
+      "OpenAI",
+      "科研",
+      "免费额度"
+    ],
+    "source": "OpenAI 官方公告 / Axios / SiliconANGLE（2026-07-29~30）",
+    "updated": "2026-07-31"
+  },
+  {
+    "id": "plugin-zapier-ai-copilot-agents",
+    "category": "plugin",
+    "level": "intermediate",
+    "title_zh": "Zapier AI Copilot + Agents：说一句需求自动搭工作流，不用再手动拖节点",
+    "title_en": "Zapier's AI Copilot and Agents: Describe What You Need and It Builds the Workflow — No More Manually Dragging Nodes",
+    "body_zh": "Zapier 把 AI 全面嵌入自动化搭建流程：AI Copilot 可以直接用自然语言描述需求生成 Zap（比如「新邮件里带附件的话，自动存到指定 Drive 文件夹并发 Slack 通知」），不用再手动一个个拖节点配置；Zapier Agents 是更进一步的自主智能体，能在 8000+ 已连接的应用之间自主执行多步任务，不需要每一步都人工触发；另外还新增了 AI Actions，允许在任意 Zap 节点里内联调用 GPT/Claude/Gemini 等模型做文本处理、分类、摘要，系统还会根据你的应用使用习惯主动推荐可以自动化的场景。实操建议：①第一次用 Copilot 搭工作流时，把需求拆成「触发条件 + 具体动作 + 输出去向」三段式描述（例如「当 A 发生时，做 B，结果发到 C」），生成的 Zap 结构会更准确，比模糊描述省去很多来回调整；②涉及多步骤、跨多个应用的重复性工作（比如线索从表单进来后要打分、建 CRM 记录、通知销售），优先试 Zapier Agents 而不是传统 Zap，能减少人工触发环节；③在节点里用 AI Actions 调模型做文本处理时，先用小样本测试输出格式是否稳定（摘要长度、分类标签是否统一），再接入正式流程，避免下游节点因为格式波动报错；④「主动推荐自动化场景」基于历史使用数据，刚开始用可能推荐不准，建议先手动跑几周真实工作流，让系统积累到足够数据再参考它的建议。",
+    "body_en": "Zapier has woven AI throughout the workflow-building process. AI Copilot lets you describe what you need in plain language and it generates the Zap for you (\"if a new email has an attachment, save it to a specific Drive folder and send a Slack notification\"), skipping the manual node-by-node configuration. Zapier Agents go a step further — autonomous agents that carry out multi-step tasks across 8,000+ connected apps without needing a human trigger at every step. There's also AI Actions, which let you call GPT, Claude, Gemini, or other models inline within any Zap step to process text, classify, or summarize, and the system proactively suggests automations based on your app usage patterns. Practical tips: 1) the first time you build a workflow with Copilot, break your request into a three-part description — trigger condition, specific action, output destination (\"when A happens, do B, send the result to C\") — the resulting Zap structure comes out much more accurate than a vague request, saving a lot of back-and-forth; 2) for multi-step, cross-app repetitive work (like scoring a lead from a form submission, creating a CRM record, and notifying sales), try Zapier Agents instead of a traditional Zap to cut down on manual triggers between steps; 3) when using AI Actions to process text inside a step, test on a small sample first to confirm the output format is stable (summary length, consistent classification labels) before wiring it into your production flow, to avoid downstream steps breaking on format drift; 4) the proactive automation suggestions are based on historical usage data, so they may not be very accurate at first — run a few weeks of real workflows manually first so the system has enough data to make good suggestions.",
+    "models": [
+      "GPT",
+      "Claude",
+      "Gemini"
+    ],
+    "tags": [
+      "Zapier",
+      "自动化",
+      "workflow",
+      "AI Agent"
+    ],
+    "source": "Zapier 官方博客 / blog.mean.ceo（2026-07 综述）",
+    "updated": "2026-07-31"
   }
 ];
