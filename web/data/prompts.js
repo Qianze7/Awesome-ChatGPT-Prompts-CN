@@ -8509,5 +8509,74 @@ window.PROMPTS = [
     ],
     "source": "Zapier 官方博客 / blog.mean.ceo（2026-07 综述）",
     "updated": "2026-07-31"
+  },
+  {
+    "id": "start-gpt56-luna-terra-price-cut",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "GPT-5.6 Luna/Terra 集体降价：Luna 直降 80%，Auto-review 同步升级",
+    "title_en": "GPT-5.6 Luna and Terra Just Got Cheaper: Luna Drops 80%, Auto-review Upgrades Too",
+    "body_zh": "OpenAI 在 2026-07-30 宣布下调 GPT-5.6 Luna 和 Terra 两档的价格：Luna 输入价从每百万 token 1 美元降到 0.2 美元（降 80%），输出从 6 美元降到 1.2 美元；Terra 输入从 2.5 美元降到 2 美元，输出从 15 美元降到 12 美元（降约 20%）。旗舰档 Sol 价格不变，仍是 5/30 美元。官方给出的理由是「效率红利回馈」——GPT-5.6 训练过程中曾让模型自己参与重写和优化生产环境的推理代码，服务成本明显下降，所以把这部分省下来的钱让利给用户。同时 ChatGPT App 和 Codex CLI 里的 Auto-review（自动审查/自动复核）功能，其底层模型从 GPT-5.4 升级到了 GPT-5.6 Luna，叠加降价后，官方估算跑一次 Auto-review 的成本比之前便宜了约 10 倍，这对高频跑 agent 工作流、需要频繁自动复核代码或内容的用户很有意义。API 里还新增了 Sol 的 Fast 模式（替代原来的 Priority Processing），速度提升到标准模式的 2.5 倍，但价格是标准价的两倍，适合对延迟敏感、愿意加钱换速度的场景。实操建议：日常批量任务、Auto-review 这类高频调用优先用降价后的 Luna，几乎不用再纠结成本；Terra 依旧是均衡首选；只有真正卡在推理深度、且不在乎多花钱换速度时才上 Sol 或 Sol Fast。",
+    "body_en": "On 2026-07-30, OpenAI cut prices for GPT-5.6's Luna and Terra tiers: Luna's input price dropped from $1 to $0.20 per million tokens (an 80% cut), and output from $6 to $1.20; Terra's input fell from $2.50 to $2, and output from $15 to $12 (roughly a 20% cut). The flagship Sol tier is unchanged at $5/$30. OpenAI framed this as passing on efficiency gains — during GPT-5.6's development, the model helped rewrite and optimize its own production inference code, which lowered serving costs enough to justify the discount. At the same time, Auto-review in the ChatGPT app and Codex CLI was upgraded from GPT-5.4 to GPT-5.6 Luna under the hood; combined with the price cut, OpenAI estimates running Auto-review now costs roughly 10x less than before — a meaningful saving if you run agentic workflows or automated code/content review frequently. The API also added a new Fast mode for Sol (replacing the old Priority Processing), delivering up to 2.5x the speed of standard processing at twice the standard price, aimed at latency-sensitive use cases where you're willing to pay more for speed. Practical takeaway: route high-frequency, batch-style work and Auto-review to the now-cheap Luna without worrying much about cost; keep Terra as your balanced default; only reach for Sol or Sol Fast when you're genuinely bottlenecked on reasoning depth and don't mind paying extra for speed.",
+    "models": [
+      "GPT-5.6",
+      "GPT-5.6 Luna",
+      "GPT-5.6 Terra",
+      "GPT-5.6 Sol"
+    ],
+    "tags": [
+      "GPT-5.6",
+      "Luna",
+      "Terra",
+      "降价",
+      "Auto-review",
+      "Codex CLI"
+    ],
+    "source": "OpenAI 官方公告 / VentureBeat / CNBC / Axios（2026-07-30）",
+    "updated": "2026-08-01"
+  },
+  {
+    "id": "image-nanobanana2-google-earth",
+    "category": "image",
+    "level": "intermediate",
+    "title_zh": "Nano Banana 2 登陆 Google Earth：在地图里直接「P」出历史场景和改造效果",
+    "title_en": "Nano Banana 2 Lands in Google Earth: Reimagine Any Place Right on the Map",
+    "body_zh": "Google 从 2026-07-30 起把 Nano Banana 2（Gemini 3.1 Flash Image）的出图能力接入了网页版 Google Earth 全球用户，用法很直接：在地图里缩放定位到任意地点，点「创建图像（create image）」，输入一句描述你想看到的画面的提示词，AI 会结合 Google Earth 的真实地理与建筑数据生成对应场景。官方给的示例用法很有代表性：把庞贝古城的遗址还原成公元 78 年鲜活的城市街景；把东京一块空地改造成想象中的商业街区；生成一张自由女神像的信息图——这时 Gemini 负责拉取准确的历史事实，Nano Banana 负责把这些事实画成图。这个功能对内容创作者、地产可视化、历史科普特别好用：提示词建议按「保留地理特征 + 明确变化方向 + 风格/时代」三段式写，比如「保留这条街道的建筑轮廓和道路走向，把它改造成 1920 年代的老上海外滩风格，黑白老照片质感」，比笼统地说「让这里更好看」出图准确率高得多。",
+    "body_en": "Starting 2026-07-30, Google brought Nano Banana 2's (Gemini 3.1 Flash Image) generation capability to Google Earth on the web for all users worldwide. The workflow is straightforward: zoom into any location on the map, click \"create image,\" type a prompt describing what you want to see, and the AI generates a scene grounded in Google Earth's real geographic and architectural data. Google's own examples are illustrative: turning the ruins of Pompeii back into a living city street scene from 78 A.D.; transforming an empty lot in Tokyo into an imagined shopping district; or generating a Statue of Liberty infographic, where Gemini pulls the historical facts and Nano Banana renders them into the image. This is especially useful for content creators, real-estate visualization, and history/education content. For better accuracy, write prompts in three parts — preserve real geographic features, state the direction of change clearly, and specify a style or era — e.g. \"keep this street's building outlines and road layout, but reimagine it as 1920s Shanghai Bund style, black-and-white vintage photo look\" — rather than a vague \"make this place look nicer.\"",
+    "models": [
+      "Nano Banana 2",
+      "Gemini 3.1 Flash Image",
+      "Google Earth"
+    ],
+    "tags": [
+      "Nano Banana 2",
+      "Google Earth",
+      "文生图",
+      "地图可视化"
+    ],
+    "source": "Google 官方博客 / EdTech Innovation Hub（2026-07-30）",
+    "updated": "2026-08-01"
+  },
+  {
+    "id": "craft-gptlive-synthid-audio-verify",
+    "category": "craft",
+    "level": "intermediate",
+    "title_zh": "ChatGPT 语音也能查真假了：GPT-Live 音频接入 SynthID 水印，官方工具一键验证",
+    "title_en": "ChatGPT Voice Gets a Truth Check: GPT-Live Audio Now Carries SynthID Watermarks",
+    "body_zh": "OpenAI 在 2026-07-31 宣布，ChatGPT Voice（GPT-Live）以及 API 生成的语音内容现在都会自动嵌入 Google DeepMind 的 SynthID 水印，并同步升级了官方校验工具（openai.com/research/verify），支持上传音频文件检测是否含有 OpenAI 的溯源信号（C2PA 元数据 + SynthID 水印双重校验）。这个水印是「隐形」的，直接编码进音频内容本身而非文件元数据，因此剪辑、加滤镜、有损压缩之后大概率仍能被检测出来，比单纯依赖文件属性的溯源方式更抗篡改。目前 SynthID 已经从 OpenAI 一家扩展到 ElevenLabs、Kakao 等厂商共同采用的跨供应商标准，累计标记内容超过 1000 亿条。实用场景：收到一段来路不明、声称是「某人说的话」的语音时，先把文件传到官方校验工具查一下是否检测到 OpenAI/SynthID 信号；作为内容创作者，也可以主动告诉受众「这段配音由 AI 生成、带 SynthID 水印」来建立信任。需要注意的是，水印只能证明「这段音频是否由支持 SynthID 的工具生成」，检测不到水印不等于内容一定是真人录制，尤其是 2026-07-31 之前生成的旧音频不会被追溯加水印。",
+    "body_en": "On 2026-07-31, OpenAI announced that audio generated through ChatGPT Voice (GPT-Live) and the OpenAI API now automatically embeds Google DeepMind's SynthID watermark, alongside an upgraded verification tool at openai.com/research/verify that lets you upload an audio file to check for OpenAI provenance signals (both C2PA metadata and the SynthID watermark). The watermark is invisible and encoded directly into the audio content itself rather than file metadata, so it's designed to survive edits like clipping, filters, or lossy compression better than metadata-only provenance methods. SynthID has grown beyond OpenAI into a cross-vendor standard also adopted by ElevenLabs and Kakao, with over 100 billion pieces of content marked so far. Practical use: if you receive an audio clip of unknown origin claiming to be \"someone's real voice message,\" upload it to the official verify tool first to check for an OpenAI/SynthID signal. As a creator, you can also proactively tell your audience that a voiceover is AI-generated and SynthID-watermarked to build trust. One caveat: the watermark can only confirm whether audio was generated by a SynthID-supporting tool — the absence of a watermark doesn't prove something is genuinely human-recorded, and audio generated before 2026-07-31 was not retroactively watermarked.",
+    "models": [
+      "GPT-Live",
+      "ChatGPT Voice",
+      "SynthID"
+    ],
+    "tags": [
+      "SynthID",
+      "音频水印",
+      "内容溯源",
+      "AI 检测"
+    ],
+    "source": "OpenAI 官方公告（2026-07-31）",
+    "updated": "2026-08-01"
   }
 ];
