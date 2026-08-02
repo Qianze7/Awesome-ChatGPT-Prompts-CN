@@ -8578,5 +8578,110 @@ window.PROMPTS = [
     ],
     "source": "OpenAI 官方公告（2026-07-31）",
     "updated": "2026-08-01"
+  },
+  {
+    "id": "start-claude-fable5-100-credit-deadline",
+    "category": "start",
+    "level": "beginner",
+    "title_zh": "Claude Fable 5 转按量计费：Pro 用户 100 美元赠费今晚截止申领",
+    "title_en": "Claude Fable 5 Now Metered: Pro Users' $100 Credit Claim Window Closes Tonight",
+    "body_zh": "Anthropic 从 2026-07-20 起把 Claude Fable 5 从 Pro 和 Team Standard 套餐的包月额度里拿了出来，改成按 token 计费的「用量额度（usage credits）」——也就是说，Fable 5 不再算在你每月固定费用里，用多少扣多少。作为过渡补偿，符合条件的 Pro 和 Team Standard 订阅用户可以一次性领取 100 美元赠送额度（Max 套餐、Team/Enterprise 的高级席位不在此列，因为它们本来就有更高包含额度）。关键时间点：申领窗口在 2026-08-02 太平洋时间 23:59 截止——也就是今天；不管你哪天申领，这笔额度都会在 2026-09-17 太平洋时间 23:59 统一过期。领取方式：打开 Claude 网页版或客户端，看设置里的「用量（Usage）」页面是否出现领取横幅，或者对话内是否弹出免费额度提示，点击领取即可，不需要额外操作。实操建议：今天之内务必登录检查一遍，过了今晚这个额度就彻底没有了；如果你平时用 Fable 5 做长文写作或复杂推理任务较多，从现在起要留意用量后台，因为这部分开销以后会按实际 token 消耗计费，不再是「包月吃到饱」。",
+    "body_en": "Starting 2026-07-20, Anthropic pulled Claude Fable 5 out of the flat monthly fee for Pro and Team Standard plans and moved it to token-based \"usage credits\" — meaning Fable 5 usage is no longer covered by your subscription price and instead bills per token consumed. As a transition cushion, eligible Pro and Team Standard subscribers can claim a one-time $100 credit (Max plans and premium Team/Enterprise seats are excluded, since they already carry higher included limits). Key dates: the claim window closes 2026-08-02 at 11:59 p.m. Pacific Time — that's tonight — and regardless of when you claim it, the credit itself expires 2026-09-17 at 11:59 p.m. Pacific Time. How to claim: open Claude on web or desktop and check Settings > Usage for a claim banner, or watch for an in-app prompt offering the free credit — just click to claim, no extra steps needed. Practical advice: log in today to check before the window closes tonight, or you'll miss the credit entirely. And if you rely on Fable 5 for long-form writing or heavier reasoning tasks, start watching your usage dashboard going forward — that cost is now metered by actual token consumption rather than bundled into your flat monthly fee.",
+    "models": [
+      "Claude Fable 5",
+      "Claude Pro"
+    ],
+    "tags": [
+      "Claude Fable 5",
+      "计费变更",
+      "Usage Credit",
+      "Pro订阅"
+    ],
+    "source": "Anthropic 官方公告 / OzBargain / Nowrap（2026-07-20 起，截止 2026-08-02）",
+    "updated": "2026-08-02"
+  },
+  {
+    "id": "start-gemini36-flash-ga-cheaper-agentic",
+    "category": "start",
+    "level": "intermediate",
+    "title_zh": "Gemini 3.6 Flash 转正式版：编程任务有效成本降约七成，标价也便宜17%",
+    "title_en": "Gemini 3.6 Flash Goes GA: List Price Down 17%, Effective Cost on Coding Tasks Down Up to ~71%",
+    "body_zh": "Google 在 2026-07-21 把 Gemini 3.6 Flash（以及 3.5 Flash-Lite）升级为正式版（GA），同步上线 Gemini API、Gemini App 和 Gemini Enterprise Agent Platform。标价上，3.6 Flash 是每百万 token 输入 1.5 美元、输出 7.5 美元，比上一代 3.5 Flash 的输出价 9 美元便宜约 17%。但真正值得关注的是「有效成本」——因为 token 效率明显提升，官方数据显示完成同一任务所需的实际花费平均降低约 31%，在编程类 agentic 任务上最高可降约 71%：具体表现是不必要的代码修改更少、执行循环次数更少，在 DeepSWE 基准上从上一代的 37% 提升到 49%。需要注意的是另一条相关消息：Gemini 独立的图像生成模型将在 2026-08-17 停止服务并下线，这与 Nano Banana 系列是两回事，如果你的工作流里调用了这些旧版图像生成模型，需要提前迁移。实操建议：如果你在用 Gemini 做编程 agent 或 CLI 工具调用，可以直接把默认模型切到 3.6 Flash——即使标价降幅看起来不大，实际跑完整任务的花费降幅会明显更大。",
+    "body_en": "On 2026-07-21, Google promoted Gemini 3.6 Flash (along with 3.5 Flash-Lite) to general availability across the Gemini API, Gemini app, and Gemini Enterprise Agent Platform. On paper, 3.6 Flash is priced at $1.50 input / $7.50 output per million tokens — about 17% cheaper on output than 3.5 Flash's $9.00. The bigger story is effective cost: thanks to improved token efficiency, Google reports the average cost per completed task drops roughly 31% overall, and up to ~71% on agentic coding workloads — driven by fewer unwanted code edits and fewer execution loops, with DeepSWE benchmark scores rising from 37% (predecessor) to 49%. One related note to watch: Gemini's standalone image-generation models are being shut down on 2026-08-17 — a separate line from the Nano Banana family — so migrate off them if your workflow still calls those endpoints. Practical takeaway: if you're running Gemini as a coding agent or through a CLI tool, switch your default model to 3.6 Flash now — the effective savings on real completed tasks are much bigger than the headline price cut suggests.",
+    "models": [
+      "Gemini 3.6 Flash",
+      "Gemini 3.5 Flash-Lite"
+    ],
+    "tags": [
+      "Gemini 3.6 Flash",
+      "降价",
+      "Agentic Coding",
+      "Token效率"
+    ],
+    "source": "Google 官方博客 / OpenRouter / DataNorth AI（2026-07-21）",
+    "updated": "2026-08-02"
+  },
+  {
+    "id": "start-kimi-k3-28t-open-source",
+    "category": "start",
+    "level": "intermediate",
+    "title_zh": "Kimi K3 发布：2.8 万亿参数全球最大开源模型，原生视觉理解 + 百万字上下文",
+    "title_en": "Kimi K3 Launches: World's Largest Open-Source Model at 2.8T Parameters, Native Vision + 1M-Token Context",
+    "body_zh": "月之暗面在 2026-07-17 发布了新一代模型 Kimi K3，参数规模达 2.8 万亿，被官方与多家媒体称为目前全球参数规模最大的开源模型。K3 原生支持视觉理解，具备百万 token 级别的上下文窗口，主要面向软件工程、知识工作、深度研究和多模态理解这类复杂任务场景做了针对性优化。完整模型权重计划在 2026-07-27 前开源放出。在 K3 之前，Kimi 主打的旗舰模型是专攻 AI 编程的 K2.7 Code（2026-06-12 发布，6 月 15 日又推出了速度更快的版本）。实操建议：如果你的任务是长文档、超长上下文的研究分析，或者需要能自己下载权重本地部署/微调的开源大模型，K3 现在是国产阵营里参数规模最大的选择；但如果只是日常写代码、追求响应速度和更低成本，K2.7 Code 系列可能仍是更合适的日常选项——建议先对比一下当前两者的 API 定价和响应速度，再决定是否把生产工作流切过去。",
+    "body_en": "On 2026-07-17, Moonshot AI released its next-generation model Kimi K3, with 2.8 trillion parameters — described by the company and multiple outlets as the largest open-source model in the world to date. K3 natively supports vision understanding and offers a context window in the million-token range, with optimization aimed specifically at software engineering, knowledge work, deep research, and multimodal understanding tasks. Full model weights were slated to be open-sourced by 2026-07-27. Before K3, Kimi's flagship line was K2.7 Code, a model focused on AI programming released on 2026-06-12, with a faster variant following on June 15. Practical takeaway: if your work involves long-document or extremely long-context research and analysis, or you need an open-weight model you can self-host and fine-tune, K3 is now the largest domestic option available. But for everyday coding tasks where speed and cost matter more, K2.7 Code may still be the better daily driver — compare current API pricing and latency for both before switching a production workflow over.",
+    "models": [
+      "Kimi K3",
+      "Kimi K2.7 Code"
+    ],
+    "tags": [
+      "Kimi K3",
+      "月之暗面",
+      "开源大模型",
+      "长上下文"
+    ],
+    "source": "新华社 / 新浪科技 / 月之暗面官方（2026-07-17）",
+    "updated": "2026-08-02"
+  },
+  {
+    "id": "video-seedance25-multimodal-reference",
+    "category": "video",
+    "level": "intermediate",
+    "title_zh": "字节 Seedance 2.5：单次生成 30 秒 4K 视频，最多可吃 50 个参考素材",
+    "title_en": "ByteDance's Seedance 2.5: Single-Take 30-Second 4K Video with Up to 50 Reference Inputs",
+    "body_zh": "字节跳动正式发布了新一代视频生成模型 Seedance 2.5：单次生成即可产出最长 30 秒、原生 4K 分辨率的视频，并且一次最多可以接受 50 个「全模态」参考素材——具体包括最多 30 张图片、10 段视频片段、10 段音频片段——用来让角色长相、光线和运镜从第一帧到最后一帧保持一致，不需要靠后期拼接来凑长视频。它同时支持文生视频和图生视频，还提供「时间戳级」的局部编辑能力，可以只针对某一段时间区间调整画面或声音，包括绿幕抠像、机位视角调整、基于参考素材的定向编辑，主打影视和广告这类专业场景。需要提醒的是，参考素材不是「越多越好」——真正决定效果的是参考素材本身的质量，素材质量差、堆再多也没用。实操建议：如果要做多人群像或群戏这类复杂场景，建议给每个参考素材明确标注角色分工（比如「参考1=A角色的脸，参考2=背景风格」），这样模型更容易正确绑定身份而不是把几个角色的特征混在一起。",
+    "body_en": "ByteDance officially launched its next-generation video model Seedance 2.5: a single generation pass can produce up to 30 seconds of native 4K video, and the model accepts up to 50 full-modality reference inputs at once — up to 30 images, 10 video clips, and 10 audio clips — to keep a character's appearance, lighting, and camera motion consistent from the first frame to the last, without needing to stitch clips together afterward to reach that length. It supports both text-to-video and image-to-video generation, plus timestamp-level region editing that lets you adjust just a specific time segment of visuals or audio — including green-screen, camera-angle changes, and reference-guided edits — aimed at professional film and advertising use cases. One caveat worth noting: more reference inputs don't automatically mean a better result — the quality of the reference set matters far more than the quantity. Practical tip: for group shots or ensemble scenes with multiple people, label each reference's role explicitly (e.g. \"reference 1 = character A's face, reference 2 = background style\") so the model binds identities correctly instead of blending different characters' features together.",
+    "models": [
+      "Seedance 2.5",
+      "即梦"
+    ],
+    "tags": [
+      "Seedance 2.5",
+      "文生视频",
+      "多模态参考",
+      "字节跳动"
+    ],
+    "source": "ByteDance Seed Team 官方博客 / TheNextWeb / BigGo（2026-07）",
+    "updated": "2026-08-02"
+  },
+  {
+    "id": "skill-claude-skill-gotchas-section",
+    "category": "skill",
+    "level": "intermediate",
+    "title_zh": "写 Claude Skill 的关键一招：加一个「常见坑」章节，比写好路径说明更管用",
+    "title_en": "The One Thing That Makes a Claude Skill Reliable: Add a \"Gotchas\" Section",
+    "body_zh": "截至 2026 年，Claude Code 的 Skill 和 Slash Command 已经统一——一个 Skill 本质上就是它自己的斜杠命令，既可以直接调用，也能在相关场景下被自动加载。社区里近期的多篇最佳实践总结都指向同一个结论：给 Skill 多写「标准路径该怎么做」的说明，效果远不如加一个明确的「常见坑（gotchas）」章节——用条目列出这个任务通常会在哪些地方翻车、Agent 容易做出哪些错误假设、之前失败过的具体场景。这一节的内容应该是「跑过之后复盘出来的」，而不是提前凭空猜测的。其他几条同样被反复提到的习惯：一件事手动做过两次以上再考虑把它做成 Skill；写新 Skill 前先确认现有 Skill 是否已经能改变 Agent 的默认行为（真正好用的 Skill 是会改变产出结果本身，而不是多一个「你得记得去调用」的命令）；配合 Plan Mode、把噪音大的调研任务丢给子代理（subagent）、用 git worktree 跑并行任务，这些都是在长会话里保持上下文干净的常见组合拳。实操建议：下次保存 Skill 时，回头把上次实际运行中踩过的坑补写成一节「已知失败模式」，这比继续打磨主流程说明的投入产出比更高。",
+    "body_en": "As of 2026, Claude Code has unified skills and slash commands — a skill is effectively its own slash command, invocable directly or auto-loaded when relevant. Several recent community best-practice write-ups converge on the same conclusion: adding more \"here's the happy path\" instructions to a skill helps far less than adding an explicit \"gotchas\" section that lists the specific ways this task usually goes wrong, the wrong assumptions the agent tends to make, and concrete prior failure cases. That section should be written in hindsight, after actually running the task, not guessed at upfront. Other habits that keep coming up: only turn something into a skill once you've done it manually more than twice; before writing a new skill, check whether an existing one already changes the agent's default behavior — a genuinely good skill changes what gets produced, not just adds a command you have to remember to invoke; and pair skill authoring with plan mode, offloading noisy research to subagents, and using git worktrees for parallel agents to keep context clean during long sessions. Practical takeaway: next time you save a skill, retrofit it with a \"known failure modes\" section based on what actually broke the last time you ran it — that's higher-leverage than continuing to polish the main instructions.",
+    "models": [
+      "Claude Code",
+      "Claude Skills"
+    ],
+    "tags": [
+      "Claude Skill",
+      "Agentic Coding",
+      "最佳实践",
+      "Slash Command"
+    ],
+    "source": "OpenHands Blog / Medium (unicodeveloper) / dev.to（2026年7月综述）",
+    "updated": "2026-08-02"
   }
 ];
