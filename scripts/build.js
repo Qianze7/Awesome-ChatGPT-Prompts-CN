@@ -80,7 +80,15 @@ const enHead = `# 🧠 AI Prompts + Account & Payment Guide (CN) — Bilingual A
 
 A beginner-friendly, **bilingual (中文 / English)** all-in-one hub: a big **prompt collection** (roles, image/video generation, agent skills, plugins/MCP for Claude Code, Codex CLI & ChatGPT) **plus full guides to sign up and pay** — covering GPT, Claude, Gemini, and Chinese models (DeepSeek, Kimi, Doubao, etc.). Updated frequently.
 
-**What's inside:** 📝 Prompt library · 🔌 AI ecosystem resources (MCP servers / Claude Code subagents & skills) · 🔐 Account sign-up (US Apple ID / Claude / OpenAI Codex) · 💳 Payment path (Apple Gift Card → in-app subscription) · 🪜 Proxy setup (Clash Verge Rev / FLClash / Shadowrocket + TUN).
+**What's inside:** 📝 Prompt library · 🔌 AI ecosystem resources (MCP servers / Claude Code subagents & skills) · 🔐 Account sign-up (US Apple ID / Claude / OpenAI Codex) · 💳 Payment path (Apple Gift Card → in-app subscription) · 🪜 Proxy setup (Clash Verge Rev / FLClash / Shadowrocket + TUN) · 🧭 AI-specific routing with Freeroad.
+
+## 🧭 Freeroad AI Routing
+
+[Freeroad](https://github.com/wikieden/freeroad) is an open-source routing configuration for Clash Verge Rev, FlClash, and Shadowrocket. It works on top of your existing node subscription and does **not** provide proxy nodes.
+
+Its policy keeps LAN and China traffic direct, sends other international traffic through the proxy, and separates Claude, OpenAI, Google/Gemini/Antigravity, and other international AI services into four independent groups. Each AI group follows a two-level selection path: **service → country → automatic latency test or a fixed node**. DNS routing, fail-closed UDP handling, and service-by-service exit verification help reduce accidental direct connections or fallback to an unrelated route.
+
+See the [Freeroad README](https://github.com/wikieden/freeroad#readme) for client-specific imports, public configuration URLs, routing scope, and validation steps. Routing configuration cannot guarantee that an account will never trigger a provider's risk controls; node quality, IP reputation, account region, client environment, and usage still matter.
 
 > 📱 Setup guide (Chinese): [账号注册与订阅指南](docs/账号注册与订阅指南.md)
 > 🔌 Ecosystem resources (Chinese): [生态资源合集](docs/生态资源合集.md)

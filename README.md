@@ -14,6 +14,7 @@
 | 🔐 **账号注册全流程** | 美区 Apple ID、Claude、OpenAI ChatGPT / Codex 的注册与激活（含防封、养号） | [注册指南](docs/账号注册与订阅指南.md#2-美区-app-store-账号apple-id) |
 | 💳 **付费全路径** | Apple 礼品卡购买（Pockyt / 支付宝 / 官网）→ iOS 内购订阅 Claude / ChatGPT | [付费指南](docs/账号注册与订阅指南.md#3-apple-礼品卡购买与充值) |
 | 🪜 **科学上网** | Clash Verge Rev / FLClash / Shadowrocket + TUN 模式 + IP 确认 | [上网指南](docs/账号注册与订阅指南.md#1-科学上网工具按平台选含-tun-模式) |
+| 🧭 **AI 分流策略** | Freeroad：为 Claude、OpenAI、Google/Gemini 和其他境外 AI 设置独立、可验证的网络出口 | [查看策略](#freeroad-ai-分流策略) |
 | 🔌 **AI 生态资源合集** | MCP Server 官方/精选、100+ Claude Code Subagent、50+ Skill，整理自四个知名开源合集 | [生态资源合集](docs/生态资源合集.md) |
 
 ## 🚀 5 分钟快速开始（新手按顺序走）
@@ -26,12 +27,32 @@
 > - **SSONE**：[点此注册](https://sky.ssonenetwork.com/register?aff=NLEVymB2) ｜ 备用网址导航：[hello36d](https://hello36d.com/register?aff=NLEVymB2)
 > - **精灵学院**：[点此注册](https://jump.riolu.work/register?aff=A6G0ImUB)
 > - 短信验证用虚拟号码：[接码平台 hero-sms](https://hero-sms.com/cn)
+>
+> 已有节点订阅、希望让不同 AI 服务使用独立且可验证的出口？可配合下方的 [Freeroad AI 分流策略](#freeroad-ai-分流策略)。
 
 **第 2 步 · 🔐 注册账号**：美区 Apple ID（绑**自己的中国手机号**即可，地址填免税州、付款选 None）；Claude / OpenAI Codex（**必须美国号 + 全程美国 IP + 浏览器无痕**）。→ [详细步骤](docs/账号注册与订阅指南.md#2-美区-app-store-账号apple-id)
 
 **第 3 步 · 💳 付费**：买美区 Apple 礼品卡（[Pockyt 商城](https://shop.pockyt.io/pc/home) 支持国内卡/微信/支付宝；或支付宝小程序 / Apple 官网）→ 充入余额 → **iOS App 内购**订阅 Claude / ChatGPT。→ [详细步骤](docs/账号注册与订阅指南.md#3-apple-礼品卡购买与充值)
 
 **第 4 步 · 📝 用提示词**：打开 [在线版](https://wikieden.github.io/Freedom-To-Chatgpt-Claude-Agent/) 搜索、一键复制；或直接看下面的 [板块目录](#板块目录)。
+
+<a id="freeroad-ai-分流策略"></a>
+
+## 🧭 Freeroad AI 分流策略
+
+[Freeroad](https://github.com/wikieden/freeroad) 是面向 Clash Verge Rev、FlClash 和 Shadowrocket 的开源 AI 分流配置。它不提供代理节点，而是在已有节点订阅之上补充分组、路由、DNS 与出口验收方案，让不同 AI 服务的网络出口更稳定、更容易检查。
+
+核心路由逻辑：
+
+- **局域网和国内服务直连**，减少绕路延迟；广告与明确命中的追踪请求拒绝；其他境外流量默认走代理。
+- **四类 AI 流量相互隔离**：`🧠 Claude`、`✨ OpenAI/AI`、`🔷 Google/Gemini/Antigravity`、`🤖 其他 AI 服务`，避免普通网页或其他 AI 的线路切换连带改变关键服务出口。
+- **两级出口选择**：先为 AI 服务选择国家，再在该国家内使用自动测速或固定具体节点。自动测速不会跨国家；重视账号稳定时可固定单一节点。
+- **防止协议回落串线**：配合 DNS 分流、UDP 失败关闭和客户端专用规则，降低 AI 请求意外直连或落入普通代理组的风险。
+- **逐项验收**：分别发起 Claude、ChatGPT/Codex、Gemini/Antigravity 等真实请求，并结合出口检测与客户端连接日志确认命中正确策略组。
+
+不同客户端使用不同配置文件，不能混用：Clash Verge Rev 与 FlClash 使用全局扩展脚本，Shadowrocket 使用原生 `.conf`。完整导入步骤、公共配置地址和出口检测方法见 **[Freeroad 项目说明](https://github.com/wikieden/freeroad#readme)**。
+
+> 分流配置只能管理路由行为，不能保证账号绝不触发风控。最终效果仍取决于节点质量、IP 信誉、账号地区、客户端环境和使用方式；请遵守当地法律法规及相关服务条款。
 
 ## 📝 提示词大全（双语 · 复制即用）
 
